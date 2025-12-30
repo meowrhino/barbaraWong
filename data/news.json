@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Exposición de Invierno 2025",
+    "synopsis": "Una muestra colectiva que explora las intersecciones entre arte digital y prácticas tradicionales. Obras de más de 20 artistas internacionales en diálogo con el espacio arquitectónico de la galería.",
+    "start_date": "2025-12-15",
+    "end_date": "2026-01-31"
+  },
+  {
+    "title": "Residencia Artística en Berlín",
+    "synopsis": "Programa de residencia de tres meses en colaboración con el Kunsthaus Berlin. Incluye estudio, alojamiento y mentoría con artistas establecidos de la escena contemporánea europea.",
+    "start_date": "2025-12-20",
+    "end_date": "2026-01-15"
+  },
+  {
+    "title": "Charla: Nuevas Narrativas Visuales",
+    "synopsis": "Conversación abierta sobre las transformaciones del lenguaje visual en la era digital. Participan críticos, artistas y curadores para debatir sobre el futuro de la imagen contemporánea.",
+    "start_date": "2025-12-28",
+    "end_date": "2026-01-05"
+  },
+  {
+    "title": "Bienal de Arte Emergente",
+    "synopsis": "Participación en la tercera edición de la Bienal con una instalación site-specific que reflexiona sobre memoria, territorio y tecnología en el contexto latinoamericano actual.",
+    "start_date": "2024-11-01",
+    "end_date": "2024-12-15"
+  }
+]

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Barbara Wong</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header con nombre -->
+    <header class="header">
+        <h1 class="site-title">
+            <a href="index.html">barbara wong</a>
+        </h1>
+    </header>
+
+    <!-- Contenedor principal -->
+    <main class="about-container">
+        <!-- Galería de imágenes -->
+        <section class="about-gallery" id="aboutGallery">
+            <!-- Se carga dinámicamente desde about_gallery.json -->
+        </section>
+
+        <!-- Texto del about -->
+        <section class="about-text" id="aboutText">
+            <!-- Se carga dinámicamente desde about_text.json -->
+        </section>
+    </main>
+
+    <!-- Overlay para imágenes en grande -->
+    <div class="overlay" id="imageOverlay">
+        <div class="overlay-content" id="overlayContent">
+            <!-- Se carga dinámicamente al hacer clic en una imagen -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 <a href="https://meowrhino.studio" target="_blank">meowrhino.studio</a></p>
+    </footer>
+
+    <script type="module" src="js/about.js"></script>
+</body>
+</html>

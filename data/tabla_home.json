@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Proyecto Alfa",
+    "subtitle": "Instalación multimedia interactiva",
+    "slug": "proyecto-alfa",
+    "type": "instalacion"
+  },
+  {
+    "name": "Serie Beta",
+    "subtitle": "Fotografía analógica experimental",
+    "slug": "serie-beta",
+    "type": "fotografia"
+  },
+  {
+    "name": "Gamma Space",
+    "subtitle": "Escultura cinética en espacio público",
+    "slug": "gamma-space",
+    "type": "escultura"
+  },
+  {
+    "name": "Delta Dreams",
+    "subtitle": "Videoarte y performance",
+    "slug": "delta-dreams",
+    "type": "video"
+  },
+  {
+    "name": "Epsilon Echo",
+    "subtitle": "Instalación sonora inmersiva",
+    "slug": "epsilon-echo",
+    "type": "sonido"
+  },
+  {
+    "name": "Zeta Fragments",
+    "subtitle": "Collage digital y pintura",
+    "slug": "zeta-fragments",
+    "type": "pintura"
+  },
+  {
+    "name": "Eta Horizons",
+    "subtitle": "Serie fotográfica documental",
+    "slug": "eta-horizons",
+    "type": "fotografia"
+  },
+  {
+    "name": "Theta Waves",
+    "subtitle": "Instalación lumínica generativa",
+    "slug": "theta-waves",
+    "type": "instalacion"
+  },
+  {
+    "name": "Iota Traces",
+    "subtitle": "Dibujo y grabado contemporáneo",
+    "slug": "iota-traces",
+    "type": "dibujo"
+  },
+  {
+    "name": "Kappa Void",
+    "subtitle": "Proyecto de arte conceptual",
+    "slug": "kappa-void",
+    "type": "conceptual"
+  }
+]

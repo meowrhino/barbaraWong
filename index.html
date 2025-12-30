@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbara Wong</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header con nombre -->
+    <header class="header">
+        <h1 class="site-title">
+            <a href="about.html">barbara wong</a>
+        </h1>
+    </header>
+
+    <!-- Contenedor principal -->
+    <main class="home-container">
+        <!-- Galería destacada -->
+        <section class="featured-section" id="featuredSection">
+            <!-- Se carga dinámicamente desde home_gallery.json -->
+        </section>
+
+        <!-- Tabla de proyectos -->
+        <section class="projects-table" id="projectsTable">
+            <div class="table-wrapper">
+                <!-- Se carga dinámicamente desde tabla_home.json -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Overlay para media en grande -->
+    <div class="overlay" id="mediaOverlay">
+        <div class="overlay-content" id="overlayContent">
+            <!-- Se carga dinámicamente al hacer clic en un item -->
+        </div>
+    </div>
+
+    <!-- Contenedor de modales HOT NOW -->
+    <div class="news-modals-container" id="newsModalsContainer">
+        <!-- Se cargan dinámicamente desde news.json -->
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 <a href="https://meowrhino.studio" target="_blank">meowrhino.studio</a></p>
+    </footer>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

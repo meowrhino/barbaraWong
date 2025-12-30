@@ -1,0 +1,11 @@
+[
+  {
+    "type": "video",
+    "src": "assets/video/ph_01.mp4",
+    "poster": "assets/img/ph_01.png",
+    "muted": true,
+    "loop": true,
+    "autoplay": true,
+    "playsinline": true
+  }
+]

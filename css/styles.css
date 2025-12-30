@@ -1,0 +1,401 @@
+/* ========================================
+   RESET Y VARIABLES
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-text: #000;
+    --color-text-gray: #888;
+    --color-text-light-gray: #ddd;
+    --color-bg: #fff;
+    --color-accent-red: #ff0000;
+    --color-accent-green: #00aa00;
+    --font-main: 'Inria Sans', sans-serif;
+    --font-mono: 'Courier New', monospace;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-main);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img, video {
+    max-width: 100%;
+    display: block;
+}
+
+/* ========================================
+   HEADER
+   ======================================== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    z-index: 100;
+    background-color: var(--color-bg);
+}
+
+.site-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.site-title a:hover {
+    opacity: 0.7;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+.footer {
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--color-text-gray);
+}
+
+.footer a {
+    text-decoration: underline;
+}
+
+/* ========================================
+   HOME CONTAINER
+   ======================================== */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 4rem;
+}
+
+/* Galería destacada */
+.featured-section {
+    width: 100%;
+    max-height: 50dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.featured-section img,
+.featured-section video {
+    max-width: 100%;
+    max-height: 50dvh;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+/* Tabla de proyectos */
+.projects-table {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.table-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.project-row {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--color-text-light-gray);
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.project-row:hover {
+    opacity: 0.7;
+}
+
+.project-name {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.project-subtitle {
+    font-size: 0.85rem;
+    color: var(--color-text-gray);
+}
+
+/* ========================================
+   ABOUT CONTAINER
+   ======================================== */
+.about-container {
+    padding-top: 4rem;
+    min-height: 100vh;
+}
+
+/* Galería about */
+.about-gallery {
+    width: 100%;
+    max-height: 50dvh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    scroll-snap-type: x mandatory;
+}
+
+.about-gallery img {
+    height: 100%;
+    max-height: 48dvh;
+    width: auto;
+    object-fit: contain;
+    cursor: pointer;
+    scroll-snap-align: center;
+}
+
+/* Texto about */
+.about-text {
+    padding: 2rem 1rem;
+    line-height: 1.6;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+}
+
+/* ========================================
+   EVENTS CONTAINER
+   ======================================== */
+.events-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    height: 100vh;
+    padding-top: 4rem;
+}
+
+.event-card {
+    min-width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    scroll-snap-align: center;
+    text-align: center;
+}
+
+.event-card.active .event-title,
+.event-card.active .event-synopsis {
+    color: var(--color-text);
+}
+
+.event-card.inactive .event-title,
+.event-card.inactive .event-synopsis {
+    color: var(--color-text-gray);
+}
+
+.event-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.event-synopsis {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.event-dates {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.event-card.active .event-dates {
+    color: var(--color-accent-green);
+}
+
+.event-card.inactive .event-dates {
+    color: var(--color-text-light-gray);
+}
+
+/* ========================================
+   NEWS MODALS (HOT NOW)
+   ======================================== */
+.news-modals-container {
+    position: fixed;
+    top: 4rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    z-index: 200;
+    max-width: 50vw;
+}
+
+.news-modal {
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-text);
+    padding: 1rem;
+    position: relative;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.news-modal:hover {
+    opacity: 0.9;
+}
+
+.news-hot-label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--color-accent-red);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.news-modal-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.news-modal-synopsis {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.news-modal-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--color-text);
+    padding: 0.25rem;
+    line-height: 1;
+}
+
+.news-modal-close:hover {
+    opacity: 0.7;
+}
+
+/* ========================================
+   OVERLAY
+   ======================================== */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.overlay.active {
+    display: flex;
+}
+
+.overlay-content {
+    max-width: 90vw;
+    max-height: 90vh;
+    cursor: default;
+}
+
+.overlay-content img,
+.overlay-content video {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+/* ========================================
+   ERROR PAGE
+   ======================================== */
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    text-align: center;
+}
+
+.error-title {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.error-message {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--color-text-gray);
+}
+
+.btn-home {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--color-text);
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+
+.btn-home:hover {
+    background-color: var(--color-text);
+    color: var(--color-bg);
+}
+
+/* ========================================
+   PROJECT CONTAINER (STUB)
+   ======================================== */
+.project-container {
+    padding: 6rem 1rem 2rem;
+    min-height: 100vh;
+}
+
+/* ========================================
+   RESPONSIVE (DESKTOP)
+   ======================================== */
+@media (min-width: 768px) {
+    .news-modals-container {
+        max-width: 400px;
+    }
+    
+    .project-row {
+        padding: 1rem 0;
+    }
+    
+    .about-gallery {
+        padding: 2rem;
+    }
+}
