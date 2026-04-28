@@ -1,26 +1,767 @@
 [
   {
-    "title": "Exposición de Invierno 2025",
-    "synopsis": "Una muestra colectiva que explora las intersecciones entre arte digital y prácticas tradicionales. Obras de más de 20 artistas internacionales en diálogo con el espacio arquitectónico de la galería.",
-    "start_date": "2025-12-15",
-    "end_date": "2026-01-31"
+    "id": 0,
+    "year": "2026",
+    "title": "Estrena Els peregrins al festival D’A dins de Simfonies de ciutat",
+    "description": "26 de març a les 19.30h\n\nTeatre del CCCB\n\nPrimera sessió d’aquest projecte audiovisual del CCCB amb la col·laboració del D’A, que arriba a la 5a edició. Tres films on les cineastes Marina Freixa Roca, Lucía Romero Castillo i Bárbara Sánchez Barroso presenten una mirada singular i creativa de la ciutat.",
+    "image": "NEWS/000_estrena-els-peregrins-al-festival-d-a-di.png",
+    "links": [
+      "https://teatenerife.es/actividad/el-espesor/3283?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnhpR5HoK8Nias8N8rr6YIJH7iK3e2DYvGSupxh-VLMPoFFUAQ_htUvccuPvk_aem_D67k-cY8hnWtZmRkYxXtFg",
+      "https://dafilmfestival.com/movie/els-peregrins/"
+    ]
   },
   {
-    "title": "Residencia Artística en Berlín",
-    "synopsis": "Programa de residencia de tres meses en colaboración con el Kunsthaus Berlin. Incluye estudio, alojamiento y mentoría con artistas establecidos de la escena contemporánea europea.",
-    "start_date": "2025-12-20",
-    "end_date": "2026-01-15"
+    "id": 1,
+    "year": "2025",
+    "title": "Atlánticas colectivas: El espesor. Fotonoviembre 2025",
+    "description": "Facultad de Bellas Artes\n\nUniversidad de La Laguna\n\nSala de exposiciones\n\n14.11.2025\n\n09.01.2026\n\nLa XVIII Bienal Internacional de Fotografía Fotonoviembre, que organiza el museo TEA Tenerife Espacio de las Artes, lleva hasta la sala de exposiciones de la Facultad de Bellas Artes Universidad de La Laguna del 14 de noviembre hasta el 9 de enero la exposición El espesor. \nComisariado: Dalia de la Rosa",
+    "image": "NEWS/001_atlanticas-colectivas-el-espesor-fotonov.png",
+    "links": [
+      "https://teatenerife.es/actividad/el-espesor/3283?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnhpR5HoK8Nias8N8rr6YIJH7iK3e2DYvGSupxh-VLMPoFFUAQ_htUvccuPvk_aem_D67k-cY8hnWtZmRkYxXtFg",
+      "https://teatenerife.es/actividad/el-espesor/"
+    ]
   },
   {
-    "title": "Charla: Nuevas Narrativas Visuales",
-    "synopsis": "Conversación abierta sobre las transformaciones del lenguaje visual en la era digital. Participan críticos, artistas y curadores para debatir sobre el futuro de la imagen contemporánea.",
-    "start_date": "2025-12-28",
-    "end_date": "2026-01-05"
+    "id": 2,
+    "year": "2025",
+    "title": "Desig i Ficció. Una exploració sensorial i material del margalló",
+    "description": "Dissabte 8 de novembre\n\nInauguracio: 12h\n\nMuseu de la Pauma\n\nMas de Barberans\n\nExposició de Cris Noguer i Sara G. de Ubieta\n\nUna exposició que posa el margalló al centre i que també vol fer visible la connexió entre el museu i el viver de les fibres vegetals on es cultiven les plantes que les artesanes fan servir de matèria prima, entre les quals hi destaca el margalló.\n\nVideo de Bárbara S. Barroso\n\nAmb l’ajuda d’Alba Bresolí i Ben Guez",
+    "image": "NEWS/002_desig-i-ficcio-una-exploracio-sensorial.jpg",
+    "links": [
+      "https://cdrmuseudelapauma.cat/worpre/desig-i-ficcio-tot-explorant-el-margallo/"
+    ]
   },
   {
-    "title": "Bienal de Arte Emergente",
-    "synopsis": "Participación en la tercera edición de la Bienal con una instalación site-specific que reflexiona sobre memoria, territorio y tecnología en el contexto latinoamericano actual.",
-    "start_date": "2024-11-01",
-    "end_date": "2024-12-15"
+    "id": 3,
+    "year": "2025",
+    "title": "Nexes. Pexes audiovisuals d’artistes residents i sòcies de La Escocesa",
+    "description": "Loop Festival. City Screen\n\nmiércoles 7 de noviembre, 19h\n\nLa Pecera, La Escocesa\n\nInstalación visual de siete piezas en diferentes formatos que ponen en diálogo las diferentes prácticas que se llevan a cabo en La Escocesa. La instalación muestra la contaminación fructífera derivada de los espacios comunes en la cotidianidad de la fábrica.",
+    "image": "NEWS/003_nexes-pexes-audiovisuals-d-artistes-resi.jpg",
+    "links": [
+      "https://www.instagram.com/p/DO6fPwTDKXC/",
+      "https://loop-barcelona.com/es/city-screen-2025/"
+    ]
+  },
+  {
+    "id": 4,
+    "year": "2025",
+    "title": "Geografías del arraigo. Encuentros sobre arte y topofilias",
+    "description": "miércoles 2 de octubre\n\napertura de puertas: 18h\n\nCincómonos Espai d’Art\nRoger de Llúria, 128 – Barcelona",
+    "image": "NEWS/004_geografias-del-arraigo-encuentros-sobre.jpg",
+    "links": [
+      "https://www.instagram.com/p/DO6fPwTDKXC/"
+    ]
+  },
+  {
+    "id": 5,
+    "year": "2025",
+    "title": "La Escocesa. Tallers Oberts 2025",
+    "description": "El cap de setmana del 13 i 14 de setembre La Escocesa obre les seves portes per mostrar els tallers i processos creatius de lis residentis del centre.",
+    "image": "NEWS/005_la-escocesa-tallers-oberts-2025.png",
+    "links": [
+      "https://laescocesa.org/ca/view/TallersOberts2025/3924",
+      "http://www.barcelona.cat/lafabracac/ca/content/performance-la-romeria-del-sifonoforo-beatriz-regueira-i-barbara-s-barroso"
+    ]
+  },
+  {
+    "id": 6,
+    "year": "2025",
+    "title": "La romería del sifonóforo",
+    "description": "Performance amb Beatriz Regueira\n\nDissabte 5 de juliol, a les 18.30 h\nLloc de trobada: Fabra i Coats: Centre d’Art Contemporani de Barcelona\nItinerari: recinte de la Fabra i Coats i els seus voltants\n\nUna performance en forma de meditació col·lectiva que busca connectar la naturalesa interdependent de l’humà, l’animal, el paisatgístic i l’espiritual. L’acció reprèn la peregrinació popular de la romeria per arribar a ser un organisme més llarg que una balena blava.",
+    "image": "NEWS/006_la-romeria-del-sifonoforo.png",
+    "links": [
+      "http://www.barcelona.cat/lafabracac/ca/content/performance-la-romeria-del-sifonoforo-beatriz-regueira-i-barbara-s-barroso",
+      "https://www.barcelona.cat/lafabracac/ca/content/performance-la-romeria-del-sifonoforo-beatriz-regueira-i-barbara-s-barroso"
+    ]
+  },
+  {
+    "id": 7,
+    "year": "2025",
+    "title": "Bloom. L’incanto della biodiversità",
+    "description": "The Knots We Knot and Botanical Dream will be part of the Public Program of BLOOM – The Enchantment of Biodiversity.\n\nVenue: Mezzanino Space on May 9th and 10th, from 11:00 AM to 7:00 PM\n\nFueriOrticola, Milan\n\nNello spazio Mezzanino, 10 Corso Como ospiterà inoltre una sequenza di video-proiezioni  in cui si alternano opere storiche come Danse serpentine (1897) dei fratelli Lumière – prima opera colorata a mano nella storia del cinema – a La croissance des végétaux del biologo Jean Comandon fino ai cortometraggi contemporanei The Knots We Knot (2022), Botanical Dream (2022) delle artiste Bárbara Sánchez Barroso, Adriana Vila Guevara e Siskin or a speculative study on the possibility of a language of plants (2021) di Anna Dot, racconti visivi che riflettono sulla connessione profonda tra esseri viventi, attraverso simbolismi e memoria, ampliando lo sguardo multidisciplinare sull’universo verde.",
+    "image": "NEWS/007_bloom-l-incanto-della-biodiversita.png",
+    "links": [
+      "http://labocine.com/issues/ethnobotanica"
+    ]
+  },
+  {
+    "id": 8,
+    "year": "2025",
+    "title": "Labocine: ETHNOBOTANICA",
+    "description": "Botanical dream is part of ETHNOBOTANICA 🌿 April Issue\n\nNow blooming on Labocine — a herbaria of films exploring how plants root us in memory, shape the present, and branch into the unknown.\n\nWatch the full April Issue now:\n\nlabocine.com/issues/ethnobotanica",
+    "image": "NEWS/008_labocine-ethnobotanica.png",
+    "links": [
+      "http://labocine.com/issues/ethnobotanica",
+      "https://donesvisuals.cat/simfonies-projeccions-seleccionades-5a/"
+    ]
+  },
+  {
+    "id": 9,
+    "year": "2025",
+    "title": "Simfonies de ciutat, Dones visuals i CCCB, Barcelona",
+    "description": "Ja coneixem a les seleccionades de la pròxima edició de #SimfoniesDeCiutat! Les cineastes ja es posen càmera en mà per mostrar-nos les seves realitats i reflexions sobre la ciutat i l'espai que habitem.\n\nSón la Bárbara Sánchez Barroso, Marta Romero Coll, Kha Villanueva, Marina Freixa Roca, Anna Mundet Molas i Lucía Romero Castillo. \n\nMés info:\n\nhttps://donesvisuals.cat/simfonies-projeccions-seleccionades-5a/",
+    "image": "NEWS/009_simfonies-de-ciutat-dones-visuals-i-cccb.png",
+    "links": [
+      "https://www.facebook.com/hashtag/simfoniesdeciutat?__eep__=6&__tn__=*NK*F",
+      "https://donesvisuals.cat/simfonies-projeccions-seleccionades-5a/",
+      "http://www.barcelona.cat/fabraicoats/centredart/es/content/amable-informal"
+    ]
+  },
+  {
+    "id": 10,
+    "year": "2025",
+    "title": "Amable informal, Centre d’Art Contemporani Fabra i Coats, Barcelona",
+    "description": "De 17 Enero, 2025 hasta 6 Julio, 2025\n\nArtistas: Bárbara Sánchez Barroso, Blanca Gracia, Enrique Radigales, Fito Conesa, Irene Pe, Julia Puyo, Luz Broto, Marc Herrero, Radia Cava-ret (Samu Céspedes, Patricia Del Razo, Violeta Ospina Dguez i Yazel Parra Nahmens), Tau Luna Acosta, Xesca Salvà i Marc Villanueva\n\nA cargo de Pilar Cruz \n\nMás info:\n\nhttps://www.barcelona.cat/fabraicoats/centredart/es/content/amable-informal",
+    "image": "NEWS/010_amable-informal-centre-d-art-contemporan.png",
+    "links": [
+      "https://www.barcelona.cat/fabraicoats/centredart/es/content/amable-informal",
+      "http://www.barcelona.cat/fabraicoats/centredart/es/content/amable-informal"
+    ]
+  },
+  {
+    "id": 11,
+    "year": "2024",
+    "title": "Recent video works selected by àngels barcelona",
+    "description": "13.11.24 > 24.11.24\nOpening: 13.11.2024\nLOOP Festival - Screen City\n\nEnar de Dios Rodríguez \nAndrea González Garrán\n\nBárbara Sánchez Barroso \n\nMás info:\n\nhttp://angelsbarcelona.com/en/program/recent-video-works-selected-by-angels-barcelona/320",
+    "image": "NEWS/011_recent-video-works-selected-by-angels-ba.png",
+    "links": [
+      "http://angelsbarcelona.com/en/program/recent-video-works-selected-by-angels-barcelona/320",
+      "https://www.mataderomadrid.org/programacion/naturalezas-del-retrato"
+    ]
+  },
+  {
+    "id": 12,
+    "year": "2024",
+    "title": "Naturalezas del retrato, Cineteca Matadero, Madrid",
+    "description": "Programa: Así son las cosas\n\n13 noviembre, 19:30h\n\nSala Borau\n\nSofía Pérez-Tudela, Estefanía Santiago, Candela Sotos, Bárbara Sánchez Barroso y\nAdriana Vila Guevara\n\nComisariado por Marta Ramos-Yzquierdo\n\nUna serie de relatos breves donde uno se vuelve árbol, pájaro, flor o hierba. Las artistas convocadas\nen esta sesión realizan un trabajo de simbiosis con el entorno natural para poder experimentar en las\nformas de la transmisión de vivencias, experiencias e incertidumbres. Desde la migración o el exilio\nhasta las tardes calladas en un bosque o los caminos\ncompartidos en un campo.\n\nMás info:\n\nhttps://www.mataderomadrid.org/programacion/naturalezas-del-retrato",
+    "image": "NEWS/012_naturalezas-del-retrato-cineteca-matader.png",
+    "links": [
+      "https://www.mataderomadrid.org/programacion/naturalezas-del-retrato"
+    ]
+  },
+  {
+    "id": 13,
+    "year": "2024",
+    "title": "Pajarracos, pájaros y pajaritos",
+    "description": "Los pajaritos\n\nMercado del Torrent Gornal, Hospitalet\n\nDomingo, 10 de noviembre, de 9 a 15 h\n\nPere Llobera – Escuela de la Tani & Pedro G. Romero – Marc Vives – Ela Ela Teatre – EMCA – Costi El Chato – La flauta dolça – Joaquín el Duende – Laura Marchal – La Corcoles – Lara Fluxà – Lolo & Sosaku – Mario Santamaría – Eva Fàbregas – Antonio Montesinos – Marla Jacarilla – Alex Palacín – Sociedad0 – Salamina – Trama 34 – Fase – Rafel Bianchi – Gonzalo Elvira – Enric Farrés – Samuel Labadie – Laura Llaneli – Aldo Urbano – Christina Schultz – Biel Llinàs – Jeleton – Germán Portal – Joana Capella – isla_666666 – Xavi Rodríguez – Marc Larré – Irene Bou – Bárbara Sánchez Barroso – María Mira\n\nMás info:\n\nhttps://planetmediterraneo.com.es/el-proximo-martes-5-comienza-la-focus-week-de-manifesta-en-lhospitalet-con-el-proyectopajarracos-pajaros-y-pajaritos/",
+    "image": "NEWS/013_pajarracos-pajaros-y-pajaritos.png",
+    "links": [
+      "https://www.salleurl.edu/ca/inauguracio-iaslab-interctive-arts-and-science-lab",
+      "https://planetmediterraneo.com.es/el-proximo-martes-5-comienza-la-focus-week-de-manifesta-en-lhospitalet-con-el-proyectopajarracos-pajaros-y-pajaritos/",
+      "http://www.salleurl.edu/ca/inauguracio-iaslab-interctive-arts-and-science-lab"
+    ]
+  },
+  {
+    "id": 14,
+    "year": "2024",
+    "title": "Inauguració IASlab, Interactive Arts & Science Lab",
+    "description": "El proper dijous 24 d'octubre a les 18.15h inaugurem l'IASLAB, un espai singular on l'Art, la ciència i la tecnologia redefineix els límits de la realitat.  \n\nL'Interactive Arts & Science Lab de La Salle Universitat Ramon Llull és un espai museístic que revolucionarà la innovació dels continguts multimèdia, artístics, acústics i d'entreteniment digital per convertir-se en motor d'evolució d'altres sectors gràcies a les experiències disruptives.\n\nRegistre gratuït:\n\nhttps://www.salleurl.edu/ca/inauguracio-iaslab-interctive-arts-and-science-lab",
+    "image": "NEWS/014_inauguracio-iaslab-interactive-arts-scie.jpg",
+    "links": [
+      "https://www.salleurl.edu/ca/inauguracio-iaslab-interctive-arts-and-science-lab",
+      "http://www.salleurl.edu/ca/inauguracio-iaslab-interctive-arts-and-science-lab",
+      "https://www.mataderomadrid.org/programacion/naturalezas-del-retrato",
+      "http://www.onomatopee.net/exhibition/a-tree/#publication_24266"
+    ]
+  },
+  {
+    "id": 15,
+    "year": "2024",
+    "title": "A Tree, A Reader on Arboreal Kinship",
+    "description": "Through this reader, the aim is to nurture and encourage dialogues and to share inspiration on exercising arboreal kinship by taking the time to think about trees differently through imagination, art, music, storytelling, poetry, and images. \n\nWith written contributions by Joss Allen, Céline Baumann, Bárbara Sánchez Barosso, Jorge Menna Barreto, Renée Bus, Lucy Davis, Amirio Freeman, Manjot Kaur, Marjolein van der Loo, Karen Lofgren, Anne Richter, Jerrold Saija, Oscar Salguero, Jonmar van Vlijmen and Müge Yilmaz.\n\nVisual contributions by Gerbrand Burger, Chihiro Geuzenbroek, Femke Habets, Roderick Hietbrink, Ingela Ihrman, Mari Keski-Korsu, Alice Ladenburg, Hira Nabi, Frank Resseler and Sanne Vaassen.\n\nEditor: Marjolein van der Loo\n\nGraphic: Yannick Nuss\n\nPublished by Onomatopee\n\nLaunching September 20\nEindhoven, The Netherlands\n\nMore info:\n\nhttps://www.onomatopee.net/exhibition/a-tree/#publication_24266",
+    "image": "NEWS/015_a-tree-a-reader-on-arboreal-kinship.jpg",
+    "links": [
+      "https://www.onomatopee.net/exhibition/a-tree/#publication_24266",
+      "http://www.onomatopee.net/exhibition/a-tree/#publication_24266"
+    ]
+  },
+  {
+    "id": 16,
+    "year": "2024",
+    "title": "La Escocesa. Talleres Abiertos 2024",
+    "description": "Durante el fin de semana del 14 y 15 de septiembre La Escocesa abre sus puertas, en esta ocasión aparte de tener abiertos los talleres de les artistas residentes tendremos también un programa de actividades a lo largo de las dos jornadas.\n\nPrograma de actividades:\nhttps://laescocesa.org/es/view/TalleresAbiertos/3843",
+    "image": "NEWS/016_la-escocesa-talleres-abiertos-2024.png",
+    "links": [
+      "https://laescocesa.org/es/view/TalleresAbiertos/3843"
+    ]
+  },
+  {
+    "id": 17,
+    "year": "2024",
+    "title": "Article 9. Capitalobscè",
+    "description": "Article, revista de reflexió i pensament crític, amb un monogràfic sobre la crisi climàtica i el concepte de «capitalisme verd».\n\nTextos: Ramón del Castillo, Gisela Chillida, Andreas Malm, Diana Padrón, Jordi Pino, Pablo G. Polite, Lucía Vicent\n\nEntrevistes: Andreu Escrivà, Jordi Colomer\n\nFotos: Irene de Andrés, Daniel de la Barra, Olalla Gómez, Jorge Isla, Leo Pum, Marta R. Chust + Roc Domingo, Edu Ruiz, Bárbara Sánchez Barroso, Huaqian Zhang\n\nhttps://santandreucontemporani.org/ca/activitats/article-9-capitalobsce",
+    "image": "NEWS/017_article-9-capitalobsce.jpg",
+    "links": [
+      "https://santandreucontemporani.org/ca/activitats/article-9-capitalobsce"
+    ]
+  },
+  {
+    "id": 18,
+    "year": "2024",
+    "title": "El buen vecinx",
+    "description": "Exposició dels alumnes de l’assignatura de Postproducció de l’Escola Massana\n\nExposició a l’espai 2 de la galeria àngels\n\nc/ dels àngels, 16\n\nInauguració: divendres 14 a les 18h\n\nExposició del 14 al 28 de juny\n\nHoraris: de 17 a 20h",
+    "image": "NEWS/018_el-buen-vecinx.jpeg",
+    "links": []
+  },
+  {
+    "id": 19,
+    "year": "2024",
+    "title": "Conference: Enbluement: connecting science and arts to expand our belonging to the Ocean",
+    "description": "UN Ocean Decade Week 2024\n\nEvent Timing: 17:00‐20:00, April 9, 2024.\n\nEvent Address: Sala d'Aactes Ramon Margalef, \n\nInstitut de Ciències del Mar, and Charles Darwin\nSquare, Passeig Marítim de la Barceloneta, 08003 Barcelona, Spain.\n\nMore info:\n\nhttps://www.icm.csic.es/ca/ocean-conference-program\n\nBlue Genes community: https://blue-genes.org/",
+    "image": "NEWS/019_conference-enbluement-connecting-science.jpg",
+    "links": [
+      "https://www.icm.csic.es/ca/ocean-conference-program",
+      "http://www.fundaciopalau.cat/event/presentacio-de-la-pellicula-aiguarir-de-maria-marvila-i-barbara-s-barroso/",
+      "https://blue-genes.org/"
+    ]
+  },
+  {
+    "id": 20,
+    "year": "2023",
+    "title": "Presentació pel·licula Aiguarir",
+    "description": "21 de desembre a les 18:30\n\nFundació Palau, Caldes d’Estrac\n\nLa pel·lícula documenta l’acció que les artistes Maria Marvila i Bárbara S. Barroso van dur a terme a Caldes d’Estrac el diumenge 18 de desembre de 2022 en el marc del cicle d’art contemporani de la Fundació Palau.\n\nMés info:\n\nhttps://www.fundaciopalau.cat/event/presentacio-de-la-pellicula-aiguarir-de-maria-marvila-i-barbara-s-barroso/",
+    "image": "NEWS/020_presentacio-pel-licula-aiguarir.png",
+    "links": [
+      "https://www.fundaciopalau.cat/event/presentacio-de-la-pellicula-aiguarir-de-maria-marvila-i-barbara-s-barroso/",
+      "http://www.fundaciopalau.cat/event/presentacio-de-la-pellicula-aiguarir-de-maria-marvila-i-barbara-s-barroso/"
+    ]
+  },
+  {
+    "id": 21,
+    "year": "2023",
+    "title": "Nature is ancient, but surprises us all",
+    "description": "11 – 26 de novembre de 2023\nInauguració: divendres 10 de novembre de 2023, 19 h amb una live performance de Baal & Mortimer\nCentrum, Reuterstr. 7, 12053 Berlín\n\nComissària: Marenka Krasomil\nArtistes: Sara Agudo Millán, Natalia Domínguez, Sergio Monje, Bárbara Sánchez Barroso\n\nMés info:\n\nhttps://santandreucontemporani.org/ca/activitats/nature-is-ancient-but-surprises-us-all",
+    "image": "NEWS/021_nature-is-ancient-but-surprises-us-all.jpeg",
+    "links": [
+      "https://santandreucontemporani.org/ca/activitats/nature-is-ancient-but-surprises-us-all"
+    ]
+  },
+  {
+    "id": 22,
+    "year": "2023",
+    "title": null,
+    "description": "Taiwan International Video Art Exhibition—Living Togetherness\n\nCurators: HSU Shih-Yu, Zoe Chia-Jung YEH\nDate: 2023.11.4 - 2024.1.28\nVenue: Hong-Gah Museum (11F., No.166, Daye Road Beitou District, 11268 Taipei City, Taiwan)\n\nThe exhibition showcases a total of 30 artists (or artist groups) from different corners of the world, including Taiwanese artists CHANG Chun-Tzu, Anvar CHENG, Esther LIN, Jessi Ali LIN & CHEN Hsin-Yu, LIN Jia-Jen, SU Yu-Hsin, Rain WU & Mariana Sanchez SALVADOR (Portugal), and international artists Tekla ASLANISHVILI & Giorgi Gago GAGOSHIZE (Georgia), Bárbara Sánchez BARROSO (Spain) & Adriana Vila GUEVARA (Venezuela), George CLARK (UK), Anne FEHRES (Netherlands) & Luke CONROY (Australia), Yining Fei (China), Juliana HÖSCHLOVÁ (Czech), Elena KNOX (Australia), Steffen KÖHN (Germany) & Nestor SIRÉ (Cuba), LEE Eunhee (South Korea), Jane Jin KAISEN (South Korea/Denmark), Danila LIPATOV (Russia), Sasha LITVINTSEVA & Beny WAGNER (UK), Anson Hoi Shan MAK (HK), Ana MENDIETA (Cuba/USA), Simon PLOUFFE (Canada), Mark SALVATUS (Philippines), Miku SATO (Japan), TANG Han (China), Natasha TONTEY (Indonesia), WANG Bo (China), Aki YAHATA (Japan), YUEN Nga-Chi (HK), and ZHOU Xiao-Peng (China).\n\nWebsite: https://www.twvideoart.org/tiva_23/",
+    "image": "NEWS/022_news-022.jpeg",
+    "links": [
+      "https://www.twvideoart.org/tiva_23/",
+      "https://santandreucontemporani.org/ca/activitats/nature-is-ancient-but-surprises-us-all"
+    ]
+  },
+  {
+    "id": 23,
+    "year": "2023",
+    "title": "Imagine. Fantasies, Dreams, Utopias. BienalSur",
+    "description": "Venue: Saudi Arabia Museum of Contemporary Art (SAMoCA)\n\nAddress : Jax District\n\nRiyadh, Saudi Arabia\n\nCuratorship: Diana B. Wechsler (ARG)\n\nOpening: Wednesday November 1st 8pm\n\nMore info:\nhttps://bienalsur.org/en/single_agenda/537",
+    "image": "NEWS/023_imagine-fantasies-dreams-utopias-bienals.jpeg",
+    "links": [
+      "https://www.lapanera.cat/ca/programacio/exposicions/ecologies-queer-aberracions-naturalment-subversives",
+      "https://bienalsur.org/en/single_agenda/537",
+      "http://www.lapanera.cat/ca/programacio/exposicions/ecologies-queer-aberracions-naturalment-subversives"
+    ]
+  },
+  {
+    "id": 24,
+    "year": "2023",
+    "title": "Ecologies queer. Aberracions naturalment subversives",
+    "description": "Exposició col·lectiva a cura de Christian Alonso\n28 d’octubre de 2023 ‒ 28 de gener de 2024\nEspai 0. Centre d’Art La Panera, Lleida\n\nParticipen: Annie Sprinkle i Beth Stephens, O.R.G.I.A, Brigitte Baptiste, Liu Xi, Ona Bros, Karim Boumjimar, La Erreria (House of Bent), Joël Harder, Laia Gimeno Bardis, Roger Bernat, Eva Chettle, Graham Bell, Alba García i Allué, Projecte Úter, Bárbara Sánchez Barroso, Alex Francés, Eulalia Valldosera, MITO Collective, Aina Mestre, Neus Solà i Marta Garcia Cardellach, Elsa Casanova Sampé.\n\nInauguració: Dissabte 28 d’octubre 2023\n\nMés info:\nhttps://www.lapanera.cat/ca/programacio/exposicions/ecologies-queer-aberracions-naturalment-subversives",
+    "image": "NEWS/024_ecologies-queer-aberracions-naturalment.png",
+    "links": [
+      "https://www.lapanera.cat/ca/programacio/exposicions/ecologies-queer-aberracions-naturalment-subversives",
+      "http://www.lapanera.cat/ca/programacio/exposicions/ecologies-queer-aberracions-naturalment-subversives",
+      "https://metafora-studio-arts.org/the-matters-of-our-stories-and-how-our-stories-matter/"
+    ]
+  },
+  {
+    "id": 25,
+    "year": "2023",
+    "title": "Art, fabulation and narratives for worlds to come",
+    "description": "Metàfora Studio Arts\nIN CONVERSATION\nParticipants: Helen Torres and Bárbara Sánchez Barroso\nWhen: Thursday 5th October between 19:30-21:00\nWhere: Carrer de Papin 29, Barcelona\n\nMore info:\nhttps://metafora-studio-arts.org/art-fabulation-and-narratives/\n\nBlog post by Helen: \nThe matters of our stories, and how our stories matter\nhttps://metafora-studio-arts.org/the-matters-of-our-stories-and-how-our-stories-matter/",
+    "image": "NEWS/025_art-fabulation-and-narratives-for-worlds.png",
+    "links": [
+      "https://bienalsur.org/es/single_agenda/486",
+      "https://metafora-studio-arts.org/art-fabulation-and-narratives/",
+      "https://metafora-studio-arts.org/the-matters-of-our-stories-and-how-our-stories-matter/"
+    ]
+  },
+  {
+    "id": 26,
+    "year": "2023",
+    "title": "Cuando la casa se quema.",
+    "description": "Comisaria: Clarisa Appendino\n\nSede: Centro Cultural Parque de España\n\nDirección : Sarmiento y el Río Paraná\n\nRosario,\nArgentina\n\nInauguración: Viernes 25 de agosto 18h\n\nMás info:\nhttps://bienalsur.org/es/single_agenda/486",
+    "image": "NEWS/026_cuando-la-casa-se-quema.jpg",
+    "links": [
+      "https://bienalsur.org/es/single_agenda/486"
+    ]
+  },
+  {
+    "id": 27,
+    "year": "2023",
+    "title": "Quattro Radici. Appunti su un'idea di parentela.",
+    "description": "A cura di Carolina Ciuti\n\n30.06-31.08.2023\n\nDimora delle Balze\n\nSS287 - km6/3 - Noto (SR)\n\nSicilia, Italia\n\nAperto tutti i giorni su prenotazione - ingresso gratuito  // open every day by reservation - free entry\n\nMore info:\nhttps://8albe.com/\n\nAbout the film screenings: \n\nhttps://palermolive.it/a-noto-la-prima-edizione-di-8-albe-rassegna-di-video-arte-organizzata-da-dimora-delle-balze/",
+    "image": "NEWS/027_quattro-radici-appunti-su-un-idea-di-par.png",
+    "links": [
+      "https://8albe.com/",
+      "https://nyamnyam.net/quinzenadart/",
+      "https://palermolive.it/a-noto-la-prima-edizione-di-8-albe-rassegna-di-video-arte-organizzata-da-dimora-delle-balze/"
+    ]
+  },
+  {
+    "id": 28,
+    "year": "2023",
+    "title": "Festa del batre a l’ Espai Nyam Nyam",
+    "description": "Mieres, Girona\n\nDiumenge 16 de juliol de 12 a 20h obrim procés de la Quinzena d'art i donem el play al primer capítol del podcast 'Vivim en un món devorat' amb el grup de recerca del projecte (Miguel Angel Blanca, Carolina Campos, Cris Noguer i Aleix Plademunt).\n\nMés info: \n\nhttps://www.facebook.com/nyamnyam.net",
+    "image": "NEWS/028_festa-del-batre-a-l-espai-nyam-nyam.jpeg",
+    "links": [
+      "https://toundiscoveredlands.cargo.site/Specific-schedule-Film",
+      "https://nyamnyam.net/quinzenadart/",
+      "http://www.facebook.com/nyamnyam.net/"
+    ]
+  },
+  {
+    "id": 29,
+    "year": "2023",
+    "title": "Cinema night at KASK cinema",
+    "description": "Paradise being screened at Cinema night at KASK cinema as part of To Undiscovered Lands film program\nKASK, Ghent, Belgium",
+    "image": "NEWS/029_cinema-night-at-kask-cinema.jpg",
+    "links": [
+      "https://toundiscoveredlands.cargo.site/Specific-schedule-Film"
+    ]
+  },
+  {
+    "id": 30,
+    "year": "2023",
+    "title": "Research Pavilion #5: Helsinki",
+    "description": "Opening on Monday, 5th June 17 h\n\nExhibition in Gallery Augusta HIAP, Suomenlinna island, 5 to 21 June\n\nWorks by artists from the Research Pavilion residency programme, curated by Taru Elfving.\n\nArtists: Sara Bédard-Goulet, Damien Beyrouthy, Elena Bisena, Sara Blosseville, Toni Brell, Nicky Coutts, Camila Flores-Fernández, Adam Kaasa, Anastasia (A) Khodyreva, Neill Lin, Elena Mazzi, Vincent Roumagnac, Hannah Rowan, Agata Ruchlewicz-Dzianach, Bárbara Sánchez Barroso, Noora Sandgren, Tim Shaw, Jaceks Smolicki, Angeliki Tzortzakaki, Jessica Wiesner\n\nOpening times: 12.00-19.00 Mon-Fri, 12.00-18.00 Sat, closed on Sundays.\n\nhttps://www.hiap.fi/event/research-pavilion-5-exhibition/",
+    "image": "NEWS/030_research-pavilion-5-helsinki.png",
+    "links": [
+      "https://www.uniarts.fi/en/research-pavilion/",
+      "https://www.hiap.fi/event/research-pavilion-5-exhibition/",
+      "http://www.uniarts.fi/en/research-pavilion/"
+    ]
+  },
+  {
+    "id": 31,
+    "year": "2023",
+    "title": "Open House at Saari Residence",
+    "description": "On Saturday, 27 May from 11 a.m. to 3 p.m.\n\nSaari Manor (Saaren kartano)\nSaaren rantatie 21\n23140 Hietamäki\n\nFinland\n\nThe artists and artist-researchers of the Uniarts Helsinki Research Pavilion, who are currently working in residency, open the doors of their workspaces to the public in the manor’s old barn and various outbuildings. Works and different stages of the work process can be seen by the artists Barbara Sanchez Barroso (Spain), Camila Florez-Fernández (Peru), Agata Ruchlewicz-Dzianach (Poland), Neill Lin (Taiwan/Germany), Elena Mazzi (Italy), Noora Sandgren (Finland) and working duo Toni Brell (Germany) and Angeliki Tzortzakika (Greece).\n\nhttps://koneensaatio.fi/en/news/saari-open-house-2023/",
+    "image": "NEWS/031_open-house-at-saari-residence.jpeg",
+    "links": [
+      "https://www.uniarts.fi/en/events/research-pavilion-2023/",
+      "https://koneensaatio.fi/en/news/saari-open-house-2023/"
+    ]
+  },
+  {
+    "id": 32,
+    "year": "2023",
+    "title": "On es recolzen les imatges?",
+    "description": "Bòlit Mentor 2022/2023\n\nDel 6 de maig al 4 de juny de 2023\n\nBòlit_PouRodó, Girona\n\nInauguració: dissabte 6 de maig, 12 h\n\nArtistes: Erik Estany Tigerström, Roc Herms, Núria Nia i Bárbara Sánchez Barroso \n\nComissària: Marta Dahó\n\nVistia comentada a l’exposició a càrrec dels artistes i la curadora\n\nDissabte 3 de juny de 2022\n12 h\n\nhttps://web.girona.cat/bolit/exposicions/2023/onesrecolzenlesimatges",
+    "image": "NEWS/032_on-es-recolzen-les-imatges.jpeg",
+    "links": [
+      "https://toundiscoveredlands.cargo.site/",
+      "https://web.girona.cat/bolit/exposicions/2023/onesrecolzenlesimatges"
+    ]
+  },
+  {
+    "id": 33,
+    "year": "2023",
+    "title": "To Undiscovered Lands",
+    "description": "To Undiscovered Lands is a group project aiming to gather people from different backgrounds to reflect, understand and create new ways of considering the intangible lines which divide us.\n\nParadise will be screened at Cinema night at KASK cinema \n22nd of May: 17:00 - 18:30\nKASK, Ghent, Belgium\n\nhttps://toundiscoveredlands.cargo.site/",
+    "image": "NEWS/033_to-undiscovered-lands.jpg",
+    "links": [
+      "https://toundiscoveredlands.cargo.site/Specific-schedule-Film",
+      "https://toundiscoveredlands.cargo.site/"
+    ]
+  },
+  {
+    "id": 34,
+    "year": "2022",
+    "title": "Aiguarir. Després de Surar",
+    "description": "Acció col·lectiva partint de la proposta de Bàrbara S. Barroso i Maria Marvila.\n\nFa un any i mig que un incendi va cremar la muntanya on jau el monestir de Sant Pere de Rodes. Les dues artistes van emprendre un procés que les duria a formalitzar una meditació col·lectiva dins el context d’ARBAR, Centre d’Art i Natura, al poble de La Vall de Santa Creu, que uniria mantres, pensaments i poesies per a la guarició de la terra cremada. Ara, un any i mig més tard, les dues es retroben per a continuar el que van iniciar amb aquella acció, dins el context de la Fundació Palau, a Caldes d’Estrac.\n\nPlaces limitades, cal inscripció al 93 791 35 93 o fp.info@fundaciopalau.cat\n\nhttps://www.fundaciopalau.cat/event/aiguarir-despres-de-surar-una-bona-accio-per-aquest-nadal/",
+    "image": "NEWS/034_aiguarir-despres-de-surar.jpg",
+    "links": [
+      "https://www.fundaciopalau.cat/event/aiguarir-despres-de-surar-una-bona-accio-per-aquest-nadal/"
+    ]
+  },
+  {
+    "id": 35,
+    "year": "2022",
+    "title": "The Wilderness",
+    "description": "El ojo del corazón vio algo que la mano nunca pudo sostener, Chiquita Room gallery\n\nPhoto: Luis Torroja\n\nhttps://chiquitaroom.com/event/el-ojo-del-corazon-vio-algo-que-la-mano-nunca-pudo-sostener/",
+    "image": "NEWS/035_the-wilderness.jpg",
+    "links": [
+      "https://loop-barcelona.com/es/activity/the-knots-we-knot/",
+      "https://chiquitaroom.com/event/el-ojo-del-corazon-vio-algo-que-la-mano-nunca-pudo-sostener/"
+    ]
+  },
+  {
+    "id": 36,
+    "year": "2022",
+    "title": "2022 Festival LOOP",
+    "description": "Del 8 al 18 de novembre de 2022\n\nARBAR participa al Festival LOOP amb el film de 16 mm d'Adriana Vila Guevara i Bárbara Sánchez Barroso «Els nusos que nuem» (2021-2022) al programa expositiu \"1+1+1...\" (1 artista, 1 comissària , 1 espai). Al Centre Excursionista de Catalunya. \n\nhttps://loop-barcelona.com/es/activity/the-knots-we-knot/",
+    "image": "NEWS/036_2022-festival-loop.png",
+    "links": [
+      "https://www.lopati.cat/es/actividades/convocatorias/biam22-artistas-seleccionados/623",
+      "https://loop-barcelona.com/es/activity/the-knots-we-knot/"
+    ]
+  },
+  {
+    "id": 37,
+    "year": "2022",
+    "title": "BIAM22",
+    "description": "Lugar:\nCentre d'Art Terres de l'Ebre - Lo Pati, Amposta\n\nFecha de inaguración:\n5 Noviembre a las 19h\n\nDoce obras de artistas contemporáneos estatales participarán a la Biennal d’Art Ciutat d’Amposta 2022\n\nhttps://www.lopati.cat/es/actividades/convocatorias/biam22-artistas-seleccionados/623/",
+    "image": "NEWS/037_biam22.jpeg",
+    "links": [
+      "http://www.iuav.it/DIPARTIMEN/CHISIAMO/eventi/2022/11--novemb/riconfigur/index.htm",
+      "https://www.lopati.cat/es/actividades/convocatorias/biam22-artistas-seleccionados/623"
+    ]
+  },
+  {
+    "id": 38,
+    "year": "2022",
+    "title": "Riconfigurazioni",
+    "description": "Tre indagini filmiche sul silvano\n\n23 > 25 novembre 2022\n\nCa’ Tron\n\naule A1, A2, A3\n\nore 11 > 18.30\n\ninaugurazione mostra\n\n23 novembre 2022, ore 17\n\nopere di Noémie Goudal, Sasha Litvintseva e Beny Wagner, Bárbara Sánchez Barroso\n\na cura di Lorenzo Lazzari Università degli Studi di Udine\n\norganizzato da Dipartimento di Culture del progetto\n\nEvento dell’unità di ricerca coordinata da Sara Marini (Università Iuav di Venezia) svolto nell’ambito del programma Prin “Sylva – Ripensare la ‘selva’. Verso una nuova alleanza tra biologico e artefatto, natura e società, selvatichezza e umanità”.\n\nhttp://www.iuav.it/DIPARTIMEN/CHISIAMO/eventi/2022/11--novemb/riconfigur/index.htm",
+    "image": "NEWS/038_riconfigurazioni.png",
+    "links": [
+      "http://www.iuav.it/dipartimen/",
+      "http://www.iuav.it/Ateneo1/docenti/architettu/docenti-st/Marini-Sar/index.htm",
+      "http://www.iuav.it/DIPARTIMEN/CHISIAMO/eventi/2022/11--novemb/riconfigur/index.htm"
+    ]
+  },
+  {
+    "id": 39,
+    "year": "2022",
+    "title": "39th Kassel Documentary Film and Video Festival",
+    "description": "Los nudos que anudamos (The knots we knot) has been selected in the 39th Kassel Documentary Film and Video Festival \n\n(November 15 to 20 + online until November 27) \n\nThe short film will be screened on November 19th at  11:15 AM at the KulturBahnhof Kassel, BALi Kinos, Kassel, Germany + also online\n\nhttps://www.kasselerdokfest.de/",
+    "image": "NEWS/039_39th-kassel-documentary-film-and-video-f.png",
+    "links": []
+  },
+  {
+    "id": 40,
+    "year": "2022",
+    "title": "El ojo del corazón vio algo que la mano nunca pudo sostener",
+    "description": "Chiquita Room Gallery\nC. de Villarroel, 25, \n08011 Barcelona\n\nEntre las artistas participantes se encuentran Valentina Alvarado Matos, Judith Adataberna, Callisto Mc Nulty, Marie Losier, Bárbara Sánchez Barroso y Jessica Sarah Rinland.\n\nExposición y ciclo comisariados por Sergi Álvarez Riosalido.\n\nInauguración: 9 de noviembre a las 19:00 h.\n\nhttps://chiquitaroom.com/event/el-ojo-del-corazon-vio-algo-que-la-mano-nunca-pudo-sostener/",
+    "image": "NEWS/040_el-ojo-del-corazon-vio-algo-que-la-mano.jpeg",
+    "links": [
+      "https://chiquitaroom.com/event/sssssh-ciclo-de-cine-de-camara/",
+      "https://chiquitaroom.com/event/el-ojo-del-corazon-vio-algo-que-la-mano-nunca-pudo-sostener/"
+    ]
+  },
+  {
+    "id": 41,
+    "year": "2022",
+    "title": "sssssh – ciclo de cine de cámara",
+    "description": "Chiquita Room Gallery\nC. de Villarroel, 25, \n\n08011 Barcelona\n\nCon motivo del Festival Loop y dentro del programa City Screen 2022, Chiquita Room propone este ciclo y exposición colectiva en los que participan Valentina Alvarado Matos, Judith Adataberna, Callisto Mc Nulty, Marie Losier, Bárbara Sánchez Barroso y Jessica Sarah Rinland.\n\nhttps://chiquitaroom.com/event/sssssh-ciclo-de-cine-de-camara/",
+    "image": "NEWS/041_sssssh-ciclo-de-cine-de-camara.jpeg",
+    "links": [
+      "https://loop-barcelona.com/es/loop-festival-2022/city-screen-2022/",
+      "https://chiquitaroom.com/event/sssssh-ciclo-de-cine-de-camara/",
+      "http://www.acinema.space/current-program"
+    ]
+  },
+  {
+    "id": 42,
+    "year": "2022",
+    "title": "Sonic Geologies",
+    "description": "aCinema\n\nFriday, October 7, 2022 | 7:00 PM\nWoodland Pattern Book Center\n720 E Locust St, Milwaukee, WI 53212\n\nhttps://www.acinema.space/current-program",
+    "image": "NEWS/042_sonic-geologies.png",
+    "links": [
+      "http://www.acinema.space/current-program"
+    ]
+  },
+  {
+    "id": 43,
+    "year": "2022",
+    "title": "11 Short 16mm Films",
+    "description": "Panora Cinema\n\nMalmö, Sweden\n\nFriday 13/5 16.30\n\nTickets are free!",
+    "image": "NEWS/043_11-short-16mm-films.jpeg",
+    "links": []
+  },
+  {
+    "id": 44,
+    "year": "2022",
+    "title": "Master of Fine Art in Artistic Research (MFAAR) Exam Exhibition 2022 / Malmö Art Academy",
+    "description": "Inter Arts Center, Malmö, Sweden\n\nExhibition opening: Monday, 23 May, 16.00–20.00; 16.15 Opening speech by Rector Maj Hasager.\n\nOpening hours: 24–30 May, all days: 12.00–17.00\n\nLocation: VR Sound/Lab, Black Room, Café/Research Platform (IAC)\n\nhttps://www.iac.lu.se/projects/mfaar/",
+    "image": "NEWS/044_master-of-fine-art-in-artistic-research.jpeg",
+    "links": [
+      "https://www.iac.lu.se/projects/mfaar/"
+    ]
+  },
+  {
+    "id": 45,
+    "year": "2021",
+    "title": "Coexistence will be screened among other art films \n\nin the program Konsthelgen, at the Kino cinema in Lund, Sweden",
+    "description": "October, Saturday 16th and Sunday 17th, 15:30 h, Free entrance\n\nMore info and where to get the tickets",
+    "image": "NEWS/045_coexistence-will-be-screened-among-other.png",
+    "links": [
+      "https://kino.nu/konsthelgen-2021"
+    ]
+  },
+  {
+    "id": 46,
+    "year": "2021",
+    "title": "Mostra Viva del Mediterrani 2021, València\nArts Visuals",
+    "description": "Inauguració: dilluns 27 de setembre a les 19.00h\n\nFins al 6 de novembre al CC Octubre\n\nEls sis artistes seleccionats per a participar en aquesta exposició són Mohamed Ben Soltane, Mounir Gouri, Anna López Luna, Bárbara Sánchez Barroso, Rania Werda i Souad Douibi, procedents dels contextos tunisià, algerià i espanyol. Les seues obres reflecteixen resistències quotidianes, individuals i col·lectives que confronten situacions complexes i en la seua majoria invisibles.\n\nUna exposició comissariada per Xavier de Luca i organitzada amb la col·laboració de Jiser Reflexions Mediterrànies (Barcelona).\n\nResponsable del projecte: Rym Ayadat (Agència CREI.Corp).\nOrganitzat per Mostra Viva del Mediterrani amb la col·laboració de l’Octubre CCC.\n\nMés info",
+    "image": "NEWS/046_mostra-viva-del-mediterrani-2021-valenci.jpeg",
+    "links": [
+      "https://www.facebook.com/xavier.deluca.9",
+      "https://www.jiser.org/",
+      "http://www.mostraviva.org/",
+      "https://octubre.cat/activitat/mostra-viva-2021-residencies-creatives-resistencies-quotidianes/"
+    ]
+  },
+  {
+    "id": 47,
+    "year": "2021",
+    "title": "El cicle A+A 2021",
+    "description": "versarà sobre el concepte de simpoiesis de Donna Haraway per analitzar, a partir de projectes performatius realitzats en els ecosistemes locals, l’estat d’hybris que caracteritza el món actual, com són les qüestions de gènere, ecològiques i mediambientals des d’una reflexió filosòfica centrada en la nova materialitat i el gir afectiu. \n\nMés info",
+    "image": "NEWS/047_el-cicle-a-a-2021.jpeg",
+    "links": [
+      "https://www.arbar.cat/ca/cicles-performatius-a-a/2021-cicle-simpoiesis/"
+    ]
+  },
+  {
+    "id": 48,
+    "year": "2019",
+    "title": "An Island of Multiple Bridges",
+    "description": "HISK Laureates 2019 exhibition\n\n2019/11/21→2019/12/15\nCoupure Rechts 310, 9000 Gent, Belgium\nOpening: 2019/11/21 18:00\nOpening times: Thursday > Monday 12:00-18:00",
+    "image": "NEWS/048_an-island-of-multiple-bridges.jpg",
+    "links": []
+  },
+  {
+    "id": 49,
+    "year": "2019",
+    "title": "سمر Dear Samar",
+    "description": "عزيزتي سمر Dear Samar will be screened at the festival Pink Screens in Brussels\nMonday 11/11 at 15 PM, Nova Cinema, 4 €\nMore info",
+    "image": "NEWS/049_dear-samar.png",
+    "links": [
+      "https://pinkscreens.org/fr/queer-o-rama/documentaire/dear-samar-zyzty-smr"
+    ]
+  },
+  {
+    "id": 50,
+    "year": "2019",
+    "title": "The Word for World is Forest",
+    "description": "Solo Show in Espai Souvenir, Barcelona\nCurator: Herman Bashiron Mendolicchio\nLOOP Barcelona City Screen\n7 — 20 November 2019\n\nFollowing an expedition through the Amazon, the artist Bárbara Sánchez Barroso tries to find explore new \ncosmologies in the post-human paradigm. Our colonising impact on nature, as well as questions about \nconcepts such ‘representation’ and ‘sight’, shape the artist's travel experiences. \nhttp://espaisouvenir.com/",
+    "image": "NEWS/050_the-word-for-world-is-forest.jpg",
+    "links": [
+      "http://espaisouvenir.com/portfolio/upcoming-the-word-for-world-is-forest-barbara-sanchez-barroso-loop-festival"
+    ]
+  },
+  {
+    "id": 51,
+    "year": "2019",
+    "title": "CINEMA TICK TACK",
+    "description": ": Bárbara Sánchez Barroso, \nDear Samar / عزيزتيسمر‎, 2019, 10’ \nPhoto: Arne Jennard\nhttps://hart-magazine.be",
+    "image": "NEWS/051_cinema-tick-tack.jpg",
+    "links": [
+      "https://hart-magazine.be/"
+    ]
+  },
+  {
+    "id": 52,
+    "year": "2019",
+    "title": "Ai Bordi dell’Identità —   Videos from the Han Nefkens Foundation Collection",
+    "description": "Inauguration of the exhibition\n\nAi Bordi dell’Identità —   Videos from the Han Nefkens Foundation Collection  \n28th September 2019 at the \nMAC Museo d’Arte Contemporanea di Lissone, Italy",
+    "image": "NEWS/052_ai-bordi-dell-identita-videos-from-the-h.png",
+    "links": []
+  },
+  {
+    "id": 53,
+    "year": "2019",
+    "title": "Why did you come to Taiwan?",
+    "description": "Opening: 2nd of August at 14h\nExhibition: August 3rd - September 29th, 2019\n\n台北當代藝術館 MoCA, Museum of Contemporary Art of Taipei, Taiwan\nNo. 39號, Chang'an West Road, Datong District, Taipei City, 103\n\nCurator: \nCheng Shao-Hung\n\nArtists:\nBárbara Sánchez Barroso\nHenrielle Baltazar Pagkaliwangan\nKao Jun-Honn\nLee Tzu-Tung\nRafael Pérez Evans",
+    "image": "NEWS/053_why-did-you-come-to-taiwan.jpg",
+    "links": [
+      "https://www.mocataipei.org.tw/tw"
+    ]
+  },
+  {
+    "id": 54,
+    "year": "2019",
+    "title": "Ai bordi dell’ identità",
+    "description": "2019/06/20→2019/11/24\n\nAi bordi dell’ identità\nMUST, Museo Storico della Città di Lecce & MAC, Museo d’Arte Contemporanea di Lissone\nOpening: 2019/06/20 19:30\nFilm screening, Video Screening\nwww.museolissone.it\nContemporary Video Art from the Han Nefkens Foundation \n\nCurated by Giacomo Zaza, and on show at the MUST in Lecce from 20th June to 8th September 2019 and at the\nMAC in Lissone (MB) from 29th September to 24th November 2019, At the Fringes of Identity is an exhibition \nof video art focusing on questions of cultural, social and gender-related identity. \n\nMUST: Museo Storico della Città di Lecce 20th June – 8th September 2019\nInauguration: 20th June 2019, 7.30pm\nMAC: Museo d’Arte Contemporanea di Lissone 28th September – 24th November 2019\nInauguration: 28th September 2019, 6pm\n\nArtists: Ramin Haerizadeh, Rokni Haerizadeh, Hesam Rahmanian / Gabriel Mascaro / Zwelethu Mthethwa / \nDeimantas Narkevičius Arash Nassiri / Shirin Neshat / Erkan Özgen / Araya Rasdjarmrearnsook / \nBárbara Sánchez Barroso / Maya Watanabe Adrián Balseca / Javier Castro / Jonathas de Andrade / \nLuis Gómez Armenteros / Beatriz Santiago Muñoz\nA project conceived and curated by Giacomo Zaza",
+    "image": "NEWS/054_ai-bordi-dell-identita.jpg",
+    "links": [
+      "http://hisk.edu/mw/index.php?title=MUST,_Museo_Storico_della_Citt%C3%A0_di_Lecce_%26_MAC,_Museo_d%E2%80%99Arte_Contemporanea_di_Lissone&action=edit&redlink=1"
+    ]
+  },
+  {
+    "id": 55,
+    "year": "2019",
+    "title": "HISK @ TICK TACK",
+    "description": "2019/06/10→2019/08/17\nTICK TACK, Mechelsesteenweg 247, 2018 Antwerpen\nOpening: 2019/06/21 20:00\n\nFor over two months, from June 10 to August 17, the HISK will present a selection of moving image works created \nby artists that are or were part of the HISK programme during its more than 20 years of existence. The selection \nis made by HISK curator Daniella Géo. The screenings start as soon as the sun sets and run throughout the night.\n\nSolo presentations will be programmed during the week and on Sundays. \nOn Fridays and Saturdays there will be group presentations.\n\nDuring the first month, HISK @ TICK TACK will present works by 24 artists: \nCarlos Aires, Sofia Caesar, Anaïs Chabeur, Hanane El Farissi, KATYA EV, Francesca Ferreri, Helen Anna Flanagan, \nEva Giolo, Hamza Halloubi, Johna Hansen, Megan-Leigh Heilig, Roel Heremans & Julien F. Thomas, Che-Yu Hsu, \nNikolay Karabinovych, Diego Lama, Ariane Loze, Chloé Op de Beeck, Jonathan Paepens, Mark Požlep, \nMeggy Rustamova, Bárbara Sánchez Barroso, Ingel Vaikla, Luca Vanello and Benjamin Verhoeven.\n\nMore info:\n\nhttp://hisk.edu/mw/index.php/HISK_@_TICK_TACK\nhttps://www.ticktack.be/exhibitions/hisk-at-tick-tack",
+    "image": "NEWS/055_hisk-tick-tack.png",
+    "links": [
+      "http://hisk.edu/mw/index.php?title=TICK_TACK,_Mechelsesteenweg_247,_2018_Antwerpen&action=edit&redlink=1",
+      "http://hisk.edu/mw/index.php/HISK_@_TICK_TACK",
+      "https://www.ticktack.be/exhibitions/hisk-at-tick-tack"
+    ]
+  },
+  {
+    "id": 56,
+    "year": "2019",
+    "title": "Next week: HISK Open Studios 2019",
+    "description": "HISK opens its doors and welcomes you for the HISK Open Studios!\n\nFriday 24 May 2019, from 14:00 - 20:00\nSaturday 25 May 2019, from 14:00 - 20:00\nSunday 26 May 2019, from 14:00 - 20:00 \nMonday 27 May 2019, from 14:00 - 20:00\n\n2019/05/24→2019/05/27\nHISK, Leopoldskazerne, Blok C, 9000, Gent (BE)",
+    "image": "NEWS/056_next-week-hisk-open-studios-2019.jpg",
+    "links": []
+  },
+  {
+    "id": 57,
+    "year": "2019",
+    "title": "Failures of Cohabitation.",
+    "description": "HISK at M HKA / Antwerp Art Weekend\n2019/05/16→2019/05/19\nM HKA, Museum van Hedendaagse Kunst Antwerpen, Leuvenstraat 32, 2000 Antwerp\n\nThe exhibition introduces the work of 14 artists currently in the 2nd year of the HISK’s programme. \nThe title Failures of Cohabitation embraces the unlikeliness of a quintessential coexistence and \nplayfully reflects their own experience of proximity and otherness, as well as the very nature of a group show.\nArtists: Sofia Caesar, Lisette de Greeuw, Francesca Ferreri, Eva Giolo, Johna Hansen, \nMegan-Leigh Heilig, Sina Hensel, Roel Heremans, Mirthe Klück, Hannah Mevis, Mark Požlep, \nBárbara Sánchez Barroso, Gintaute Skvernyte, Ingel Vaikla.\nCurator: Daniella Géo\n\nThursday 16.05.2019 - Sunday 19.05.2019\nOpening hours:\nThursday - 11:00 > 21:00\nFriday, Saturday, Sunday - 11:00 > 18:00",
+    "image": "NEWS/057_failures-of-cohabitation.png",
+    "links": [
+      "http://hisk.edu/mw/index.php?title=M_HKA,_Museum_van_Hedendaagse_Kunst_Antwerpen,_Leuvenstraat_32,_2000_Antwerp&action=edit&redlink=1"
+    ]
+  },
+  {
+    "id": 58,
+    "year": "2019",
+    "title": "Function.Anomy",
+    "description": "2019/03/29→2019/05/16\nRathaus-Galerie Reinickendorf, Eichborndamm 13437, Berlin, Germany\nOpening: 2019/03/28 18:00\nOpening times: Mon - Fri: 09:00 - 18:00\nGroup Exhibition\nhttps://www.intermissioncollective.com/barbarasanchezbarroso",
+    "image": "NEWS/058_function-anomy.jpg",
+    "links": [
+      "https://www.intermissioncollective.com/home",
+      "http://hisk.edu/mw/index.php?title=Mon_-_Fri:_09:00_-_18:00&action=edit&redlink=1",
+      "https://www.intermissioncollective.com/barbarasanchezbarroso"
+    ]
+  },
+  {
+    "id": 59,
+    "year": "2019",
+    "title": "Greenfield. The archive",
+    "description": "is finally coming out:\nThe new publication of Pablo Lerma, with texts from a bunch of artists and art agents,\nme among them.\n\nGreenfield. The Archive is a fictional archive created from a found wooden box full of real negatives. \nBy the action of indexing and conferring the found materials with an official structure, an archive, \nthis project challenges the ideas of truth and fiction with the use of image and text.\n\nTexts by Adam Giles Ryan, Alexandra Laudo, Bárbara Sánchez Barroso, Carolina Castro Jorquera, \nCatherine Taylor, Edith Fikes, Efrem Zelony-Mindell, Gabriel Pericàs, Magali Duzant, Marla Jacarilla, \nMatt Baczweski, Matthew Carson, Oriol Vilanova, Pedro Torres, Russet Lederman, Teresa Blanch, and Pablo Lerma.\n\nThis publication was made with the support of Centre d’Art La Panera (ES) and Sala d’Art Jove (ES)\n\nMeteoro Editions",
+    "image": "NEWS/059_greenfield-the-archive.jpg",
+    "links": [
+      "https://meteoroeditions.com/Greenfield-The-Archive",
+      "https://meteoroeditions.com/"
+    ]
+  },
+  {
+    "id": 60,
+    "year": "2018-2019",
+    "title": "Els marges. Produccions afectives, polítiques i estètiques des de fins i fora d’un territori.",
+    "description": "Centre d’Art La Panera, Lleida\n\nAlbert Bayona / Martin Llavaneras / Agnès Pe / Antoni Pinent / Bárbara Sánchez Barroso \ndel 27 d’octubre al 13 de gener \nComissariat: Jordi Antas i Antoni Jové\nFotos: Jordi V. Pou",
+    "image": "NEWS/060_els-marges-produccions-afectives-politiq.jpg",
+    "links": [
+      "http://www.lapanera.cat/home.php?op=10&module=programacio&cad=2&item=217"
+    ]
+  },
+  {
+    "id": 61,
+    "year": "2018",
+    "title": "15ª Mostra, Museo de Arte Contemporáneo Fundación Naturgy, A Coruña",
+    "description": "Photos: María Meseguer\nCortesy of Fundación Naturgy\n\nInauguración / Opening: 25 Octubre",
+    "image": "NEWS/061_15-mostra-museo-de-arte-contemporaneo-fu.jpg",
+    "links": []
+  },
+  {
+    "id": 62,
+    "year": "2018-2019",
+    "title": "Els marges. Produccions afectives, polítiques i estètiques des de fins i fora d’un territori.",
+    "description": "Centre d’Art La Panera, Lleida\n\nAlbert Bayona / Martin Llavaneras / Agnès Pe / Antoni Pinent / Bárbara Sánchez Barroso \ndel 27 d’octubre al 13 de gener",
+    "image": "NEWS/062_els-marges-produccions-afectives-politiq.png",
+    "links": [
+      "http://www.lapanera.cat/home.php?op=10&module=programacio&cad=2&item=217"
+    ]
+  },
+  {
+    "id": 63,
+    "year": "2018",
+    "title": "HISK Open Studio",
+    "description": "s 2018, Gent, Belgium\n\nPhotos by Chantal van Rijt",
+    "image": "NEWS/063_hisk-open-studio.png",
+    "links": [
+      "http://hisk.edu/mw/"
+    ]
+  },
+  {
+    "id": 64,
+    "year": "2018",
+    "title": "Taula 4",
+    "description": ": Presentation of artistic contexts in Tunis and Algiers, HANGAR, Barcelona",
+    "image": "NEWS/064_taula-4.png",
+    "links": []
+  },
+  {
+    "id": 65,
+    "year": "2018",
+    "title": "Expo finale Résidences BCN>TNS>ALG,",
+    "description": "Centre Cívic Fort Pienc, Barcelona",
+    "image": "NEWS/065_expo-finale-residences-bcn-tns-alg.jpg",
+    "links": []
+  },
+  {
+    "id": 66,
+    "year": "2018",
+    "title": "The Odyssey",
+    "description": ", Espai 13, Fundació Miró, Barcelona",
+    "image": "NEWS/066_the-odyssey.jpg",
+    "links": [
+      "https://www.fmirobcn.org/en/exhibitions/5734/the-odyssey"
+    ]
+  },
+  {
+    "id": 67,
+    "year": "2017",
+    "title": "Focus Mediterrània,",
+    "description": "Swab Barcelona Art Fair, Barcelona,  2017\n28.09.17 - 01.10.17, with JISER",
+    "image": "NEWS/067_focus-mediterrania.jpg",
+    "links": [
+      "https://www.jiser.org/es/project/focus-mediterrania-swab-2017/"
+    ]
+  },
+  {
+    "id": 68,
+    "year": "2017",
+    "title": "In search of Global Poetry: Videos de la colección Han Nefkens",
+    "description": "Artists: Adel Abdessemed, Anri Sala, Arash Nassiri, Barbara Sanchez Barroso, Deimantas Narkevicius, \nFabien Rigobert, Pipilotti Rist, Sam Taylor-Johnson, Shirin Neshat, Sojung Jun, Zhou Tao,\nZwelethu Mthethwa, Gerald Van Der Kaap.\nCurators: Hilde Teerlinck, Feng Boyi, Gou Xianxu, Eduardo Carrera R.\nOrganizer: Centro de Arte Contemporáneo de Quito, Ecuador\nCo-organizer: Han Nefkens Foundation, Barcelona",
+    "image": "NEWS/068_in-search-of-global-poetry-videos-de-la.png",
+    "links": [
+      "http://www.centrodeartecontemporaneo.gob.ec/gallery-item/in-search-of-global-poetry/#!"
+    ]
+  },
+  {
+    "id": 69,
+    "year": "2017",
+    "title": "Résidences de Création",
+    "description": "BCN>ALG>TNS 2017\n\nBAC Art Center (Tunis)",
+    "image": "NEWS/069_residences-de-creation.jpg",
+    "links": []
+  },
+  {
+    "id": 70,
+    "year": "2017",
+    "title": "Résidences de Création",
+    "description": "BCN>ALG>TNS 2017\n\nBAC Art Center (Tunis)",
+    "image": "NEWS/070_residences-de-creation.jpg",
+    "links": []
+  },
+  {
+    "id": 71,
+    "year": "2016",
+    "title": "RE_VISIONS\n\n10 anys de video a Barcelona Producció",
+    "description": "Del 16 de maig al 25 de juny\n\nLa Capella",
+    "image": "NEWS/071_re-visions-10-anys-de-video-a-barcelona.jpg",
+    "links": []
+  },
+  {
+    "id": 72,
+    "year": "2016",
+    "title": "BCN PRODUCCIÓ ‘16",
+    "description": "Llibreria Calders\n\nDivendres 9 de desembre - 19.30h\n\nBárbara Sánchez Barroso\n\nCartes des del bosc\n\nProjecció, conversa i presentació de la publicació amb l’autora, Ariadna Guiteras i Mireia Sallarès\n\nCartes des del bosc\n\nExposició individual, El Cub, La Capella, Barcelona",
+    "image": "NEWS/072_bcn-produccio-16.jpg",
+    "links": []
+  },
+  {
+    "id": 73,
+    "year": "2014",
+    "title": "Yo, misil",
+    "description": "ON MEDIATION/1 Exhibition at Cercle Artístic Sant LLuc\n26th May – 31th May 2014\nVernissage: Monday 26th May, 19:30h\n\nArtists: Harun Farocki, Santiago Vich, David Bestué, Xavier Ristol, Francesc Ruiz Abad / Aniol Fernández, \nIngrid Skovgaard, Bárbara Sánchez Barroso\nCurators: Caterina Almirall, Blanca del Río, Mariella Franzoni, Lidia Gónzález Alija, Antonella Medici, \nJavier Moreno López, Asunción Paterna, Georgia Theologi, Jordi Vernis",
+    "image": "NEWS/073_yo-misil.jpg",
+    "links": [
+      "https://onmediationplatform.com/en/yo-misil/"
+    ]
   }
 ]

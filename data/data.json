@@ -1,0 +1,28 @@
+{
+  "site": {
+    "name": "Bárbara Sánchez Barroso",
+    "handle": "barbara_wong",
+    "default_lang": "es",
+    "languages": ["es", "en", "ca"]
+  },
+  "menu": [
+    { "key": "about",        "label": { "es": "About",        "en": "About",        "ca": "About" },        "source": "data/about.json" },
+    { "key": "news",         "label": { "es": "News",         "en": "News",         "ca": "News" },         "source": "data/news.json" },
+    { "key": "work",         "label": { "es": "Work",         "en": "Work",         "ca": "Obra" },         "source": "data/projects.json" },
+    { "key": "publications", "label": { "es": "Publications", "en": "Publications", "ca": "Publicacions" }, "source": "data/publications.json" },
+    { "key": "photo",        "label": { "es": "Photo",        "en": "Photo",        "ca": "Photo" },        "source": "data/photos.json" }
+  ],
+  "sources": {
+    "about": "data/about.json",
+    "news": "data/news.json",
+    "projects": "data/projects.json",
+    "publications": "data/publications.json",
+    "photos": "data/photos.json"
+  },
+  "assets": {
+    "news_dir": "NEWS/",
+    "publications_dir": "PUBLICATIONS/",
+    "projects_dir": "PROYECTOS/",
+    "photos_dir": "PHOTOS/"
+  }
+}

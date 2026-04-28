@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "WebFetch(domain:barbarawong.info)",
+      "Bash(curl -s -o /tmp/news_archive.html -w \"HTTP:%{http_code}\\\\nSIZE:%{size_download}\\\\n\" \"https://barbarawong.info/News-Archive\" -A \"Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36\")",
+      "Bash(python3 /tmp/parse_bw.py /tmp/news_archive.html /tmp/news_parsed.json)",
+      "Bash(python3 /tmp/parse_bw.py /tmp/bw_publications.html /tmp/pubs_parsed.json)"
+    ]
+  }
+}
