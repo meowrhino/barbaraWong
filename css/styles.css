@@ -254,6 +254,22 @@ body[data-view="about"] #viewer-content {
     padding-bottom: 2rem;
 }
 .news-item img { width: 100%; height: auto; }
+.news-slider { position: relative; }
+.news-slider img { width: 100%; height: auto; display: block; }
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.75);
+    border: none;
+    cursor: pointer;
+    font-size: 1.4rem;
+    line-height: 1;
+    padding: 0.2rem 0.5rem;
+    z-index: 1;
+}
+.slider-prev { left: 0; }
+.slider-next { right: 0; }
 .news-item .news-year {
     font-size: var(--fs-small);
     color: var(--muted);

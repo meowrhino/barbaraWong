@@ -37,8 +37,14 @@ const I18N = {
     photo:        { es: "Photo",        en: "Photo",        ca: "Photo" },
     back:         { es: "← back",       en: "← back",       ca: "← back" },
     no_photos:    { es: "Aún no hay fotos en el journal.", en: "No photos yet.", ca: "Encara no hi ha fotos." },
+    exhibition_views: { es: "Exhibition views", en: "Exhibition views", ca: "Exhibition views" },
 };
 const t = (k) => (I18N[k] && I18N[k][state.lang]) || I18N[k]?.es || k;
+const tf = (val) => {
+    if (!val) return '';
+    if (typeof val === 'string') return val;
+    return val[state.lang] || val.es || val.en || '';
+};
 
 // ---------- Data loading ----------
 async function loadJSON(path) {
@@ -131,7 +137,7 @@ function renderMenu() {
             "data-slug": w.slug,
             on: w.published ? { click: () => setView("project", w.slug) } : {},
             title: w.published ? "" : "Próximamente",
-        }, w.title)
+        }, tf(w.title))
     ));
     // Title click → home
     $("#site-title").addEventListener("click", () => setView("home"), { once: false });
@@ -193,16 +199,30 @@ function renderAbout() {
     ));
 }
 
+function makeSlider(images) {
+    let i = 0;
+    const img = el("img", { src: images[0], alt: "", loading: "lazy" });
+    const prev = el("button", { class: "slider-btn slider-prev", "aria-label": "anterior" }, "‹");
+    const next = el("button", { class: "slider-btn slider-next", "aria-label": "siguiente" }, "›");
+    prev.addEventListener("click", () => { i = (i - 1 + images.length) % images.length; img.src = images[i]; });
+    next.addEventListener("click", () => { i = (i + 1) % images.length; img.src = images[i]; });
+    return el("div", { class: "news-slider" }, prev, img, next);
+}
+
 function renderNews() {
     const v = $("#viewer-content");
     const items = state.news || [];
     v.replaceChildren(el("div", { class: "view-news" },
         ...items.map(n => el("article", { class: "news-item" },
-            n.image ? el("div", {}, el("img", { src: n.image, alt: n.title || "", loading: "lazy" })) : el("div"),
+            n.images?.length > 1
+                ? el("div", {}, makeSlider(n.images))
+                : (n.image || n.images?.[0])
+                    ? el("div", {}, el("img", { src: n.image || n.images[0], alt: n.title || "", loading: "lazy" }))
+                    : el("div"),
             el("div", {},
                 n.year ? el("div", { class: "news-year" }, n.year) : null,
-                n.title ? el("div", { class: "news-title" }, n.title) : null,
-                n.description ? el("div", { class: "news-desc" }, n.description) : null,
+                n.title ? el("div", { class: "news-title" }, tf(n.title)) : null,
+                n.description ? el("div", { class: "news-desc" }, tf(n.description)) : null,
                 n.links?.length ? el("div", { class: "news-links" },
                     ...n.links.map((u, i) => el("a", { href: u, target: "_blank", rel: "noopener" },
                         i === 0 ? "↗ link" : `↗ link ${i + 1}`
@@ -219,15 +239,19 @@ function renderPublications() {
     v.replaceChildren(el("div", { class: "view-publications" },
         ...items.map(p => el("article", { class: "pub-item" },
             el("div", {},
-                el("h3", {}, p.year ? `${p.year}. ${p.title}` : (p.title || "")),
-                p.description ? el("div", { class: "pub-desc" }, p.description) : null,
+                el("h3", {}, p.year ? `${p.year}. ${tf(p.title)}` : (tf(p.title) || "")),
+                p.description ? el("div", { class: "pub-desc" }, tf(p.description)) : null,
                 p.links?.length ? el("div", { class: "pub-links" },
                     ...p.links.map((u, i) => el("a", { href: u, target: "_blank", rel: "noopener" },
                         i === 0 ? "↗ link" : `↗ link ${i + 1}`
                     ))
                 ) : null,
             ),
-            p.image ? el("div", {}, el("img", { src: p.image, alt: p.title || "", loading: "lazy" })) : el("div"),
+            p.images?.length > 1
+                ? el("div", {}, makeSlider(p.images))
+                : (p.image || p.images?.[0])
+                    ? el("div", {}, el("img", { src: p.image || p.images[0], alt: tf(p.title) || "", loading: "lazy" }))
+                    : el("div"),
         ))
     ));
 }
@@ -240,7 +264,7 @@ function renderWorkIndex() {
             el("article", { class: "news-item" },
                 el("div"),
                 el("div", {},
-                    el("div", { class: "news-title" }, w.title),
+                    el("div", { class: "news-title" }, tf(w.title)),
                     el("div", { class: "news-desc" }, w.published ? "Click on the title in the menu →" : "(Próximamente)"),
                 )
             )
@@ -260,16 +284,16 @@ function renderProject(slug) {
         return;
     }
     const info = p.info || {};
-    const metaLine = [info.year, info.type, info.duration].filter(Boolean).join(" · ");
+    const metaLine = [info.year, tf(info.type), info.duration].filter(Boolean).join(" · ");
     const vimeoId = (p.video || "").match(/vimeo\.com\/(\d+)/)?.[1];
     v.replaceChildren(el("article", { class: "view-project" },
         // 1. Info técnica
         el("header", { class: "project-header" },
-            el("h2", {}, p.title),
+            el("h2", {}, tf(p.title)),
             metaLine ? el("div", { class: "project-meta" }, metaLine) : null,
         ),
         // 2. Texto
-        p.text ? el("div", { class: "project-text" }, p.text) : null,
+        p.text ? el("div", { class: "project-text" }, tf(p.text)) : null,
         // 3. Imágenes / fotogramas
         p.images?.length
             ? el("div", { class: "project-gallery" },
@@ -290,7 +314,7 @@ function renderProject(slug) {
         // 5. Exhibition views (a veces)
         p.exhibition_views?.length
             ? el("section", {},
-                el("div", { class: "project-section-title" }, "Exhibition views"),
+                el("div", { class: "project-section-title" }, t("exhibition_views")),
                 el("div", { class: "project-gallery" },
                     ...p.exhibition_views.map(src => el("img", { src, alt: "", loading: "lazy" }))
                 ),
