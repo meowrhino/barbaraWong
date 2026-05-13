@@ -20,13 +20,7 @@ function pickRandom() {
 }
 
 function applySources(video, entry, preload) {
-    video.innerHTML = "";
-    for (const s of entry.sources) {
-        const source = document.createElement("source");
-        source.src = s.src;
-        source.type = s.type;
-        video.appendChild(source);
-    }
+    video.replaceChildren(...entry.sources.map(s => el("source", { src: s.src, type: s.type })));
     video.preload = preload;
     video.load();
 }

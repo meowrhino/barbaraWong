@@ -1,7 +1,7 @@
 // Router + init. Default view = "news". Fade suave al cambiar de vista.
 
 import { $ } from "./dom.js";
-import { state, loadAll } from "./data.js";
+import { state, loadAll, setView as setStateView } from "./data.js";
 import { renderMenu, setHandlers } from "./menu.js";
 import { shouldShowWelcome, startWelcome, skipWelcome } from "./welcome.js";
 import {
@@ -28,8 +28,7 @@ function viewKey() {
 
 function setView(view, payload) {
     if (!VIEWS.has(view)) view = DEFAULT_VIEW;
-    state.view = view;
-    document.body.dataset.view = view;
+    setStateView(view);
     const hash = `#${view}${payload ? "/" + payload : ""}`;
     if (location.hash !== hash) history.pushState({ view, payload }, "", hash);
     fadeRender();
@@ -92,15 +91,13 @@ function fadeRender() {
 
 window.addEventListener("hashchange", () => {
     const { view } = readHash();
-    state.view = VIEWS.has(view) ? view : DEFAULT_VIEW;
-    document.body.dataset.view = state.view;
+    setStateView(VIEWS.has(view) ? view : DEFAULT_VIEW);
     fadeRender();
 });
 
 function startApp() {
     const { view } = readHash();
-    state.view = VIEWS.has(view) ? view : DEFAULT_VIEW;
-    document.body.dataset.view = state.view;
+    setStateView(VIEWS.has(view) ? view : DEFAULT_VIEW);
     prevKey = null;
     fadeRender();
 }

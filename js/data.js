@@ -71,3 +71,9 @@ export async function loadAll() {
 export function findProject(slug) {
     return (state.projects || []).find(p => p.slug === slug);
 }
+
+// Setter centralizado para evitar mutaciones dispersas y mantener data-view en body sincronizado.
+export function setView(view) {
+    state.view = view;
+    document.body.dataset.view = view;
+}

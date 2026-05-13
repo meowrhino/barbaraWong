@@ -1,6 +1,6 @@
 // Menú: render, persiana móvil, lang switch, label activo, toggle works.
 
-import { $, $$, el } from "./dom.js";
+import { $, $$, el, cx, bindOnce } from "./dom.js";
 import { state, t, tf } from "./data.js";
 import { showWelcomeAgain } from "./welcome.js";
 
@@ -51,8 +51,7 @@ function renderSections() {
 
 function renderWorksSection(m) {
     const inWorks = state.view === "project";
-    const cls = ["menu-section", "menu-works", worksOpen ? "is-open" : "", inWorks ? "is-active" : ""]
-        .filter(Boolean).join(" ");
+    const cls = cx("menu-section", "menu-works", worksOpen && "is-open", inWorks && "is-active");
 
     const header = el("button", {
         class: "menu-works-toggle",
@@ -70,11 +69,7 @@ function renderWorksSection(m) {
         ...(state.projects || []).map(w => {
             const slug = w.slug;
             const active = state.view === "project" && location.hash === `#project/${slug}`;
-            const liCls = [
-                "work-item",
-                w.published ? "" : "is-unpublished",
-                active ? "is-active" : "",
-            ].filter(Boolean).join(" ");
+            const liCls = cx("work-item", !w.published && "is-unpublished", active && "is-active");
             return el("li", {
                 class: liCls,
                 "data-slug": slug,
@@ -99,51 +94,44 @@ function renderActiveLabel() {
 function renderLangSwitch() {
     $$(".lang-btn").forEach(btn => {
         btn.classList.toggle("is-active", btn.dataset.lang === state.lang);
-        btn.onclick = () => {
-            if (btn.dataset.lang === state.lang) return;
-            onLang(btn.dataset.lang);
-        };
+        bindOnce(btn, n => n.addEventListener("click", () => {
+            if (n.dataset.lang === state.lang) return;
+            onLang(n.dataset.lang);
+        }));
     });
 }
 
 function bindToggle() {
     const toggle = $("#nav-toggle");
     const nav = $("#nav");
-    if (!toggle._bound) {
-        toggle.addEventListener("click", (e) => {
-            e.stopPropagation();
-            const open = nav.classList.toggle("is-open");
-            toggle.setAttribute("aria-expanded", open ? "true" : "false");
-            toggle.textContent = open ? t("close_menu") : t("open_menu");
-        });
-        toggle._bound = true;
-    }
+
+    bindOnce(toggle, n => n.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const open = nav.classList.toggle("is-open");
+        n.setAttribute("aria-expanded", open ? "true" : "false");
+        n.textContent = open ? t("close_menu") : t("open_menu");
+    }));
     toggle.textContent = nav.classList.contains("is-open") ? t("close_menu") : t("open_menu");
 
-    const name = $("#site-name");
-    if (name && !name._bound) {
-        name.addEventListener("click", (e) => {
-            e.preventDefault();
+    bindOnce($("#site-name"), n => n.addEventListener("click", (e) => {
+        e.preventDefault();
+        closePersiana();
+        showWelcomeAgain();
+    }));
+
+    // Mobile nav-top: el nombre lleva al welcome; la categoría activa abre el menú.
+    // El resto del nav-top NO es clickable (evita aperturas accidentales).
+    bindOnce($("#nav-top"), n => n.addEventListener("click", (e) => {
+        if (!MOBILE_MQ.matches) return;
+        if (e.target.closest("#nav-name")) {
             closePersiana();
             showWelcomeAgain();
-        });
-        name._bound = true;
-    }
-    const navTop = $("#nav-top");
-    if (navTop && !navTop._bound) {
-        navTop.addEventListener("click", (e) => {
-            if (!MOBILE_MQ.matches) return;
-            if (!nav.classList.contains("is-open")) {
-                openPersiana();
-                return;
-            }
-            if (e.target.closest("#nav-name")) {
-                closePersiana();
-                showWelcomeAgain();
-            }
-        });
-        navTop._bound = true;
-    }
+            return;
+        }
+        if (e.target.closest("#nav-active")) {
+            if (!nav.classList.contains("is-open")) openPersiana();
+        }
+    }));
 }
 
 function openPersiana() {

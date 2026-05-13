@@ -494,7 +494,6 @@ body[data-view="photos"] #viewer-content {
         height: var(--nav-top-h);
         padding: 0 var(--pad);
         flex: 0 0 auto;
-        cursor: pointer;
     }
     #nav-name {
         font-size: var(--fs-small);
@@ -513,6 +512,7 @@ body[data-view="photos"] #viewer-content {
         max-width: 50%;
         text-align: right;
         line-height: 1;
+        cursor: pointer;
     }
     #nav.is-open #nav-active { opacity: 0; }
 

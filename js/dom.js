@@ -3,6 +3,18 @@
 export const $  = (sel, root = document) => root.querySelector(sel);
 export const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
 
+// Construye un string de clases ignorando falsy values.
+//   cx("a", cond && "b", "")  →  "a b"   |   cx("a", false)  →  "a"
+export const cx = (...classes) => classes.filter(Boolean).join(" ");
+
+// Bind idempotente — solo añade el listener una vez por elemento.
+//   bindOnce(btn, node => node.addEventListener("click", handler))
+export function bindOnce(node, attach) {
+    if (!node || node._bound) return;
+    node._bound = true;
+    attach(node);
+}
+
 export function el(tag, attrs = {}, ...kids) {
     const node = document.createElement(tag);
     for (const [k, v] of Object.entries(attrs)) {
