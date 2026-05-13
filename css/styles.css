@@ -82,8 +82,15 @@ ul, ol { list-style: none; }
     pointer-events: none;
 }
 
-#enter-btn {
+#welcome-center {
     pointer-events: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+#welcome-name {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,32 +101,47 @@ ul, ol { list-style: none; }
     line-height: 1.05;
     letter-spacing: 0.02em;
     text-transform: lowercase;
-    padding: clamp(0.5rem, 1.5vw, 1rem) clamp(1rem, 3vw, 1.8rem);
     text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+    cursor: pointer;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
-#enter-btn span { display: block; }
-#enter-btn:hover { opacity: 0.85; transform: scale(1.02); }
+#welcome-name span { display: block; }
+#welcome-name:hover { opacity: 0.85; transform: scale(1.02); }
+#welcome-name:focus-visible { outline: 1px solid rgba(255,255,255,0.7); outline-offset: 6px; }
+
+#enter-btn {
+    color: rgba(255, 255, 255, 0.85);
+    font-family: var(--font);
+    font-size: clamp(0.85rem, 1vw, 1rem);
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.06em;
+    text-transform: lowercase;
+    text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+    padding: 0.25rem 0.5rem;
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+#enter-btn:hover { color: #fff; text-decoration: underline; }
 
 #audio-btn {
+    position: absolute;
+    bottom: clamp(1.2rem, 3vh, 2.2rem);
+    right: clamp(1.2rem, 3vw, 2rem);
     pointer-events: auto;
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    color: rgba(255, 255, 255, 0.75);
-    font-family: var(--font);
-    font-size: 0.85rem;
-    text-transform: lowercase;
-    padding: 0.35rem 0.7rem;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 999px;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
-    transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    justify-content: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    color: rgba(255, 255, 255, 0.8);
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.5));
+    transition: color 0.2s ease, transform 0.2s ease;
 }
-#audio-btn:hover { color: #fff; border-color: rgba(255, 255, 255, 0.9); }
-#audio-btn.is-on { color: #111; background: rgba(255, 255, 255, 0.9); border-color: transparent; }
-#audio-btn .audio-icon { font-size: 0.95rem; line-height: 1; }
+#audio-btn:hover { color: #fff; transform: scale(1.05); }
+.audio-icon-svg { width: 1.6rem; height: 1.6rem; display: none; }
+#audio-btn .audio-icon-off { display: block; }
+#audio-btn.is-on .audio-icon-off { display: none; }
+#audio-btn.is-on .audio-icon-on { display: block; }
 
 /* Bolitas pequeñas abajo */
 #welcome-thumbs {
@@ -221,14 +243,22 @@ ul, ol { list-style: none; }
 .menu-works.is-active > .menu-works-toggle { color: var(--muted); text-decoration: none; }
 
 .works-list {
-    display: none;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.35s ease, margin-top 0.35s ease, opacity 0.25s ease;
+    margin-top: 0;
+    opacity: 0;
+}
+.works-list-inner {
+    min-height: 0;
+    overflow: hidden;
+    display: flex;
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
-    margin-top: 0.4rem;
     gap: 0.4rem;
 }
-.menu-works.is-open .works-list { display: flex; }
+.menu-works.is-open .works-list { grid-template-rows: 1fr; margin-top: 0.4rem; opacity: 1; }
 
 .work-item {
     font-size: var(--fs-work);
@@ -242,7 +272,7 @@ ul, ol { list-style: none; }
 
 #lang-switch {
     display: flex;
-    gap: 0.4rem;
+    gap: 0;
     justify-content: flex-end;
     align-items: center;
     margin-top: 1rem;
@@ -252,7 +282,9 @@ ul, ol { list-style: none; }
 .lang-btn { color: var(--muted); text-transform: lowercase; }
 .lang-btn:hover { color: var(--fg); }
 .lang-btn.is-active { color: var(--fg); text-decoration: underline; }
-.lang-sep { color: var(--muted); }
+.lang-btn::after { content: "/"; color: var(--muted); margin: 0 0.15em; display: inline-block; text-decoration: none; }
+.lang-btn.is-active::after { text-decoration: none; }
+.lang-btn:last-of-type::after { content: none; }
 
 /* ============================================================
    VIEWER (con nombre desktop dentro del scroll)
@@ -357,7 +389,7 @@ body[data-view="contact"] #viewer-content {
 .pub-links a { color: var(--muted); word-break: break-all; }
 .pub-links a:hover { color: var(--fg); }
 
-.view-project { max-width: 880px; margin: 0 auto; padding-top: 1rem; }
+.view-project { max-width: 880px; margin: 0; padding-top: 1rem; }
 .project-header { margin-bottom: 1.25rem; }
 .project-header h2 { font-weight: 500; font-size: var(--fs-title); text-transform: lowercase; margin-bottom: 0.4rem; }
 .project-meta { font-size: var(--fs-small); color: var(--muted); line-height: 1.5; }
@@ -382,8 +414,7 @@ body[data-view="contact"] #viewer-content {
     color: var(--muted);
     margin-bottom: 0.6rem;
 }
-.project-gallery { display: grid; grid-template-columns: 1fr; gap: 1rem; }
-.project-gallery img { width: 100%; height: auto; }
+.project-gallery-section .slider img { width: 100%; height: auto; }
 
 .project-vimeo {
     width: 100%;
@@ -428,7 +459,7 @@ body[data-view="photos"] #viewer-content {
 @media (max-width: 768px) {
     :root {
         --nav-top-h: 2.6rem;
-        --nav-bottom-h: 2.6rem;
+        --nav-bottom-h: 3.4rem;
         --fs-name: 0.95rem;
         --fs-menu: 1.05rem;
         --fs-work: 0.92rem;
@@ -442,7 +473,6 @@ body[data-view="photos"] #viewer-content {
         height: auto;
         max-height: calc(var(--nav-top-h) + var(--nav-bottom-h));
         padding: 0;
-        border-bottom: 1px solid var(--line);
         transition: max-height 0.35s ease;
         z-index: 500;
         overflow: hidden;
@@ -493,7 +523,7 @@ body[data-view="photos"] #viewer-content {
         align-items: center;
         justify-content: center;
         height: var(--nav-bottom-h);
-        padding: 0 var(--pad);
+        padding: 0 var(--pad) 0.7rem;
         flex: 0 0 auto;
     }
     #nav-toggle {

@@ -157,15 +157,13 @@ export function renderProject(slug) {
             if (!imgs || !imgs.length) return null;
             const label = (name || "").toLowerCase();
             const showLabel = label && label !== "fotogramas";
+            const altBase = `${titleStr} — ${name || "imagen"}`;
+            const media = imgs.length > 1
+                ? makeSlider(imgs, altBase)
+                : el("img", { src: imgs[0], alt: `${altBase} 1`, loading: "lazy" });
             return el("section", { class: "project-gallery-section" },
                 showLabel ? el("div", { class: "project-section-title" }, label) : null,
-                el("div", { class: "project-gallery" },
-                    ...imgs.map((src, idx) => el("img", {
-                        src,
-                        alt: `${titleStr} — ${name || "imagen"} ${idx + 1}`,
-                        loading: "lazy",
-                    }))
-                )
+                media
             );
         }),
         vimeoEmbed(p.trailer || p.video),

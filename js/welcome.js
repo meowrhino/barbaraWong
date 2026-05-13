@@ -96,11 +96,12 @@ function bindAudioToggle() {
     const btn = $("#audio-btn");
     if (!btn || btn._bound) return;
     btn._bound = true;
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", (ev) => {
+        ev.stopPropagation();
         const on = btn.getAttribute("aria-pressed") === "true";
         const next = !on;
         btn.setAttribute("aria-pressed", next ? "true" : "false");
-        btn.querySelector(".audio-text").textContent = next ? "sound on" : "sound off";
+        btn.setAttribute("aria-label", next ? "Silenciar" : "Activar sonido");
         btn.classList.toggle("is-on", next);
         const a = $("#welcome-video-a");
         const b = $("#welcome-video-b");
@@ -160,6 +161,13 @@ export function startWelcome() {
     $("#welcome").hidden = false;
 
     $("#enter-btn").addEventListener("click", done);
+    const wname = $("#welcome-name");
+    if (wname) {
+        wname.addEventListener("click", done);
+        wname.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" || e.key === " ") { e.preventDefault(); done(); }
+        });
+    }
     keydownHandler = (e) => {
         if ($("#welcome").hidden) return;
         if (e.key === "Enter" || e.key === " " || e.key === "Escape") {

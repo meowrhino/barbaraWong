@@ -63,7 +63,7 @@ function renderWorksSection(m) {
         } },
     }, tf(m.label));
 
-    const list = el("ol", { class: "works-list" },
+    const inner = el("ol", { class: "works-list-inner" },
         ...(state.projects || []).map(w => {
             const slug = w.slug;
             const active = state.view === "project" && location.hash === `#project/${slug}`;
@@ -80,6 +80,7 @@ function renderWorksSection(m) {
             }, tf(w.title));
         })
     );
+    const list = el("div", { class: "works-list" }, inner);
 
     return el("li", { class: cls }, header, list);
 }
