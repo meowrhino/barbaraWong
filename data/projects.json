@@ -26,6 +26,7 @@
     "trailer": "https://vimeo.com/1173077278",
     "creditos": { "es": [], "en": [], "ca": [] },
     "gallerys": [
+      ["", ["data/_works/01. Els peregrins/poster.webp"]],
       ["fotogramas", [
         "data/_works/01. Els peregrins/fotogramas/001.webp",
         "data/_works/01. Els peregrins/fotogramas/002.webp",
