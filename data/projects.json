@@ -23,13 +23,13 @@
     "creditos": { "es": [], "en": [], "ca": [] },
     "gallerys": [
       ["fotogramas", [
-        "data/_works/01. Els peregrins/fotogramas/001.png",
-        "data/_works/01. Els peregrins/fotogramas/002.png",
-        "data/_works/01. Els peregrins/fotogramas/003.png",
-        "data/_works/01. Els peregrins/fotogramas/004.png",
-        "data/_works/01. Els peregrins/fotogramas/005.png",
-        "data/_works/01. Els peregrins/fotogramas/006.png",
-        "data/_works/01. Els peregrins/fotogramas/007.png"
+        "data/_works/01. Els peregrins/fotogramas/001.webp",
+        "data/_works/01. Els peregrins/fotogramas/002.webp",
+        "data/_works/01. Els peregrins/fotogramas/003.webp",
+        "data/_works/01. Els peregrins/fotogramas/004.webp",
+        "data/_works/01. Els peregrins/fotogramas/005.webp",
+        "data/_works/01. Els peregrins/fotogramas/006.webp",
+        "data/_works/01. Els peregrins/fotogramas/007.webp"
       ]]
     ]
   },
@@ -63,12 +63,12 @@
     "creditos": { "es": [], "en": [], "ca": [] },
     "gallerys": [
       ["fotogramas", [
-        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-17h53m37s152.png",
-        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-17h56m14s836.png",
-        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-17h59m31s406.png",
-        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-18h08m37s685.png",
-        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-18h11m55s216.png",
-        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-18h20m42s361.png"
+        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-17h53m37s152.webp",
+        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-17h56m14s836.webp",
+        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-17h59m31s406.webp",
+        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-18h08m37s685.webp",
+        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-18h11m55s216.webp",
+        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-18h20m42s361.webp"
       ]]
     ]
   },
@@ -109,14 +109,14 @@
     },
     "gallerys": [
       ["fotogramas", [
-        "data/_works/03. Biophilia/Fotogramas/vlcsnap-2023-11-23-15h31m52s900.png",
-        "data/_works/03. Biophilia/Fotogramas/vlcsnap-2023-11-23-15h32m41s050.png",
-        "data/_works/03. Biophilia/Fotogramas/vlcsnap-2023-11-23-15h33m02s499.png"
+        "data/_works/03. Biophilia/Fotogramas/vlcsnap-2023-11-23-15h31m52s900.webp",
+        "data/_works/03. Biophilia/Fotogramas/vlcsnap-2023-11-23-15h32m41s050.webp",
+        "data/_works/03. Biophilia/Fotogramas/vlcsnap-2023-11-23-15h33m02s499.webp"
       ]],
       ["exhibition views", [
-        "data/_works/03. Biophilia/Exhibition views/Captura-de-pantalla-2023-11-23-a-las-16.08.40.png",
-        "data/_works/03. Biophilia/Exhibition views/detail_web_1.png",
-        "data/_works/03. Biophilia/Exhibition views/detail_web_2.png"
+        "data/_works/03. Biophilia/Exhibition views/Captura-de-pantalla-2023-11-23-a-las-16.08.40.webp",
+        "data/_works/03. Biophilia/Exhibition views/detail_web_1.webp",
+        "data/_works/03. Biophilia/Exhibition views/detail_web_2.webp"
       ]]
     ]
   },
@@ -153,21 +153,21 @@
     },
     "gallerys": [
       ["fotogramas", [
-        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-15h51m19s995.png",
-        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-15h57m27s058.png",
-        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-15h58m36s104.png",
-        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-15h58m54s281.png",
-        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-16h00m35s358.png",
-        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-16h01m53s634.png"
+        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-15h51m19s995.webp",
+        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-15h57m27s058.webp",
+        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-15h58m36s104.webp",
+        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-15h58m54s281.webp",
+        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-16h00m35s358.webp",
+        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-16h01m53s634.webp"
       ]],
       ["35mm photos", [
-        "data/_works/04. Aiguarir/35mm photos/000015.jpeg",
-        "data/_works/04. Aiguarir/35mm photos/000027.jpeg",
-        "data/_works/04. Aiguarir/35mm photos/000028.jpeg",
-        "data/_works/04. Aiguarir/35mm photos/000032.jpeg",
-        "data/_works/04. Aiguarir/35mm photos/000033.jpeg",
-        "data/_works/04. Aiguarir/35mm photos/000034.jpeg",
-        "data/_works/04. Aiguarir/35mm photos/000036.jpeg"
+        "data/_works/04. Aiguarir/35mm photos/000015.webp",
+        "data/_works/04. Aiguarir/35mm photos/000027.webp",
+        "data/_works/04. Aiguarir/35mm photos/000028.webp",
+        "data/_works/04. Aiguarir/35mm photos/000032.webp",
+        "data/_works/04. Aiguarir/35mm photos/000033.webp",
+        "data/_works/04. Aiguarir/35mm photos/000034.webp",
+        "data/_works/04. Aiguarir/35mm photos/000036.webp"
       ]]
     ]
   },
@@ -203,22 +203,22 @@
     "creditos": { "es": [], "en": [], "ca": [] },
     "gallerys": [
       ["fotogramas", [
-        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h33m14s518.png",
-        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h36m40s561.png",
-        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h38m49s333.png",
-        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h39m08s369.png",
-        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h42m06s194.png",
-        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h43m25s078.png"
+        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h33m14s518.webp",
+        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h36m40s561.webp",
+        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h38m49s333.webp",
+        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h39m08s369.webp",
+        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h42m06s194.webp",
+        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h43m25s078.webp"
       ]],
       ["35mm — fotos tomadas por las estudiantes", [
-        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734701.jpg",
-        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734731.jpg",
-        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734762.jpg",
-        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734796.jpg",
-        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734827.jpg",
-        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734858.jpg",
-        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734890.jpg",
-        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734921.jpg"
+        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734701.webp",
+        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734731.webp",
+        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734762.webp",
+        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734796.webp",
+        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734827.webp",
+        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734858.webp",
+        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734890.webp",
+        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734921.webp"
       ]]
     ]
   },
@@ -247,15 +247,15 @@
     "creditos": { "es": [], "en": [], "ca": [] },
     "gallerys": [
       ["installation views — Bienal Sur (SAMoCA, Riyadh)", [
-        "data/_works/06. The holobiont that therefore I am/Installation views at Bienal Sur- Imagine. Fantasies, Dreams, Utopias, SAMoCA, Riyadh/1701272605900.jpg",
-        "data/_works/06. The holobiont that therefore I am/Installation views at Bienal Sur- Imagine. Fantasies, Dreams, Utopias, SAMoCA, Riyadh/IMG_1379_peque.jpg",
-        "data/_works/06. The holobiont that therefore I am/Installation views at Bienal Sur- Imagine. Fantasies, Dreams, Utopias, SAMoCA, Riyadh/pasillo.jpg"
+        "data/_works/06. The holobiont that therefore I am/Installation views at Bienal Sur- Imagine. Fantasies, Dreams, Utopias, SAMoCA, Riyadh/1701272605900.webp",
+        "data/_works/06. The holobiont that therefore I am/Installation views at Bienal Sur- Imagine. Fantasies, Dreams, Utopias, SAMoCA, Riyadh/IMG_1379_peque.webp",
+        "data/_works/06. The holobiont that therefore I am/Installation views at Bienal Sur- Imagine. Fantasies, Dreams, Utopias, SAMoCA, Riyadh/pasillo.webp"
       ]],
       ["installation views — Inter Arts Center, Malmö 2022", [
-        "data/_works/06. The holobiont that therefore I am/Installation views at Inter Arts Center, Malmö, 2022 /DSC00125.jpeg",
-        "data/_works/06. The holobiont that therefore I am/Installation views at Inter Arts Center, Malmö, 2022 /DSC00131.jpeg",
-        "data/_works/06. The holobiont that therefore I am/Installation views at Inter Arts Center, Malmö, 2022 /JPG_MFAAR_exhibition_View_74.jpg",
-        "data/_works/06. The holobiont that therefore I am/Installation views at Inter Arts Center, Malmö, 2022 /JPG_MFAAR_exhibition_View_76.jpg"
+        "data/_works/06. The holobiont that therefore I am/Installation views at Inter Arts Center, Malmö, 2022 /DSC00125.webp",
+        "data/_works/06. The holobiont that therefore I am/Installation views at Inter Arts Center, Malmö, 2022 /DSC00131.webp",
+        "data/_works/06. The holobiont that therefore I am/Installation views at Inter Arts Center, Malmö, 2022 /JPG_MFAAR_exhibition_View_74.webp",
+        "data/_works/06. The holobiont that therefore I am/Installation views at Inter Arts Center, Malmö, 2022 /JPG_MFAAR_exhibition_View_76.webp"
       ]]
     ]
   },
@@ -290,15 +290,15 @@
     },
     "gallerys": [
       ["fotogramas", [
-        "data/_works/07. Botanical dream/fotogramas/vlcsnap-2022-05-10-14h49m03s538.png",
-        "data/_works/07. Botanical dream/fotogramas/vlcsnap-2022-05-10-14h50m03s270.png",
-        "data/_works/07. Botanical dream/fotogramas/vlcsnap-2022-05-10-14h50m29s784.png",
-        "data/_works/07. Botanical dream/fotogramas/vlcsnap-2022-05-10-14h51m50s439.png",
-        "data/_works/07. Botanical dream/fotogramas/vlcsnap-2022-05-10-14h52m15s154.png"
+        "data/_works/07. Botanical dream/fotogramas/vlcsnap-2022-05-10-14h49m03s538.webp",
+        "data/_works/07. Botanical dream/fotogramas/vlcsnap-2022-05-10-14h50m03s270.webp",
+        "data/_works/07. Botanical dream/fotogramas/vlcsnap-2022-05-10-14h50m29s784.webp",
+        "data/_works/07. Botanical dream/fotogramas/vlcsnap-2022-05-10-14h51m50s439.webp",
+        "data/_works/07. Botanical dream/fotogramas/vlcsnap-2022-05-10-14h52m15s154.webp"
       ]],
       ["installation views — Riconfigurazioni, Palazzo Ca' Tron, Venice 2022", [
-        "data/_works/07. Botanical dream/Installation views of the exhibition Riconfigurazioni. Tre indagini filmiche sul silvano, Palazzo Ca’ Tron , Venice, 2022/foto1.jpeg",
-        "data/_works/07. Botanical dream/Installation views of the exhibition Riconfigurazioni. Tre indagini filmiche sul silvano, Palazzo Ca’ Tron , Venice, 2022/foto2.jpeg"
+        "data/_works/07. Botanical dream/Installation views of the exhibition Riconfigurazioni. Tre indagini filmiche sul silvano, Palazzo Ca’ Tron , Venice, 2022/foto1.webp",
+        "data/_works/07. Botanical dream/Installation views of the exhibition Riconfigurazioni. Tre indagini filmiche sul silvano, Palazzo Ca’ Tron , Venice, 2022/foto2.webp"
       ]]
     ]
   }
