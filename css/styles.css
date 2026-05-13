@@ -224,11 +224,11 @@ ul, ol { list-style: none; }
 #menu-sections a:hover { text-decoration: underline; }
 #menu-sections a.is-active { color: var(--muted); text-decoration: none; }
 
-/* Works toggle: separación arriba/abajo, sin líneas */
+/* Works toggle: el header "obras" se comporta como cualquier item del menú.
+   El espacio extra va en el bloque expandido (.works-list), no en el header. */
 .menu-works {
     width: 100%;
     text-align: right;
-    margin: 0.8rem 0;
 }
 .menu-works-toggle {
     display: block;
@@ -245,8 +245,8 @@ ul, ol { list-style: none; }
 .works-list {
     display: grid;
     grid-template-rows: 0fr;
-    transition: grid-template-rows 0.35s ease, margin-top 0.35s ease, opacity 0.25s ease;
-    margin-top: 0;
+    transition: grid-template-rows 0.35s ease, margin 0.35s ease, opacity 0.25s ease;
+    margin: 0;
     opacity: 0;
 }
 .works-list-inner {
@@ -258,7 +258,7 @@ ul, ol { list-style: none; }
     text-align: right;
     gap: 0.4rem;
 }
-.menu-works.is-open .works-list { grid-template-rows: 1fr; margin-top: 0.4rem; opacity: 1; }
+.menu-works.is-open .works-list { grid-template-rows: 1fr; margin: 0.7rem 0; opacity: 1; }
 
 .work-item {
     font-size: var(--fs-work);
@@ -518,10 +518,16 @@ body[data-view="photos"] #viewer-content {
 
     #nav-body {
         flex: 1 1 auto;
-        padding: 0.5rem var(--pad);
+        padding: 0 var(--pad);
         gap: 1rem;
         overflow: hidden;
         min-height: 0;
+        max-height: 0;
+        transition: max-height 0.35s ease, padding 0.35s ease;
+    }
+    #nav.is-open #nav-body {
+        max-height: calc(85dvh - var(--nav-top-h) - var(--nav-bottom-h));
+        padding: 0.5rem var(--pad);
     }
     #menu-sections ul { gap: 0.4rem; }
     #menu-sections a { padding: 0.2rem 0; }
