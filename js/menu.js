@@ -1,0 +1,143 @@
+// Menú: render, persiana móvil, lang switch, label de sección activa, toggle works.
+
+import { $, $$, el } from "./dom.js";
+import { state, t, tf } from "./data.js";
+
+const MOBILE_MQ = window.matchMedia("(max-width: 768px)");
+
+let onNavigate = () => {};
+let onLang = () => {};
+
+// Estado del toggle "works": abierto por defecto en desktop, cerrado en móvil.
+let worksOpen = !MOBILE_MQ.matches;
+MOBILE_MQ.addEventListener("change", (e) => {
+    worksOpen = !e.matches;
+    renderMenu();
+});
+
+export function setHandlers({ navigate, lang }) {
+    onNavigate = navigate;
+    onLang = lang;
+}
+
+export function renderMenu() {
+    renderSections();
+    renderActiveLabel();
+    renderLangSwitch();
+    bindToggle();
+}
+
+function renderSections() {
+    const items = state.data.menu;
+    const ul = $("#menu-sections ul");
+    ul.replaceChildren(...items.map(m => {
+        if (m.key === "works") return renderWorksSection(m);
+        const isActive = state.view === m.key;
+        return el("li", { class: "menu-section" },
+            el("a", {
+                href: `#${m.key}`,
+                "data-section": m.key,
+                class: isActive ? "is-active" : "",
+                on: { click: (e) => {
+                    e.preventDefault();
+                    onNavigate(m.key);
+                    closePersiana();
+                } },
+            }, tf(m.label))
+        );
+    }));
+}
+
+function renderWorksSection(m) {
+    const inWorks = state.view === "project";
+    const cls = ["menu-section", "menu-works", worksOpen ? "is-open" : "", inWorks ? "is-active" : ""]
+        .filter(Boolean).join(" ");
+
+    const header = el("button", {
+        class: "menu-works-toggle",
+        type: "button",
+        "aria-expanded": worksOpen ? "true" : "false",
+        on: { click: () => {
+            worksOpen = !worksOpen;
+            renderMenu();
+        } },
+    }, tf(m.label));
+
+    const list = el("ol", { class: "works-list" },
+        ...(state.projects || []).map(w => {
+            const slug = w.slug;
+            const active = state.view === "project" && location.hash === `#project/${slug}`;
+            const liCls = [
+                "work-item",
+                w.published ? "" : "is-unpublished",
+                active ? "is-active" : "",
+            ].filter(Boolean).join(" ");
+            return el("li", {
+                class: liCls,
+                "data-slug": slug,
+                title: w.published ? "" : t("soon"),
+                on: w.published ? { click: () => { onNavigate("project", slug); closePersiana(); } } : {},
+            }, tf(w.title));
+        })
+    );
+
+    return el("li", { class: cls }, header, list);
+}
+
+function renderActiveLabel() {
+    const lbl = $("#nav-active");
+    if (!lbl) return;
+    const key = state.view === "project" ? "works" : state.view;
+    const entry = state.data.menu.find(m => m.key === key);
+    lbl.textContent = entry ? tf(entry.label) : "";
+}
+
+function renderLangSwitch() {
+    $$(".lang-btn").forEach(btn => {
+        btn.classList.toggle("is-active", btn.dataset.lang === state.lang);
+        btn.onclick = () => {
+            if (btn.dataset.lang === state.lang) return;
+            onLang(btn.dataset.lang);
+        };
+    });
+}
+
+function bindToggle() {
+    const toggle = $("#nav-toggle");
+    const nav = $("#nav");
+    if (!toggle._bound) {
+        toggle.addEventListener("click", () => {
+            const open = nav.classList.toggle("is-open");
+            toggle.setAttribute("aria-expanded", open ? "true" : "false");
+            toggle.textContent = open ? t("close_menu") : t("open_menu");
+        });
+        toggle._bound = true;
+    }
+    toggle.textContent = nav.classList.contains("is-open") ? t("close_menu") : t("open_menu");
+
+    const name = $("#site-name");
+    if (name && !name._bound) {
+        name.addEventListener("click", (e) => {
+            e.preventDefault();
+            onNavigate("news");
+            closePersiana();
+        });
+        name._bound = true;
+    }
+    const navName = $("#nav-name");
+    if (navName && !navName._bound) {
+        navName.addEventListener("click", () => { onNavigate("news"); closePersiana(); });
+        navName._bound = true;
+    }
+}
+
+function closePersiana() {
+    if (!MOBILE_MQ.matches) return;
+    const nav = $("#nav");
+    if (nav.classList.contains("is-open")) {
+        nav.classList.remove("is-open");
+        const toggle = $("#nav-toggle");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.textContent = t("open_menu");
+    }
+}

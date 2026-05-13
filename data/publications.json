@@ -12,7 +12,7 @@
       "en": "",
       "ca": ""
     },
-    "image": "data/publi_img/1.webp",
+    "image": "data/_publications/1.webp",
     "links": [
       "https://www.onomatopee.net/exhibition/a-tree/"
     ]
@@ -30,7 +30,7 @@
       "en": "",
       "ca": ""
     },
-    "image": "data/publi_img/2.webp",
+    "image": "data/_publications/2.webp",
     "links": [
       "https://dialnet.unirioja.es/descarga/libro/976925.pdf"
     ]
@@ -48,7 +48,7 @@
       "en": "",
       "ca": ""
     },
-    "images": ["data/publi_img/3_1.webp", "data/publi_img/3_2.webp"],
+    "images": ["data/_publications/3_1.webp", "data/_publications/3_2.webp"],
     "links": [
       "https://en.silvanaeditoriale.it/libro/9788836641871"
     ]
@@ -66,7 +66,7 @@
       "en": "",
       "ca": ""
     },
-    "images": ["data/publi_img/4_1.webp", "data/publi_img/4_2.webp", "data/publi_img/4_3.webp", "data/publi_img/4_4.webp", "data/publi_img/4_5.webp", "data/publi_img/4_6.webp"],
+    "images": ["data/_publications/4_1.webp", "data/_publications/4_2.webp", "data/_publications/4_3.webp", "data/_publications/4_4.webp", "data/_publications/4_5.webp", "data/_publications/4_6.webp"],
     "links": [
       "https://hisk.edu/publications/das-wort-ozean-ist-ca-20-quadratmillimeter-gross"
     ]
@@ -85,7 +85,7 @@
       "en": "",
       "ca": ""
     },
-    "image": "data/publi_img/5.webp",
+    "image": "data/_publications/5.webp",
     "links": [
       "https://fmirobcn.org/miroshop/en/exhibition-catalogues/867-the-possibility-of-an-island-espai-13.html"
     ]
@@ -103,7 +103,7 @@
       "en": "",
       "ca": ""
     },
-    "image": "data/publi_img/6.webp",
+    "image": "data/_publications/6.webp",
     "links": [
       "https://meteoroeditions.com/Greenfield-The-Archive-P-Lerma"
     ]
@@ -122,7 +122,7 @@
       "en": "",
       "ca": ""
     },
-    "image": "data/publi_img/7.webp",
+    "image": "data/_publications/7.webp",
     "links": [
       "https://ajuntament.barcelona.cat/barcelonallibres/ca/publicacions/barbara-sanchez-barroso"
     ]
@@ -141,7 +141,7 @@
       "en": "",
       "ca": ""
     },
-    "image": "data/publi_img/8.webp",
+    "image": "data/_publications/8.webp",
     "links": [
       "https://issuu.com/barbarawong/docs/_bloodfanzine_2014_entero"
     ]
@@ -159,7 +159,7 @@
       "en": "",
       "ca": ""
     },
-    "image": "data/publi_img/9.webp",
+    "image": "data/_publications/9.webp",
     "links": [
       "https://nenazas.tumblr.com/"
     ]

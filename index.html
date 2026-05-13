@@ -6,40 +6,55 @@
     <title>Bárbara Sánchez Barroso</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body data-view="home">
+<body data-view="news">
 
-    <main id="app">
-        <!-- VISUALIZADOR (70%) -->
-        <section id="viewer" aria-label="Visualizador">
-            <div id="viewer-content"></div>
-        </section>
+    <!-- WELCOME: vídeo aleatorio fullscreen + botón "entrar" + selector de vídeo -->
+    <div id="welcome" hidden>
+        <video id="welcome-video-a" class="welcome-video is-current" muted playsinline preload="auto"></video>
+        <video id="welcome-video-b" class="welcome-video" muted playsinline preload="metadata"></video>
 
-        <!-- MENÚ (30%) -->
-        <aside id="menu" aria-label="Menú principal">
-            <div id="menu-center">
-                <h1 id="site-title">bárbara sánchez<br>barroso</h1>
+        <div id="welcome-ui">
+            <button id="enter-btn" type="button" aria-label="Entrar al sitio">
+                <span>bárbara</span>
+                <span>sánchez</span>
+                <span>barroso</span>
+            </button>
+            <div id="welcome-thumbs" role="tablist" aria-label="Elegir vídeo de portada"></div>
+        </div>
+    </div>
 
+    <!-- SITE -->
+    <main id="app" hidden>
+
+        <a id="site-name" href="#news" aria-label="Inicio">bárbara s. barroso</a>
+
+        <aside id="nav" aria-label="Menú principal">
+            <div id="nav-bar">
+                <span id="nav-name">bárbara s. barroso</span>
+                <span id="nav-active" aria-hidden="true"></span>
+                <button id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-body">ver menú</button>
+            </div>
+
+            <div id="nav-body">
                 <nav id="menu-sections">
                     <ul></ul>
                 </nav>
-
-                <nav id="menu-works" aria-label="Obras">
-                    <h2 class="menu-heading" data-i18n="work" role="button" tabindex="0" aria-expanded="false">Work</h2>
-                    <ol id="works-list"></ol>
-                </nav>
+                <div id="lang-switch" role="group" aria-label="Idioma">
+                    <button class="lang-btn is-active" data-lang="es">es</button>
+                    <span class="lang-sep">/</span>
+                    <button class="lang-btn" data-lang="en">en</button>
+                    <span class="lang-sep">/</span>
+                    <button class="lang-btn" data-lang="ca">cat</button>
+                </div>
             </div>
-
-            <div id="lang-switch" role="group" aria-label="Idioma">
-                <button class="lang-btn is-active" data-lang="es">es</button>
-                <button class="lang-btn" data-lang="en">en</button>
-                <button class="lang-btn" data-lang="ca">ca</button>
-            </div>
-
-            <button id="back-btn" type="button" aria-label="Back">← back</button>
         </aside>
+
+        <section id="viewer" aria-label="Contenido">
+            <div id="viewer-content"></div>
+        </section>
     </main>
 
     <noscript>

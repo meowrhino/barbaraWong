@@ -1,4 +1,6 @@
 {
-  "photos": [],
-  "_note": "Photo Journal: cargar fotos por orden alfabético desde /PHOTOS/. Cada entrada solo necesita src; opcionalmente caption y date."
+  "count": 205,
+  "ext": "webp",
+  "dir": "data/_photos/",
+  "_note": "El JS genera data/_photos/${i}.webp para i = 1..count. Si añades fotos, sube count."
 }

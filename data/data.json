@@ -6,23 +6,34 @@
     "languages": ["es", "en", "ca"]
   },
   "menu": [
-    { "key": "about",        "label": { "es": "About",        "en": "About",        "ca": "About" },        "source": "data/about.json" },
-    { "key": "news",         "label": { "es": "News",         "en": "News",         "ca": "News" },         "source": "data/news.json" },
-    { "key": "work",         "label": { "es": "Work",         "en": "Work",         "ca": "Obra" },         "source": "data/projects.json" },
-    { "key": "publications", "label": { "es": "Publications", "en": "Publications", "ca": "Publicacions" }, "source": "data/publications.json" },
-    { "key": "photo",        "label": { "es": "Photo",        "en": "Photo",        "ca": "Photo" },        "source": "data/photos.json" }
+    { "key": "news",         "label": { "es": "news",         "en": "news",         "ca": "news" } },
+    { "key": "works",        "label": { "es": "works",        "en": "works",        "ca": "obres" },        "collapsible": true },
+    { "key": "publications", "label": { "es": "publications", "en": "publications", "ca": "publicacions" } },
+    { "key": "photos",       "label": { "es": "photos",       "en": "photos",       "ca": "photos" } },
+    { "key": "about",        "label": { "es": "about",        "en": "about",        "ca": "about" } },
+    { "key": "contact",      "label": { "es": "contact",      "en": "contact",      "ca": "contacte" } }
   ],
   "sources": {
-    "about": "data/about.json",
-    "news": "data/news.json",
-    "projects": "data/projects.json",
+    "about":        "data/about.json",
+    "news":         "data/news.json",
+    "projects":     "data/projects.json",
     "publications": "data/publications.json",
-    "photos": "data/photos.json"
+    "photos":       "data/photos.json"
+  },
+  "welcome": {
+    "dir": "data/_welcome/",
+    "videos": [
+      { "id": "1", "label": "01" },
+      { "id": "2", "label": "02" },
+      { "id": "3", "label": "03" },
+      { "id": "4", "label": "04" }
+    ],
+    "formats": ["webm", "mp4"]
   },
   "assets": {
-    "news_dir": "NEWS/",
-    "publications_dir": "PUBLICATIONS/",
-    "projects_dir": "PROYECTOS/",
-    "photos_dir": "PHOTOS/"
+    "news_dir":         "data/_news/",
+    "publications_dir": "data/_publications/",
+    "works_dir":        "data/_works/",
+    "photos_dir":       "data/_photos/"
   }
 }
