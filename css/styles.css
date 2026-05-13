@@ -333,6 +333,8 @@ body[data-view="contact"] #viewer-content {
     line-height: 1.6;
     text-align: center;
     padding: var(--pad);
+    font-size: var(--fs-small);
+    color: var(--muted);
 }
 .view-about p { margin-bottom: 1em; }
 .view-about p:last-child { margin-bottom: 0; }
@@ -341,8 +343,11 @@ body[data-view="contact"] #viewer-content {
     text-align: center;
     line-height: 1.8;
     padding: var(--pad);
+    font-size: var(--fs-small);
+    color: var(--muted);
 }
-.view-contact a { text-decoration: underline; }
+.view-contact a,
+.view-contact a:hover { text-decoration: none; color: inherit; }
 
 .view-news { display: flex; flex-direction: column; gap: 3rem; padding-top: 1rem; }
 .news-item {
