@@ -92,6 +92,25 @@ function refreshThumbs() {
         b.classList.toggle("is-active", i === curIdx));
 }
 
+function bindAudioToggle() {
+    const btn = $("#audio-btn");
+    if (!btn || btn._bound) return;
+    btn._bound = true;
+    btn.addEventListener("click", () => {
+        const on = btn.getAttribute("aria-pressed") === "true";
+        const next = !on;
+        btn.setAttribute("aria-pressed", next ? "true" : "false");
+        btn.querySelector(".audio-text").textContent = next ? "sound on" : "sound off";
+        btn.classList.toggle("is-on", next);
+        const a = $("#welcome-video-a");
+        const b = $("#welcome-video-b");
+        a.muted = !next;
+        b.muted = !next;
+        // Algunos navegadores requieren replay tras unmute
+        if (next) a.play().catch(() => {});
+    });
+}
+
 function done() {
     const w = $("#welcome");
     const app = $("#app");
@@ -136,6 +155,7 @@ export function startWelcome() {
     setCurrent(pickRandom());
     queueNext();
     buildThumbs();
+    bindAudioToggle();
 
     $("#welcome").hidden = false;
 

@@ -1,4 +1,4 @@
-// Router + init. Decide welcome vs SPA. Sin vista home: la default es "news".
+// Router + init. Default view = "news". Fade suave al cambiar de vista.
 
 import { $ } from "./dom.js";
 import { state, loadAll } from "./data.js";
@@ -11,6 +11,7 @@ import {
 
 const VIEWS = new Set(["news", "publications", "photos", "about", "contact", "project"]);
 const DEFAULT_VIEW = "news";
+const FADE_MS = 180;
 
 function readHash() {
     const h = location.hash.replace(/^#/, "");
@@ -19,13 +20,19 @@ function readHash() {
     return { view, payload: rest.join("/") || undefined };
 }
 
+let prevKey = null;
+
+function viewKey() {
+    return `${state.view}:${location.hash}`;
+}
+
 function setView(view, payload) {
     if (!VIEWS.has(view)) view = DEFAULT_VIEW;
     state.view = view;
     document.body.dataset.view = view;
     const hash = `#${view}${payload ? "/" + payload : ""}`;
     if (location.hash !== hash) history.pushState({ view, payload }, "", hash);
-    render();
+    fadeRender();
     document.getElementById("viewer")?.scrollTo({ top: 0, left: 0, behavior: "instant" });
 }
 
@@ -37,11 +44,11 @@ function navigate(view, payload) {
 function setLang(lang) {
     state.lang = lang;
     document.documentElement.lang = lang;
-    render();
+    // Cambio de idioma → no fade (mismo contenido, refresco directo)
+    renderNow();
 }
 
-function render() {
-    renderMenu();
+function dispatch() {
     const { view, payload } = readHash();
     const v = view || state.view;
     switch (v) {
@@ -55,18 +62,47 @@ function render() {
     }
 }
 
+function renderNow() {
+    renderMenu();
+    dispatch();
+}
+
+function fadeRender() {
+    const key = viewKey();
+    if (prevKey === null) {
+        // Primera vez — sin fade
+        prevKey = key;
+        renderNow();
+        return;
+    }
+    if (prevKey === key) {
+        // Misma vista (p. ej. solo re-render por idioma) — directo
+        renderNow();
+        return;
+    }
+    prevKey = key;
+    const vc = $("#viewer-content");
+    vc.classList.add("is-leaving");
+    setTimeout(() => {
+        renderNow();
+        // forzar reflow para que la transición de entrada cuente
+        vc.classList.remove("is-leaving");
+    }, FADE_MS);
+}
+
 window.addEventListener("hashchange", () => {
     const { view } = readHash();
     state.view = VIEWS.has(view) ? view : DEFAULT_VIEW;
     document.body.dataset.view = state.view;
-    render();
+    fadeRender();
 });
 
 function startApp() {
     const { view } = readHash();
     state.view = VIEWS.has(view) ? view : DEFAULT_VIEW;
     document.body.dataset.view = state.view;
-    render();
+    prevKey = null;
+    fadeRender();
 }
 
 async function init() {

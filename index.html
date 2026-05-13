@@ -13,7 +13,7 @@
 </head>
 <body data-view="news">
 
-    <!-- WELCOME: vídeo aleatorio fullscreen + botón "entrar" + bolitas selector -->
+    <!-- WELCOME -->
     <div id="welcome" hidden>
         <video id="welcome-video-a" class="welcome-video is-current" muted playsinline preload="auto"></video>
         <video id="welcome-video-b" class="welcome-video" muted playsinline preload="metadata"></video>
@@ -24,6 +24,10 @@
                 <span>sánchez</span>
                 <span>barroso</span>
             </button>
+            <button id="audio-btn" type="button" aria-pressed="false" aria-label="Activar sonido">
+                <span class="audio-icon" aria-hidden="true">♪</span>
+                <span class="audio-text">sound off</span>
+            </button>
         </div>
         <div id="welcome-thumbs" role="tablist" aria-label="Elegir vídeo de portada"></div>
     </div>
@@ -31,16 +35,14 @@
     <!-- SITE -->
     <main id="app" hidden>
 
-        <a id="site-name" href="#news" aria-label="Inicio">bárbara s. barroso</a>
-
         <aside id="nav" aria-label="Menú principal">
-            <!-- TOP (visible solo en móvil): nombre + categoría activa -->
+            <!-- TOP (móvil): nombre + categoría activa -->
             <div id="nav-top">
                 <span id="nav-name">bárbara s. barroso</span>
                 <span id="nav-active" aria-hidden="true"></span>
             </div>
 
-            <!-- BODY (siempre visible en desktop; colapsable en móvil) -->
+            <!-- BODY: menú + lang -->
             <div id="nav-body">
                 <nav id="menu-sections" aria-label="Secciones">
                     <ul></ul>
@@ -54,13 +56,14 @@
                 </div>
             </div>
 
-            <!-- BOTTOM (visible solo en móvil): toggle "ver/cerrar menú" -->
+            <!-- BOTTOM (móvil): toggle persiana -->
             <div id="nav-bottom">
                 <button id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-body">ver menú</button>
             </div>
         </aside>
 
         <section id="viewer" aria-label="Contenido">
+            <a id="site-name" href="#news" aria-label="Inicio">bárbara s. barroso</a>
             <div id="viewer-content"></div>
         </section>
     </main>
