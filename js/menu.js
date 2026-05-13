@@ -2,6 +2,7 @@
 
 import { $, $$, el } from "./dom.js";
 import { state, t, tf } from "./data.js";
+import { showWelcomeAgain } from "./welcome.js";
 
 const MOBILE_MQ = window.matchMedia("(max-width: 768px)");
 
@@ -123,8 +124,8 @@ function bindToggle() {
     if (name && !name._bound) {
         name.addEventListener("click", (e) => {
             e.preventDefault();
-            onNavigate("news");
             closePersiana();
+            showWelcomeAgain();
         });
         name._bound = true;
     }
@@ -137,8 +138,8 @@ function bindToggle() {
                 return;
             }
             if (e.target.closest("#nav-name")) {
-                onNavigate("news");
                 closePersiana();
+                showWelcomeAgain();
             }
         });
         navTop._bound = true;

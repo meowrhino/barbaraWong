@@ -182,3 +182,28 @@ export function skipWelcome() {
     $("#welcome").hidden = true;
     $("#app").hidden = false;
 }
+
+export function showWelcomeAgain() {
+    if (!entries.length) {
+        // Welcome no inicializado (skip directo). Inicializa ahora.
+        startWelcome();
+        return;
+    }
+    sessionStorage.removeItem(SESSION_KEY);
+    const w = $("#welcome");
+    const app = $("#app");
+    w.classList.remove("is-fading-out");
+    w.hidden = false;
+    app.hidden = true;
+    if (cur && cur.paused) cur.play().catch(() => {});
+    if (!keydownHandler) {
+        keydownHandler = (e) => {
+            if (w.hidden) return;
+            if (e.key === "Enter" || e.key === " " || e.key === "Escape") {
+                e.preventDefault();
+                done();
+            }
+        };
+        document.addEventListener("keydown", keydownHandler);
+    }
+}
