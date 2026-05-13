@@ -6,15 +6,19 @@
     "published": true,
     "ficha_tecnica": {
       "year": "2025",
-      "type": { "es": "Film, 16mm en digital", "en": "Film, 16mm to digital", "ca": "" },
+      "type": { "es": "Film, 16mm a digital", "en": "Film, 16mm to digital", "ca": "Film, 16 mm a digital" },
       "duration": "14:34 min"
     },
     "info": {
       "es": [
         "En el Prat de Llobregat, Ondrej trabaja como halconero en el control de aves en el aeropuerto, al tiempo que cuida sus propias tierras con animales en un entorno agrícola cada vez más presionado. En este territorio limítrofe, su trabajo deviene una forma de resistencia ante el constante zumbido de los aviones. Humanos y no humanos comparten, en un espacio marcado por la ampliación del aeropuerto, una frágil red de relaciones."
       ],
-      "en": [],
-      "ca": []
+      "en": [
+        "In the Prat de Llobregat, Ondrej works as a falconer controlling birds at the airport, while at the same time tending to his own land and animals in an agricultural environment under growing pressure. In this borderland, his work becomes a form of resistance against the constant hum of the planes. Humans and non-humans share, in a space marked by the airport's expansion, a fragile web of relations."
+      ],
+      "ca": [
+        "Al Prat de Llobregat, Ondrej treballa com a falconer en el control d'aus a l'aeroport, alhora que cuida les seves pròpies terres amb animals en un entorn agrícola cada vegada més pressionat. En aquest territori limítrof, la seva feina esdevé una forma de resistència davant del brunzit constant dels avions. Humans i no humans comparteixen, en un espai marcat per l'ampliació de l'aeroport, una fràgil xarxa de relacions."
+      ]
     },
     "links": [
       ["D'A Film Festival — Els peregrins", "https://dafilmfestival.com/es/movie/els-peregrins/"]
@@ -40,12 +44,24 @@
     "published": true,
     "ficha_tecnica": {
       "year": "2025",
-      "type": { "es": "Instal·lació de vídeo", "en": "Video installation", "ca": "Instal·lació de vídeo" },
+      "type": { "es": "Instalación de vídeo", "en": "Video installation", "ca": "Instal·lació de vídeo" },
       "duration": ""
     },
     "info": {
-      "es": [],
-      "en": [],
+      "es": [
+        "Tráiler de la pieza de vídeo que acompaña la exposición Desig i ficció. Una exploración sensorial y material del margalló, comisariada por Sara G. de Ubieta y Cris Noguer en el Centre de Desenvolupament Rural Museu de la Pauma de Mas de Barberans, Tarragona.",
+        "El margalló (Chamaerops humilis) es una planta que posibilita la vida. Su capacidad de regeneración tras un incendio forestal, la rapidez con la que rebrota y la estabilidad de su ciclo fenológico —que se reanuda casi sin alteraciones— son ejemplos claros. Esta resistencia se debe a una morfología adaptada que protege las partes vitales de la planta del fuego, lo que le permite florecer y fructificar de nuevo con normalidad y asegura su función ecológica y reproductiva.",
+        "Además, el margalló no solo tolera condiciones ambientales adversas, sino que tiene un papel ecológico fundamental en la protección del suelo gracias a su entramado de raíces denso y profundo.",
+        "Desde esta perspectiva, el margalló es mucho más que una planta resiliente: es una infraestructura viva que sostiene la vida, una pieza clave en la creación de microecosistemas y un símbolo tangible de esa otra manera de habitar y narrar el mundo: desde el vínculo, la atención y la reciprocidad.",
+        "Desde la cultura de los materiales y su imparable transformación, surge una colección de objetos que es apenas un hilo del pasado, el presente y el futuro del margalló."
+      ],
+      "en": [
+        "Trailer of the video piece accompanying the exhibition Desig i ficció. A sensory and material exploration of the margalló (dwarf fan palm), curated by Sara G. de Ubieta and Cris Noguer at the Centre de Desenvolupament Rural Museu de la Pauma, Mas de Barberans, Tarragona.",
+        "The margalló (Chamaerops humilis) is a plant that makes life possible. Its capacity to regenerate after a forest fire, the speed with which it sprouts back, and the stability of its phenological cycle — which resumes almost without alteration — are clear examples. This resilience comes from an adapted morphology that protects the plant's vital parts from fire, allowing it to bloom and bear fruit again normally and ensuring its ecological and reproductive function.",
+        "Moreover, the margalló not only tolerates adverse environmental conditions, but plays a fundamental ecological role in protecting the soil thanks to its dense and deep root network.",
+        "From this perspective, the margalló is much more than a resilient plant: it is a living infrastructure that sustains life, a key piece in the creation of micro-ecosystems and a tangible symbol of another way of inhabiting and narrating the world: through bond, attention and reciprocity.",
+        "From the culture of materials and their unstoppable transformation, a collection of objects emerges that is only a thread of the past, present and future of the margalló."
+      ],
       "ca": [
         "Trailer per la peça de vídeo que acompanya l'exposició Desig i ficció. Una exploració sensorial i material del margalló, comissariada per Sara G. de Ubieta i Cris Noguer al Centre de Desenvolupament Rural Museu de la Pauma de Mas de Barberans, Tarragona.",
         "El margalló (Chamaerops humilis) és una planta que possibilita la vida. La seva capacitat de regeneració després d'un incendi forestal, la rapidesa amb què rebrota i l'estabilitat del seu cicle fenològic –que es reprèn gairebé sense alteracions– en són exemples clars. Aquesta resistència és deguda a una morfologia adaptada que protegeix les parts vitals de la planta del foc, cosa que li permet florir i fructificar novament amb normalitat i n'assegura la funció ecològica i reproductiva.",
@@ -55,7 +71,7 @@
       ]
     },
     "links": [
-      ["Catàleg (PDF)", "data/_works/02. Desig i Ficció/Cataleg_desig_ficcio_50x70_cast.pdf"],
+      ["Catálogo (PDF)", "data/_works/02. Desig i Ficció/Cataleg_desig_ficcio_50x70_cast.pdf"],
       ["Museu de la Pauma", "https://cdrmuseudelapauma.cat/worpre/desig-i-ficcio-tot-explorant-el-margallo/"],
       ["Artículo en El País", "https://elpais.com/quadern/art-i-arquitectura/2025-12-18/benvinguts-al-futur-arcaic.html"]
     ],
@@ -79,7 +95,7 @@
     "published": true,
     "ficha_tecnica": {
       "year": "2023",
-      "type": { "es": "Super 8 transferido a digital, video instalación, proyección sobre piezas cerámicas", "en": "Super 8 film transferred to digital, video installation, projection on ceramic pieces", "ca": "" },
+      "type": { "es": "Super 8 transferido a digital, video instalación, proyección sobre piezas cerámicas", "en": "Super 8 film transferred to digital, video installation, projection on ceramic pieces", "ca": "Super 8 transferit a digital, videoinstal·lació, projecció sobre peces ceràmiques" },
       "duration": "7 min"
     },
     "info": {
@@ -89,8 +105,18 @@
         "Al fin y al cabo, no tenemos muchas opciones más que buscar y generar vida entre las ruinas. Como afirma Tsing en \"The Mushroom at the End of the World\", para poder generar vida \"el primer paso es restaurar la curiosidad\". En Biophilia, la artista cultiva la curiosidad en un ensayo audiovisual grabado en un valle asturiano donde se evidencian las marcas de la industrialización, la minería, la explotación de yacimientos minerales y las centrales térmicas. Es en este valle donde Bárbara acompaña la vida de una mujer que trabaja el campo y su comunidad multiespecie.",
         "Texto curatorial de Christian Alonso"
       ],
-      "en": [],
-      "ca": []
+      "en": [
+        "In an exercise of speculative fabulation, we find ourselves in a world where it seems that the system model we have been living in has come to an end. A world in ruins and a narrative suggesting that this may, perhaps, be a moment of possibility. A possibility that reveals itself in the apocalyptic narratives we consume, as well as in the construction of a new world grounded in values and stories from the past, and in the very notion of construction. Perhaps it is necessary to rethink the relations, the values we have lived by, and the very agents that make life possible — and simply to focus on living in the ruins, together, and with joy.",
+        "Biophilia is a film that places us in a world that has come to an end. It is not an imaginary, fabled, or utopian world. It is our current world. Our common world. A world in ruins, polluted, mistreated, exhausted. A world condemned by consumption, colonialism, machismo, extractivism. We are living through the crisis of capitalist modernity. This crisis is social, environmental and psychic. Its debris appears as wounds in the landscape and also marks the precarious lives of people. And yet, as anthropologist Anna Tsing argues, in the ruins life can germinate. In abandoned fields, multispecies life can proliferate.",
+        "After all, we have few options other than seeking and generating life among the ruins. As Tsing claims in The Mushroom at the End of the World, in order to generate life \"the first step is to restore curiosity\". In Biophilia, the artist cultivates curiosity in an audiovisual essay shot in an Asturian valley where the marks of industrialisation, mining, mineral extraction and thermal power plants are visible. It is in this valley that Bárbara accompanies the life of a woman who works the land and her multispecies community.",
+        "Curatorial text by Christian Alonso"
+      ],
+      "ca": [
+        "En un exercici de fabulació especulativa, ens trobem en un món on sembla que el model de sistema en què vivíem ha arribat a la seva fi. Un món en ruïnes i un relat que ens presenta que potser aquest sigui un moment de possibilitat. Una possibilitat que es revela cap a les narratives apocalíptiques que consumim, així com cap a la construcció d'un nou món basat en valors i relats del passat, i en la noció mateixa de construcció. Potser cal replantejar les relacions, els valors amb què hem viscut fins ara, i els propis agents que fan possible la vida, i centrar-nos simplement a viure en les ruïnes, junts, i amb gaudi.",
+        "Biophilia és una pel·lícula que ens situa en un món que ha arribat a la seva fi. No és un món imaginari, fabulat o utòpic. És el nostre món actual. El nostre món comú. Un món en ruïnes, contaminat, maltractat, esgotat. Un món condemnat pel consum, el colonialisme, el masclisme, l'extractivisme. Vivim la crisi de la modernitat capitalista. Aquesta crisi és social, mediambiental i psíquica. Els residus d'aquesta crisi es manifesten com a ferides en el paisatge i també marquen les vides precàries de les persones. Tanmateix, com sosté l'antropòloga Anna Tsing, en les ruïnes pot germinar la vida. En els camps abandonats pot proliferar la vida multiespècie.",
+        "Al cap i a la fi, no tenim gaires opcions més que buscar i generar vida entre les ruïnes. Com afirma Tsing a The Mushroom at the End of the World, per poder generar vida \"el primer pas és restaurar la curiositat\". A Biophilia, l'artista cultiva la curiositat en un assaig audiovisual gravat en una vall asturiana on s'evidencien les marques de la industrialització, la mineria, l'explotació de jaciments minerals i les centrals tèrmiques. És en aquesta vall on Bárbara acompanya la vida d'una dona que treballa el camp i la seva comunitat multiespècie.",
+        "Text curatorial de Christian Alonso"
+      ]
     },
     "links": [],
     "trailer": "https://vimeo.com/878483404",
@@ -127,29 +153,47 @@
     "published": true,
     "ficha_tecnica": {
       "year": "2023",
-      "type": { "es": "Performance con Maria Marvila, film en 16 mm transferido a digital, fotos 35 mm", "en": "Performance with Maria Marvila, film shot in 16 mm transferred to digital, 35mm photos", "ca": "" },
+      "type": { "es": "Performance con Maria Marvila, film en 16 mm transferido a digital, fotos 35 mm", "en": "Performance with Maria Marvila, film shot in 16 mm transferred to digital, 35mm photos", "ca": "Performance amb Maria Marvila, film en 16 mm transferit a digital, fotos 35 mm" },
       "duration": ""
     },
     "info": {
-      "es": [],
-      "en": [],
+      "es": [
+        "Un incendio quema una montaña. Una montaña de alcornoques que arden, pero sobreviven. Dos mujeres recogen la corteza quemada de un alcornoque. La llevan hacia el mar, para aguarirla. Un acto colectivo, donde se escriben deseos y se cuelgan en las ramas. Al soltar, al hacer flotar, los deseos y esperanzas emprenden el viaje. Ellas, aguariendo, continúan su sendero verdadero.",
+        "El verano de 2021 un incendio quemó la montaña donde yace el monasterio de Sant Pere de Rodes. Ambas artistas emprendieron un proceso que les llevaría a formalizar una meditación colectiva dentro del contexto de ARBAR, en la Vall de Santa Creu, que uniría mantras, pensamientos y poesías para la curación de la tierra quemada. Ahora, un año y medio más tarde, ambas se reencuentran para continuar lo que iniciaron con aquella acción, dentro del contexto de la Fundació Palau, en Caldes d'Estrac.",
+        "En un acto de homenaje a Perejaume y a su obra Surar, Bárbara y Maria llevaron la rama caída de un alcornoque, de la montaña todavía quemada pero reverdeciendo, hacia el mar del Maresme. Allí, en un acto colectivo, invitaron a las personas participantes a colgar de las ramas quemadas, palabras escritas en papeles biodegradables, para la curación de la montaña y para la conciencia de la comunidad. Por último, hicieron flotar en el mar la rama negra con las palabras de papel atadas, para aguarla*.",
+        "*Aiguarir (en catalán: agua + curar)"
+      ],
+      "en": [
+        "A fire that burns a mountain. A mountain of cork oaks that burn but survive. Two women collect the burnt bark of a cork oak. They carry it towards the sea, to water-heal it. A collective act, in which wishes are written and hung from the branches. In letting go, in making them float, the wishes and hopes set off on a journey. They, water-healing, continue along their true path.",
+        "In the summer of 2021 a fire burnt the mountain where the monastery of Sant Pere de Rodes stands. Both artists undertook a process that would lead them to formalise a collective meditation within the context of ARBAR, in the Vall de Santa Creu, joining mantras, thoughts and poetry for the healing of the burnt land. A year and a half later, the two meet again to continue what they began with that action, within the context of Fundació Palau, in Caldes d'Estrac.",
+        "As a homage to Perejaume and his work Surar, Bárbara and Maria carried a fallen branch of a cork oak, from the still-burnt but greening mountain, towards the Maresme sea. There, in a collective act, they invited participants to hang words written on biodegradable paper from the burnt branches, for the healing of the mountain and the awareness of the community. Finally, they made the black branch with its tied paper words float on the sea, to water-heal it*.",
+        "*Aiguarir (in Catalan: water + heal)"
+      ],
       "ca": [
         "Un incendi que crema una muntanya. Una muntanya d'alzinars surers que cremen, però que sobreviuen. Dues dones recullen l'escorça cremada d'una alzina surera. La porten cap a mar, per a aiguarir-la. Un acte col·lectiu, on hom escriu voluntats i les penja a les branques. En deixar anar, en fer surar, els desitjos i esperances emprenen el viatge. Elles, aiguarint, continuen la seva sendera vera.",
-        "El verano de 2021 un incendio quemó la montaña donde yace el monasterio de Sant Pere de Rodes. Ambas artistas emprendieron un proceso que les llevaría a formalizar una meditación colectiva dentro del contexto de ARBAR, en la Vall de Santa Creu, que uniría mantras, pensamientos y poesías para la curación de la tierra quemada. Ahora, un año y medio más tarde, ambas se reencuentran para continuar lo que iniciaron con aquella acción, dentro del contexto de la Fundació Palau, en Caldes d'Estrac.",
-        "En un acto de homenaje a Perejaume y a su obra Surar, Bárbara y Maria llevaron la rama caída de un alcornoque, de la montaña todavía quemada pero reverdeciendo, hacia el mar del Maresme. Allí, en un acto colectivo, invitaron a las personas participantes a colgar de las ramas quemadas, palabras escritas en papeles biodegradables, para la curación de la montaña y para la conciencia de la comunidad. Por último, hicieron flotar en mar la rama negra con las palabras de papel lazadas, para aiguarla*.",
-        "*Aiguarir (en catalán: agua + curar)"
+        "L'estiu del 2021 un incendi va cremar la muntanya on hi ha el monestir de Sant Pere de Rodes. Les dues artistes van emprendre un procés que les portaria a formalitzar una meditació col·lectiva dins el context d'ARBAR, a la Vall de Santa Creu, que uniria mantres, pensaments i poesies per a la curació de la terra cremada. Ara, un any i mig més tard, totes dues es retroben per continuar el que van iniciar amb aquella acció, dins el context de la Fundació Palau, a Caldes d'Estrac.",
+        "En un acte d'homenatge a Perejaume i a la seva obra Surar, Bárbara i Maria van portar la branca caiguda d'una alzina surera, de la muntanya encara cremada però reverdint, cap al mar del Maresme. Allà, en un acte col·lectiu, van convidar les persones participants a penjar de les branques cremades paraules escrites en papers biodegradables, per a la curació de la muntanya i per a la consciència de la comunitat. Finalment, van fer surar al mar la branca negra amb les paraules de paper lligades, per aiguarir-la*.",
+        "*Aiguarir (en català: aigua + guarir)"
       ]
     },
     "links": [],
     "trailer": "https://vimeo.com/852875084",
     "creditos": {
       "es": [
+        "Cámara: Carlos Vásquez Méndez",
+        "Diseño de sonido: Cora Delgado",
+        "Fundació Palau, Caldes d'Estrac"
+      ],
+      "en": [
         "Camera: Carlos Vásquez Méndez",
         "Sound design: Cora Delgado",
         "Fundació Palau, Caldes d'Estrac"
       ],
-      "en": [],
-      "ca": []
+      "ca": [
+        "Càmera: Carlos Vásquez Méndez",
+        "Disseny de so: Cora Delgado",
+        "Fundació Palau, Caldes d'Estrac"
+      ]
     },
     "gallerys": [
       ["fotogramas", [
@@ -174,11 +218,11 @@
   {
     "slug": "una-comunitat-de-llavors-i-de-relats",
     "order": 5,
-    "title": { "es": "Una comunitat de llavors i de relats", "en": "Una comunitat de llavors i de relats", "ca": "Una comunitat de llavors i de relats" },
+    "title": { "es": "Una comunidad de semillas y de relatos", "en": "A community of seeds and stories", "ca": "Una comunitat de llavors i de relats" },
     "published": true,
     "ficha_tecnica": {
       "year": "2023",
-      "type": { "es": "16 mm transferido a digital, fotos 35 mm", "en": "16 mm transferred to digital, 35 mm photos", "ca": "" },
+      "type": { "es": "16 mm transferido a digital, fotos 35 mm", "en": "16 mm transferred to digital, 35 mm photos", "ca": "16 mm transferit a digital, fotos 35 mm" },
       "duration": ""
     },
     "info": {
@@ -192,8 +236,26 @@
         "Junto a estas cuestiones hemos reflexionado sobre conceptos que son muy importantes para mí cómo es la figura del héroe masculino en muchas de las narrativas, literarias y fílmicas, que consumimos, y un concepto relacionado con el posthumanismo como es el holobionte. Originalmente propuesto por Lynn Margulis en su teoría de la simbiosis, el holobionte es un ser vivo compuesto por otros entes, que viven en comunidades o colonias, y necesitan otros para sobrevivir, que son interdependientes.",
         "Con las alumnas hemos leído textos como La teoría de la bolsa de la ficción de Ursula K. Le Guin, en lo alto de una montaña, que tardamos una hora en subir, y después meditamos, comer avellanas y tomamos el sol. Y no recuerdo que nadie pensara en el móvil o se quejara por no tenerlo. Con nosotros sólo había una comunidad formada de naturaleza, ficción, hilos, cestas y semillas."
       ],
-      "en": [],
-      "ca": []
+      "en": [
+        "Project developed within the framework of Bòlit Mentor — Bolit, Centre d'Art Contemporani de Girona. Curator: Marta Dahó. Institut Castell d'Estela d'Amer, Girona.",
+        "During a few months of residency with high-school students, I wanted to reflect on the images on screens from an extreme starting point: making technology disappear from our sessions. The proposal was simply to leave the phones aside and, whenever possible, to leave the classrooms for the natural surroundings of Amer, Girona.",
+        "Since some of the students are not from the town and others do not always go out to get to know their surroundings, we set out together on foot to explore. On these walks what mattered was spending more time together, weaving relations — like the string figures Donna Haraway speaks of in Staying with the Trouble — also with our closest reality, with everything that is alive around us and to which we pay little attention.",
+        "Screens and technology have become an extension of our body, fully necessary for almost anything we want to do every day. With this project I did not want to demonise phones or the technology behind them; simply to open a reflection on their use and our dependence on them, through an action as simple as setting them aside.",
+        "I like to think of it as a gap that opens between two realities — that of phones and classrooms, and the one I proposed, in which we shifted into an analogue world, where touch, talking, eating, drawing took centre stage, instead of just looking at a screen.",
+        "In this analogue context I introduced the idea of making, all together, a 16 mm film with an analogue cinema camera — which, being also technology, is not instantaneous like today's interfaces. We can't see the images we take in the moment, because the camera only takes small 30-metre rolls that last just two and a half minutes. Through this process I wanted to share what is now central to my artistic practice and to how I am experiencing analogue cinema: do we need to take as many images as we do with an electronic device? What happens when we suddenly don't have so much capacity to take and store them? Does that make us think more about how and why we take them? About the value they hold?",
+        "Together with these questions we reflected on concepts that are very important to me, such as the figure of the male hero in many of the narratives — literary and filmic — that we consume, and a concept related to posthumanism: the holobiont. Originally proposed by Lynn Margulis in her theory of symbiosis, the holobiont is a living being made up of other entities, living in communities or colonies, needing one another to survive, interdependent.",
+        "With the students we read texts such as The Carrier Bag Theory of Fiction by Ursula K. Le Guin, on top of a mountain that took us an hour to climb, then we meditated, ate hazelnuts and sat in the sun. And I don't remember anyone thinking about their phone or complaining about not having it. With us there was only a community made of nature, fiction, threads, baskets and seeds."
+      ],
+      "ca": [
+        "Projecte desenvolupat en el marc de Bòlit Mentor — Bòlit, Centre d'Art Contemporani de Girona. Comissària: Marta Dahó. Institut Castell d'Estela d'Amer, Girona.",
+        "Durant uns mesos de residència amb estudiants de batxillerat he volgut reflexionar sobre les imatges a les pantalles des d'un punt de partida extrem: fent desaparèixer la tecnologia de les sessions. La proposta consistia simplement a deixar els mòbils a banda i sortir sempre que poguéssim de les aules cap a l'entorn natural d'Amer, Girona.",
+        "Com que algunes de les alumnes no són del poble i d'altres no sempre surten a conèixer el seu entorn, ens hem llançat totes juntes a explorar-lo a peu. En aquestes sortides el que comptava era passar més temps en companyia, teixint relacions, com les figures de cordes de què parla Donna Haraway a Seguir amb el problema, i fent-ho també amb la nostra realitat més propera, amb tot allò que és viu i ens envolta i a què no parem atenció.",
+        "Les pantalles i la tecnologia s'han convertit en una extensió del nostre cos, totalment necessària per a gairebé qualsevol cosa que vulguem fer cada dia. Amb aquest projecte no he volgut demonitzar els mòbils ni la tecnologia que els fa possibles, simplement obrir una reflexió sobre el seu ús i la nostra dependència a partir d'una acció tan simple com deixar-los de banda.",
+        "M'agrada pensar que és una escletxa que s'obre entre dues realitats, la dels mòbils i les aules, i la que jo els proposava, en la qual passàvem a un món analògic, on el tacte, parlar, menjar, dibuixar prenien protagonisme, en lloc de només mirar una pantalla.",
+        "En aquest context analògic he introduït la idea de fer totes juntes una pel·lícula en 16 mm amb una càmera de cinema analògic que, essent també tecnologia, no és instantània com les interfícies a què estem acostumades avui dia. Les imatges que prenem no les podem veure al mateix moment, perquè a la càmera només hi caben petits rotlles de pel·lícula de 30 metres que només duraran dos minuts i mig. Amb aquest procés he volgut compartir el que és ara central per a mi en la meva pràctica artística i en com l'estic experimentant amb el cinema analògic: cal prendre tantes imatges com en fem quan tenim un dispositiu electrònic? Què passa si de cop no tenim tanta capacitat per prendre'n i guardar-ne? Potser això ens fa pensar més en com prendre-les i per què? En el valor que tenen?",
+        "Al costat d'aquestes qüestions hem reflexionat sobre conceptes que són molt importants per a mi com és la figura de l'heroi masculí en moltes de les narratives, literàries i fílmiques, que consumim, i un concepte relacionat amb el posthumanisme com és l'holobiont. Proposat originalment per Lynn Margulis en la seva teoria de la simbiosi, l'holobiont és un ésser viu compost per altres ens, que viuen en comunitats o colònies, i necessiten altres per sobreviure, que són interdependents.",
+        "Amb les alumnes hem llegit textos com La teoria de la bossa de la ficció d'Ursula K. Le Guin, dalt d'una muntanya, que vam trigar una hora a pujar, i després meditem, mengem avellanes i prenem el sol. I no recordo que ningú pensés en el mòbil ni es queixés per no tenir-lo. Amb nosaltres només hi havia una comunitat formada de natura, ficció, fils, cistells i llavors."
+      ]
     },
     "links": [
       ["Hoja de sala — On es recolzen les imatges? (PDF)", "https://web.girona.cat/documents/20147/10808186/FdS-Bolit-2023-onesrecolzenlesimatges.pdf"],
@@ -229,7 +291,7 @@
     "published": true,
     "ficha_tecnica": {
       "year": "2022",
-      "type": { "es": "Video instalación site-specific con varias películas en 16 mm escaneadas a HD + 1 pantalla pequeña con un film digital", "en": "Site-specific video installation using different 16 mm scanned to HD films + 1 small screen with a digital film", "ca": "" },
+      "type": { "es": "Video instalación site-specific con varias películas en 16 mm escaneadas a HD + 1 pantalla pequeña con un film digital", "en": "Site-specific video installation using different 16 mm scanned to HD films + 1 small screen with a digital film", "ca": "Videoinstal·lació site-specific amb diverses pel·lícules en 16 mm escanejades a HD + 1 pantalla petita amb un film digital" },
       "duration": ""
     },
     "info": {
@@ -239,8 +301,18 @@
         "En The way my mother talked to plants la artista ha filmado a su madre en casa y con amigos, (siendo éstos humanos y no humanos), para reflexionar sobre los cuidados entre los seres humanos y la naturaleza.",
         "The Knots We Knot es una película surgida a través de una colaboración con la cineasta Adriana Vila Guevara en una mini residencia en la Vall de Santa Creu. Ambas artistas deciden pasar unos días en el valle explorando sus intereses, y el entorno, humano, animal, vegetal, y liquen que las rodea, interactuando con él a través de una cámara Bólex de 16 mm y una grabadora de sonido, y acompañadas de las lecturas de Donna Haraway, Robin W. Kimmerer y María Puig de la Bellacasa entre otras autoras."
       ],
-      "en": [],
-      "ca": []
+      "en": [
+        "Taking Derrida's The Animal That Therefore I Am as a reference to ask how to open a real dialogue based on ways of being-with, alterity and agency, the installation is part of a reflection process on the themes of a research about coexistence, more-than-human worlds and politics of care.",
+        "In Botanical dream, shot in a botanical garden, we witness a dream, but we are not sure whose dream it is. Perhaps the garden's plants dream of transforming, passing through those glass walls and turning into a tropical rainforest.",
+        "In The way my mother talked to plants the artist filmed her mother at home and with friends (both human and non-human), to reflect on care between human beings and nature.",
+        "The Knots We Knot is a film that emerged from a collaboration with filmmaker Adriana Vila Guevara during a mini residency in the Vall de Santa Creu. Both artists decided to spend a few days in the valley exploring their interests and the human, animal, vegetal and lichen environment around them, interacting with it through a 16 mm Bolex camera and a sound recorder, accompanied by readings from Donna Haraway, Robin W. Kimmerer and María Puig de la Bellacasa, among other authors."
+      ],
+      "ca": [
+        "Prenent com a referència The animal that therefore I am de Derrida per preguntar-se com obrir un diàleg real a partir de maneres de ser-amb, alteritat i agència, la instal·lació forma part d'un procés de reflexió sobre els temes d'una recerca sobre la convivència, els mons més-que-humans i les polítiques de la cura.",
+        "A l'obra Botanical dream, rodada en un jardí botànic, assistim a un somni, però no estem segures de qui és. Potser les plantes del jardí somien transformar-se, traspassar aquelles parets de vidre i esdevenir una selva tropical?",
+        "A The way my mother talked to plants l'artista ha filmat la seva mare a casa i amb amics (humans i no humans), per reflexionar sobre les cures entre els éssers humans i la natura.",
+        "The Knots We Knot és una pel·lícula sorgida d'una col·laboració amb la cineasta Adriana Vila Guevara en una mini residència a la Vall de Santa Creu. Les dues artistes decideixen passar uns dies a la vall explorant els seus interessos i l'entorn humà, animal, vegetal i de líquens que les envolta, interactuant-hi a través d'una càmera Bolex de 16 mm i una gravadora de so, i acompanyades de les lectures de Donna Haraway, Robin W. Kimmerer i María Puig de la Bellacasa, entre d'altres autores."
+      ]
     },
     "links": [],
     "trailer": "",
@@ -266,27 +338,41 @@
     "published": true,
     "ficha_tecnica": {
       "year": "2022",
-      "type": { "es": "16 mm transferido a digital", "en": "16 mm transferred to digital", "ca": "" },
+      "type": { "es": "16 mm transferido a digital", "en": "16 mm transferred to digital", "ca": "16 mm transferit a digital" },
       "duration": "5 min 40 sec"
     },
     "info": {
       "es": [
         "Botanical Dream pone en marcha un deseo concebido por un sujeto más que humano: el jardín botánico. Una multi identidad en constante evolución, el resultado de la ilusión colonial, la de poder reunir y ordenar todos los bosques del mundo en un solo lugar. En la película, Barroso transforma el jardín, a través de una ficción onírica, de objeto mudo a sujeto que actúa. Abriendo la imaginación del espectador a una ruptura imposible de la prisión de cristal y acero que lo contiene, la vegetación del jardín espera una irrupción en el espacio de la ciudad para derrocar su orden. A través del desorden, eco de los bosques de los que fue violentamente extrapolado, el jardín se convierte en un bosque extraño nunca antes concebido.",
         "Obra en 16 mm que, a través de la ficción especulativa, da voz a las plantas del Jardín Botánico de Copenhague creado en 1872. Mientras que el orden de los acontecimientos y el control antrópico impiden un rebobinado del tiempo y el retorno de estos cuerpos-planta a su naturaleza selvática, la estratagema narrativa llevada al cine por la artista reconfigura lo que se puede decir, ver, hacer. Así, imagina una huida onírica hacia la ciudad, donde los cuerpos vegetales de los habitantes del jardín han abolido por fin el cerco que los contenía y ordenaba, tomando posesión del espacio que les había sido robado. Se convertirán, en un tiempo muy largo, profundo e inimaginable, en una nueva forma de bosque queer, en una alianza de todas esas entidades antes tomadas por el hombre.",
+        "Texto curatorial de Lorenzo Lazzari"
+      ],
+      "en": [
+        "Botanical Dream sets in motion a desire conceived by a more-than-human subject: the botanical garden. A multi-identity in constant evolution, the result of the colonial illusion of being able to gather and order all the world's forests in a single place. In the film, Barroso transforms the garden, through an oneiric fiction, from mute object to acting subject. Opening the viewer's imagination to an impossible rupture of the glass-and-steel prison that contains it, the garden's vegetation awaits an irruption into the space of the city in order to overthrow its order. Through disorder — an echo of the forests from which it was violently extrapolated — the garden becomes a strange forest never before conceived.",
+        "A 16 mm work that, through speculative fiction, gives voice to the plants of the Copenhagen Botanical Garden, created in 1872. While the order of events and anthropic control prevent any rewinding of time and the return of these plant-bodies to their wild nature, the narrative stratagem the artist brings to cinema reconfigures what can be said, seen, done. It imagines a dreamlike escape into the city, where the vegetal bodies of the garden's inhabitants have finally abolished the fence that contained and ordered them, taking possession of the space that had been stolen from them. Over a very long, deep, unimaginable time, they will become a new form of queer forest, an alliance of all those entities once taken by humans.",
         "Curatorial text by Lorenzo Lazzari"
       ],
-      "en": [],
-      "ca": []
+      "ca": [
+        "Botanical Dream posa en marxa un desig concebut per un subjecte més-que-humà: el jardí botànic. Una multi-identitat en constant evolució, el resultat de la il·lusió colonial de poder reunir i ordenar tots els boscos del món en un sol lloc. A la pel·lícula, Barroso transforma el jardí, a través d'una ficció onírica, d'objecte mut a subjecte que actua. Obrint la imaginació de l'espectadora a una ruptura impossible de la presó de vidre i acer que el conté, la vegetació del jardí espera una irrupció en l'espai de la ciutat per enderrocar el seu ordre. A través del desordre, eco dels boscos d'on va ser violentament extrapolat, el jardí esdevé un bosc estrany mai abans concebut.",
+        "Obra en 16 mm que, a través de la ficció especulativa, dóna veu a les plantes del Jardí Botànic de Copenhaguen, creat el 1872. Mentre que l'ordre dels esdeveniments i el control antròpic impedeixen un rebobinat del temps i el retorn d'aquests cossos-planta a la seva naturalesa selvàtica, l'estratagema narrativa portada al cinema per l'artista reconfigura el que es pot dir, veure, fer. Imagina una fugida onírica cap a la ciutat, on els cossos vegetals dels habitants del jardí han abolit per fi la tanca que els contenia i ordenava, prenent possessió de l'espai que els havia estat robat. Esdevindran, en un temps molt llarg, profund i inimaginable, una nova forma de bosc queer, una aliança de totes aquelles entitats abans preses pels humans.",
+        "Text curatorial de Lorenzo Lazzari"
+      ]
     },
     "links": [],
     "trailer": "",
     "creditos": {
       "es": [
+        "Diseño de sonido: Paulius Sliaupa",
+        "Voz en off: Paul Beaudoin"
+      ],
+      "en": [
         "Sound design: Paulius Sliaupa",
         "Voice over: Paul Beaudoin"
       ],
-      "en": [],
-      "ca": []
+      "ca": [
+        "Disseny de so: Paulius Sliaupa",
+        "Veu en off: Paul Beaudoin"
+      ]
     },
     "gallerys": [
       ["fotogramas", [

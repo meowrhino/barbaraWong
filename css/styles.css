@@ -279,11 +279,10 @@ ul, ol { list-style: none; }
     font-size: var(--fs-small);
     color: var(--muted);
 }
-.lang-btn { color: var(--muted); text-transform: lowercase; }
-.lang-btn:hover { color: var(--fg); }
-.lang-btn.is-active { color: var(--fg); text-decoration: underline; }
-.lang-btn::after { content: "/"; color: var(--muted); margin: 0 0.15em; display: inline-block; text-decoration: none; }
-.lang-btn.is-active::after { text-decoration: none; }
+.lang-btn { color: var(--fg); text-transform: lowercase; text-decoration: none; }
+.lang-btn:hover { color: var(--muted); }
+.lang-btn.is-active { color: var(--muted); text-decoration: none; cursor: default; }
+.lang-btn::after { content: "/"; color: var(--fg); margin: 0 0.15em; display: inline-block; text-decoration: none; }
 .lang-btn:last-of-type::after { content: none; }
 
 /* ============================================================
@@ -448,6 +447,8 @@ body[data-view="photos"] #viewer-content {
     overflow-x: auto;
     overflow-y: hidden;
     scrollbar-width: none;
+    padding-left: 30dvw;
+    padding-right: 30dvw;
 }
 .view-photos::-webkit-scrollbar { display: none; }
 .view-photos img {
@@ -463,8 +464,8 @@ body[data-view="photos"] #viewer-content {
    ============================================================ */
 @media (max-width: 768px) {
     :root {
-        --nav-top-h: 2.2rem;
-        --nav-bottom-h: 2.8rem;
+        --nav-top-h: 2rem;
+        --nav-bottom-h: 2.4rem;
         --fs-name: 0.95rem;
         --fs-menu: 1.05rem;
         --fs-work: 0.92rem;
@@ -491,6 +492,7 @@ body[data-view="photos"] #viewer-content {
         height: var(--nav-top-h);
         padding: 0 var(--pad);
         flex: 0 0 auto;
+        cursor: pointer;
     }
     #nav-name {
         font-size: var(--fs-name);
@@ -569,6 +571,10 @@ body[data-view="photos"] #viewer-content {
         gap: 1rem;
         height: auto;
         overflow: visible;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 20dvh;
+        padding-bottom: 20dvh;
     }
     .view-photos img {
         height: auto;

@@ -109,7 +109,8 @@ function bindToggle() {
     const toggle = $("#nav-toggle");
     const nav = $("#nav");
     if (!toggle._bound) {
-        toggle.addEventListener("click", () => {
+        toggle.addEventListener("click", (e) => {
+            e.stopPropagation();
             const open = nav.classList.toggle("is-open");
             toggle.setAttribute("aria-expanded", open ? "true" : "false");
             toggle.textContent = open ? t("close_menu") : t("open_menu");
@@ -127,10 +128,31 @@ function bindToggle() {
         });
         name._bound = true;
     }
-    const navName = $("#nav-name");
-    if (navName && !navName._bound) {
-        navName.addEventListener("click", () => { onNavigate("news"); closePersiana(); });
-        navName._bound = true;
+    const navTop = $("#nav-top");
+    if (navTop && !navTop._bound) {
+        navTop.addEventListener("click", (e) => {
+            if (!MOBILE_MQ.matches) return;
+            if (!nav.classList.contains("is-open")) {
+                openPersiana();
+                return;
+            }
+            if (e.target.closest("#nav-name")) {
+                onNavigate("news");
+                closePersiana();
+            }
+        });
+        navTop._bound = true;
+    }
+}
+
+function openPersiana() {
+    if (!MOBILE_MQ.matches) return;
+    const nav = $("#nav");
+    if (!nav.classList.contains("is-open")) {
+        nav.classList.add("is-open");
+        const toggle = $("#nav-toggle");
+        toggle.setAttribute("aria-expanded", "true");
+        toggle.textContent = t("close_menu");
     }
 }
 
