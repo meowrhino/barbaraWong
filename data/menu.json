@@ -2,7 +2,7 @@
   { "key": "news",         "label": { "es": "noticias",      "en": "news",         "ca": "notícies" } },
   { "key": "works",        "label": { "es": "obras",         "en": "works",        "ca": "obres" },        "collapsible": true },
   { "key": "publications", "label": { "es": "publicaciones", "en": "publications", "ca": "publicacions" } },
-  { "key": "photos",       "label": { "es": "fotos",         "en": "photos",       "ca": "fotos" } },
+  { "key": "photos",       "label": { "es": "diario",        "en": "diary",        "ca": "diari" } },
   { "key": "about",        "label": { "es": "sobre",         "en": "about",        "ca": "sobre" } },
   { "key": "contact",      "label": { "es": "contacto",      "en": "contact",      "ca": "contacte" } }
 ]

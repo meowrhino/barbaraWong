@@ -17,6 +17,7 @@ export const I18N = {
     close_menu:   { es: "cerrar menú",  en: "close menu",   ca: "tancar menú" },
     no_photos:    { es: "Aún no hay fotos.", en: "No photos yet.", ca: "Encara no hi ha fotos." },
     soon:         { es: "(próximamente)",    en: "(coming soon)",  ca: "(properament)" },
+    credits:      { es: "créditos",     en: "credits",      ca: "crèdits" },
 };
 
 export const t  = (k) => (I18N[k] && I18N[k][state.lang]) || I18N[k]?.es || k;

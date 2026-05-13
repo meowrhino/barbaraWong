@@ -169,7 +169,7 @@ export function renderProject(slug) {
         vimeoEmbed(p.trailer || p.video),
         creditos.length
             ? el("div", { class: "project-credits" },
-                el("div", { class: "project-section-title" }, "credits"),
+                el("div", { class: "project-section-title" }, t("credits")),
                 ...creditos.map(c => el("p", {}, c))
             )
             : null,
@@ -191,10 +191,15 @@ export function renderPhotos() {
         return;
     }
 
-    const imgs = Array.from({ length: count }, (_, i) =>
+    const order = Array.from({ length: count }, (_, i) => i + 1);
+    for (let i = order.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [order[i], order[j]] = [order[j], order[i]];
+    }
+    const imgs = order.map((n, idx) =>
         el("img", {
-            src: `${dir}${i + 1}.${ext}`,
-            alt: `photo ${i + 1}`,
+            src: `${dir}${n}.${ext}`,
+            alt: `diary ${idx + 1}`,
             loading: "lazy",
             on: { error: (e) => e.currentTarget.classList.add("is-missing") },
         })
