@@ -57,9 +57,11 @@ function renderWorksSection(m) {
         class: "menu-works-toggle",
         type: "button",
         "aria-expanded": worksOpen ? "true" : "false",
-        on: { click: () => {
+        on: { click: (e) => {
             worksOpen = !worksOpen;
-            renderMenu();
+            const li = e.currentTarget.closest(".menu-works");
+            if (li) li.classList.toggle("is-open", worksOpen);
+            e.currentTarget.setAttribute("aria-expanded", worksOpen ? "true" : "false");
         } },
     }, tf(m.label));
 

@@ -463,8 +463,8 @@ body[data-view="photos"] #viewer-content {
    ============================================================ */
 @media (max-width: 768px) {
     :root {
-        --nav-top-h: 2.6rem;
-        --nav-bottom-h: 3.4rem;
+        --nav-top-h: 2.2rem;
+        --nav-bottom-h: 2.8rem;
         --fs-name: 0.95rem;
         --fs-menu: 1.05rem;
         --fs-work: 0.92rem;
@@ -528,7 +528,7 @@ body[data-view="photos"] #viewer-content {
         align-items: center;
         justify-content: center;
         height: var(--nav-bottom-h);
-        padding: 0 var(--pad) 0.7rem;
+        padding: 0 var(--pad) 0.45rem;
         flex: 0 0 auto;
     }
     #nav-toggle {
