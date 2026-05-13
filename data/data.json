@@ -5,15 +5,8 @@
     "default_lang": "es",
     "languages": ["es", "en", "ca"]
   },
-  "menu": [
-    { "key": "news",         "label": { "es": "news",         "en": "news",         "ca": "news" } },
-    { "key": "works",        "label": { "es": "works",        "en": "works",        "ca": "obres" },        "collapsible": true },
-    { "key": "publications", "label": { "es": "publications", "en": "publications", "ca": "publicacions" } },
-    { "key": "photos",       "label": { "es": "photos",       "en": "photos",       "ca": "photos" } },
-    { "key": "about",        "label": { "es": "about",        "en": "about",        "ca": "about" } },
-    { "key": "contact",      "label": { "es": "contact",      "en": "contact",      "ca": "contacte" } }
-  ],
   "sources": {
+    "menu":         "data/menu.json",
     "about":        "data/about.json",
     "news":         "data/news.json",
     "projects":     "data/projects.json",

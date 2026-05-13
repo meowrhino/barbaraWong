@@ -153,20 +153,21 @@ export function renderProject(slug) {
                 ...links.map(([name, url]) => el("a", { href: url, target: "_blank", rel: "noopener" }, `↗ ${name}`))
             )
             : null,
-        ...gallerys.map(([name, imgs]) =>
-            (imgs && imgs.length)
-                ? el("section", { class: "project-gallery-section" },
-                    name && name !== "fotogramas" ? el("div", { class: "project-section-title" }, name) : null,
-                    el("div", { class: "project-gallery" },
-                        ...imgs.map((src, idx) => el("img", {
-                            src,
-                            alt: `${titleStr} — ${name || "imagen"} ${idx + 1}`,
-                            loading: "lazy",
-                        }))
-                    )
+        ...gallerys.map(([name, imgs]) => {
+            if (!imgs || !imgs.length) return null;
+            const label = (name || "").toLowerCase();
+            const showLabel = label && label !== "fotogramas";
+            return el("section", { class: "project-gallery-section" },
+                showLabel ? el("div", { class: "project-section-title" }, label) : null,
+                el("div", { class: "project-gallery" },
+                    ...imgs.map((src, idx) => el("img", {
+                        src,
+                        alt: `${titleStr} — ${name || "imagen"} ${idx + 1}`,
+                        loading: "lazy",
+                    }))
                 )
-                : null
-        ),
+            );
+        }),
         vimeoEmbed(p.trailer || p.video),
         creditos.length
             ? el("div", { class: "project-credits" },

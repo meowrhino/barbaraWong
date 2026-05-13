@@ -1,5 +1,5 @@
-// Welcome: vídeo aleatorio fullscreen, crossfade entre vídeos, selector inferior.
-// Estrategia carbon-friendly: solo el vídeo actual hace preload completo.
+// Welcome: vídeo aleatorio fullscreen + crossfade + bolitas selector.
+// Carbon-friendly: solo el vídeo actual hace preload="auto".
 
 import { $, el } from "./dom.js";
 import { state } from "./data.js";
@@ -46,7 +46,7 @@ function queueNext() {
 }
 
 function swap() {
-    if (!nxt._nextIdx && nxt._nextIdx !== 0) {
+    if (nxt._nextIdx === undefined) {
         queueNext();
         return;
     }
@@ -83,13 +83,13 @@ function buildThumbs() {
             setCurrent(i);
             queueNext();
         } },
-    }, e.label)));
+    })));
     refreshThumbs();
 }
 
 function refreshThumbs() {
-    const buttons = document.querySelectorAll(".welcome-thumb");
-    buttons.forEach((b, i) => b.classList.toggle("is-active", i === curIdx));
+    document.querySelectorAll(".welcome-thumb").forEach((b, i) =>
+        b.classList.toggle("is-active", i === curIdx));
 }
 
 function done() {

@@ -11,8 +11,11 @@
     --font: 'Chivo Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
 
     --pad: clamp(0.85rem, 1.4vw, 1.25rem);
-    --nav-w: 14dvw;            /* ancho nav desktop */
-    --bar-h: 3.25rem;          /* altura persiana cerrada en móvil */
+    --nav-w: 14dvw;
+
+    /* Persiana móvil: alto del bloque superior + alto del bloque inferior */
+    --nav-top-h: 2.6rem;
+    --nav-bottom-h: 2.6rem;
 
     --fs-base:  clamp(0.92rem, 0.95vw, 1.05rem);
     --fs-small: clamp(0.78rem, 0.82vw, 0.9rem);
@@ -44,7 +47,7 @@ ul, ol { list-style: none; }
 .muted { color: var(--muted); }
 
 /* ============================================================
-   WELCOME (vídeo fullscreen + selector inferior)
+   WELCOME — vídeo fullscreen + botón entrar + bolitas selector
    ============================================================ */
 #welcome {
     position: fixed;
@@ -71,11 +74,9 @@ ul, ol { list-style: none; }
     position: absolute;
     inset: 0;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: clamp(2rem, 6vw, 4rem);
-    pointer-events: none;     /* dejar pasar interacción al vídeo donde no haya UI */
+    pointer-events: none;
 }
 
 #enter-btn {
@@ -97,37 +98,31 @@ ul, ol { list-style: none; }
 #enter-btn span { display: block; }
 #enter-btn:hover { opacity: 0.85; transform: scale(1.02); }
 
+/* Bolitas: pequeñas, abajo, centradas */
 #welcome-thumbs {
-    pointer-events: auto;
+    position: absolute;
+    bottom: clamp(1.5rem, 3vh, 2.5rem);
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    gap: 0.6rem;
+    gap: 0.55rem;
     align-items: center;
+    z-index: 2;
 }
 .welcome-thumb {
-    width: 2rem;
-    height: 2rem;
+    width: 0.55rem;
+    height: 0.55rem;
     border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.65);
-    color: rgba(255, 255, 255, 0.85);
-    font-family: var(--font);
-    font-size: 0.78rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
-    backdrop-filter: blur(2px);
-    -webkit-backdrop-filter: blur(2px);
+    background: rgba(255, 255, 255, 0.35);
+    border: 0;
+    padding: 0;
+    transition: background 0.25s ease, transform 0.25s ease;
 }
-.welcome-thumb:hover { transform: scale(1.05); }
-.welcome-thumb.is-active {
-    background: rgba(255, 255, 255, 0.92);
-    color: #111;
-    border-color: transparent;
-}
+.welcome-thumb:hover { background: rgba(255, 255, 255, 0.65); transform: scale(1.15); }
+.welcome-thumb.is-active { background: #fff; }
 
 /* ============================================================
-   App layout — desktop
+   APP layout — desktop
    ============================================================ */
 #app {
     position: relative;
@@ -136,7 +131,7 @@ ul, ol { list-style: none; }
     overflow: hidden;
 }
 
-/* Nombre top-left */
+/* Nombre top-left (solo desktop) */
 #site-name {
     position: fixed;
     top: var(--pad);
@@ -149,7 +144,7 @@ ul, ol { list-style: none; }
 }
 #site-name:hover { text-decoration: underline; }
 
-/* Nav top-right */
+/* Nav top-right (desktop): columna fija */
 #nav {
     position: fixed;
     top: 0;
@@ -164,7 +159,8 @@ ul, ol { list-style: none; }
     overflow: hidden;
 }
 
-#nav-bar { display: none; }   /* sólo móvil */
+/* En desktop ocultamos top y bottom; en móvil se muestran */
+#nav-top, #nav-bottom { display: none; }
 
 #nav-body {
     flex: 1 1 auto;
@@ -199,7 +195,7 @@ ul, ol { list-style: none; }
 #menu-sections a:hover { text-decoration: underline; }
 #menu-sections a.is-active { text-decoration: underline; }
 
-/* Works (toggle, sin separadores) */
+/* Works toggle (sin separadores) */
 .menu-works { width: 100%; text-align: right; }
 .menu-works-toggle {
     display: block;
@@ -235,7 +231,6 @@ ul, ol { list-style: none; }
 .work-item.is-unpublished { color: var(--muted); cursor: default; }
 .work-item.is-unpublished:hover { text-decoration: none; }
 
-/* Lang switch */
 #lang-switch {
     display: flex;
     gap: 0.4rem;
@@ -248,7 +243,6 @@ ul, ol { list-style: none; }
 .lang-btn {
     color: var(--muted);
     text-transform: lowercase;
-    padding: 0;
 }
 .lang-btn:hover { color: var(--fg); }
 .lang-btn.is-active { color: var(--fg); text-decoration: underline; }
@@ -273,7 +267,6 @@ ul, ol { list-style: none; }
    Vistas
    ============================================================ */
 
-/* ABOUT / CONTACT — centradas */
 body[data-view="about"] #viewer-content,
 body[data-view="contact"] #viewer-content {
     min-height: 100%;
@@ -299,38 +292,22 @@ body[data-view="contact"] #viewer-content {
 .view-contact a { text-decoration: underline; }
 
 /* NEWS */
-.view-news { display: flex; flex-direction: column; gap: 2.5rem; }
+.view-news { display: flex; flex-direction: column; gap: 3rem; }
 .news-item {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 1.5rem;
     align-items: start;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--line);
 }
-.news-item:last-child { border-bottom: 0; }
 .news-media img { width: 100%; height: auto; }
-.news-year {
-    font-size: var(--fs-small);
-    color: var(--muted);
-    margin-bottom: 0.25rem;
-}
-.news-title {
-    font-size: var(--fs-base);
-    font-style: italic;
-    margin-bottom: 0.5rem;
-    line-height: 1.3;
-}
-.news-desc {
-    font-size: var(--fs-small);
-    line-height: 1.55;
-    white-space: pre-line;
-}
+.news-year { font-size: var(--fs-small); color: var(--muted); margin-bottom: 0.25rem; }
+.news-title { font-size: var(--fs-base); font-style: italic; margin-bottom: 0.5rem; line-height: 1.3; }
+.news-desc  { font-size: var(--fs-small); line-height: 1.55; white-space: pre-line; }
 .news-links { margin-top: 0.5rem; font-size: var(--fs-small); display: flex; flex-direction: column; gap: 0.2rem; }
 .news-links a { word-break: break-all; color: var(--muted); }
 .news-links a:hover { color: var(--fg); }
 
-/* Slider (compartido) */
+/* Slider compartido */
 .slider { position: relative; }
 .slider img { width: 100%; height: auto; display: block; }
 .slider-btn {
@@ -348,20 +325,17 @@ body[data-view="contact"] #viewer-content {
 .slider-prev { left: 0; }
 .slider-next { right: 0; }
 
-/* PUBLICATIONS */
-.view-publications { display: flex; flex-direction: column; gap: 2.5rem; }
+/* PUBLICATIONS — más espacio, sin líneas separatorias */
+.view-publications { display: flex; flex-direction: column; gap: 5rem; }
 .pub-item {
     display: grid;
     grid-template-columns: 1.4fr 1fr;
-    gap: 1.5rem;
+    gap: 1.8rem;
     align-items: start;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--line);
 }
-.pub-item:last-child { border-bottom: 0; }
 .pub-media img { width: 100%; height: auto; }
 .pub-item h3 { font-weight: 500; font-size: 1rem; margin-bottom: 0.5rem; line-height: 1.3; }
-.pub-desc { font-size: var(--fs-small); line-height: 1.55; white-space: pre-line; }
+.pub-desc  { font-size: var(--fs-small); line-height: 1.55; white-space: pre-line; }
 .pub-links { margin-top: 0.5rem; font-size: var(--fs-small); display: flex; flex-direction: column; gap: 0.2rem; }
 .pub-links a { color: var(--muted); word-break: break-all; }
 .pub-links a:hover { color: var(--fg); }
@@ -369,17 +343,8 @@ body[data-view="contact"] #viewer-content {
 /* PROJECT */
 .view-project { max-width: 880px; margin: 0 auto; }
 .project-header { margin-bottom: 1.25rem; }
-.project-header h2 {
-    font-weight: 500;
-    font-size: var(--fs-title);
-    text-transform: lowercase;
-    margin-bottom: 0.4rem;
-}
-.project-meta {
-    font-size: var(--fs-small);
-    color: var(--muted);
-    line-height: 1.5;
-}
+.project-header h2 { font-weight: 500; font-size: var(--fs-title); text-transform: lowercase; margin-bottom: 0.4rem; }
+.project-meta { font-size: var(--fs-small); color: var(--muted); line-height: 1.5; }
 .project-info { max-width: 65ch; margin-bottom: 1.5rem; line-height: 1.6; }
 .project-info p { margin-bottom: 0.9em; }
 .project-info p:last-child { margin-bottom: 0; }
@@ -393,7 +358,7 @@ body[data-view="contact"] #viewer-content {
 .project-links a { color: var(--muted); }
 .project-links a:hover { color: var(--fg); }
 
-.project-gallery-section { margin-bottom: 1.5rem; }
+.project-gallery-section { margin-bottom: 2rem; }
 .project-section-title {
     font-size: var(--fs-small);
     text-transform: lowercase;
@@ -401,11 +366,7 @@ body[data-view="contact"] #viewer-content {
     color: var(--muted);
     margin-bottom: 0.6rem;
 }
-.project-gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-}
+.project-gallery { display: grid; grid-template-columns: 1fr; gap: 1rem; }
 .project-gallery img { width: 100%; height: auto; }
 
 .project-vimeo {
@@ -416,15 +377,10 @@ body[data-view="contact"] #viewer-content {
 }
 .project-vimeo iframe { width: 100%; height: 100%; border: 0; }
 
-.project-credits {
-    font-size: var(--fs-small);
-    color: var(--muted);
-    line-height: 1.55;
-    margin-top: 1.5rem;
-}
+.project-credits { font-size: var(--fs-small); color: var(--muted); line-height: 1.55; margin-top: 1.5rem; }
 .project-credits p { margin-bottom: 0.4em; }
 
-/* PHOTOS — desktop horizontal */
+/* PHOTOS — horizontal en desktop */
 body[data-view="photos"] #viewer { overflow-x: hidden; overflow-y: hidden; }
 body[data-view="photos"] #viewer-content {
     padding: 0;
@@ -452,11 +408,13 @@ body[data-view="photos"] #viewer-content {
 .view-photos img.is-missing { display: none; }
 
 /* ============================================================
-   MÓVIL (<= 768px): persiana que crece con el contenido
+   MÓVIL (<= 768px)
+   Persiana en 3 bloques: top (name+active), body (colapsable), bottom (toggle).
    ============================================================ */
 @media (max-width: 768px) {
     :root {
-        --bar-h: 2.85rem;
+        --nav-top-h: 2.6rem;
+        --nav-bottom-h: 2.6rem;
         --fs-name: 0.95rem;
         --fs-menu: 1.05rem;
         --fs-work: 0.92rem;
@@ -470,78 +428,97 @@ body[data-view="photos"] #viewer-content {
         left: 0;
         width: 100dvw;
         height: auto;
-        max-height: var(--bar-h);
+        max-height: calc(var(--nav-top-h) + var(--nav-bottom-h));
         padding: 0;
         border-bottom: 1px solid var(--line);
         transition: max-height 0.35s ease;
         z-index: 500;
         overflow: hidden;
     }
-    /* Abierta: crece con el contenido, tope blando al 85% del viewport para que nunca cubra todo */
-    #nav.is-open {
-        max-height: 85dvh;
-    }
+    #nav.is-open { max-height: 85dvh; }
 
-    #nav-bar {
-        display: grid;
-        grid-template-columns: 1fr auto 1fr;
+    /* TOP: nombre + categoría activa, en la misma fila */
+    #nav-top {
+        display: flex;
         align-items: center;
-        height: var(--bar-h);
+        justify-content: space-between;
+        height: var(--nav-top-h);
         padding: 0 var(--pad);
-        gap: 0.5rem;
+        flex: 0 0 auto;
     }
     #nav-name {
         font-size: var(--fs-name);
         text-transform: lowercase;
         cursor: pointer;
-        justify-self: start;
         white-space: nowrap;
+        line-height: 1;
     }
-    #nav-toggle {
-        justify-self: center;
-        font-size: var(--fs-small);
-        color: var(--muted);
-        text-transform: lowercase;
-        white-space: nowrap;
-    }
-    #nav-toggle:hover { color: var(--fg); }
     #nav-active {
-        justify-self: end;
         color: var(--muted);
         font-size: var(--fs-small);
         text-transform: lowercase;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 100%;
+        max-width: 50%;
+        text-align: right;
+        line-height: 1;
     }
-    #nav.is-open #nav-active { visibility: hidden; }
+    /* Cuando está abierto, la activa se oculta sutil */
+    #nav.is-open #nav-active { opacity: 0; }
 
+    /* BODY: menu (colapsable). Sin altura mínima fija — flex absorbe el espacio. */
     #nav-body {
-        padding: var(--pad);
+        flex: 1 1 auto;
+        padding: 0.5rem var(--pad);
         gap: 1rem;
-        height: auto;
-        max-height: calc(85dvh - var(--bar-h));
+        overflow-y: auto;
+        overflow-x: hidden;
+        min-height: 0;
+    }
+    #nav.is-open #nav-body {
+        /* visible cuando se abre */
     }
 
+    /* En cerrado, el body queda con 0 altura visible (el nav recorta) */
     #menu-sections ul { gap: 0.4rem; }
-    #menu-sections a { padding: 0.15rem 0; }
+    #menu-sections a { padding: 0.2rem 0; }
 
+    /* BOTTOM: toggle (ver/cerrar menú) centrado, pegado a la línea inferior */
+    #nav-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: var(--nav-bottom-h);
+        padding: 0 var(--pad);
+        flex: 0 0 auto;
+    }
+    #nav-toggle {
+        font-size: var(--fs-small);
+        color: var(--muted);
+        text-transform: lowercase;
+        line-height: 1;
+    }
+    #nav-toggle:hover { color: var(--fg); }
+
+    /* Viewer empuja debajo del nav cerrado */
     #viewer {
         margin-right: 0;
-        margin-top: var(--bar-h);
-        height: calc(100dvh - var(--bar-h));
+        margin-top: calc(var(--nav-top-h) + var(--nav-bottom-h));
+        height: calc(100dvh - var(--nav-top-h) - var(--nav-bottom-h));
     }
     #viewer-content { padding: calc(var(--pad) * 1.5) var(--pad) var(--pad); }
 
+    /* News y publications: stack vertical */
     .news-item, .pub-item {
         grid-template-columns: 1fr;
-        gap: 0.8rem;
+        gap: 0.9rem;
     }
     .news-media, .pub-media {
         max-width: 75%;
         margin: 0 auto;
     }
+    .view-publications { gap: 4rem; }
 
     /* Photos: scroll vertical */
     body[data-view="photos"] #viewer { overflow-x: hidden; overflow-y: auto; }
@@ -565,20 +542,19 @@ body[data-view="photos"] #viewer-content {
 
 /* ============================================================
    FALLBACK para navegadores sin dvh / dvw
-   Bloque separado: si en el futuro la cobertura es total, borrar este bloque.
-   Navegadores afectados: Safari < 15.4, Chrome < 108, Firefox < 101.
+   ----
+   Bloque aislado, fácil de borrar a futuro cuando el soporte sea total.
+   Afecta a Safari < 15.4, Chrome < 108, Firefox < 101.
    ============================================================ */
 @supports not (height: 100dvh) {
     html, body { height: 100vh; }
     #app { width: 100vw; height: 100vh; }
-    #nav { height: 100vh; }
-    #welcome-thumbs, .welcome-video, #welcome { /* sin cambios — usan inset:0 */ }
+    #nav { width: 14vw; height: 100vh; }
     .view-photos img { height: 70vh; }
 
     @media (max-width: 768px) {
         #nav { width: 100vw; }
         #nav.is-open { max-height: 85vh; }
-        #nav-body { max-height: calc(85vh - var(--bar-h)); }
-        #viewer { height: calc(100vh - var(--bar-h)); }
+        #viewer { height: calc(100vh - var(--nav-top-h) - var(--nav-bottom-h)); }
     }
 }

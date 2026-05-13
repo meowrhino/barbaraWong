@@ -1,4 +1,4 @@
-// Menú: render, persiana móvil, lang switch, label de sección activa, toggle works.
+// Menú: render, persiana móvil, lang switch, label activo, toggle works.
 
 import { $, $$, el } from "./dom.js";
 import { state, t, tf } from "./data.js";
@@ -8,7 +8,7 @@ const MOBILE_MQ = window.matchMedia("(max-width: 768px)");
 let onNavigate = () => {};
 let onLang = () => {};
 
-// Estado del toggle "works": abierto por defecto en desktop, cerrado en móvil.
+// Works: abierto por defecto en desktop, cerrado en móvil.
 let worksOpen = !MOBILE_MQ.matches;
 MOBILE_MQ.addEventListener("change", (e) => {
     worksOpen = !e.matches;
@@ -28,7 +28,7 @@ export function renderMenu() {
 }
 
 function renderSections() {
-    const items = state.data.menu;
+    const items = state.menu || [];
     const ul = $("#menu-sections ul");
     ul.replaceChildren(...items.map(m => {
         if (m.key === "works") return renderWorksSection(m);
@@ -88,7 +88,7 @@ function renderActiveLabel() {
     const lbl = $("#nav-active");
     if (!lbl) return;
     const key = state.view === "project" ? "works" : state.view;
-    const entry = state.data.menu.find(m => m.key === key);
+    const entry = (state.menu || []).find(m => m.key === key);
     lbl.textContent = entry ? tf(entry.label) : "";
 }
 

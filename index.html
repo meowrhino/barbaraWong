@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bárbara Sánchez Barroso</title>
+    <link rel="icon" type="image/png" sizes="any" href="assets/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -11,7 +13,7 @@
 </head>
 <body data-view="news">
 
-    <!-- WELCOME: vídeo aleatorio fullscreen + botón "entrar" + selector de vídeo -->
+    <!-- WELCOME: vídeo aleatorio fullscreen + botón "entrar" + bolitas selector -->
     <div id="welcome" hidden>
         <video id="welcome-video-a" class="welcome-video is-current" muted playsinline preload="auto"></video>
         <video id="welcome-video-b" class="welcome-video" muted playsinline preload="metadata"></video>
@@ -22,8 +24,8 @@
                 <span>sánchez</span>
                 <span>barroso</span>
             </button>
-            <div id="welcome-thumbs" role="tablist" aria-label="Elegir vídeo de portada"></div>
         </div>
+        <div id="welcome-thumbs" role="tablist" aria-label="Elegir vídeo de portada"></div>
     </div>
 
     <!-- SITE -->
@@ -32,14 +34,15 @@
         <a id="site-name" href="#news" aria-label="Inicio">bárbara s. barroso</a>
 
         <aside id="nav" aria-label="Menú principal">
-            <div id="nav-bar">
+            <!-- TOP (visible solo en móvil): nombre + categoría activa -->
+            <div id="nav-top">
                 <span id="nav-name">bárbara s. barroso</span>
                 <span id="nav-active" aria-hidden="true"></span>
-                <button id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-body">ver menú</button>
             </div>
 
+            <!-- BODY (siempre visible en desktop; colapsable en móvil) -->
             <div id="nav-body">
-                <nav id="menu-sections">
+                <nav id="menu-sections" aria-label="Secciones">
                     <ul></ul>
                 </nav>
                 <div id="lang-switch" role="group" aria-label="Idioma">
@@ -49,6 +52,11 @@
                     <span class="lang-sep">/</span>
                     <button class="lang-btn" data-lang="ca">cat</button>
                 </div>
+            </div>
+
+            <!-- BOTTOM (visible solo en móvil): toggle "ver/cerrar menú" -->
+            <div id="nav-bottom">
+                <button id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-body">ver menú</button>
             </div>
         </aside>
 

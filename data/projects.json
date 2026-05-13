@@ -1,11 +1,12 @@
 [
   {
     "slug": "els-peregrins",
+    "order": 1,
     "title": { "es": "Els peregrins", "en": "Els peregrins", "ca": "Els peregrins" },
     "published": true,
     "ficha_tecnica": {
       "year": "2025",
-      "type": { "es": "Film, 16mm en digital", "en": "", "ca": "" },
+      "type": { "es": "Film, 16mm en digital", "en": "Film, 16mm to digital", "ca": "" },
       "duration": "14:34 min"
     },
     "info": {
@@ -22,51 +23,58 @@
     "creditos": { "es": [], "en": [], "ca": [] },
     "gallerys": [
       ["fotogramas", [
-        "data/_works/els-peregrins/1.webp",
-        "data/_works/els-peregrins/2.webp",
-        "data/_works/els-peregrins/3.webp",
-        "data/_works/els-peregrins/4.webp",
-        "data/_works/els-peregrins/5.webp",
-        "data/_works/els-peregrins/6.webp",
-        "data/_works/els-peregrins/7.webp"
+        "data/_works/01. Els peregrins/fotogramas/001.png",
+        "data/_works/01. Els peregrins/fotogramas/002.png",
+        "data/_works/01. Els peregrins/fotogramas/003.png",
+        "data/_works/01. Els peregrins/fotogramas/004.png",
+        "data/_works/01. Els peregrins/fotogramas/005.png",
+        "data/_works/01. Els peregrins/fotogramas/006.png",
+        "data/_works/01. Els peregrins/fotogramas/007.png"
       ]]
     ]
   },
   {
     "slug": "desig-i-ficcio",
-    "title": { "es": "Desig i ficció", "en": "Desig i ficció", "ca": "Desig i ficció" },
+    "order": 2,
+    "title": { "es": "Desig i Ficció", "en": "Desig i Ficció", "ca": "Desig i Ficció" },
     "published": true,
     "ficha_tecnica": {
       "year": "2025",
-      "type": { "es": "Instal·lació de vídeo", "en": "", "ca": "" },
+      "type": { "es": "Instal·lació de vídeo", "en": "Video installation", "ca": "Instal·lació de vídeo" },
       "duration": ""
     },
     "info": {
       "es": [],
       "en": [],
       "ca": [
+        "Trailer per la peça de vídeo que acompanya l'exposició Desig i ficció. Una exploració sensorial i material del margalló, comissariada per Sara G. de Ubieta i Cris Noguer al Centre de Desenvolupament Rural Museu de la Pauma de Mas de Barberans, Tarragona.",
         "El margalló (Chamaerops humilis) és una planta que possibilita la vida. La seva capacitat de regeneració després d'un incendi forestal, la rapidesa amb què rebrota i l'estabilitat del seu cicle fenològic –que es reprèn gairebé sense alteracions– en són exemples clars. Aquesta resistència és deguda a una morfologia adaptada que protegeix les parts vitals de la planta del foc, cosa que li permet florir i fructificar novament amb normalitat i n'assegura la funció ecològica i reproductiva.",
         "A més, el margalló no només tolera condicions ambientals adverses, sinó que té un paper ecològic fonamental en la protecció del sòl gràcies al seu entramat d'arrels dens i profund.",
         "Des d'aquesta perspectiva, el margalló és molt més que una planta resilient: és una infraestructura viva que sosté la vida, una peça clau en la creació de microecosistemes i un símbol tangible d'aquesta altra manera d'habitar i narrar el món: des del vincle, l'atenció i la reciprocitat.",
         "Des de la cultura dels materials i la seva imparable transformació, sorgeix una col·lecció d'objectes que és només un bri del passat, el present i el futur del margalló."
       ]
     },
-    "links": [],
+    "links": [
+      ["Catàleg (PDF)", "data/_works/02. Desig i Ficció/Cataleg_desig_ficcio_50x70_cast.pdf"],
+      ["Museu de la Pauma", "https://cdrmuseudelapauma.cat/worpre/desig-i-ficcio-tot-explorant-el-margallo/"],
+      ["Artículo en El País", "https://elpais.com/quadern/art-i-arquitectura/2025-12-18/benvinguts-al-futur-arcaic.html"]
+    ],
     "trailer": "https://vimeo.com/1148754736",
     "creditos": { "es": [], "en": [], "ca": [] },
     "gallerys": [
       ["fotogramas", [
-        "data/_works/desig-i-ficcio/1.webp",
-        "data/_works/desig-i-ficcio/2.webp",
-        "data/_works/desig-i-ficcio/3.webp",
-        "data/_works/desig-i-ficcio/4.webp",
-        "data/_works/desig-i-ficcio/5.webp",
-        "data/_works/desig-i-ficcio/6.webp"
+        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-17h53m37s152.png",
+        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-17h56m14s836.png",
+        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-17h59m31s406.png",
+        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-18h08m37s685.png",
+        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-18h11m55s216.png",
+        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-18h20m42s361.png"
       ]]
     ]
   },
   {
     "slug": "biophilia",
+    "order": 3,
     "title": { "es": "Biophilia", "en": "Biophilia", "ca": "Biophilia" },
     "published": true,
     "ficha_tecnica": {
@@ -101,19 +109,20 @@
     },
     "gallerys": [
       ["fotogramas", [
-        "data/_works/biophilia/fotogramas/01.png",
-        "data/_works/biophilia/fotogramas/02.png",
-        "data/_works/biophilia/fotogramas/03.png"
+        "data/_works/03. Biophilia/Fotogramas/vlcsnap-2023-11-23-15h31m52s900.png",
+        "data/_works/03. Biophilia/Fotogramas/vlcsnap-2023-11-23-15h32m41s050.png",
+        "data/_works/03. Biophilia/Fotogramas/vlcsnap-2023-11-23-15h33m02s499.png"
       ]],
       ["exhibition views", [
-        "data/_works/biophilia/exhibition-views/01.png",
-        "data/_works/biophilia/exhibition-views/02.png",
-        "data/_works/biophilia/exhibition-views/03.png"
+        "data/_works/03. Biophilia/Exhibition views/Captura-de-pantalla-2023-11-23-a-las-16.08.40.png",
+        "data/_works/03. Biophilia/Exhibition views/detail_web_1.png",
+        "data/_works/03. Biophilia/Exhibition views/detail_web_2.png"
       ]]
     ]
   },
   {
     "slug": "aiguarir",
+    "order": 4,
     "title": { "es": "Aiguarir. Després de Surar", "en": "Aiguarir. Després de Surar", "ca": "Aiguarir. Després de Surar" },
     "published": true,
     "ficha_tecnica": {
@@ -144,27 +153,155 @@
     },
     "gallerys": [
       ["fotogramas", [
-        "data/_works/aiguarir/fotogramas/01.png",
-        "data/_works/aiguarir/fotogramas/02.png",
-        "data/_works/aiguarir/fotogramas/03.png",
-        "data/_works/aiguarir/fotogramas/04.png",
-        "data/_works/aiguarir/fotogramas/05.png",
-        "data/_works/aiguarir/fotogramas/06.png"
+        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-15h51m19s995.png",
+        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-15h57m27s058.png",
+        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-15h58m36s104.png",
+        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-15h58m54s281.png",
+        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-16h00m35s358.png",
+        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-16h01m53s634.png"
       ]],
-      ["35mm", [
-        "data/_works/aiguarir/35mm/01.jpeg",
-        "data/_works/aiguarir/35mm/02.jpeg",
-        "data/_works/aiguarir/35mm/03.jpeg",
-        "data/_works/aiguarir/35mm/04.jpeg",
-        "data/_works/aiguarir/35mm/05.jpeg",
-        "data/_works/aiguarir/35mm/06.jpeg",
-        "data/_works/aiguarir/35mm/07.jpeg"
+      ["35mm photos", [
+        "data/_works/04. Aiguarir/35mm photos/000015.jpeg",
+        "data/_works/04. Aiguarir/35mm photos/000027.jpeg",
+        "data/_works/04. Aiguarir/35mm photos/000028.jpeg",
+        "data/_works/04. Aiguarir/35mm photos/000032.jpeg",
+        "data/_works/04. Aiguarir/35mm photos/000033.jpeg",
+        "data/_works/04. Aiguarir/35mm photos/000034.jpeg",
+        "data/_works/04. Aiguarir/35mm photos/000036.jpeg"
       ]]
     ]
   },
-  { "slug": "una-comunitat-de-llavors-i-de-relats", "title": "Una comunitat de llavors i de relats", "published": false },
-  { "slug": "the-holobiont-that-therefore-i-am", "title": "The holobiont that therefore I am", "published": false },
-  { "slug": "botanical-dream", "title": "Botanical Dream", "published": false },
+  {
+    "slug": "una-comunitat-de-llavors-i-de-relats",
+    "order": 5,
+    "title": { "es": "Una comunitat de llavors i de relats", "en": "Una comunitat de llavors i de relats", "ca": "Una comunitat de llavors i de relats" },
+    "published": true,
+    "ficha_tecnica": {
+      "year": "2023",
+      "type": { "es": "16 mm transferido a digital, fotos 35 mm", "en": "16 mm transferred to digital, 35 mm photos", "ca": "" },
+      "duration": ""
+    },
+    "info": {
+      "es": [
+        "Proyecto desarrollado en el marco de Bòlit Mentor — Bolit, Centre d'Art Contemporani de Girona. Comisaria: Marta Dahó. Institut Castell d'Estela d'Amer, Girona.",
+        "Durante unos meses de residencia con estudiantes de bachillerato he querido reflexionar sobre las imágenes en las pantallas desde un punto de salida extremo: haciendo desaparecer la tecnología de las sesiones. La propuesta consistía en simplemente dejar los móviles aparte y salir siempre que pudiéramos de las aulas en el entorno natural de Amer, Girona.",
+        "Como algunas de las alumnas no son del pueblo y otras no siempre salen a conocer su entorno, nos hemos lanzado todas juntas a explorarlo andando. En estas salidas lo que contaba era el hecho de pasar más tiempo en compañía, tejiendo relaciones, como las figuras de cuerdas de las que habla Donna Haraway en Seguir con el problema, además de hacerlo también con nuestra realidad más cercana, con todo lo que está vivo y nos rodea y a lo que no prestamos atención.",
+        "Las pantallas y la tecnología se han convertido en una extensión de nuestro cuerpo, totalmente necesaria para casi cualquier cosa que se quiera hacer a diario. Con este proyecto no he querido demonizar a los móviles ni la tecnología que los hace posibles, simplemente, abrir una reflexión sobre su uso y nuestra dependencia de ellos a partir de una acción tan simple como sacarlos de encima.",
+        "Me gusta pensar que es una brecha que se abre entre dos realidades, la de los móviles y las clases, y la que yo les proponía, en la que pasábamos a un mundo analógico, en el que el tacto, hablar, comer, dibujar cobraban protagonismo, en lugar de sólo mirar en una pantalla.",
+        "En este contexto analógico he introducido la idea de hacer todas juntas una película en 16 mm con una cámara de cine analógica, que siendo también tecnología, no es instantánea como a lo que nos tienen acostumbradas las interfaces de hoy en día. Las imágenes que tomamos no podemos verlas en el mismo momento, porque en la cámara sólo caben pequeños rollos de película de 30 metros que sólo durarán dos minutos y medio. Con este proceso he querido compartir lo que es ahora central para mí en mi práctica artística y en cómo lo estoy experimentando con el cine analógico: ¿hay que tomar tantas imágenes como hacemos cuando tenemos un dispositivo electrónico? ¿Qué ocurre si de repente no tenemos tanta capacidad para tomarlas y guardarlas? ¿Puede que esto nos haga pensar más en cómo tomarlas y por qué? ¿En el valor que tienen?",
+        "Junto a estas cuestiones hemos reflexionado sobre conceptos que son muy importantes para mí cómo es la figura del héroe masculino en muchas de las narrativas, literarias y fílmicas, que consumimos, y un concepto relacionado con el posthumanismo como es el holobionte. Originalmente propuesto por Lynn Margulis en su teoría de la simbiosis, el holobionte es un ser vivo compuesto por otros entes, que viven en comunidades o colonias, y necesitan otros para sobrevivir, que son interdependientes.",
+        "Con las alumnas hemos leído textos como La teoría de la bolsa de la ficción de Ursula K. Le Guin, en lo alto de una montaña, que tardamos una hora en subir, y después meditamos, comer avellanas y tomamos el sol. Y no recuerdo que nadie pensara en el móvil o se quejara por no tenerlo. Con nosotros sólo había una comunidad formada de naturaleza, ficción, hilos, cestas y semillas."
+      ],
+      "en": [],
+      "ca": []
+    },
+    "links": [
+      ["Hoja de sala — On es recolzen les imatges? (PDF)", "https://web.girona.cat/documents/20147/10808186/FdS-Bolit-2023-onesrecolzenlesimatges.pdf"],
+      ["Galería en Flickr", "https://flic.kr/s/aHBqjACUHq"]
+    ],
+    "trailer": "https://vimeo.com/824791180",
+    "creditos": { "es": [], "en": [], "ca": [] },
+    "gallerys": [
+      ["fotogramas", [
+        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h33m14s518.png",
+        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h36m40s561.png",
+        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h38m49s333.png",
+        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h39m08s369.png",
+        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h42m06s194.png",
+        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h43m25s078.png"
+      ]],
+      ["35mm — fotos tomadas por las estudiantes", [
+        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734701.jpg",
+        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734731.jpg",
+        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734762.jpg",
+        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734796.jpg",
+        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734827.jpg",
+        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734858.jpg",
+        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734890.jpg",
+        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734921.jpg"
+      ]]
+    ]
+  },
+  {
+    "slug": "the-holobiont-that-therefore-i-am",
+    "order": 6,
+    "title": { "es": "The holobiont that therefore I am", "en": "The holobiont that therefore I am", "ca": "The holobiont that therefore I am" },
+    "published": true,
+    "ficha_tecnica": {
+      "year": "2022",
+      "type": { "es": "Video instalación site-specific con varias películas en 16 mm escaneadas a HD + 1 pantalla pequeña con un film digital", "en": "Site-specific video installation using different 16 mm scanned to HD films + 1 small screen with a digital film", "ca": "" },
+      "duration": ""
+    },
+    "info": {
+      "es": [
+        "Usando como referencia The animal that therefore I am de Derrida para preguntarse cómo abrir un diálogo real a partir de modos de ser-con, alteridad y agencia, la instalación forma parte de un proceso de reflexión sobre los temas de una investigación sobre la convivencia, los mundos más-que-humanos y las políticas del cuidado.",
+        "En la obra Botanical dream, rodada en un jardín botánico, asistimos a un sueño, pero no estamos seguros de quién es. ¿Quizá las plantas del jardín sueñan con transformarse, traspasar esas paredes de cristal y convertirse en una selva tropical?",
+        "En The way my mother talked to plants la artista ha filmado a su madre en casa y con amigos, (siendo éstos humanos y no humanos), para reflexionar sobre los cuidados entre los seres humanos y la naturaleza.",
+        "The Knots We Knot es una película surgida a través de una colaboración con la cineasta Adriana Vila Guevara en una mini residencia en la Vall de Santa Creu. Ambas artistas deciden pasar unos días en el valle explorando sus intereses, y el entorno, humano, animal, vegetal, y liquen que las rodea, interactuando con él a través de una cámara Bólex de 16 mm y una grabadora de sonido, y acompañadas de las lecturas de Donna Haraway, Robin W. Kimmerer y María Puig de la Bellacasa entre otras autoras."
+      ],
+      "en": [],
+      "ca": []
+    },
+    "links": [],
+    "trailer": "",
+    "creditos": { "es": [], "en": [], "ca": [] },
+    "gallerys": [
+      ["installation views — Bienal Sur (SAMoCA, Riyadh)", [
+        "data/_works/06. The holobiont that therefore I am/Installation views at Bienal Sur- Imagine. Fantasies, Dreams, Utopias, SAMoCA, Riyadh/1701272605900.jpg",
+        "data/_works/06. The holobiont that therefore I am/Installation views at Bienal Sur- Imagine. Fantasies, Dreams, Utopias, SAMoCA, Riyadh/IMG_1379_peque.jpg",
+        "data/_works/06. The holobiont that therefore I am/Installation views at Bienal Sur- Imagine. Fantasies, Dreams, Utopias, SAMoCA, Riyadh/pasillo.jpg"
+      ]],
+      ["installation views — Inter Arts Center, Malmö 2022", [
+        "data/_works/06. The holobiont that therefore I am/Installation views at Inter Arts Center, Malmö, 2022 /DSC00125.jpeg",
+        "data/_works/06. The holobiont that therefore I am/Installation views at Inter Arts Center, Malmö, 2022 /DSC00131.jpeg",
+        "data/_works/06. The holobiont that therefore I am/Installation views at Inter Arts Center, Malmö, 2022 /JPG_MFAAR_exhibition_View_74.jpg",
+        "data/_works/06. The holobiont that therefore I am/Installation views at Inter Arts Center, Malmö, 2022 /JPG_MFAAR_exhibition_View_76.jpg"
+      ]]
+    ]
+  },
+  {
+    "slug": "botanical-dream",
+    "order": 7,
+    "title": { "es": "Botanical Dream", "en": "Botanical Dream", "ca": "Botanical Dream" },
+    "published": true,
+    "ficha_tecnica": {
+      "year": "2022",
+      "type": { "es": "16 mm transferido a digital", "en": "16 mm transferred to digital", "ca": "" },
+      "duration": "5 min 40 sec"
+    },
+    "info": {
+      "es": [
+        "Botanical Dream pone en marcha un deseo concebido por un sujeto más que humano: el jardín botánico. Una multi identidad en constante evolución, el resultado de la ilusión colonial, la de poder reunir y ordenar todos los bosques del mundo en un solo lugar. En la película, Barroso transforma el jardín, a través de una ficción onírica, de objeto mudo a sujeto que actúa. Abriendo la imaginación del espectador a una ruptura imposible de la prisión de cristal y acero que lo contiene, la vegetación del jardín espera una irrupción en el espacio de la ciudad para derrocar su orden. A través del desorden, eco de los bosques de los que fue violentamente extrapolado, el jardín se convierte en un bosque extraño nunca antes concebido.",
+        "Obra en 16 mm que, a través de la ficción especulativa, da voz a las plantas del Jardín Botánico de Copenhague creado en 1872. Mientras que el orden de los acontecimientos y el control antrópico impiden un rebobinado del tiempo y el retorno de estos cuerpos-planta a su naturaleza selvática, la estratagema narrativa llevada al cine por la artista reconfigura lo que se puede decir, ver, hacer. Así, imagina una huida onírica hacia la ciudad, donde los cuerpos vegetales de los habitantes del jardín han abolido por fin el cerco que los contenía y ordenaba, tomando posesión del espacio que les había sido robado. Se convertirán, en un tiempo muy largo, profundo e inimaginable, en una nueva forma de bosque queer, en una alianza de todas esas entidades antes tomadas por el hombre.",
+        "Curatorial text by Lorenzo Lazzari"
+      ],
+      "en": [],
+      "ca": []
+    },
+    "links": [],
+    "trailer": "",
+    "creditos": {
+      "es": [
+        "Sound design: Paulius Sliaupa",
+        "Voice over: Paul Beaudoin"
+      ],
+      "en": [],
+      "ca": []
+    },
+    "gallerys": [
+      ["fotogramas", [
+        "data/_works/07. Botanical dream/fotogramas/vlcsnap-2022-05-10-14h49m03s538.png",
+        "data/_works/07. Botanical dream/fotogramas/vlcsnap-2022-05-10-14h50m03s270.png",
+        "data/_works/07. Botanical dream/fotogramas/vlcsnap-2022-05-10-14h50m29s784.png",
+        "data/_works/07. Botanical dream/fotogramas/vlcsnap-2022-05-10-14h51m50s439.png",
+        "data/_works/07. Botanical dream/fotogramas/vlcsnap-2022-05-10-14h52m15s154.png"
+      ]],
+      ["installation views — Riconfigurazioni, Palazzo Ca' Tron, Venice 2022", [
+        "data/_works/07. Botanical dream/Installation views of the exhibition Riconfigurazioni. Tre indagini filmiche sul silvano, Palazzo Ca’ Tron , Venice, 2022/foto1.jpeg",
+        "data/_works/07. Botanical dream/Installation views of the exhibition Riconfigurazioni. Tre indagini filmiche sul silvano, Palazzo Ca’ Tron , Venice, 2022/foto2.jpeg"
+      ]]
+    ]
+  },
   { "slug": "the-way-my-mother-talked-to-plants", "title": "The way my mother talked to plants", "published": false },
   { "slug": "the-knots-we-knot", "title": "The knots we knot", "published": false },
   { "slug": "coexistence", "title": "Coexistence", "published": false },

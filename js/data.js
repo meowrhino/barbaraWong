@@ -3,21 +3,16 @@
 export const state = {
     lang: "es",
     data: null,
+    menu: null,
     about: null,
     news: null,
     publications: null,
     projects: null,
     photos: null,
-    view: "home",
+    view: "news",
 };
 
 export const I18N = {
-    news:         { es: "news",         en: "news",         ca: "news" },
-    works:        { es: "works",        en: "works",        ca: "obres" },
-    publications: { es: "publications", en: "publications", ca: "publicacions" },
-    photos:       { es: "photos",       en: "photos",       ca: "photos" },
-    about:        { es: "about",        en: "about",        ca: "about" },
-    contact:      { es: "contact",      en: "contact",      ca: "contacte" },
     open_menu:    { es: "ver menú",     en: "see menu",     ca: "veure menú" },
     close_menu:   { es: "cerrar menú",  en: "close menu",   ca: "tancar menú" },
     no_photos:    { es: "Aún no hay fotos.", en: "No photos yet.", ca: "Encara no hi ha fotos." },
@@ -33,8 +28,7 @@ export const tf = (val) => {
     return val[state.lang] || val.es || val.en || val.ca || "";
 };
 
-// Devuelve un array localizado: acepta string, array, o { es:[…], en:[…], ca:[…] }.
-// Cae al siguiente idioma cuando el array está vacío (los `[]` son truthy en JS).
+// Devuelve un array localizado. Cae al siguiente idioma cuando el array está vacío.
 export const tfa = (val) => {
     if (val == null) return [];
     if (Array.isArray(val)) return val;
@@ -57,17 +51,19 @@ async function loadJSON(path) {
 export async function loadAll() {
     state.data = await loadJSON("data/data.json");
     const s = state.data.sources;
-    const [about, news, publications, projects, photos] = await Promise.all([
+    const [menu, about, news, publications, projects, photos] = await Promise.all([
+        loadJSON(s.menu).catch(() => null),
         loadJSON(s.about).catch(() => null),
         loadJSON(s.news).catch(() => null),
         loadJSON(s.publications).catch(() => null),
         loadJSON(s.projects).catch(() => null),
         loadJSON(s.photos).catch(() => null),
     ]);
+    state.menu = menu || [];
     state.about = about;
     state.news = news;
     state.publications = publications;
-    state.projects = projects;
+    state.projects = (projects || []).slice().sort((a, b) => (a.order || 999) - (b.order || 999));
     state.photos = photos;
 }
 
