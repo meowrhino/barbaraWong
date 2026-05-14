@@ -117,6 +117,7 @@ function done() {
     }
     setTimeout(() => {
         w.hidden = true;
+        app.classList.remove("is-fading-out");
         app.hidden = false;
         $("#welcome-video-a").pause();
         $("#welcome-video-b").pause();
@@ -186,10 +187,25 @@ export function showWelcomeAgain() {
     sessionStorage.removeItem(SESSION_KEY);
     const w = $("#welcome");
     const app = $("#app");
-    w.classList.remove("is-fading-out");
+
+    // Crossfade simultáneo: welcome empieza invisible y app visible;
+    // en el siguiente frame se invierte y ambos transicionan a la vez.
+    w.classList.add("is-fading-out");
     w.hidden = false;
-    app.hidden = true;
     if (cur && cur.paused) cur.play().catch(() => {});
+
+    requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+            w.classList.remove("is-fading-out");
+            app.classList.add("is-fading-out");
+        });
+    });
+
+    setTimeout(() => {
+        app.hidden = true;
+        app.classList.remove("is-fading-out");
+    }, 400);
+
     if (!keydownHandler) {
         keydownHandler = (e) => {
             if (w.hidden) return;

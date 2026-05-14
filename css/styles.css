@@ -60,6 +60,9 @@ ul, ol { list-style: none; }
 }
 #welcome.is-fading-out { opacity: 0; pointer-events: none; }
 
+#app { transition: opacity 0.4s ease; }
+#app.is-fading-out { opacity: 0; pointer-events: none; }
+
 .welcome-video {
     position: absolute;
     inset: 0;
@@ -395,11 +398,11 @@ body[data-view="contact"] #viewer-content {
 .pub-links a { color: var(--muted); word-break: break-all; }
 .pub-links a:hover { color: var(--fg); }
 
-.view-project { max-width: 880px; margin: 0; padding-top: 1rem; }
+.view-project { max-width: 750px; margin: 0; padding-top: 1rem; }
 .project-header { margin-bottom: 1.25rem; }
 .project-header h2 { font-weight: 500; font-size: var(--fs-title); text-transform: lowercase; margin-bottom: 0.4rem; }
 .project-meta { font-size: var(--fs-small); color: var(--muted); line-height: 1.5; }
-.project-info { max-width: 65ch; margin-bottom: 1.5rem; line-height: 1.6; }
+.project-info { margin-bottom: 1.5rem; line-height: 1.6; }
 .project-info p { margin-bottom: 0.9em; }
 .project-info p:last-child { margin-bottom: 0; }
 .project-links {
@@ -457,6 +460,7 @@ body[data-view="photos"] #viewer-content {
     flex: 0 0 auto;
     height: 70dvh;
     width: auto;
+    max-width: 60vw;
     object-fit: contain;
 }
 .view-photos img.is-missing { display: none; }
@@ -587,6 +591,8 @@ body[data-view="photos"] #viewer-content {
         height: auto;
         width: 100%;
         max-width: 90vw;
+        max-height: 80dvh;
+        object-fit: contain;
         margin: 0 auto;
     }
 
@@ -608,5 +614,6 @@ body[data-view="photos"] #viewer-content {
         #nav { width: 100vw; }
         #nav.is-open { max-height: 85vh; }
         #viewer { height: calc(100vh - var(--nav-top-h) - var(--nav-bottom-h)); }
+        .view-photos img { max-height: 80vh; }
     }
 }
