@@ -423,6 +423,11 @@ body[data-view="contact"] #viewer-content {
     color: var(--muted);
     margin-bottom: 0.6rem;
 }
+.project-section-title.gallery-caption {
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
 .project-gallery-section .slider img { width: 100%; height: auto; }
 
 .project-vimeo {
