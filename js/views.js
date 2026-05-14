@@ -236,5 +236,17 @@ export function renderPhotos() {
             on: { error: (e) => e.currentTarget.classList.add("is-missing") },
         })
     );
-    v.replaceChildren(el("div", { class: "view-photos" }, ...imgs));
+    const wrap = el("div", { class: "view-photos" }, ...imgs);
+    // En desktop: convertir scroll vertical (rueda) en scroll horizontal.
+    // En móvil la rueda no aplica y el flex pasa a columna (ver CSS).
+    wrap.addEventListener("wheel", (e) => {
+        // Si la galería ya no puede scrollear horizontal (móvil apilado), no hacemos nada.
+        if (wrap.scrollWidth <= wrap.clientWidth) return;
+        // Priorizar el delta dominante; algunos trackpads dan deltaX también.
+        const delta = Math.abs(e.deltaY) >= Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
+        if (delta === 0) return;
+        wrap.scrollLeft += delta;
+        e.preventDefault();
+    }, { passive: false });
+    v.replaceChildren(wrap);
 }

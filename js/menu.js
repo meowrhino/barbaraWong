@@ -9,12 +9,8 @@ const MOBILE_MQ = window.matchMedia("(max-width: 768px)");
 let onNavigate = () => {};
 let onLang = () => {};
 
-// Works: abierto por defecto en desktop, cerrado en móvil.
-let worksOpen = !MOBILE_MQ.matches;
-MOBILE_MQ.addEventListener("change", (e) => {
-    worksOpen = !e.matches;
-    renderMenu();
-});
+// Works: plegado por defecto siempre (desktop y móvil).
+let worksOpen = false;
 
 export function setHandlers({ navigate, lang }) {
     onNavigate = navigate;
