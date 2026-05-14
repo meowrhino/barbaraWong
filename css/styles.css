@@ -452,13 +452,7 @@ body[data-view="contact"] #viewer-content {
 .project-links a:hover { color: var(--fg); }
 
 .project-gallery-section { margin-bottom: 2rem; }
-.project-gallery-section > img {
-    width: 100%;
-    aspect-ratio: var(--gallery-ar);
-    object-fit: contain;
-    background: var(--gallery-bg);
-    display: block;
-}
+.project-gallery-section > img { width: 100%; height: auto; display: block; }
 .project-section-title {
     font-size: var(--fs-small);
     text-transform: lowercase;
