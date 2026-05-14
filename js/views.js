@@ -22,6 +22,34 @@ function makeSlider(images, altBase = "") {
     return el("div", { class: "slider" }, prev, img, next);
 }
 
+// Calcula el aspect-ratio promedio de un conjunto de imágenes y lo aplica
+// al contenedor del slider. Carga las imágenes en paralelo solo para leer
+// sus dimensiones naturales (los navegadores cachean, así que el slider
+// real las reutiliza). Si alguna falla se ignora.
+function applyAdaptiveRatio(sliderEl, imageUrls) {
+    if (!sliderEl || !imageUrls || imageUrls.length === 0) return;
+    const ratios = [];
+    let done = 0;
+    const finish = () => {
+        if (done < imageUrls.length) return;
+        if (!ratios.length) return;
+        const avg = ratios.reduce((a, b) => a + b, 0) / ratios.length;
+        sliderEl.style.aspectRatio = String(avg);
+    };
+    imageUrls.forEach(url => {
+        const probe = new Image();
+        probe.onload = () => {
+            if (probe.naturalWidth && probe.naturalHeight) {
+                ratios.push(probe.naturalWidth / probe.naturalHeight);
+            }
+            done++;
+            finish();
+        };
+        probe.onerror = () => { done++; finish(); };
+        probe.src = url;
+    });
+}
+
 function vimeoEmbed(url) {
     const id = (url || "").match(/vimeo\.com\/(\d+)/)?.[1];
     if (!id) return null;
@@ -157,9 +185,14 @@ export function renderProject(slug) {
             if (!imgs || !imgs.length) return null;
             const label = (name || "").toLowerCase();
             const altBase = `${titleStr} — ${name || "imagen"}`;
-            const media = imgs.length > 1
-                ? makeSlider(imgs, altBase)
-                : el("img", { src: imgs[0], alt: `${altBase} 1`, loading: "lazy" });
+            let media;
+            if (imgs.length > 1) {
+                media = makeSlider(imgs, altBase);
+                // Ratio adaptativo: el slider se amolda al promedio de su galería
+                applyAdaptiveRatio(media, imgs);
+            } else {
+                media = el("img", { src: imgs[0], alt: `${altBase} 1`, loading: "lazy" });
+            }
             return el("section", { class: "project-gallery-section" },
                 media,
                 label ? el("div", { class: "project-section-title gallery-caption" }, label) : null,
