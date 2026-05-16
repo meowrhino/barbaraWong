@@ -134,26 +134,6 @@ ul, ol { list-style: none; }
 }
 #enter-btn:hover { color: #fff; text-decoration: underline; }
 
-#audio-btn {
-    position: absolute;
-    bottom: clamp(1.2rem, 3vh, 2.2rem);
-    right: clamp(1.2rem, 3vw, 2rem);
-    pointer-events: auto;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 1.8rem;
-    height: 1.8rem;
-    color: rgba(255, 255, 255, 0.8);
-    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.5));
-    transition: color 0.2s ease, transform 0.2s ease;
-}
-#audio-btn:hover { color: #fff; transform: scale(1.05); }
-.audio-icon-svg { width: 1.6rem; height: 1.6rem; display: none; }
-#audio-btn .audio-icon-off { display: block; }
-#audio-btn.is-on .audio-icon-off { display: none; }
-#audio-btn.is-on .audio-icon-on { display: block; }
-
 /* Bolitas pequeñas abajo */
 #welcome-thumbs {
     position: absolute;

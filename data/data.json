@@ -21,7 +21,7 @@
       { "id": "3", "label": "03" },
       { "id": "4", "label": "04" }
     ],
-    "formats": ["webm", "mp4"]
+    "formats": ["webm"]
   },
   "assets": {
     "news_dir":         "data/_news/",

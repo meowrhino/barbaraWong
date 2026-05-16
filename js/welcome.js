@@ -10,6 +10,15 @@ let entries = [];          // [{ id, label, sources: [{src, type}] }]
 let cur = null, nxt = null;
 let curIdx = -1;
 let keydownHandler = null;
+let fallbackTriggered = false;
+let fallbackTimer = null;
+
+function triggerFallback() {
+    if (fallbackTriggered) return;
+    fallbackTriggered = true;
+    if (fallbackTimer) { clearTimeout(fallbackTimer); fallbackTimer = null; }
+    done();
+}
 
 function pickRandom() {
     if (!entries.length) return -1;
@@ -86,26 +95,6 @@ function refreshThumbs() {
         b.classList.toggle("is-active", i === curIdx));
 }
 
-function bindAudioToggle() {
-    const btn = $("#audio-btn");
-    if (!btn || btn._bound) return;
-    btn._bound = true;
-    btn.addEventListener("click", (ev) => {
-        ev.stopPropagation();
-        const on = btn.getAttribute("aria-pressed") === "true";
-        const next = !on;
-        btn.setAttribute("aria-pressed", next ? "true" : "false");
-        btn.setAttribute("aria-label", next ? "Silenciar" : "Activar sonido");
-        btn.classList.toggle("is-on", next);
-        const a = $("#welcome-video-a");
-        const b = $("#welcome-video-b");
-        a.muted = !next;
-        b.muted = !next;
-        // Algunos navegadores requieren replay tras unmute
-        if (next) a.play().catch(() => {});
-    });
-}
-
 function done() {
     const w = $("#welcome");
     const app = $("#app");
@@ -151,7 +140,15 @@ export function startWelcome() {
     setCurrent(pickRandom());
     queueNext();
     buildThumbs();
-    bindAudioToggle();
+
+    // Fallback: si el vídeo no llega a HAVE_CURRENT_DATA en 3s, ir directo a news.
+    fallbackTimer = setTimeout(() => {
+        if (cur && cur.readyState < 2) triggerFallback();
+    }, 3000);
+    cur.addEventListener("error", triggerFallback, { once: true });
+    cur.addEventListener("loadeddata", () => {
+        if (fallbackTimer) { clearTimeout(fallbackTimer); fallbackTimer = null; }
+    }, { once: true });
 
     $("#welcome").hidden = false;
 
