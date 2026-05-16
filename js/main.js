@@ -8,6 +8,7 @@ import {
     renderAbout, renderContact, renderNews,
     renderPublications, renderProject, renderPhotos,
 } from "./views.js";
+import { initLightbox } from "./lightbox.js";
 
 const VIEWS = new Set(["news", "publications", "photos", "about", "contact", "project"]);
 const DEFAULT_VIEW = "news";
@@ -106,6 +107,7 @@ async function init() {
     try {
         await loadAll();
         setHandlers({ navigate, lang: setLang });
+        initLightbox();
 
         if (shouldShowWelcome()) {
             startWelcome();

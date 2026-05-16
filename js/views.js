@@ -2,23 +2,35 @@
 
 import { $, el } from "./dom.js";
 import { state, t, tf, tfa, findProject } from "./data.js";
+import { openLightbox } from "./lightbox.js";
 
 // ---------- Helpers ----------
+function zoomable(img, getGallery, getIndex) {
+    img.classList.add("is-zoomable");
+    img.addEventListener("click", (e) => {
+        e.stopPropagation();
+        openLightbox(getGallery(), getIndex());
+    });
+}
+
 function makeSlider(images, altBase = "") {
     let i = 0;
     const img = el("img", { src: images[0], alt: altBase ? `${altBase} 1` : "", loading: "lazy" });
     const prev = el("button", { class: "slider-btn slider-prev", "aria-label": "anterior" }, "‹");
     const next = el("button", { class: "slider-btn slider-next", "aria-label": "siguiente" }, "›");
-    prev.addEventListener("click", () => {
+    prev.addEventListener("click", (e) => {
+        e.stopPropagation();
         i = (i - 1 + images.length) % images.length;
         img.src = images[i];
         if (altBase) img.alt = `${altBase} ${i + 1}`;
     });
-    next.addEventListener("click", () => {
+    next.addEventListener("click", (e) => {
+        e.stopPropagation();
         i = (i + 1) % images.length;
         img.src = images[i];
         if (altBase) img.alt = `${altBase} ${i + 1}`;
     });
+    zoomable(img, () => images, () => i);
     return el("div", { class: "slider" }, prev, img, next);
 }
 
@@ -95,14 +107,16 @@ export function renderNews() {
     v.replaceChildren(el("div", { class: "view-news" },
         ...items.map(n => {
             const titleStr = tf(n.title) || "";
+            const singleSrc = n.image || n.images?.[0];
+            let media = null;
+            if (n.images?.length > 1) {
+                media = makeSlider(n.images, titleStr);
+            } else if (singleSrc) {
+                media = el("img", { src: singleSrc, alt: titleStr, loading: "lazy" });
+                zoomable(media, () => [singleSrc], () => 0);
+            }
             return el("article", { class: "news-item" },
-                el("div", { class: "news-media" },
-                    n.images?.length > 1
-                        ? makeSlider(n.images, titleStr)
-                        : (n.image || n.images?.[0])
-                            ? el("img", { src: n.image || n.images[0], alt: titleStr, loading: "lazy" })
-                            : null
-                ),
+                el("div", { class: "news-media" }, media),
                 el("div", { class: "news-body" },
                     n.year ? el("div", { class: "news-year" }, String(n.year)) : null,
                     titleStr ? el("div", { class: "news-title" }, titleStr) : null,
@@ -135,13 +149,14 @@ export function renderPublications() {
                         ))
                     ) : null,
                 ),
-                el("div", { class: "pub-media" },
-                    p.images?.length > 1
-                        ? makeSlider(p.images, titleStr)
-                        : (p.image || p.images?.[0])
-                            ? el("img", { src: p.image || p.images[0], alt: titleStr, loading: "lazy" })
-                            : null
-                )
+                el("div", { class: "pub-media" }, (() => {
+                    const singleSrc = p.image || p.images?.[0];
+                    if (p.images?.length > 1) return makeSlider(p.images, titleStr);
+                    if (!singleSrc) return null;
+                    const im = el("img", { src: singleSrc, alt: titleStr, loading: "lazy" });
+                    zoomable(im, () => [singleSrc], () => 0);
+                    return im;
+                })())
             );
         })
     ));
@@ -192,6 +207,7 @@ export function renderProject(slug) {
                 applyAdaptiveRatio(media, imgs);
             } else {
                 media = el("img", { src: imgs[0], alt: `${altBase} 1`, loading: "lazy" });
+                zoomable(media, () => imgs, () => 0);
             }
             return el("section", { class: "project-gallery-section" },
                 media,
@@ -228,14 +244,17 @@ export function renderPhotos() {
         const j = Math.floor(Math.random() * (i + 1));
         [order[i], order[j]] = [order[j], order[i]];
     }
-    const imgs = order.map((n, idx) =>
-        el("img", {
-            src: `${dir}${n}.${ext}`,
+    const urls = order.map(n => `${dir}${n}.${ext}`);
+    const imgs = urls.map((src, idx) => {
+        const im = el("img", {
+            src,
             alt: `diary ${idx + 1}`,
             loading: "lazy",
             on: { error: (e) => e.currentTarget.classList.add("is-missing") },
-        })
-    );
+        });
+        zoomable(im, () => urls, () => idx);
+        return im;
+    });
     const wrap = el("div", { class: "view-photos" }, ...imgs);
     // En desktop: convertir scroll vertical (rueda) en scroll horizontal.
     // En móvil la rueda no aplica y el flex pasa a columna (ver CSS).
