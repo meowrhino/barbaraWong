@@ -198,16 +198,18 @@ export function renderProject(slug) {
             : null,
         ...gallerys.map(([name, imgs]) => {
             if (!imgs || !imgs.length) return null;
+            const base = `data/_works/${p.slug}/`;
+            const full = imgs.map(src => /^(?:https?:\/\/|data\/)/.test(src) ? src : base + src);
             const label = (name || "").toLowerCase();
             const altBase = `${titleStr} — ${name || "imagen"}`;
             let media;
-            if (imgs.length > 1) {
-                media = makeSlider(imgs, altBase);
+            if (full.length > 1) {
+                media = makeSlider(full, altBase);
                 // Ratio adaptativo: el slider se amolda al promedio de su galería
-                applyAdaptiveRatio(media, imgs);
+                applyAdaptiveRatio(media, full);
             } else {
-                media = el("img", { src: imgs[0], alt: `${altBase} 1`, loading: "lazy" });
-                zoomable(media, () => imgs, () => 0);
+                media = el("img", { src: full[0], alt: `${altBase} 1`, loading: "lazy" });
+                zoomable(media, () => full, () => 0);
             }
             return el("section", { class: "project-gallery-section" },
                 media,

@@ -6,7 +6,11 @@
     "published": true,
     "ficha_tecnica": {
       "year": "2025",
-      "type": { "es": "Film, 16mm a digital", "en": "Film, 16mm to digital", "ca": "Film, 16 mm a digital" },
+      "type": {
+        "es": "Film, 16mm a digital",
+        "en": "Film, 16mm to digital",
+        "ca": "Film, 16 mm a digital"
+      },
       "duration": "14:34 min"
     },
     "info": {
@@ -21,21 +25,36 @@
       ]
     },
     "links": [
-      ["D'A Film Festival — Els peregrins", "https://dafilmfestival.com/es/movie/els-peregrins/"]
+      [
+        "D'A Film Festival — Els peregrins",
+        "https://dafilmfestival.com/es/movie/els-peregrins/"
+      ]
     ],
     "trailer": "https://vimeo.com/1173077278",
-    "creditos": { "es": [], "en": [], "ca": [] },
+    "creditos": {
+      "es": [],
+      "en": [],
+      "ca": []
+    },
     "gallerys": [
-      ["", ["data/_works/01. Els peregrins/poster.webp"]],
-      ["fotogramas", [
-        "data/_works/01. Els peregrins/fotogramas/001.webp",
-        "data/_works/01. Els peregrins/fotogramas/002.webp",
-        "data/_works/01. Els peregrins/fotogramas/003.webp",
-        "data/_works/01. Els peregrins/fotogramas/004.webp",
-        "data/_works/01. Els peregrins/fotogramas/005.webp",
-        "data/_works/01. Els peregrins/fotogramas/006.webp",
-        "data/_works/01. Els peregrins/fotogramas/007.webp"
-      ]]
+      [
+        "",
+        [
+          "poster.webp"
+        ]
+      ],
+      [
+        "fotogramas",
+        [
+          "fotogramas/001.webp",
+          "fotogramas/002.webp",
+          "fotogramas/003.webp",
+          "fotogramas/004.webp",
+          "fotogramas/005.webp",
+          "fotogramas/006.webp",
+          "fotogramas/007.webp"
+        ]
+      ]
     ]
   },
   {
@@ -45,7 +64,11 @@
     "published": true,
     "ficha_tecnica": {
       "year": "2025",
-      "type": { "es": "Instalación de vídeo", "en": "Video installation", "ca": "Instal·lació de vídeo" },
+      "type": {
+        "es": "Instalación de vídeo",
+        "en": "Video installation",
+        "ca": "Instal·lació de vídeo"
+      },
       "duration": ""
     },
     "info": {
@@ -72,21 +95,37 @@
       ]
     },
     "links": [
-      ["Catálogo (PDF)", "data/_works/02. Desig i Ficció/Cataleg_desig_ficcio_50x70_cast.pdf"],
-      ["Museu de la Pauma", "https://cdrmuseudelapauma.cat/worpre/desig-i-ficcio-tot-explorant-el-margallo/"],
-      ["Artículo en El País", "https://elpais.com/quadern/art-i-arquitectura/2025-12-18/benvinguts-al-futur-arcaic.html"]
+      [
+        "Catálogo (PDF)",
+        "data/_works/desig-i-ficcio/Cataleg_desig_ficcio_50x70_cast.pdf"
+      ],
+      [
+        "Museu de la Pauma",
+        "https://cdrmuseudelapauma.cat/worpre/desig-i-ficcio-tot-explorant-el-margallo/"
+      ],
+      [
+        "Artículo en El País",
+        "https://elpais.com/quadern/art-i-arquitectura/2025-12-18/benvinguts-al-futur-arcaic.html"
+      ]
     ],
     "trailer": "https://vimeo.com/1148754736",
-    "creditos": { "es": [], "en": [], "ca": [] },
+    "creditos": {
+      "es": [],
+      "en": [],
+      "ca": []
+    },
     "gallerys": [
-      ["fotogramas", [
-        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-17h53m37s152.webp",
-        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-17h56m14s836.webp",
-        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-17h59m31s406.webp",
-        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-18h08m37s685.webp",
-        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-18h11m55s216.webp",
-        "data/_works/02. Desig i Ficció/Fotogramas/vlcsnap-2025-09-28-18h20m42s361.webp"
-      ]]
+      [
+        "fotogramas",
+        [
+          "Fotogramas/vlcsnap-2025-09-28-17h53m37s152.webp",
+          "Fotogramas/vlcsnap-2025-09-28-17h56m14s836.webp",
+          "Fotogramas/vlcsnap-2025-09-28-17h59m31s406.webp",
+          "Fotogramas/vlcsnap-2025-09-28-18h08m37s685.webp",
+          "Fotogramas/vlcsnap-2025-09-28-18h11m55s216.webp",
+          "Fotogramas/vlcsnap-2025-09-28-18h20m42s361.webp"
+        ]
+      ]
     ]
   },
   {
@@ -96,7 +135,11 @@
     "published": true,
     "ficha_tecnica": {
       "year": "2023",
-      "type": { "es": "Super 8 transferido a digital, video instalación, proyección sobre piezas cerámicas", "en": "Super 8 film transferred to digital, video installation, projection on ceramic pieces", "ca": "Super 8 transferit a digital, videoinstal·lació, projecció sobre peces ceràmiques" },
+      "type": {
+        "es": "Super 8 transferido a digital, video instalación, proyección sobre piezas cerámicas",
+        "en": "Super 8 film transferred to digital, video installation, projection on ceramic pieces",
+        "ca": "Super 8 transferit a digital, videoinstal·lació, projecció sobre peces ceràmiques"
+      },
       "duration": "7 min"
     },
     "info": {
@@ -135,16 +178,22 @@
       "ca": []
     },
     "gallerys": [
-      ["fotogramas", [
-        "data/_works/03. Biophilia/Fotogramas/vlcsnap-2023-11-23-15h31m52s900.webp",
-        "data/_works/03. Biophilia/Fotogramas/vlcsnap-2023-11-23-15h32m41s050.webp",
-        "data/_works/03. Biophilia/Fotogramas/vlcsnap-2023-11-23-15h33m02s499.webp"
-      ]],
-      ["exhibition views", [
-        "data/_works/03. Biophilia/Exhibition views/Captura-de-pantalla-2023-11-23-a-las-16.08.40.webp",
-        "data/_works/03. Biophilia/Exhibition views/detail_web_1.webp",
-        "data/_works/03. Biophilia/Exhibition views/detail_web_2.webp"
-      ]]
+      [
+        "fotogramas",
+        [
+          "Fotogramas/vlcsnap-2023-11-23-15h31m52s900.webp",
+          "Fotogramas/vlcsnap-2023-11-23-15h32m41s050.webp",
+          "Fotogramas/vlcsnap-2023-11-23-15h33m02s499.webp"
+        ]
+      ],
+      [
+        "exhibition views",
+        [
+          "Exhibition views/Captura-de-pantalla-2023-11-23-a-las-16.08.40.webp",
+          "Exhibition views/detail_web_1.webp",
+          "Exhibition views/detail_web_2.webp"
+        ]
+      ]
     ]
   },
   {
@@ -154,7 +203,11 @@
     "published": true,
     "ficha_tecnica": {
       "year": "2023",
-      "type": { "es": "Performance con Maria Marvila, film en 16 mm transferido a digital, fotos 35 mm", "en": "Performance with Maria Marvila, film shot in 16 mm transferred to digital, 35mm photos", "ca": "Performance amb Maria Marvila, film en 16 mm transferit a digital, fotos 35 mm" },
+      "type": {
+        "es": "Performance con Maria Marvila, film en 16 mm transferido a digital, fotos 35 mm",
+        "en": "Performance with Maria Marvila, film shot in 16 mm transferred to digital, 35mm photos",
+        "ca": "Performance amb Maria Marvila, film en 16 mm transferit a digital, fotos 35 mm"
+      },
       "duration": ""
     },
     "info": {
@@ -197,23 +250,29 @@
       ]
     },
     "gallerys": [
-      ["fotogramas", [
-        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-15h51m19s995.webp",
-        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-15h57m27s058.webp",
-        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-15h58m36s104.webp",
-        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-15h58m54s281.webp",
-        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-16h00m35s358.webp",
-        "data/_works/04. Aiguarir/Fotogramas/vlcsnap-2023-01-24-16h01m53s634.webp"
-      ]],
-      ["35mm photos", [
-        "data/_works/04. Aiguarir/35mm photos/000015.webp",
-        "data/_works/04. Aiguarir/35mm photos/000027.webp",
-        "data/_works/04. Aiguarir/35mm photos/000028.webp",
-        "data/_works/04. Aiguarir/35mm photos/000032.webp",
-        "data/_works/04. Aiguarir/35mm photos/000033.webp",
-        "data/_works/04. Aiguarir/35mm photos/000034.webp",
-        "data/_works/04. Aiguarir/35mm photos/000036.webp"
-      ]]
+      [
+        "fotogramas",
+        [
+          "Fotogramas/vlcsnap-2023-01-24-15h51m19s995.webp",
+          "Fotogramas/vlcsnap-2023-01-24-15h57m27s058.webp",
+          "Fotogramas/vlcsnap-2023-01-24-15h58m36s104.webp",
+          "Fotogramas/vlcsnap-2023-01-24-15h58m54s281.webp",
+          "Fotogramas/vlcsnap-2023-01-24-16h00m35s358.webp",
+          "Fotogramas/vlcsnap-2023-01-24-16h01m53s634.webp"
+        ]
+      ],
+      [
+        "35mm photos",
+        [
+          "35mm photos/000015.webp",
+          "35mm photos/000027.webp",
+          "35mm photos/000028.webp",
+          "35mm photos/000032.webp",
+          "35mm photos/000033.webp",
+          "35mm photos/000034.webp",
+          "35mm photos/000036.webp"
+        ]
+      ]
     ]
   },
   {
@@ -223,7 +282,11 @@
     "published": true,
     "ficha_tecnica": {
       "year": "2023",
-      "type": { "es": "16 mm transferido a digital, fotos 35 mm", "en": "16 mm transferred to digital, 35 mm photos", "ca": "16 mm transferit a digital, fotos 35 mm" },
+      "type": {
+        "es": "16 mm transferido a digital, fotos 35 mm",
+        "en": "16 mm transferred to digital, 35 mm photos",
+        "ca": "16 mm transferit a digital, fotos 35 mm"
+      },
       "duration": ""
     },
     "info": {
@@ -259,30 +322,46 @@
       ]
     },
     "links": [
-      ["Hoja de sala — On es recolzen les imatges? (PDF)", "https://web.girona.cat/documents/20147/10808186/FdS-Bolit-2023-onesrecolzenlesimatges.pdf"],
-      ["Galería en Flickr", "https://flic.kr/s/aHBqjACUHq"]
+      [
+        "Hoja de sala — On es recolzen les imatges? (PDF)",
+        "https://web.girona.cat/documents/20147/10808186/FdS-Bolit-2023-onesrecolzenlesimatges.pdf"
+      ],
+      [
+        "Galería en Flickr",
+        "https://flic.kr/s/aHBqjACUHq"
+      ]
     ],
     "trailer": "https://vimeo.com/824791180",
-    "creditos": { "es": [], "en": [], "ca": [] },
+    "creditos": {
+      "es": [],
+      "en": [],
+      "ca": []
+    },
     "gallerys": [
-      ["fotogramas", [
-        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h33m14s518.webp",
-        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h36m40s561.webp",
-        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h38m49s333.webp",
-        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h39m08s369.webp",
-        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h42m06s194.webp",
-        "data/_works/05. Una comunitat de llavors i de relats/fotogramas/vlcsnap-2023-04-20-18h43m25s078.webp"
-      ]],
-      ["35mm — fotos tomadas por las estudiantes", [
-        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734701.webp",
-        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734731.webp",
-        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734762.webp",
-        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734796.webp",
-        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734827.webp",
-        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734858.webp",
-        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734890.webp",
-        "data/_works/05. Una comunitat de llavors i de relats/Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734921.webp"
-      ]]
+      [
+        "fotogramas",
+        [
+          "fotogramas/vlcsnap-2023-04-20-18h33m14s518.webp",
+          "fotogramas/vlcsnap-2023-04-20-18h36m40s561.webp",
+          "fotogramas/vlcsnap-2023-04-20-18h38m49s333.webp",
+          "fotogramas/vlcsnap-2023-04-20-18h39m08s369.webp",
+          "fotogramas/vlcsnap-2023-04-20-18h42m06s194.webp",
+          "fotogramas/vlcsnap-2023-04-20-18h43m25s078.webp"
+        ]
+      ],
+      [
+        "35mm — fotos tomadas por las estudiantes",
+        [
+          "Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734701.webp",
+          "Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734731.webp",
+          "Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734762.webp",
+          "Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734796.webp",
+          "Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734827.webp",
+          "Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734858.webp",
+          "Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734890.webp",
+          "Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734921.webp"
+        ]
+      ]
     ]
   },
   {
@@ -292,7 +371,11 @@
     "published": true,
     "ficha_tecnica": {
       "year": "2022",
-      "type": { "es": "Video instalación site-specific con varias películas en 16 mm escaneadas a HD + 1 pantalla pequeña con un film digital", "en": "Site-specific video installation using different 16 mm scanned to HD films + 1 small screen with a digital film", "ca": "Videoinstal·lació site-specific amb diverses pel·lícules en 16 mm escanejades a HD + 1 pantalla petita amb un film digital" },
+      "type": {
+        "es": "Video instalación site-specific con varias películas en 16 mm escaneadas a HD + 1 pantalla pequeña con un film digital",
+        "en": "Site-specific video installation using different 16 mm scanned to HD films + 1 small screen with a digital film",
+        "ca": "Videoinstal·lació site-specific amb diverses pel·lícules en 16 mm escanejades a HD + 1 pantalla petita amb un film digital"
+      },
       "duration": ""
     },
     "info": {
@@ -317,19 +400,29 @@
     },
     "links": [],
     "trailer": "",
-    "creditos": { "es": [], "en": [], "ca": [] },
+    "creditos": {
+      "es": [],
+      "en": [],
+      "ca": []
+    },
     "gallerys": [
-      ["installation views — Bienal Sur (SAMoCA, Riyadh)", [
-        "data/_works/06. The holobiont that therefore I am/Installation views at Bienal Sur- Imagine. Fantasies, Dreams, Utopias, SAMoCA, Riyadh/1701272605900.webp",
-        "data/_works/06. The holobiont that therefore I am/Installation views at Bienal Sur- Imagine. Fantasies, Dreams, Utopias, SAMoCA, Riyadh/IMG_1379_peque.webp",
-        "data/_works/06. The holobiont that therefore I am/Installation views at Bienal Sur- Imagine. Fantasies, Dreams, Utopias, SAMoCA, Riyadh/pasillo.webp"
-      ]],
-      ["installation views — Inter Arts Center, Malmö 2022", [
-        "data/_works/06. The holobiont that therefore I am/Installation views at Inter Arts Center, Malmö, 2022 /DSC00125.webp",
-        "data/_works/06. The holobiont that therefore I am/Installation views at Inter Arts Center, Malmö, 2022 /DSC00131.webp",
-        "data/_works/06. The holobiont that therefore I am/Installation views at Inter Arts Center, Malmö, 2022 /JPG_MFAAR_exhibition_View_74.webp",
-        "data/_works/06. The holobiont that therefore I am/Installation views at Inter Arts Center, Malmö, 2022 /JPG_MFAAR_exhibition_View_76.webp"
-      ]]
+      [
+        "installation views — Bienal Sur (SAMoCA, Riyadh)",
+        [
+          "Installation views at Bienal Sur- Imagine. Fantasies, Dreams, Utopias, SAMoCA, Riyadh/1701272605900.webp",
+          "Installation views at Bienal Sur- Imagine. Fantasies, Dreams, Utopias, SAMoCA, Riyadh/IMG_1379_peque.webp",
+          "Installation views at Bienal Sur- Imagine. Fantasies, Dreams, Utopias, SAMoCA, Riyadh/pasillo.webp"
+        ]
+      ],
+      [
+        "installation views — Inter Arts Center, Malmö 2022",
+        [
+          "Installation views at Inter Arts Center, Malmö, 2022 /DSC00125.webp",
+          "Installation views at Inter Arts Center, Malmö, 2022 /DSC00131.webp",
+          "Installation views at Inter Arts Center, Malmö, 2022 /JPG_MFAAR_exhibition_View_74.webp",
+          "Installation views at Inter Arts Center, Malmö, 2022 /JPG_MFAAR_exhibition_View_76.webp"
+        ]
+      ]
     ]
   },
   {
@@ -339,7 +432,11 @@
     "published": true,
     "ficha_tecnica": {
       "year": "2022",
-      "type": { "es": "16 mm transferido a digital", "en": "16 mm transferred to digital", "ca": "16 mm transferit a digital" },
+      "type": {
+        "es": "16 mm transferido a digital",
+        "en": "16 mm transferred to digital",
+        "ca": "16 mm transferit a digital"
+      },
       "duration": "5 min 40 sec"
     },
     "info": {
@@ -376,17 +473,23 @@
       ]
     },
     "gallerys": [
-      ["fotogramas", [
-        "data/_works/07. Botanical dream/fotogramas/vlcsnap-2022-05-10-14h49m03s538.webp",
-        "data/_works/07. Botanical dream/fotogramas/vlcsnap-2022-05-10-14h50m03s270.webp",
-        "data/_works/07. Botanical dream/fotogramas/vlcsnap-2022-05-10-14h50m29s784.webp",
-        "data/_works/07. Botanical dream/fotogramas/vlcsnap-2022-05-10-14h51m50s439.webp",
-        "data/_works/07. Botanical dream/fotogramas/vlcsnap-2022-05-10-14h52m15s154.webp"
-      ]],
-      ["installation views — Riconfigurazioni, Palazzo Ca' Tron, Venice 2022", [
-        "data/_works/07. Botanical dream/Installation views of the exhibition Riconfigurazioni. Tre indagini filmiche sul silvano, Palazzo Ca’ Tron , Venice, 2022/foto1.webp",
-        "data/_works/07. Botanical dream/Installation views of the exhibition Riconfigurazioni. Tre indagini filmiche sul silvano, Palazzo Ca’ Tron , Venice, 2022/foto2.webp"
-      ]]
+      [
+        "fotogramas",
+        [
+          "fotogramas/vlcsnap-2022-05-10-14h49m03s538.webp",
+          "fotogramas/vlcsnap-2022-05-10-14h50m03s270.webp",
+          "fotogramas/vlcsnap-2022-05-10-14h50m29s784.webp",
+          "fotogramas/vlcsnap-2022-05-10-14h51m50s439.webp",
+          "fotogramas/vlcsnap-2022-05-10-14h52m15s154.webp"
+        ]
+      ],
+      [
+        "installation views — Riconfigurazioni, Palazzo Ca' Tron, Venice 2022",
+        [
+          "Installation views of the exhibition Riconfigurazioni. Tre indagini filmiche sul silvano, Palazzo Ca’ Tron , Venice, 2022/foto1.webp",
+          "Installation views of the exhibition Riconfigurazioni. Tre indagini filmiche sul silvano, Palazzo Ca’ Tron , Venice, 2022/foto2.webp"
+        ]
+      ]
     ]
   }
 ]
