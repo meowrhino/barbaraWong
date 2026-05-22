@@ -2,7 +2,7 @@
   {
     "slug": "els-peregrins",
     "order": 1,
-    "title": { "es": "Els peregrins", "en": "Els peregrins", "ca": "Els peregrins" },
+    "title": "Els peregrins",
     "published": true,
     "ficha_tecnica": {
       "year": "2025",
@@ -41,7 +41,7 @@
   {
     "slug": "desig-i-ficcio",
     "order": 2,
-    "title": { "es": "Desig i Ficció", "en": "Desig i Ficció", "ca": "Desig i Ficció" },
+    "title": "Desig i Ficció",
     "published": true,
     "ficha_tecnica": {
       "year": "2025",
@@ -92,7 +92,7 @@
   {
     "slug": "biophilia",
     "order": 3,
-    "title": { "es": "Biophilia", "en": "Biophilia", "ca": "Biophilia" },
+    "title": "Biophilia",
     "published": true,
     "ficha_tecnica": {
       "year": "2023",
@@ -150,7 +150,7 @@
   {
     "slug": "aiguarir",
     "order": 4,
-    "title": { "es": "Aiguarir. Després de Surar", "en": "Aiguarir. Després de Surar", "ca": "Aiguarir. Després de Surar" },
+    "title": "Aiguarir. Després de Surar",
     "published": true,
     "ficha_tecnica": {
       "year": "2023",
@@ -219,7 +219,7 @@
   {
     "slug": "una-comunitat-de-llavors-i-de-relats",
     "order": 5,
-    "title": { "es": "Una comunidad de semillas y de relatos", "en": "A community of seeds and stories", "ca": "Una comunitat de llavors i de relats" },
+    "title": "Una comunitat de llavors i de relats",
     "published": true,
     "ficha_tecnica": {
       "year": "2023",
@@ -288,7 +288,7 @@
   {
     "slug": "the-holobiont-that-therefore-i-am",
     "order": 6,
-    "title": { "es": "The holobiont that therefore I am", "en": "The holobiont that therefore I am", "ca": "The holobiont that therefore I am" },
+    "title": "The holobiont that therefore I am",
     "published": true,
     "ficha_tecnica": {
       "year": "2022",
@@ -335,7 +335,7 @@
   {
     "slug": "botanical-dream",
     "order": 7,
-    "title": { "es": "Botanical Dream", "en": "Botanical Dream", "ca": "Botanical Dream" },
+    "title": "Botanical Dream",
     "published": true,
     "ficha_tecnica": {
       "year": "2022",
