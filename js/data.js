@@ -64,7 +64,7 @@ export async function loadAll() {
     state.about = about;
     state.news = news;
     state.publications = publications;
-    state.projects = (projects || []).slice().sort((a, b) => (a.order || 999) - (b.order || 999));
+    state.projects = projects || [];
     state.photos = photos;
 }
 

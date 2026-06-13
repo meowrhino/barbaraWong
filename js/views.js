@@ -4,6 +4,22 @@ import { $, el } from "./dom.js";
 import { state, t, tf, tfa, findProject } from "./data.js";
 import { openLightbox } from "./lightbox.js";
 
+// Markdown inline mínimo: **bold** y *italic*.
+// Escapa HTML primero. Para escribir un asterisco literal: \*
+function md(str) {
+    if (str == null) return "";
+    let s = String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+    const PH = "\uE000";
+    s = s.replace(/\\\*/g, PH);
+    s = s.replace(/\*\*([^*\n]+?)\*\*/g, "<strong>$1</strong>");
+    s = s.replace(/\*([^*\n]+?)\*/g, "<em>$1</em>");
+    s = s.replace(new RegExp(PH, "g"), "*");
+    return s;
+}
+
 // ---------- Helpers ----------
 function zoomable(img, getGallery, getIndex) {
     img.classList.add("is-zoomable");
@@ -80,9 +96,15 @@ function vimeoEmbed(url) {
 // ---------- About ----------
 export function renderAbout() {
     const v = $("#viewer-content");
-    const bio = tfa(state.about?.bio);
+    const a = state.about || {};
+    const bio = tfa(a.bio);
     v.replaceChildren(el("article", { class: "view-about" },
-        ...bio.map(p => el("p", {}, p))
+        ...bio.map(p => el("p", { html: md(p) })),
+        a.image ? el("img", { class: "view-about-image", src: a.image, alt: "", loading: "lazy" }) : null,
+        el("p", { class: "view-about-web" },
+            "web:",
+            el("a", { href: "https://meowrhino.studio", target: "_blank", rel: "noopener" }, "meowrhino.studio")
+        ),
     ));
 }
 
@@ -91,6 +113,7 @@ export function renderContact() {
     const v = $("#viewer-content");
     const c = state.about?.contact || {};
     v.replaceChildren(el("article", { class: "view-contact" },
+        c.image ? el("img", { class: "view-contact-image", src: c.image, alt: "", loading: "lazy" }) : null,
         c.email ? el("p", {}, el("a", { href: `mailto:${c.email.replace(" [@] ", "@")}` }, c.email)) : null,
         (c.instagram || c.instagram_url) ? el("p", {},
             c.instagram_url
@@ -119,8 +142,8 @@ export function renderNews() {
                 el("div", { class: "news-media" }, media),
                 el("div", { class: "news-body" },
                     n.year ? el("div", { class: "news-year" }, String(n.year)) : null,
-                    titleStr ? el("div", { class: "news-title" }, titleStr) : null,
-                    n.description ? el("div", { class: "news-desc" }, tf(n.description)) : null,
+                    titleStr ? el("div", { class: "news-title", html: md(titleStr) }) : null,
+                    n.description ? el("div", { class: "news-desc", html: md(tf(n.description)) }) : null,
                     n.links?.length ? el("div", { class: "news-links" },
                         ...n.links.map((u, i) => el("a", { href: u, target: "_blank", rel: "noopener" },
                             i === 0 ? "↗ link" : `↗ link ${i + 1}`
@@ -141,8 +164,8 @@ export function renderPublications() {
             const titleStr = tf(p.title) || "";
             return el("article", { class: "pub-item" },
                 el("div", { class: "pub-body" },
-                    el("h3", {}, p.year ? `${p.year}. ${titleStr}` : titleStr),
-                    p.description ? el("div", { class: "pub-desc" }, tf(p.description)) : null,
+                    el("h3", { html: p.year ? `${p.year}. ${md(titleStr)}` : md(titleStr) }),
+                    p.description ? el("div", { class: "pub-desc", html: md(tf(p.description)) }) : null,
                     p.links?.length ? el("div", { class: "pub-links" },
                         ...p.links.map((u, i) => el("a", { href: u, target: "_blank", rel: "noopener" },
                             i === 0 ? "↗ link" : `↗ link ${i + 1}`
@@ -189,7 +212,7 @@ export function renderProject(slug) {
             fichaLine ? el("div", { class: "project-meta" }, fichaLine) : null,
         ),
         info.length
-            ? el("div", { class: "project-info" }, ...info.map(par => el("p", {}, par)))
+            ? el("div", { class: "project-info" }, ...info.map(par => el("p", { html: md(par) })))
             : null,
         links.length
             ? el("div", { class: "project-links" },
@@ -220,7 +243,7 @@ export function renderProject(slug) {
         creditos.length
             ? el("div", { class: "project-credits" },
                 el("div", { class: "project-section-title" }, t("credits")),
-                ...creditos.map(c => el("p", {}, c))
+                ...creditos.map(c => el("p", { html: md(c) }))
             )
             : null,
     ));

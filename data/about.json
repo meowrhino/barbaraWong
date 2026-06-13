@@ -22,9 +22,11 @@
       "Actualment és doctoranda a BAU-UVIC, artista resident a La Escocesa i treballa com a docent en diferents universitats i institucions."
     ]
   },
+  "image": "data/_about/about.webp",
   "contact": {
     "email": "b.sanch.b [@] gmail.com",
     "instagram": "@barbara_wong",
-    "instagram_url": "https://instagram.com/barbara_wong"
+    "instagram_url": "https://instagram.com/barbara_wong",
+    "image": "data/_about/contact.webp"
   }
 }
