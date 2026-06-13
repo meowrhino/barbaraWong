@@ -8,6 +8,8 @@ Sitio web personal de Bárbara Sánchez Barroso (artista visual, cine analógico
 
 Todo el contenido vive en `data/`. Edita el JSON correspondiente, guarda, y haz commit. **Las imágenes deben estar en `.webp`** antes de subirlas (ver "Imágenes" abajo).
 
+> 📖 Para una guía paso a paso pensada para alguien sin perfil técnico (qué es GitHub, cómo navegar la web, cómo añadir/quitar/ordenar en cada sección), ver **[GUIA_CLIENTE.md](GUIA_CLIENTE.md)**.
+
 ### Estructura de `data/`
 
 ```
@@ -32,7 +34,6 @@ Cada noticia es un objeto:
 
 ```json
 {
-  "id": 75,
   "year": "2026",
   "title": {
     "es": "Título en castellano",
@@ -52,13 +53,13 @@ Cada noticia es un objeto:
 
 - `image` (singular) o `images` (array, múltiples → aparece slider con `‹ ›`).
 - Si un idioma falta, el sitio cae al español. Tradúcelos para mejor experiencia.
+- **Orden**: las noticias se renderizan en el orden del array (la primera, arriba). No hay campo de orden ni `id` (el `id` antiguo era decorativo y se eliminó).
 
 ### Editar obras (`data/projects.json`)
 
 ```json
 {
   "slug": "el-slug-en-url",
-  "order": 8,
   "title": { "es": "...", "en": "...", "ca": "..." },
   "published": true,
   "ficha_tecnica": {
@@ -73,19 +74,30 @@ Cada noticia es un objeto:
   },
   "links": [["Nombre del link", "https://..."]],
   "trailer": "https://vimeo.com/123456",
+  "trailer_pos": "despues",
   "creditos": { "es": [...], "en": [...], "ca": [...] },
   "gallerys": [
-    ["", ["data/_works/08. Mi obra/poster.webp"]],
-    ["fotogramas", ["data/_works/08. Mi obra/fotogramas/01.webp", "..."]],
-    ["exhibition views", ["data/_works/08. Mi obra/exhibition/01.webp"]]
+    ["", ["poster.webp"]],
+    ["fotogramas", ["fotogramas/01.webp", "..."]],
+    ["exhibition views", ["exhibition/01.webp"]]
   ]
 }
 ```
 
-- **Orden de render dentro de una obra**: ficha técnica → info → links → cada galería (en el orden que estén en `gallerys`) → vídeo Vimeo → créditos.
-- Cada entrada en `gallerys` es `["nombre", [imagenes]]`. Si `nombre` es `""` o `"fotogramas"`, no se muestra etiqueta. Si hay más de una imagen, se renderiza como slider.
+- **Orden de las obras**: el orden del array en `projects.json` (no hay campo `order`; se eliminó). Para reordenar, mueve el bloque de la obra.
+- **Orden de render dentro de una obra**: cabecera (título + ficha) → info → links → galerías → tráiler → créditos. Con `"trailer_pos": "antes"` el tráiler se muestra **antes** de las galerías; por defecto (sin el campo o `"despues"`) va después.
+- Cada entrada en `gallerys` es `["nombre", [imagenes]]`. Las rutas son **relativas a `data/_works/<slug>/`** (p. ej. `"poster.webp"` o `"fotogramas/01.webp"`). Si `nombre` es `""` no se muestra etiqueta; cualquier otro texto se muestra como subtítulo (respeta mayúsculas). Si hay más de una imagen, se renderiza como slider.
 - `published: false` → la obra aparece tachada en el menú con "(próximamente)" y no es navegable.
-- Convención de carpeta: `data/_works/NN. Nombre/...` (numerada).
+- **Convención de carpeta**: `data/_works/<slug>/` (el nombre de la carpeta = el `slug` de la obra).
+
+### Formato de texto (común a info, créditos, noticias y publicaciones)
+
+Todos los textos largos comparten el mismo criterio:
+
+- **Párrafo nuevo**: un elemento más en el array, **o** una línea en blanco (`\n\n`) dentro del string. Equivalentes.
+- **Salto de línea**: `<br>` **o** un salto simple (`\n`).
+- **Cursiva** `*texto*`, **negrita** `**texto**`. Para un asterisco literal: `\*`.
+- En **títulos** y **nombres de galería** también valen `<br>`, `*` y `**`, y respetan mayúsculas.
 
 ### Editar diario fotográfico (`data/photos.json`)
 
@@ -190,6 +202,10 @@ t("close_menu")                // strings fijos en data.js → I18N
 ```
 
 Si añades un string fijo nuevo en el UI, mételo en `I18N` dentro de `js/data.js`.
+
+### Formato de texto (`js/views.js`)
+
+`md(str)` aplica markdown inline mínimo (`**negrita**`, `*cursiva*`, `<br>`) escapando el resto del HTML. `richParagraphs(val)` lo envuelve para bloques: acepta array (cada item = `<p>`) o string (separa párrafos por línea en blanco `\n{2,}` y convierte `\n` simple en `<br>`). Se usa en info, créditos, noticias y publicaciones, de modo que el criterio de párrafos/saltos es único en toda la web.
 
 ### Router
 

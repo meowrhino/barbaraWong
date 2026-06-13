@@ -377,7 +377,9 @@ body[data-view="contact"] #viewer-content {
 .news-media img { width: 100%; height: auto; display: block; }
 .news-year { font-size: var(--fs-small); color: var(--muted); margin-bottom: 0.25rem; }
 .news-title { font-size: var(--fs-base); font-style: italic; margin-bottom: 0.5rem; line-height: 1.3; }
-.news-desc  { font-size: var(--fs-small); line-height: 1.55; white-space: pre-line; }
+.news-desc  { font-size: var(--fs-small); line-height: 1.55; }
+.news-desc p { margin-bottom: 0.9em; }
+.news-desc p:last-child { margin-bottom: 0; }
 .news-links { margin-top: 0.5rem; font-size: var(--fs-small); display: flex; flex-direction: column; gap: 0.2rem; }
 .news-links a { word-break: break-all; color: var(--muted); }
 .news-links a:hover { color: var(--fg); }
@@ -427,14 +429,16 @@ body[data-view="contact"] #viewer-content {
 }
 .pub-media img { width: 100%; height: auto; display: block; }
 .pub-item h3 { font-weight: 500; font-size: 1rem; margin-bottom: 0.5rem; line-height: 1.3; }
-.pub-desc  { font-size: var(--fs-small); line-height: 1.55; white-space: pre-line; }
+.pub-desc  { font-size: var(--fs-small); line-height: 1.55; }
+.pub-desc p { margin-bottom: 0.9em; }
+.pub-desc p:last-child { margin-bottom: 0; }
 .pub-links { margin-top: 0.5rem; font-size: var(--fs-small); display: flex; flex-direction: column; gap: 0.2rem; }
 .pub-links a { color: var(--muted); word-break: break-all; }
 .pub-links a:hover { color: var(--fg); }
 
 .view-project { max-width: var(--w-section); margin: 0; padding-top: 1rem; }
 .project-header { margin-bottom: 1.25rem; }
-.project-header h2 { font-weight: 500; font-size: var(--fs-title); text-transform: lowercase; margin-bottom: 0.4rem; }
+.project-header h2 { font-weight: 500; font-size: var(--fs-title); margin-bottom: 0.4rem; }
 .project-meta { font-size: var(--fs-small); color: var(--muted); line-height: 1.5; }
 .project-info { margin-bottom: 1.5rem; line-height: 1.6; font-size: var(--fs-small); }
 .project-info p { margin-bottom: 0.9em; }
@@ -460,6 +464,7 @@ body[data-view="contact"] #viewer-content {
 }
 .project-section-title.gallery-caption {
     text-align: center;
+    text-transform: none;
     margin-top: 0.5rem;
     margin-bottom: 0;
 }

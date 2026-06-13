@@ -1,6 +1,5 @@
 [
   {
-    "id": 0,
     "year": "2026",
     "title": {
       "es": "Estrena Els peregrins al festival D'A dins de Simfonies de ciutat",
@@ -19,7 +18,6 @@
     ]
   },
   {
-    "id": 1,
     "year": "2025",
     "title": {
       "es": "Atlánticas colectivas: El espesor. Fotonoviembre 2025",
@@ -38,7 +36,6 @@
     ]
   },
   {
-    "id": 2,
     "year": "2025",
     "title": {
       "es": "Desig i Ficció. Una exploración sensorial y material del margalló",
@@ -56,7 +53,6 @@
     ]
   },
   {
-    "id": 3,
     "year": "2025",
     "title": {
       "es": "Nexes. Piezas audiovisuales de artistas residentes y socias de La Escocesa",
@@ -75,7 +71,6 @@
     ]
   },
   {
-    "id": 4,
     "year": "2025",
     "title": {
       "es": "Geografías del arraigo. Encuentros sobre arte y topofilias",
@@ -93,7 +88,6 @@
     ]
   },
   {
-    "id": 5,
     "year": "2025",
     "title": {
       "es": "La Escocesa. Talleres Abiertos 2025",
@@ -112,7 +106,6 @@
     ]
   },
   {
-    "id": 6,
     "year": "2025",
     "title": {
       "es": "La romería del sifonóforo",
@@ -131,7 +124,6 @@
     ]
   },
   {
-    "id": 7,
     "year": "2025",
     "title": {
       "es": "Bloom. L'incanto della biodiversità",
@@ -149,7 +141,6 @@
     ]
   },
   {
-    "id": 8,
     "year": "2025",
     "title": {
       "es": "Labocine: ETHNOBOTANICA",
@@ -168,7 +159,6 @@
     ]
   },
   {
-    "id": 9,
     "year": "2025",
     "title": {
       "es": "Simfonies de ciutat, Dones visuals y CCCB, Barcelona",
@@ -188,7 +178,6 @@
     ]
   },
   {
-    "id": 10,
     "year": "2025",
     "title": {
       "es": "Amable informal, Centre d'Art Contemporani Fabra i Coats, Barcelona",
@@ -207,7 +196,6 @@
     ]
   },
   {
-    "id": 11,
     "year": "2024",
     "title": {
       "es": "Recent video works selected by àngels barcelona",
@@ -226,7 +214,6 @@
     ]
   },
   {
-    "id": 12,
     "year": "2024",
     "title": {
       "es": "Naturalezas del retrato, Cineteca Matadero, Madrid",
@@ -244,7 +231,6 @@
     ]
   },
   {
-    "id": 13,
     "year": "2024",
     "title": {
       "es": "Pajarracos, pájaros y pajaritos",
@@ -264,7 +250,6 @@
     ]
   },
   {
-    "id": 14,
     "year": "2024",
     "title": {
       "es": "Inauguración IASlab, Interactive Arts & Science Lab",
@@ -285,7 +270,6 @@
     ]
   },
   {
-    "id": 15,
     "year": "2024",
     "title": {
       "es": "A Tree, A Reader on Arboreal Kinship",
@@ -304,7 +288,6 @@
     ]
   },
   {
-    "id": 16,
     "year": "2024",
     "title": {
       "es": "La Escocesa. Talleres Abiertos 2024",
@@ -322,7 +305,6 @@
     ]
   },
   {
-    "id": 17,
     "year": "2024",
     "title": {
       "es": "Article 9. Capitalobscè",
@@ -340,7 +322,6 @@
     ]
   },
   {
-    "id": 18,
     "year": "2024",
     "title": {
       "es": "El buen vecinx",
@@ -356,7 +337,6 @@
     "links": []
   },
   {
-    "id": 19,
     "year": "2024",
     "title": {
       "es": "Conferencia: Enbluement: connecting science and arts to expand our belonging to the Ocean",
@@ -376,7 +356,6 @@
     ]
   },
   {
-    "id": 20,
     "year": "2023",
     "title": {
       "es": "Presentación película Aiguarir",
@@ -395,7 +374,6 @@
     ]
   },
   {
-    "id": 21,
     "year": "2023",
     "title": {
       "es": "Nature is ancient, but surprises us all",
@@ -413,7 +391,6 @@
     ]
   },
   {
-    "id": 22,
     "year": "2023",
     "title": null,
     "description": {
@@ -428,7 +405,6 @@
     ]
   },
   {
-    "id": 23,
     "year": "2023",
     "title": {
       "es": "Imagine. Fantasies, Dreams, Utopias. BienalSur",
@@ -448,7 +424,6 @@
     ]
   },
   {
-    "id": 24,
     "year": "2023",
     "title": {
       "es": "Ecologies queer. Aberraciones naturalmente subversivas",
@@ -468,7 +443,6 @@
     ]
   },
   {
-    "id": 25,
     "year": "2023",
     "title": {
       "es": "Art, fabulation and narratives for worlds to come",
@@ -488,7 +462,6 @@
     ]
   },
   {
-    "id": 26,
     "year": "2023",
     "title": {
       "es": "Cuando la casa se quema.",
@@ -506,7 +479,6 @@
     ]
   },
   {
-    "id": 27,
     "year": "2023",
     "title": {
       "es": "Quattro Radici. Appunti su un'idea di parentela.",
@@ -526,7 +498,6 @@
     ]
   },
   {
-    "id": 28,
     "year": "2023",
     "title": {
       "es": "Festa del batre en l'Espai Nyam Nyam",
@@ -546,7 +517,6 @@
     ]
   },
   {
-    "id": 29,
     "year": "2023",
     "title": {
       "es": "Cinema night at KASK cinema",
@@ -564,7 +534,6 @@
     ]
   },
   {
-    "id": 30,
     "year": "2023",
     "title": {
       "es": "Research Pavilion #5: Helsinki",
@@ -584,7 +553,6 @@
     ]
   },
   {
-    "id": 31,
     "year": "2023",
     "title": {
       "es": "Open House at Saari Residence",
@@ -603,7 +571,6 @@
     ]
   },
   {
-    "id": 32,
     "year": "2023",
     "title": {
       "es": "¿En qué se apoyan las imágenes?",
@@ -622,7 +589,6 @@
     ]
   },
   {
-    "id": 33,
     "year": "2023",
     "title": {
       "es": "To Undiscovered Lands",
@@ -641,7 +607,6 @@
     ]
   },
   {
-    "id": 34,
     "year": "2022",
     "title": {
       "es": "Aiguarir. Después de Surar",
@@ -659,7 +624,6 @@
     ]
   },
   {
-    "id": 35,
     "year": "2022",
     "title": {
       "es": "The Wilderness",
@@ -678,7 +642,6 @@
     ]
   },
   {
-    "id": 36,
     "year": "2022",
     "title": {
       "es": "2022 Festival LOOP",
@@ -697,7 +660,6 @@
     ]
   },
   {
-    "id": 37,
     "year": "2022",
     "title": {
       "es": "BIAM22",
@@ -716,7 +678,6 @@
     ]
   },
   {
-    "id": 38,
     "year": "2022",
     "title": {
       "es": "Riconfigurazioni",
@@ -736,7 +697,6 @@
     ]
   },
   {
-    "id": 39,
     "year": "2022",
     "title": {
       "es": "39th Kassel Documentary Film and Video Festival",
@@ -752,7 +712,6 @@
     "links": []
   },
   {
-    "id": 40,
     "year": "2022",
     "title": {
       "es": "El ojo del corazón vio algo que la mano nunca pudo sostener",
@@ -771,7 +730,6 @@
     ]
   },
   {
-    "id": 41,
     "year": "2022",
     "title": {
       "es": "sssssh – ciclo de cine de cámara",
@@ -791,7 +749,6 @@
     ]
   },
   {
-    "id": 42,
     "year": "2022",
     "title": {
       "es": "Sonic Geologies",
@@ -809,7 +766,6 @@
     ]
   },
   {
-    "id": 43,
     "year": "2022",
     "title": {
       "es": "11 Short 16mm Films",
@@ -825,7 +781,6 @@
     "links": []
   },
   {
-    "id": 44,
     "year": "2022",
     "title": {
       "es": "Master of Fine Art in Artistic Research (MFAAR) Exam Exhibition 2022 / Malmö Art Academy",
@@ -843,7 +798,6 @@
     ]
   },
   {
-    "id": 45,
     "year": "2021",
     "title": {
       "es": "Coexistence se proyectará junto a otras películas de arte\n\nen el programa Konsthelgen, en el Kino cinema de Lund, Suecia",
@@ -861,7 +815,6 @@
     ]
   },
   {
-    "id": 46,
     "year": "2021",
     "title": {
       "es": "Mostra Viva del Mediterrani 2021, València\nArtes Visuales",
@@ -882,7 +835,6 @@
     ]
   },
   {
-    "id": 47,
     "year": "2021",
     "title": {
       "es": "El ciclo A+A 2021",
@@ -900,7 +852,6 @@
     ]
   },
   {
-    "id": 48,
     "year": "2019",
     "title": {
       "es": "An Island of Multiple Bridges",
@@ -916,7 +867,6 @@
     "links": []
   },
   {
-    "id": 49,
     "year": "2019",
     "title": {
       "es": "سمر Dear Samar",
@@ -934,7 +884,6 @@
     ]
   },
   {
-    "id": 50,
     "year": "2019",
     "title": {
       "es": "The Word for World is Forest",
@@ -952,7 +901,6 @@
     ]
   },
   {
-    "id": 51,
     "year": "2019",
     "title": {
       "es": "CINEMA TICK TACK",
@@ -970,7 +918,6 @@
     ]
   },
   {
-    "id": 52,
     "year": "2019",
     "title": {
       "es": "Ai Bordi dell'Identità —   Videos from the Han Nefkens Foundation Collection",
@@ -986,7 +933,6 @@
     "links": []
   },
   {
-    "id": 53,
     "year": "2019",
     "title": {
       "es": "Why did you come to Taiwan?",
@@ -1004,7 +950,6 @@
     ]
   },
   {
-    "id": 54,
     "year": "2019",
     "title": {
       "es": "Ai bordi dell' identità",
@@ -1022,7 +967,6 @@
     ]
   },
   {
-    "id": 55,
     "year": "2019",
     "title": {
       "es": "HISK @ TICK TACK",
@@ -1042,7 +986,6 @@
     ]
   },
   {
-    "id": 56,
     "year": "2019",
     "title": {
       "es": "Próxima semana: HISK Open Studios 2019",
@@ -1058,7 +1001,6 @@
     "links": []
   },
   {
-    "id": 57,
     "year": "2019",
     "title": {
       "es": "Failures of Cohabitation.",
@@ -1076,7 +1018,6 @@
     ]
   },
   {
-    "id": 58,
     "year": "2019",
     "title": {
       "es": "Function.Anomy",
@@ -1096,7 +1037,6 @@
     ]
   },
   {
-    "id": 59,
     "year": "2019",
     "title": {
       "es": "Greenfield. The archive",
@@ -1115,7 +1055,6 @@
     ]
   },
   {
-    "id": 60,
     "year": "2018-2019",
     "title": {
       "es": "Els marges. Producciones afectivas, políticas y estéticas desde los confines y fuera de un territorio.",
@@ -1133,7 +1072,6 @@
     ]
   },
   {
-    "id": 61,
     "year": "2018",
     "title": {
       "es": "15ª Mostra, Museo de Arte Contemporáneo Fundación Naturgy, A Coruña",
@@ -1149,7 +1087,6 @@
     "links": []
   },
   {
-    "id": 62,
     "year": "2018-2019",
     "title": {
       "es": "Els marges. Producciones afectivas, políticas y estéticas desde los confines y fuera de un territorio.",
@@ -1167,7 +1104,6 @@
     ]
   },
   {
-    "id": 63,
     "year": "2018",
     "title": {
       "es": "HISK Open Studio",
@@ -1185,7 +1121,6 @@
     ]
   },
   {
-    "id": 64,
     "year": "2018",
     "title": {
       "es": "Taula 4",
@@ -1201,7 +1136,6 @@
     "links": []
   },
   {
-    "id": 65,
     "year": "2018",
     "title": {
       "es": "Expo finale Résidences BCN>TNS>ALG,",
@@ -1217,7 +1151,6 @@
     "links": []
   },
   {
-    "id": 66,
     "year": "2018",
     "title": {
       "es": "The Odyssey",
@@ -1235,7 +1168,6 @@
     ]
   },
   {
-    "id": 67,
     "year": "2017",
     "title": {
       "es": "Focus Mediterrània,",
@@ -1253,7 +1185,6 @@
     ]
   },
   {
-    "id": 68,
     "year": "2017",
     "title": {
       "es": "In search of Global Poetry: Videos de la colección Han Nefkens",
@@ -1271,7 +1202,6 @@
     ]
   },
   {
-    "id": 69,
     "year": "2017",
     "title": {
       "es": "Résidences de Création",
@@ -1287,7 +1217,6 @@
     "links": []
   },
   {
-    "id": 70,
     "year": "2017",
     "title": {
       "es": "Résidences de Création",
@@ -1303,7 +1232,6 @@
     "links": []
   },
   {
-    "id": 71,
     "year": "2016",
     "title": {
       "es": "RE_VISIONS\n\n10 años de vídeo en Barcelona Producció",
@@ -1319,7 +1247,6 @@
     "links": []
   },
   {
-    "id": 72,
     "year": "2016",
     "title": {
       "es": "BCN PRODUCCIÓ '16",
@@ -1335,7 +1262,6 @@
     "links": []
   },
   {
-    "id": 73,
     "year": "2014",
     "title": {
       "es": "Yo, misil",

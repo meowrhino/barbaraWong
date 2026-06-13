@@ -4,20 +4,34 @@ import { $, el } from "./dom.js";
 import { state, t, tf, tfa, findProject } from "./data.js";
 import { openLightbox } from "./lightbox.js";
 
-// Markdown inline mínimo: **bold** y *italic*.
-// Escapa HTML primero. Para escribir un asterisco literal: \*
+// Markdown inline mínimo: **bold**, *italic* y <br> para salto de línea.
+// Escapa el resto del HTML. Para escribir un asterisco literal: \*
 function md(str) {
     if (str == null) return "";
     let s = String(str)
         .replace(/&/g, "&amp;")
         .replace(/</g, "&lt;")
         .replace(/>/g, "&gt;");
+    // Único HTML permitido: <br>, <br/> y <br /> como salto de línea.
+    s = s.replace(/&lt;br\s*\/?&gt;/gi, "<br>");
     const PH = "\uE000";
     s = s.replace(/\\\*/g, PH);
     s = s.replace(/\*\*([^*\n]+?)\*\*/g, "<strong>$1</strong>");
     s = s.replace(/\*([^*\n]+?)\*/g, "<em>$1</em>");
     s = s.replace(new RegExp(PH, "g"), "*");
     return s;
+}
+
+// Texto rico → párrafos. Criterio ÚNICO para info, créditos, news y publications.
+// Acepta array (cada item = un párrafo) o string con líneas en blanco (\n\n = párrafo).
+// Dentro de un párrafo: \n o <br> = salto de línea; *cursiva* y **negrita**.
+function richParagraphs(val) {
+    return tfa(val)
+        .join("\n\n")
+        .split(/\n{2,}/)
+        .map(s => s.trim())
+        .filter(Boolean)
+        .map(s => el("p", { html: md(s).replace(/\n/g, "<br>") }));
 }
 
 // ---------- Helpers ----------
@@ -143,7 +157,7 @@ export function renderNews() {
                 el("div", { class: "news-body" },
                     n.year ? el("div", { class: "news-year" }, String(n.year)) : null,
                     titleStr ? el("div", { class: "news-title", html: md(titleStr) }) : null,
-                    n.description ? el("div", { class: "news-desc", html: md(tf(n.description)) }) : null,
+                    n.description ? el("div", { class: "news-desc" }, ...richParagraphs(n.description)) : null,
                     n.links?.length ? el("div", { class: "news-links" },
                         ...n.links.map((u, i) => el("a", { href: u, target: "_blank", rel: "noopener" },
                             i === 0 ? "↗ link" : `↗ link ${i + 1}`
@@ -165,7 +179,7 @@ export function renderPublications() {
             return el("article", { class: "pub-item" },
                 el("div", { class: "pub-body" },
                     el("h3", { html: p.year ? `${p.year}. ${md(titleStr)}` : md(titleStr) }),
-                    p.description ? el("div", { class: "pub-desc", html: md(tf(p.description)) }) : null,
+                    p.description ? el("div", { class: "pub-desc" }, ...richParagraphs(p.description)) : null,
                     p.links?.length ? el("div", { class: "pub-links" },
                         ...p.links.map((u, i) => el("a", { href: u, target: "_blank", rel: "noopener" },
                             i === 0 ? "↗ link" : `↗ link ${i + 1}`
@@ -201,29 +215,33 @@ export function renderProject(slug) {
     const titleStr = tf(p.title);
     const ficha = p.ficha_tecnica || {};
     const fichaLine = [ficha.year, tf(ficha.type), ficha.duration].filter(Boolean).join(" · ");
-    const info = tfa(p.info);
-    const creditos = tfa(p.creditos);
+    const info = richParagraphs(p.info);
+    const creditos = richParagraphs(p.creditos);
     const links = Array.isArray(p.links) ? p.links : [];
     const gallerys = Array.isArray(p.gallerys) ? p.gallerys : [];
+    const trailerNode = vimeoEmbed(p.trailer || p.video);
+    // trailer_pos: "antes" muestra el trailer antes de las galerías; por defecto va después.
+    const trailerBefore = ["antes", "pre"].includes((p.trailer_pos || "").toLowerCase());
 
     v.replaceChildren(el("article", { class: "view-project" },
         el("header", { class: "project-header" },
-            el("h2", {}, titleStr),
+            el("h2", { html: md(titleStr) }),
             fichaLine ? el("div", { class: "project-meta" }, fichaLine) : null,
         ),
         info.length
-            ? el("div", { class: "project-info" }, ...info.map(par => el("p", { html: md(par) })))
+            ? el("div", { class: "project-info" }, ...info)
             : null,
         links.length
             ? el("div", { class: "project-links" },
                 ...links.map(([name, url]) => el("a", { href: url, target: "_blank", rel: "noopener" }, `↗ ${name}`))
             )
             : null,
+        trailerBefore ? trailerNode : null,
         ...gallerys.map(([name, imgs]) => {
             if (!imgs || !imgs.length) return null;
             const base = `data/_works/${p.slug}/`;
             const full = imgs.map(src => /^(?:https?:\/\/|data\/)/.test(src) ? src : base + src);
-            const label = (name || "").toLowerCase();
+            const label = name || "";
             const altBase = `${titleStr} — ${name || "imagen"}`;
             let media;
             if (full.length > 1) {
@@ -236,14 +254,14 @@ export function renderProject(slug) {
             }
             return el("section", { class: "project-gallery-section" },
                 media,
-                label ? el("div", { class: "project-section-title gallery-caption" }, label) : null,
+                label ? el("div", { class: "project-section-title gallery-caption", html: md(label) }) : null,
             );
         }),
-        vimeoEmbed(p.trailer || p.video),
+        trailerBefore ? null : trailerNode,
         creditos.length
             ? el("div", { class: "project-credits" },
                 el("div", { class: "project-section-title" }, t("credits")),
-                ...creditos.map(c => el("p", { html: md(c) }))
+                ...creditos
             )
             : null,
     ));
