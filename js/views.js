@@ -3,24 +3,8 @@
 import { $, el } from "./dom.js";
 import { state, t, tf, tfa, findProject } from "./data.js";
 import { openLightbox } from "./lightbox.js";
+import { md } from "./text.js";
 
-// Markdown inline mínimo: **bold**, *italic* y <br> para salto de línea.
-// Escapa el resto del HTML. Para escribir un asterisco literal: \*
-function md(str) {
-    if (str == null) return "";
-    let s = String(str)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;");
-    // Único HTML permitido: <br>, <br/> y <br /> como salto de línea.
-    s = s.replace(/&lt;br\s*\/?&gt;/gi, "<br>");
-    const PH = "\uE000";
-    s = s.replace(/\\\*/g, PH);
-    s = s.replace(/\*\*([^*\n]+?)\*\*/g, "<strong>$1</strong>");
-    s = s.replace(/\*([^*\n]+?)\*/g, "<em>$1</em>");
-    s = s.replace(new RegExp(PH, "g"), "*");
-    return s;
-}
 
 // Texto rico → párrafos. Criterio ÚNICO para info, créditos, news y publications.
 // Acepta array (cada item = un párrafo) o string con líneas en blanco (\n\n = párrafo).

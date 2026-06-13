@@ -3,6 +3,7 @@
 import { $, $$, el, cx, bindOnce } from "./dom.js";
 import { state, t, tf } from "./data.js";
 import { showWelcomeAgain } from "./welcome.js";
+import { md } from "./text.js";
 
 const MOBILE_MQ = window.matchMedia("(max-width: 768px)");
 
@@ -70,8 +71,9 @@ function renderWorksSection(m) {
                 class: liCls,
                 "data-slug": slug,
                 title: w.published ? "" : t("soon"),
+                html: md(tf(w.title)),
                 on: w.published ? { click: () => { onNavigate("project", slug); closePersiana(); } } : {},
-            }, tf(w.title));
+            });
         })
     );
     const list = el("div", { class: "works-list" }, inner);
