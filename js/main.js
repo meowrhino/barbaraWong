@@ -44,6 +44,7 @@ function navigate(view, payload) {
 function setLang(lang) {
     state.lang = lang;
     document.documentElement.lang = lang;
+    try { localStorage.setItem("lang", lang); } catch {}
     // Cambio de idioma → no fade (mismo contenido, refresco directo)
     renderNow();
 }

@@ -66,6 +66,22 @@ export async function loadAll() {
     state.publications = publications;
     state.projects = projects || [];
     state.photos = photos;
+    initLang();
+}
+
+// Recupera el idioma elegido por el usuario (localStorage) y lo valida contra
+// los idiomas disponibles en site. Si no hay uno guardado o no es válido, usa
+// el idioma por defecto del sitio.
+export function initLang() {
+    const allowed = state.data?.site?.languages || ["es", "en", "ca"];
+    const fallback = state.data?.site?.default_lang || "es";
+    let saved = null;
+    try {
+        saved = localStorage.getItem("lang");
+    } catch {}
+    const lang = allowed.includes(saved) ? saved : fallback;
+    state.lang = lang;
+    document.documentElement.lang = lang;
 }
 
 export function findProject(slug) {

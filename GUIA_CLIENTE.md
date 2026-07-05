@@ -48,7 +48,6 @@ Esto es lo que ve cualquier visitante. Conviene que lo conozcas para entender d�
 
 ### La pantalla de bienvenida
 - Al entrar, se ven **vídeos a pantalla completa** con un botón **"entrar"**.
-- Hay un **botón de sonido** (altavoz) para activar/silenciar el audio.
 - Una vez dentro, si **haces clic en el nombre** ("Bárbara Sánchez Barroso" arriba), **vuelves a la bienvenida**.
 
 ### El menú y las secciones

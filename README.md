@@ -21,7 +21,7 @@ data/
 ├── publications.json   # Publicaciones
 ├── projects.json       # Obras
 ├── photos.json         # Configuración del diario fotográfico
-├── _welcome/           # Vídeos de la pantalla de bienvenida (.webm + .mp4)
+├── _welcome/           # Vídeos de la pantalla de bienvenida (.webm)
 ├── _news/              # Imágenes de noticias (.webp, numeradas)
 ├── _publications/      # Imágenes de publicaciones (.webp, numeradas)
 ├── _photos/            # Diario fotográfico (.webp, numeradas)
@@ -128,7 +128,7 @@ Las fotos viven en `data/_photos/1.webp`, `2.webp`, …, `N.webp`. Para añadir 
 
 ### Welcome (pantalla de bienvenida)
 
-Configurado en `data/data.json` → `welcome`. Los vídeos están en `data/_welcome/`, formato dual `.webm` y `.mp4` con mismo nombre (`1.webm` + `1.mp4`, etc.). Para añadir uno: sube ambos formatos a la carpeta y añade `{ "id": "5", "label": "05" }` al array.
+Configurado en `data/data.json` → `welcome`. Los vídeos están en `data/_welcome/`, formato `.webm` (`1.webm`, `2.webm`, …). Para añadir uno: sube el vídeo a la carpeta y añade `{ "id": "5", "label": "05" }` al array.
 
 ### Imágenes
 
@@ -168,6 +168,8 @@ Convierte todas las imágenes referenciadas en `projects.json` a `.webp` (calida
 │   ├── dom.js              # Helpers: $, $$, el(), cx(), bindOnce()
 │   ├── menu.js             # Sidebar: secciones, works toggle, lang switch
 │   ├── views.js            # Renderers por vista (about, news, project, …)
+│   ├── lightbox.js         # Visor fullscreen de imágenes (galerías con flechas ‹ ›)
+│   ├── text.js             # Markdown inline mínimo (md())
 │   └── welcome.js          # Pantalla de bienvenida con vídeo
 ├── data/                   # JSON + media (ver sección cliente)
 ├── assets/                 # Favicon
@@ -203,7 +205,9 @@ t("close_menu")                // strings fijos en data.js → I18N
 
 Si añades un string fijo nuevo en el UI, mételo en `I18N` dentro de `js/data.js`.
 
-### Formato de texto (`js/views.js`)
+El idioma elegido se guarda en `localStorage` (clave `lang`) desde `setLang()` en `main.js`, y se recupera al cargar la web con `initLang()` en `js/data.js` (validando contra `site.languages`, con fallback a `site.default_lang`).
+
+### Formato de texto (`js/text.js`)
 
 `md(str)` aplica markdown inline mínimo (`**negrita**`, `*cursiva*`, `<br>`) escapando el resto del HTML. `richParagraphs(val)` lo envuelve para bloques: acepta array (cada item = `<p>`) o string (separa párrafos por línea en blanco `\n{2,}` y convierte `\n` simple en `<br>`). Se usa en info, créditos, noticias y publicaciones, de modo que el criterio de párrafos/saltos es único en toda la web.
 
@@ -215,7 +219,6 @@ Hash-based, sin History API para back/forward profundo. Vistas registradas en `V
 
 - Solo se muestra una vez por sesión (`sessionStorage.welcomeDone`).
 - Vídeos en loop con crossfade aleatorio entre cada uno.
-- Botón de audio (mute/unmute), bocina SVG con ondas en estado on.
 - Click en el nombre del sitio (desktop o móvil) **vuelve a mostrar el welcome** (limpia el flag).
 
 ### Correr local
