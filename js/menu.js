@@ -67,13 +67,25 @@ function renderWorksSection(m) {
             const slug = w.slug;
             const active = state.view === "project" && location.hash === `#project/${slug}`;
             const liCls = cx("work-item", !w.published && "is-unpublished", active && "is-active");
-            return el("li", {
-                class: liCls,
-                "data-slug": slug,
-                title: w.published ? "" : t("soon"),
-                html: md(tf(w.title)),
-                on: w.published ? { click: () => { onNavigate("project", slug); closePersiana(); } } : {},
-            });
+            if (!w.published) {
+                return el("li", {
+                    class: liCls,
+                    "data-slug": slug,
+                    title: t("soon"),
+                    html: md(tf(w.title)),
+                });
+            }
+            return el("li", { class: liCls, "data-slug": slug },
+                el("a", {
+                    href: `#project/${slug}`,
+                    html: md(tf(w.title)),
+                    on: { click: (e) => {
+                        e.preventDefault();
+                        onNavigate("project", slug);
+                        closePersiana();
+                    } },
+                })
+            );
         })
     );
     const list = el("div", { class: "works-list" }, inner);

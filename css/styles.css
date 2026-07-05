@@ -263,6 +263,21 @@ ul, ol { list-style: none; }
 .work-item.is-unpublished { color: var(--muted); cursor: not-allowed; opacity: 0.6; }
 .work-item.is-unpublished:hover { text-decoration: none; }
 
+/* El <a> interior de .work-item matchea también #menu-sections a, que le
+   impondría font-size: var(--fs-menu). El prefijo #menu-sections es necesario
+   para ganar en especificidad y restaurar el aspecto real de un work-item. */
+#menu-sections .work-item a {
+    display: block;
+    color: inherit;
+    text-align: right;
+    padding: 0;
+    font-size: var(--fs-work);
+    text-transform: lowercase;
+    line-height: 1.05;
+    text-decoration: none;
+}
+#menu-sections .work-item a:hover { text-decoration: underline; }
+
 #lang-switch {
     display: flex;
     gap: 0;
