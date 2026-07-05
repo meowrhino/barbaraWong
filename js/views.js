@@ -52,8 +52,7 @@ function makeSlider(images, altBase = "") {
 // al contenedor del slider. Carga las imágenes en paralelo solo para leer
 // sus dimensiones naturales (los navegadores cachean, así que el slider
 // real las reutiliza). Si alguna falla se ignora.
-function applyAdaptiveRatio(sliderEl, imageUrls) {
-    if (!sliderEl || !imageUrls || imageUrls.length === 0) return;
+function measureAdaptiveRatio(sliderEl, imageUrls) {
     const ratios = [];
     let done = 0;
     const finish = () => {
@@ -74,6 +73,48 @@ function applyAdaptiveRatio(sliderEl, imageUrls) {
         probe.onerror = () => { done++; finish(); };
         probe.src = url;
     });
+}
+
+// Difiere la medición del ratio hasta que el slider esté cerca del viewport,
+// para no descargar todas las imágenes de todas las galerías de golpe.
+function applyAdaptiveRatio(sliderEl, imageUrls) {
+    if (!sliderEl || !imageUrls || imageUrls.length === 0) return;
+    if (typeof IntersectionObserver === "undefined") {
+        measureAdaptiveRatio(sliderEl, imageUrls);
+        return;
+    }
+    const observer = new IntersectionObserver((entries) => {
+        for (const entry of entries) {
+            if (entry.isIntersecting) {
+                observer.disconnect();
+                measureAdaptiveRatio(sliderEl, imageUrls);
+            }
+        }
+    }, { root: null, rootMargin: "200px" });
+    observer.observe(sliderEl);
+}
+
+// Media de un item (news/publications): slider si hay varias imágenes,
+// si no una única imagen zoomable. Devuelve null si no hay imagen.
+function itemMedia(item, titleStr) {
+    const singleSrc = item.image || item.images?.[0];
+    if (item.images?.length > 1) {
+        return makeSlider(item.images, titleStr);
+    }
+    if (!singleSrc) return null;
+    const img = el("img", { src: singleSrc, alt: titleStr, loading: "lazy" });
+    zoomable(img, () => [singleSrc], () => 0);
+    return img;
+}
+
+// Lista de links "↗ link" / "↗ link N". Devuelve null si no hay links.
+function linkList(links, className) {
+    if (!links?.length) return null;
+    return el("div", { class: className },
+        ...links.map((u, i) => el("a", { href: u, target: "_blank", rel: "noopener" },
+            i === 0 ? "↗ link" : `↗ link ${i + 1}`
+        ))
+    );
 }
 
 function vimeoEmbed(url) {
@@ -128,25 +169,14 @@ export function renderNews() {
     v.replaceChildren(el("div", { class: "view-news" },
         ...items.map(n => {
             const titleStr = tf(n.title) || "";
-            const singleSrc = n.image || n.images?.[0];
-            let media = null;
-            if (n.images?.length > 1) {
-                media = makeSlider(n.images, titleStr);
-            } else if (singleSrc) {
-                media = el("img", { src: singleSrc, alt: titleStr, loading: "lazy" });
-                zoomable(media, () => [singleSrc], () => 0);
-            }
+            const media = itemMedia(n, titleStr);
             return el("article", { class: "news-item" },
                 el("div", { class: "news-media" }, media),
                 el("div", { class: "news-body" },
                     n.year ? el("div", { class: "news-year" }, String(n.year)) : null,
                     titleStr ? el("div", { class: "news-title", html: md(titleStr) }) : null,
                     n.description ? el("div", { class: "news-desc" }, ...richParagraphs(n.description)) : null,
-                    n.links?.length ? el("div", { class: "news-links" },
-                        ...n.links.map((u, i) => el("a", { href: u, target: "_blank", rel: "noopener" },
-                            i === 0 ? "↗ link" : `↗ link ${i + 1}`
-                        ))
-                    ) : null,
+                    linkList(n.links, "news-links"),
                 )
             );
         })
@@ -164,20 +194,9 @@ export function renderPublications() {
                 el("div", { class: "pub-body" },
                     el("h3", { html: p.year ? `${p.year}. ${md(titleStr)}` : md(titleStr) }),
                     p.description ? el("div", { class: "pub-desc" }, ...richParagraphs(p.description)) : null,
-                    p.links?.length ? el("div", { class: "pub-links" },
-                        ...p.links.map((u, i) => el("a", { href: u, target: "_blank", rel: "noopener" },
-                            i === 0 ? "↗ link" : `↗ link ${i + 1}`
-                        ))
-                    ) : null,
+                    linkList(p.links, "pub-links"),
                 ),
-                el("div", { class: "pub-media" }, (() => {
-                    const singleSrc = p.image || p.images?.[0];
-                    if (p.images?.length > 1) return makeSlider(p.images, titleStr);
-                    if (!singleSrc) return null;
-                    const im = el("img", { src: singleSrc, alt: titleStr, loading: "lazy" });
-                    zoomable(im, () => [singleSrc], () => 0);
-                    return im;
-                })())
+                el("div", { class: "pub-media" }, itemMedia(p, titleStr))
             );
         })
     ));
