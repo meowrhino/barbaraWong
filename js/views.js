@@ -21,9 +21,16 @@ function richParagraphs(val) {
 // ---------- Helpers ----------
 function zoomable(img, getGallery, getIndex) {
     img.classList.add("is-zoomable");
-    img.addEventListener("click", (e) => {
+    img.tabIndex = 0;
+    img.setAttribute("role", "button");
+    img.setAttribute("aria-label", "ampliar imagen");
+    const open = (e) => {
         e.stopPropagation();
         openLightbox(getGallery(), getIndex());
+    };
+    img.addEventListener("click", open);
+    img.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(e); }
     });
 }
 
@@ -179,9 +186,10 @@ export function renderAbout() {
 export function renderContact() {
     const v = $("#viewer-content");
     const c = state.about?.contact || {};
+    const email = c.email ? c.email.replace(" [@] ", "@") : null;
     v.replaceChildren(el("article", { class: "view-contact" },
         c.image ? el("img", { class: "view-contact-image", src: c.image, alt: "", loading: "lazy", decoding: "async" }) : null,
-        c.email ? el("p", {}, el("a", { href: safeHref(`mailto:${c.email.replace(" [@] ", "@")}`) }, c.email)) : null,
+        email ? el("p", {}, el("a", { href: safeHref(`mailto:${email}`) }, email)) : null,
         (c.instagram || c.instagram_url) ? el("p", {},
             c.instagram_url
                 ? el("a", { href: safeHref(c.instagram_url), target: "_blank", rel: "noopener" }, c.instagram || "instagram")
@@ -248,8 +256,11 @@ export function renderProject(slug) {
     const fichaLine = [ficha.year, tf(ficha.type), ficha.duration].filter(Boolean).join(" · ");
     const info = richParagraphs(p.info);
     const creditos = richParagraphs(p.creditos);
-    const links = Array.isArray(p.links) ? p.links : [];
-    const gallerys = Array.isArray(p.gallerys) ? p.gallerys : [];
+    // Solo se aceptan pares bien formados: una entrada rota no debe tirar toda la obra.
+    const links = (Array.isArray(p.links) ? p.links : [])
+        .filter(l => Array.isArray(l) && l[0] && l[1]);
+    const gallerys = (Array.isArray(p.gallerys) ? p.gallerys : [])
+        .filter(g => Array.isArray(g) && Array.isArray(g[1]));
     const trailerNode = vimeoEmbed(p.trailer || p.video);
     // trailer_pos: "antes" muestra el trailer antes de las galerías; por defecto va después.
     const trailerBefore = ["antes", "pre"].includes((p.trailer_pos || "").toLowerCase());

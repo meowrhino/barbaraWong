@@ -50,6 +50,23 @@ function onKey(e) {
     if (e.key === "Escape") { e.preventDefault(); close(); }
     else if (e.key === "ArrowLeft" && images.length > 1) { e.preventDefault(); show(idx - 1); }
     else if (e.key === "ArrowRight" && images.length > 1) { e.preventDefault(); show(idx + 1); }
+    else if (e.key === "Tab") trapFocus(e);
+}
+
+// Mantiene el foco dentro del diálogo mientras está abierto (ciclo entre sus botones visibles).
+function trapFocus(e) {
+    // Orden real en el DOM: closeBtnEl, prevBtn, nextBtn (imgEl y counterEl no son focuseables).
+    const focusable = [closeBtnEl, prevBtn, nextBtn].filter(b => b && !b.hidden);
+    if (!focusable.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+    }
 }
 
 function close() {
