@@ -305,6 +305,11 @@ ul, ol { list-style: none; }
     scroll-behavior: smooth;
     background: var(--bg);
 }
+/* El <a id="site-name"> vive dentro de un <h1> (para tener un único h1 en la
+   página). #site-name ya fija su propio font-size, pero el h1 del UA trae
+   font-size/font-weight propios que hay que neutralizar para que el resultado
+   visual no cambie. */
+#viewer h1 { font-size: inherit; font-weight: inherit; }
 #site-name {
     display: block;
     font-size: var(--fs-name);
