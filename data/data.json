@@ -1,7 +1,5 @@
 {
   "site": {
-    "name": "Bárbara Sánchez Barroso",
-    "handle": "barbara_wong",
     "default_lang": "es",
     "languages": ["es", "en", "ca"]
   },
