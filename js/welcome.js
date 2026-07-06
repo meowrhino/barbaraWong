@@ -69,6 +69,18 @@ function swap() {
     queueNext();
 }
 
+// Remata un crossfade: tras FADE_MS, oculta la capa saliente y limpia su
+// clase de fade. Común a done() y showWelcomeAgain(); el resto de la
+// coreografía (qué capa arranca visible, si hay doble rAF, etc.) difiere
+// entre ambas y se queda en cada función.
+function finishCrossfade(saliente, extra) {
+    setTimeout(() => {
+        saliente.hidden = true;
+        saliente.classList.remove("is-fading-out");
+        if (extra) extra();
+    }, FADE_MS);
+}
+
 function attachEnded(video) {
     video.addEventListener("ended", () => {
         if (video !== cur) return;
@@ -107,14 +119,13 @@ function done() {
         document.removeEventListener("keydown", keydownHandler);
         keydownHandler = null;
     }
-    setTimeout(() => {
-        w.hidden = true;
+    finishCrossfade(w, () => {
         app.classList.remove("is-fading-out");
         app.hidden = false;
         $("#welcome-video-a").pause();
         $("#welcome-video-b").pause();
         document.dispatchEvent(new CustomEvent("welcome:done"));
-    }, FADE_MS);
+    });
 }
 
 export function shouldShowWelcome() {
@@ -203,10 +214,7 @@ export function showWelcomeAgain() {
         });
     });
 
-    setTimeout(() => {
-        app.hidden = true;
-        app.classList.remove("is-fading-out");
-    }, FADE_MS);
+    finishCrossfade(app);
 
     if (!keydownHandler) {
         keydownHandler = (e) => {
