@@ -18,3 +18,12 @@ export function md(str) {
     s = s.replace(new RegExp(PH, "g"), "*");
     return s;
 }
+
+// Defensa contra `javascript:` URIs en los JSON editoriales. Solo deja pasar
+// esquemas conocidos (http/https/mailto/anclas/rutas relativas); si no, "#".
+export function safeHref(url) {
+    if (typeof url === "string" && /^(?:https?:\/\/|mailto:|#|\/|data\/)/i.test(url)) {
+        return url;
+    }
+    return "#";
+}

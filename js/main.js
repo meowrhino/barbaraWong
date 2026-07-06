@@ -18,7 +18,10 @@ function readHash() {
     const h = location.hash.replace(/^#/, "");
     if (!h) return { view: DEFAULT_VIEW };
     const [view, ...rest] = h.split("/");
-    return { view, payload: rest.join("/") || undefined };
+    const raw = rest.join("/");
+    let payload = raw || undefined;
+    try { if (raw) payload = decodeURIComponent(raw); } catch {}
+    return { view, payload };
 }
 
 let prevKey = null;

@@ -61,11 +61,11 @@ export async function loadAll() {
         loadJSON(s.photos).catch(() => null),
     ]);
     state.menu = menu || [];
-    state.about = about;
-    state.news = news;
-    state.publications = publications;
+    state.about = about || {};
+    state.news = news || [];
+    state.publications = publications || [];
     state.projects = projects || [];
-    state.photos = photos;
+    state.photos = photos || {};
     initLang();
 }
 

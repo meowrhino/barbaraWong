@@ -3,7 +3,7 @@
 import { $, el } from "./dom.js";
 import { state, t, tf, tfa, findProject } from "./data.js";
 import { openLightbox } from "./lightbox.js";
-import { md } from "./text.js";
+import { md, safeHref } from "./text.js";
 
 
 // Texto rico → párrafos. Criterio ÚNICO para info, créditos, news y publications.
@@ -29,7 +29,7 @@ function zoomable(img, getGallery, getIndex) {
 
 function makeSlider(images, altBase = "") {
     let i = 0;
-    const img = el("img", { src: images[0], alt: altBase ? `${altBase} 1` : "", loading: "lazy" });
+    const img = el("img", { src: images[0], alt: altBase ? `${altBase} 1` : "", loading: "lazy", decoding: "async" });
     const prev = el("button", { class: "slider-btn slider-prev", "aria-label": "anterior" }, "‹");
     const next = el("button", { class: "slider-btn slider-next", "aria-label": "siguiente" }, "›");
     prev.addEventListener("click", (e) => {
@@ -102,7 +102,7 @@ function itemMedia(item, titleStr) {
         return makeSlider(item.images, titleStr);
     }
     if (!singleSrc) return null;
-    const img = el("img", { src: singleSrc, alt: titleStr, loading: "lazy" });
+    const img = el("img", { src: singleSrc, alt: titleStr, loading: "lazy", decoding: "async" });
     zoomable(img, () => [singleSrc], () => 0);
     return img;
 }
@@ -111,7 +111,7 @@ function itemMedia(item, titleStr) {
 function linkList(links, className) {
     if (!links?.length) return null;
     return el("div", { class: className },
-        ...links.map((u, i) => el("a", { href: u, target: "_blank", rel: "noopener" },
+        ...links.map((u, i) => el("a", { href: safeHref(u), target: "_blank", rel: "noopener" },
             i === 0 ? "↗ link" : `↗ link ${i + 1}`
         ))
     );
@@ -132,6 +132,34 @@ function vimeoEmbed(url) {
     );
 }
 
+// Resuelve las rutas de una galería de proyecto: si ya son absolutas
+// (http(s):// o data/) se dejan tal cual, si no se anteponen a la carpeta del proyecto.
+function resolveGalleryImages(imgs, slug) {
+    const base = `data/_works/${slug}/`;
+    return imgs.map(src => /^(?:https?:\/\/|data\/)/.test(src) ? src : base + src);
+}
+
+// Construye una sección de galería de proyecto (slider o imagen única + caption).
+function gallerySection(name, imgs, slug, titleStr) {
+    if (!imgs || !imgs.length) return null;
+    const full = resolveGalleryImages(imgs, slug);
+    const label = name || "";
+    const altBase = `${titleStr} — ${name || "imagen"}`;
+    let media;
+    if (full.length > 1) {
+        media = makeSlider(full, altBase);
+        // Ratio adaptativo: el slider se amolda al promedio de su galería
+        applyAdaptiveRatio(media, full);
+    } else {
+        media = el("img", { src: full[0], alt: `${altBase} 1`, loading: "lazy", decoding: "async" });
+        zoomable(media, () => full, () => 0);
+    }
+    return el("section", { class: "project-gallery-section" },
+        media,
+        label ? el("div", { class: "project-section-title gallery-caption", html: md(label) }) : null,
+    );
+}
+
 // ---------- About ----------
 export function renderAbout() {
     const v = $("#viewer-content");
@@ -139,7 +167,7 @@ export function renderAbout() {
     const bio = tfa(a.bio);
     v.replaceChildren(el("article", { class: "view-about" },
         ...bio.map(p => el("p", { html: md(p) })),
-        a.image ? el("img", { class: "view-about-image", src: a.image, alt: "", loading: "lazy" }) : null,
+        a.image ? el("img", { class: "view-about-image", src: a.image, alt: "", loading: "lazy", decoding: "async" }) : null,
         el("p", { class: "view-about-web" },
             "web:",
             el("a", { href: "https://meowrhino.studio", target: "_blank", rel: "noopener" }, "meowrhino.studio")
@@ -152,11 +180,11 @@ export function renderContact() {
     const v = $("#viewer-content");
     const c = state.about?.contact || {};
     v.replaceChildren(el("article", { class: "view-contact" },
-        c.image ? el("img", { class: "view-contact-image", src: c.image, alt: "", loading: "lazy" }) : null,
-        c.email ? el("p", {}, el("a", { href: `mailto:${c.email.replace(" [@] ", "@")}` }, c.email)) : null,
+        c.image ? el("img", { class: "view-contact-image", src: c.image, alt: "", loading: "lazy", decoding: "async" }) : null,
+        c.email ? el("p", {}, el("a", { href: safeHref(`mailto:${c.email.replace(" [@] ", "@")}`) }, c.email)) : null,
         (c.instagram || c.instagram_url) ? el("p", {},
             c.instagram_url
-                ? el("a", { href: c.instagram_url, target: "_blank", rel: "noopener" }, c.instagram || "instagram")
+                ? el("a", { href: safeHref(c.instagram_url), target: "_blank", rel: "noopener" }, c.instagram || "instagram")
                 : c.instagram
         ) : null,
     ));
@@ -192,7 +220,7 @@ export function renderPublications() {
             const titleStr = tf(p.title) || "";
             return el("article", { class: "pub-item" },
                 el("div", { class: "pub-body" },
-                    el("h3", { html: p.year ? `${p.year}. ${md(titleStr)}` : md(titleStr) }),
+                    el("h3", { html: md(p.year ? `${p.year}. ${titleStr}` : titleStr) }),
                     p.description ? el("div", { class: "pub-desc" }, ...richParagraphs(p.description)) : null,
                     linkList(p.links, "pub-links"),
                 ),
@@ -236,30 +264,11 @@ export function renderProject(slug) {
             : null,
         links.length
             ? el("div", { class: "project-links" },
-                ...links.map(([name, url]) => el("a", { href: url, target: "_blank", rel: "noopener" }, `↗ ${name}`))
+                ...links.map(([name, url]) => el("a", { href: safeHref(url), target: "_blank", rel: "noopener" }, `↗ ${name}`))
             )
             : null,
         trailerBefore ? trailerNode : null,
-        ...gallerys.map(([name, imgs]) => {
-            if (!imgs || !imgs.length) return null;
-            const base = `data/_works/${p.slug}/`;
-            const full = imgs.map(src => /^(?:https?:\/\/|data\/)/.test(src) ? src : base + src);
-            const label = name || "";
-            const altBase = `${titleStr} — ${name || "imagen"}`;
-            let media;
-            if (full.length > 1) {
-                media = makeSlider(full, altBase);
-                // Ratio adaptativo: el slider se amolda al promedio de su galería
-                applyAdaptiveRatio(media, full);
-            } else {
-                media = el("img", { src: full[0], alt: `${altBase} 1`, loading: "lazy" });
-                zoomable(media, () => full, () => 0);
-            }
-            return el("section", { class: "project-gallery-section" },
-                media,
-                label ? el("div", { class: "project-section-title gallery-caption", html: md(label) }) : null,
-            );
-        }),
+        ...gallerys.map(([name, imgs]) => gallerySection(name, imgs, p.slug, titleStr)),
         trailerBefore ? null : trailerNode,
         creditos.length
             ? el("div", { class: "project-credits" },
@@ -296,6 +305,7 @@ export function renderPhotos() {
             src,
             alt: `diary ${idx + 1}`,
             loading: "lazy",
+            decoding: "async",
             on: { error: (e) => e.currentTarget.classList.add("is-missing") },
         });
         zoomable(im, () => urls, () => idx);
