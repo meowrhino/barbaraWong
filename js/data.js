@@ -69,19 +69,58 @@ export async function loadAll() {
     initLang();
 }
 
-// Recupera el idioma elegido por el usuario (localStorage) y lo valida contra
-// los idiomas disponibles en site. Si no hay uno guardado o no es válido, usa
-// el idioma por defecto del sitio.
+// Precedencia del idioma inicial:
+//   1) parámetro ?lang= de la URL (si es uno de los idiomas del sitio)
+//   2) localStorage
+//   3) idioma por defecto del sitio
+// Si llega un parámetro válido, se persiste también en localStorage.
 export function initLang() {
     const allowed = state.data?.site?.languages || ["es", "en", "ca"];
     const fallback = state.data?.site?.default_lang || "es";
+
+    let fromUrl = null;
+    try {
+        const p = new URLSearchParams(location.search).get("lang");
+        if (allowed.includes(p)) fromUrl = p;
+    } catch {}
+
     let saved = null;
     try {
         saved = localStorage.getItem("lang");
     } catch {}
-    const lang = allowed.includes(saved) ? saved : fallback;
+
+    let lang;
+    if (fromUrl) {
+        lang = fromUrl;
+        try { localStorage.setItem("lang", lang); } catch {}
+    } else if (allowed.includes(saved)) {
+        lang = saved;
+    } else {
+        lang = fallback;
+    }
+
     state.lang = lang;
     document.documentElement.lang = lang;
+    updateCanonical();
+}
+
+// Actualiza <link rel="canonical">. Si la URL tiene ?lang= válido apunta a
+// https://barbarawong.info/?lang=xx; si no, a la raíz. Nunca incluye el hash.
+export function updateCanonical() {
+    const link = document.querySelector('link[rel="canonical"]');
+    if (!link) return;
+    const allowed = state.data?.site?.languages || ["es", "en", "ca"];
+    let lang = null;
+    try {
+        const p = new URLSearchParams(location.search).get("lang");
+        if (allowed.includes(p)) lang = p;
+    } catch {}
+    link.setAttribute(
+        "href",
+        lang
+            ? `https://barbarawong.info/?lang=${lang}`
+            : "https://barbarawong.info/"
+    );
 }
 
 export function findProject(slug) {
