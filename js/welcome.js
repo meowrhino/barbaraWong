@@ -5,6 +5,9 @@ import { $, el } from "./dom.js";
 import { state } from "./data.js";
 
 const SESSION_KEY = "welcomeDone";
+// Debe coincidir con la transición de #welcome / #app en css/styles.css
+// (regla `#welcome { transition: opacity 0.4s ease; }`).
+const FADE_MS = 400;
 
 let entries = [];          // [{ id, label, sources: [{src, type}] }]
 let cur = null, nxt = null;
@@ -111,10 +114,11 @@ function done() {
         $("#welcome-video-a").pause();
         $("#welcome-video-b").pause();
         document.dispatchEvent(new CustomEvent("welcome:done"));
-    }, 400);
+    }, FADE_MS);
 }
 
 export function shouldShowWelcome() {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return false;
     return sessionStorage.getItem(SESSION_KEY) !== "1";
 }
 
@@ -176,6 +180,7 @@ export function skipWelcome() {
 }
 
 export function showWelcomeAgain() {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     if (!entries.length) {
         // Welcome no inicializado (skip directo). Inicializa ahora.
         startWelcome();
@@ -201,7 +206,7 @@ export function showWelcomeAgain() {
     setTimeout(() => {
         app.hidden = true;
         app.classList.remove("is-fading-out");
-    }, 400);
+    }, FADE_MS);
 
     if (!keydownHandler) {
         keydownHandler = (e) => {
