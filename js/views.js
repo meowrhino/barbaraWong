@@ -161,7 +161,10 @@ function gallerySection(name, imgs, slug, titleStr) {
         media = el("img", { src: full[0], alt: `${altBase} 1`, loading: "lazy", decoding: "async" });
         zoomable(media, () => full, () => 0);
     }
-    return el("section", { class: "project-gallery-section" },
+    // Convención: si algún archivo de la galería lleva "VERTICAL" en el nombre,
+    // la galería se estrecha (--w-gallery-vertical) para que no ocupe todo el alto.
+    const isVertical = full.some(src => /vertical/i.test(src));
+    return el("section", { class: "project-gallery-section" + (isVertical ? " is-vertical" : "") },
         media,
         label ? el("div", { class: "project-section-title gallery-caption", html: md(label) }) : null,
     );

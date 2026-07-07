@@ -163,6 +163,9 @@ El mismo texto también se puede escribir como un solo bloque separando párrafo
 - En los **títulos** de obra puedes usar `<br>` para partir en dos líneas, y `*cursiva*` / `**negrita**`.
 - Los **nombres de galería** y los **títulos** **respetan las mayúsculas** tal y como las escribas (el menú y la navegación, en cambio, se ven siempre en minúscula, es parte del diseño).
 
+### Imágenes verticales
+- Si una galería tiene fotos verticales y en pantalla de ordenador quedan demasiado grandes, añade la palabra `VERTICAL` al nombre de alguno de sus archivos (por ejemplo `1_VERTICAL.webp`). Toda esa galería se mostrará más estrecha (420px en vez de 720px) para que quepa mejor en pantalla.
+
 ---
 
 ## 7. Editar cada sección

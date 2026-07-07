@@ -31,6 +31,7 @@
     --w-col-text:  400px;     /* columna de texto en 2-col */
     --col-gap:     1.25rem;   /* gap entre columnas (300 + 20 + 400 = 720) */
     --gallery-ar:  3 / 2;     /* aspect-ratio fijo de sliders */
+    --w-gallery-vertical: 420px; /* max-width de galerías con "VERTICAL" en el nombre de archivo */
     --gallery-bg:  #f2f2f2;   /* fondo neutro para letterbox de verticales */
 }
 
@@ -491,6 +492,7 @@ body[data-view="contact"] #viewer-content {
 .project-links a:hover { color: var(--fg); }
 
 .project-gallery-section { margin-bottom: 2rem; }
+.project-gallery-section.is-vertical { max-width: var(--w-gallery-vertical); }
 .project-gallery-section > img { width: 100%; height: auto; display: block; }
 .project-section-title {
     font-size: var(--fs-small);
