@@ -2,6 +2,40 @@
   {
     "year": "2026",
     "title": {
+      "es": "El gesto de filmar. El vídeo en la colección Macba",
+      "en": "The Act of Filming. Video in the MACBA Collection",
+      "ca": "El gest de filmar. El vídeo a la col·lecció Macba"
+    },
+    "description": {
+      "es": "Inauguración, miércoles 8 de julio a las 20h.\n\nPresentamos una nueva muestra de la Colección MACBA, dedicada a la presencia del vídeo y que articula tres momentos y contextos de la imagen en movimiento, plasmados en tres propuestas: Contrainformación: Video-Nou / Servei de Vídeo Comunitari, Ecos. Vídeos de la donación de la Fundación Han Nefkens y Pere Portabella: la mirada comprometida. Estas tres iniciativas se integran en una misma constelación de prácticas que entienden el vídeo como una forma de atención a lo real: no se trata solo de registrar, sino también de activar miradas, presencias y relatos con frecuencia situados en los márgenes de la historia oficial.",
+      "en": "Opening, Wednesday, July 8 at 8:00 PM.\n\nWe present a new exhibition from the MACBA Collection, dedicated to the presence of video and structured around three moments and contexts of the moving image, expressed through three proposals: Counter-information: Video-Nou / Servei de Video Comunitari, Echoes. Videos from the Han Nefkens Foundation donation and Pere Portabella: the committed gaze. These three initiatives come together in a single constellation of practices that understand video as a form of attention to reality: not only a matter of recording, but also of activating gazes, presences and narratives often situated on the margins of official history.",
+      "ca": "Inauguració, dimecres 8 de juliol a les 20h.\n\nPresentem una nova mostra de la Col·lecció MACBA, dedicada a la presència del vídeo i que articula tres moments i contextos de la imatge en moviment, plasmats en tres propostes: Contrainformació: Video-Nou / Servei de Vídeo Comunitari, Ecos. Vídeos de la donació de la Fundació Han Nefkens i Pere Portabella: la mirada compromesa. Aquestes tres iniciatives s'integren en una mateixa constel·lació de pràctiques que entenen el vídeo com una forma d'atenció a allò real: no es tracta només de registrar, sinó també d'activar mirades, presències i relats sovint situats als marges de la història oficial."
+    },
+    "image": "data/_news/076.webp",
+    "links": [
+      "https://www.macba.cat/es/el-gesto-de-filmar-el-video-en-la-coleccion-macba/"
+    ]
+  },
+  {
+    "year": "2026",
+    "title": {
+      "es": "Cineclub en La Escocesa",
+      "en": "Cineclub at La Escocesa",
+      "ca": "Cineclub a La Escocesa"
+    },
+    "description": {
+      "es": "Miércoles 17 de junio, 20:00h\n\nEl cineclub es un encuentro en el que mensualmente mostramos una cuidada selección de películas. Cada sesión incluye la proyección y un pica-pica vegetariano preparado por une artista invitade, inspirado en la obra proyectada.",
+      "en": "Wednesday, June 17, 8:00 PM\n\nThe cineclub is a gathering where each month we present a carefully curated selection of films. Each session includes a screening and vegetarian snacks prepared by a guest artist, inspired by the work being shown.",
+      "ca": "Dimecres 17 de juny, 20:00h\n\nEl cineclub és una trobada on mensualment mostrem una cuidada selecció de pel·lícules. Cada sessió inclou la projecció i un pica-pica vegetarià preparat per uni artista invitadi, inspirada en l'obra projectada."
+    },
+    "image": "data/_news/075.webp",
+    "links": [
+      "https://laescocesa.org/es/view/cineclub/4007"
+    ]
+  },
+  {
+    "year": "2026",
+    "title": {
       "es": "Estrena Els peregrins al festival D'A dins de Simfonies de ciutat",
       "en": "Els peregrins premieres at the D'A Film Festival as part of Simfonies de ciutat",
       "ca": "Estrena d'Els peregrins al festival D'A dins de Simfonies de ciutat"
@@ -13,7 +47,6 @@
     },
     "image": "data/_news/074.webp",
     "links": [
-      "https://teatenerife.es/activitat/el-espesor/3283?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnhpR5HoK8Nias8N8rr6YIJH7iK3e2DYvGSupxh-VLMPoFFUAQ_htUvccuPvk_aem_D67k-cY8hnWtZmRkYxXtFg",
       "https://dafilmfestival.com/movie/els-peregrins/"
     ]
   },

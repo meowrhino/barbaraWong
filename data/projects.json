@@ -163,6 +163,15 @@
     "trailer": "https://vimeo.com/878483404",
     "creditos": {
       "es": [
+        "Escrito por: Bárbara Sánchez Barroso, Paulius Sliaupa",
+        "Diseño de sonido: Paulius Sliaupa",
+        "Voz en off: Bryony Ulyett",
+        "Color: Ben Guez",
+        "Laboratorio Super 8: CineLab Bucharest",
+        "Piezas cerámicas producidas y cocidas en el taller de Julieta Dentone",
+        "Agradecimientos: a Erundina, Rocio, Luis y el resto de la familia de Alba Feito por acogerme, Paulius Sliaupa, Ben Guez, Valentina Alvarado, Alba Bresolí, Cristina Ferrández, Mara y Armando de Figal de Xugabolos, Cornelia, Diana y Rodrigo de CineLab Bucharest, David Rodríguez y el equipo de La Panera."
+      ],
+      "en": [
         "Written by: Bárbara Sánchez Barroso, Paulius Sliaupa",
         "Sound Design: Paulius Sliaupa",
         "Voice over: Bryony Ulyett",
@@ -171,8 +180,13 @@
         "Ceramic pieces produced and fired in Julieta Dentone's workshop",
         "Acknowledgments: to Erundina, Rocio, Luis, and the rest of Alba Feito's family for hosting me, Paulius Sliaupa, Ben Guez, Valentina Alvarado, Alba Bresolí, Cristina Ferrández, Mara and Armando from Figal de Xugabolos, Cornelia, Diana and Rodrigo from CineLab Bucharest, David Rodríguez, and the La Panera team."
       ],
-      "en": [],
-      "ca": []
+      "ca": ["Escrit per: Bárbara Sánchez Barroso, Paulius Sliaupa",
+      "Disseny de so: Paulius Sliaupa",
+      "Veu en off: Bryony Ulyett",
+      "Color: Ben Guez",
+      "Laboratori Super 8: CineLab Bucharest",
+      "Peces ceràmiques produïdes i cuites al taller de Julieta Dentone",
+      "Agraïments: a Erundina, Rocio, Luis i la resta de la família d'Alba Feito per acollir-me, Paulius Sliaupa, Ben Guez, Valentina Alvarado, Alba Bresolí, Cristina Ferrández, Mara i Armando de Figal de Xugabolos, Cornelia, Diana i Rodrigo de CineLab Bucharest, David Rodríguez i l'equip de La Panera."]
     },
     "gallerys": [
       [
@@ -195,7 +209,7 @@
   },
   {
     "slug": "aiguarir",
-    "title": "Aiguarir. Després de Surar",
+    "title": "Aiguarir",
     "published": true,
     "ficha_tecnica": {
       "year": "2023",
@@ -273,7 +287,7 @@
   },
   {
     "slug": "una-comunitat-de-llavors-i-de-relats",
-    "title": "Una comunitat de llavors i de relats",
+    "title": "Una comunitat de <br> llavors i de relats",
     "published": true,
     "ficha_tecnica": {
       "year": "2023",
@@ -374,22 +388,22 @@
     },
     "info": {
       "es": [
-        "Usando como referencia The animal that therefore I am de Derrida para preguntarse cómo abrir un diálogo real a partir de modos de ser-con, alteridad y agencia, la instalación forma parte de un proceso de reflexión sobre los temas de una investigación sobre la convivencia, los mundos más-que-humanos y las políticas del cuidado.",
-        "En la obra Botanical dream, rodada en un jardín botánico, asistimos a un sueño, pero no estamos seguros de quién es. ¿Quizá las plantas del jardín sueñan con transformarse, traspasar esas paredes de cristal y convertirse en una selva tropical?",
-        "En The way my mother talked to plants la artista ha filmado a su madre en casa y con amigos, (siendo éstos humanos y no humanos), para reflexionar sobre los cuidados entre los seres humanos y la naturaleza.",
-        "The Knots We Knot es una película surgida a través de una colaboración con la cineasta Adriana Vila Guevara en una mini residencia en la Vall de Santa Creu. Ambas artistas deciden pasar unos días en el valle explorando sus intereses, y el entorno, humano, animal, vegetal, y liquen que las rodea, interactuando con él a través de una cámara Bólex de 16 mm y una grabadora de sonido, y acompañadas de las lecturas de Donna Haraway, Robin W. Kimmerer y María Puig de la Bellacasa entre otras autoras."
+        "Usando como referencia *The animal that therefore I am* de Derrida para preguntarse cómo abrir un diálogo real a partir de modos de ser-con, alteridad y agencia, la instalación forma parte de un proceso de reflexión sobre los temas de una investigación sobre la convivencia, los mundos más-que-humanos y las políticas del cuidado.",
+        "En la obra *Botanical dream*, rodada en un jardín botánico, asistimos a un sueño, pero no estamos seguros de quién es. ¿Quizá las plantas del jardín sueñan con transformarse, traspasar esas paredes de cristal y convertirse en una selva tropical?",
+        "En *The way my mother talked to plants*, la artista ha filmado a su madre en casa y con amigos, (siendo éstos humanos y no humanos), para reflexionar sobre los cuidados entre los seres humanos y la naturaleza.",
+        "*The Knots We Knot* es una película surgida a través de una colaboración con la cineasta Adriana Vila Guevara en una mini residencia en la Vall de Santa Creu. Ambas artistas deciden pasar unos días en el valle explorando sus intereses, y el entorno, humano, animal, vegetal, y liquen que las rodea, interactuando con él a través de una cámara Bólex de 16 mm y una grabadora de sonido, y acompañadas de las lecturas de Donna Haraway, Robin W. Kimmerer y María Puig de la Bellacasa entre otras autoras."
       ],
       "en": [
-        "Taking Derrida's The Animal That Therefore I Am as a reference to ask how to open a real dialogue based on ways of being-with, alterity and agency, the installation is part of a reflection process on the themes of a research about coexistence, more-than-human worlds and politics of care.",
-        "In Botanical dream, shot in a botanical garden, we witness a dream, but we are not sure whose dream it is. Perhaps the garden's plants dream of transforming, passing through those glass walls and turning into a tropical rainforest.",
-        "In The way my mother talked to plants the artist filmed her mother at home and with friends (both human and non-human), to reflect on care between human beings and nature.",
-        "The Knots We Knot is a film that emerged from a collaboration with filmmaker Adriana Vila Guevara during a mini residency in the Vall de Santa Creu. Both artists decided to spend a few days in the valley exploring their interests and the human, animal, vegetal and lichen environment around them, interacting with it through a 16 mm Bolex camera and a sound recorder, accompanied by readings from Donna Haraway, Robin W. Kimmerer and María Puig de la Bellacasa, among other authors."
+        "Taking Derrida's *The Animal That Therefore I Am* as a reference to ask how to open a real dialogue based on ways of being-with, alterity and agency, the installation is part of a reflection process on the themes of a research about coexistence, more-than-human worlds and politics of care.",
+        "In *Botanical dream*, shot in a botanical garden, we witness a dream, but we are not sure whose dream it is. Perhaps the garden's plants dream of transforming, passing through those glass walls and turning into a tropical rainforest.",
+        "In *The way my mother talked to plants* the artist filmed her mother at home and with friends (both human and non-human), to reflect on care between human beings and nature.",
+        "*The Knots We Knot* is a film that emerged from a collaboration with filmmaker Adriana Vila Guevara during a mini residency in the Vall de Santa Creu. Both artists decided to spend a few days in the valley exploring their interests and the human, animal, vegetal and lichen environment around them, interacting with it through a 16 mm Bolex camera and a sound recorder, accompanied by readings from Donna Haraway, Robin W. Kimmerer and María Puig de la Bellacasa, among other authors."
       ],
       "ca": [
-        "Prenent com a referència The animal that therefore I am de Derrida per preguntar-se com obrir un diàleg real a partir de maneres de ser-amb, alteritat i agència, la instal·lació forma part d'un procés de reflexió sobre els temes d'una recerca sobre la convivència, els mons més-que-humans i les polítiques de la cura.",
-        "A l'obra Botanical dream, rodada en un jardí botànic, assistim a un somni, però no estem segures de qui és. Potser les plantes del jardí somien transformar-se, traspassar aquelles parets de vidre i esdevenir una selva tropical?",
-        "A The way my mother talked to plants l'artista ha filmat la seva mare a casa i amb amics (humans i no humans), per reflexionar sobre les cures entre els éssers humans i la natura.",
-        "The Knots We Knot és una pel·lícula sorgida d'una col·laboració amb la cineasta Adriana Vila Guevara en una mini residència a la Vall de Santa Creu. Les dues artistes decideixen passar uns dies a la vall explorant els seus interessos i l'entorn humà, animal, vegetal i de líquens que les envolta, interactuant-hi a través d'una càmera Bolex de 16 mm i una gravadora de so, i acompanyades de les lectures de Donna Haraway, Robin W. Kimmerer i María Puig de la Bellacasa, entre d'altres autores."
+        "Prenent com a referència *The animal that therefore I am* de Derrida per preguntar-se com obrir un diàleg real a partir de maneres de ser-amb, alteritat i agència, la instal·lació forma part d'un procés de reflexió sobre els temes d'una recerca sobre la convivència, els mons més-que-humans i les polítiques de la cura.",
+        "A l'obra *Botanical dream*, rodada en un jardí botànic, assistim a un somni, però no estem segures de qui és. Potser les plantes del jardí somien transformar-se, traspassar aquelles parets de vidre i esdevenir una selva tropical?",
+        "A *The way my mother talked to plants* l'artista ha filmat la seva mare a casa i amb amics (humans i no humans), per reflexionar sobre les cures entre els éssers humans i la natura.",
+        "*The Knots We Knot* és una pel·lícula sorgida d'una col·laboració amb la cineasta Adriana Vila Guevara en una mini residència a la Vall de Santa Creu. Les dues artistes decideixen passar uns dies a la vall explorant els seus interessos i l'entorn humà, animal, vegetal i de líquens que les envolta, interactuant-hi a través d'una càmera Bolex de 16 mm i una gravadora de so, i acompanyades de les lectures de Donna Haraway, Robin W. Kimmerer i María Puig de la Bellacasa, entre d'altres autores."
       ]
     },
     "links": [],
@@ -536,9 +550,9 @@
     "ficha_tecnica": {
       "year": "2021",
       "type": {
-        "es": "16 mm transferido a digital y 2 performances",
-        "en": "16 mm transferred to digital and 2 performances",
-        "ca": "16 mm transferit a digital i 2 performances"
+        "es": "16 mm transferido a digital y 2 performances, en colaboración con Adriana Vila Guevara y Maria Marvila ",
+        "en": "16 mm transferred to digital and 2 performances, in collaboration with Adriana Vila Guevara and Maria Marvila",
+        "ca": "16 mm transferit a digital i 2 performances, en col·laboració amb Adriana Vila Guevara i Maria Marvila"
       },
       "duration": "8 min 7 sec"
     },
@@ -554,7 +568,7 @@
       ]
     },
     "links": [],
-    "trailer": "",
+    "trailer": "https://vimeo.com/604236418",
     "creditos": {
       "es": [],
       "en": [],
@@ -571,7 +585,7 @@
         ]
       ],
       [
-        "performance 1",
+        "performance Los nudos que anudamos, en colaboración con Adriana Vila Guevara",
         [
           "performance1/1.webp",
           "performance1/2.webp",
@@ -581,7 +595,7 @@
         ]
       ],
       [
-        "performance 2",
+        "performance Una (espècie de) meditació crítica a la vinya, en colaboración con Maria Marvila",
         [
           "performance2/1.webp",
           "performance2/2.webp",
@@ -591,6 +605,57 @@
           "performance2/6.webp",
           "performance2/7.webp",
           "performance2/8.webp"
+        ]
+      ]
+    ]
+  },
+  {
+    "slug": "coexistence",
+    "title": "Coexistence",
+    "published": true,
+    "ficha_tecnica": {
+      "year": "2021",
+      "type": {
+        "es": "Video digital",
+        "en": "Digital video",
+        "ca": "Vídeo digital"
+      },
+      "duration": "8 min"
+    },
+    "info": {
+      "es": [
+        "Coexistence es una película concisa que explora nuestra relación con los animales y el mundo vivo en tiempos de pandemia. Hasta ahora nos hemos aprovechado del planeta, considerándolo una mercancía y nuestra propiedad, como hacen los niños de la película con los peces, utilizándolos como atrezzo en un juego. En este juego hay transacciones económicas, como si los animales fueran máquinas con las que jugar. La película pretende plantear la siguiente pregunta: ¿la pandemia nos hará cambiar y cambiar nuestra relación con el mundo?"
+      ],
+      "en": [
+        "Coexistence is a concise film that explores our relationship with animals and the living world in times of pandemic. Until now we have taken advantage of the planet, considering it a commodity and our property, as the children in the film do with the fish, using them as props in a game. In this game there are economic transactions, as if animals were machines to play with. The film aims to raise the following question: will the pandemic make us change and change our relationship with the world?"
+      ],
+      "ca": [
+        ""
+      ]
+    },
+    "links": [],
+    "trailer": "https://vimeo.com/541253773",
+    "creditos": {
+      "es": [
+        "Fragmento del texto “What the virus wants”, de Filipa Ramos",
+        "Voz en off: Bo Alfaro"
+      ],
+      "en": [
+        "Excerpt from the text “What the virus wants”, by Filipa Ramos",
+        "Voice over: Bo Alfaro"
+      ],
+      "ca": [
+        "Extracte del text «What the Virus Wants», de Filipa Ramos",
+        "Veu en off: Bo Alfaro"
+      ]
+    },
+    "gallerys": [
+      [
+        "fotogramas",
+        [
+          "img/1.webp",
+          "img/2.webp",
+          "img/3.webp"
         ]
       ]
     ]
