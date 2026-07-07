@@ -167,20 +167,49 @@ function gallerySection(name, imgs, slug, titleStr) {
     );
 }
 
+// CV: un PDF por idioma en data/PDF/. Cacheamos el resultado del HEAD por
+// ruta para no repetir la comprobación cada vez que se re-renderiza la vista.
+const CV_FILES = { es: "cv_es.pdf", en: "cv_en.pdf", ca: "cv_cat.pdf" };
+const cvExistsCache = new Map();
+
+function checkCvExists(path) {
+    if (cvExistsCache.has(path)) return cvExistsCache.get(path);
+    const promise = fetch(path, { method: "HEAD" })
+        .then(r => r.ok)
+        .catch(() => false);
+    cvExistsCache.set(path, promise);
+    return promise;
+}
+
 // ---------- About ----------
 export function renderAbout() {
     const v = $("#viewer-content");
     const a = state.about || {};
     const bio = tfa(a.bio);
+    const cvContainer = el("p", { class: "view-about-cv" });
     v.replaceChildren(el("article", { class: "view-about" },
         ...bio.map(p => el("p", { html: md(p) })),
+        cvContainer,
         a.image ? el("img", { class: "view-about-image", src: a.image, alt: "", loading: "lazy", decoding: "async" }) : null,
         el("p", { class: "view-about-web" },
             "web:",
             el("a", { href: "https://meowrhino.studio", target: "_blank", rel: "noopener" }, "meowrhino.studio")
         ),
     ));
+
+    const cvFile = CV_FILES[state.lang];
+    if (!cvFile) return;
+    const cvPath = `data/PDF/${cvFile}`;
+    checkCvExists(cvPath).then(ok => {
+        if (!ok) return;
+        // La vista puede haber cambiado mientras esperábamos el fetch.
+        if (!cvContainer.isConnected) return;
+        cvContainer.replaceChildren(el("a", { href: cvPath, download: "" }, t("cv")));
+    });
 }
+
+const ICON_EMAIL = `<svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5"><rect x="2.5" y="5" width="19" height="14" rx="2"></rect><polyline points="2.5,6.5 12,13 21.5,6.5"></polyline></svg>`;
+const ICON_INSTAGRAM = `<svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"></circle></svg>`;
 
 // ---------- Contact ----------
 export function renderContact() {
@@ -189,8 +218,12 @@ export function renderContact() {
     const email = c.email ? c.email.replace(" [@] ", "@") : null;
     v.replaceChildren(el("article", { class: "view-contact" },
         c.image ? el("img", { class: "view-contact-image", src: c.image, alt: "", loading: "lazy", decoding: "async" }) : null,
-        email ? el("p", {}, el("a", { href: safeHref(`mailto:${email}`) }, email)) : null,
+        email ? el("p", {},
+            el("span", { class: "contact-icon", "aria-hidden": "true", html: ICON_EMAIL }),
+            el("a", { href: safeHref(`mailto:${email}`) }, email)
+        ) : null,
         (c.instagram || c.instagram_url) ? el("p", {},
+            el("span", { class: "contact-icon", "aria-hidden": "true", html: ICON_INSTAGRAM }),
             c.instagram_url
                 ? el("a", { href: safeHref(c.instagram_url), target: "_blank", rel: "noopener" }, c.instagram || "instagram")
                 : c.instagram
@@ -238,6 +271,20 @@ export function renderPublications() {
     ));
 }
 
+// Botón "ver más" / "ver menos" + bloque de info adicional colapsable.
+// Devuelve [botón, div] listos para insertar en el árbol.
+function infoMoreToggle(paragraphs) {
+    const more = el("div", { class: "project-info project-info-more", hidden: "" }, ...paragraphs);
+    const btn = el("button", { class: "project-more-toggle", "aria-expanded": "false" }, t("see_more"));
+    btn.addEventListener("click", () => {
+        const isHidden = more.hidden;
+        more.hidden = !isHidden;
+        btn.setAttribute("aria-expanded", String(isHidden));
+        btn.textContent = isHidden ? t("see_less") : t("see_more");
+    });
+    return [btn, more];
+}
+
 // ---------- Project ----------
 export function renderProject(slug) {
     const v = $("#viewer-content");
@@ -255,6 +302,7 @@ export function renderProject(slug) {
     const ficha = p.ficha_tecnica || {};
     const fichaLine = [ficha.year, tf(ficha.type), ficha.duration].filter(Boolean).join(" · ");
     const info = richParagraphs(p.info);
+    const infoMore = richParagraphs(p.info_colapsable);
     const creditos = richParagraphs(p.creditos);
     // Solo se aceptan pares bien formados: una entrada rota no debe tirar toda la obra.
     const links = (Array.isArray(p.links) ? p.links : [])
@@ -273,6 +321,7 @@ export function renderProject(slug) {
         info.length
             ? el("div", { class: "project-info" }, ...info)
             : null,
+        ...(infoMore.length ? infoMoreToggle(infoMore) : []),
         links.length
             ? el("div", { class: "project-links" },
                 ...links.map(([name, url]) => el("a", { href: safeHref(url), target: "_blank", rel: "noopener" }, `↗ ${name}`))

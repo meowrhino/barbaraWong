@@ -30,6 +30,18 @@ function viewKey() {
     return `${state.view}:${location.hash}`;
 }
 
+// Envía un page_view manual a GA4 (send_page_view está desactivado en el
+// snippet base porque esto es una SPA con hash routing).
+function trackPageView() {
+    if (typeof window.gtag !== "function") return;
+    const { view, payload } = readHash();
+    const path = `/${view || DEFAULT_VIEW}${payload ? "/" + payload : ""}`;
+    window.gtag("event", "page_view", {
+        page_location: location.origin + path + location.search,
+        page_title: document.title,
+    });
+}
+
 function setView(view, payload) {
     if (!VIEWS.has(view)) view = DEFAULT_VIEW;
     setStateView(view);
@@ -84,6 +96,7 @@ function fadeRender() {
         // Primera vez — sin fade
         prevKey = key;
         renderNow();
+        trackPageView();
         return;
     }
     if (prevKey === key) {
@@ -98,6 +111,7 @@ function fadeRender() {
         renderNow();
         // forzar reflow para que la transición de entrada cuente
         vc.classList.remove("is-leaving");
+        trackPageView();
     }, FADE_MS);
 }
 

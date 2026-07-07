@@ -363,6 +363,9 @@ body[data-view="contact"] #viewer-content {
 .view-contact a,
 .view-contact a:hover { text-decoration: none; color: inherit; }
 
+.contact-icon { display: inline-block; margin-right: 0.45em; }
+.contact-icon svg { width: 0.85em; height: 0.85em; vertical-align: -0.08em; }
+
 .view-about-image,
 .view-contact-image {
     display: block;
@@ -463,6 +466,20 @@ body[data-view="contact"] #viewer-content {
 .project-info { margin-bottom: 1.5rem; line-height: 1.6; font-size: var(--fs-small); }
 .project-info p { margin-bottom: 0.9em; }
 .project-info p:last-child { margin-bottom: 0; }
+
+.project-more-toggle {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    border: 0;
+    background: none;
+    font: inherit;
+    font-size: var(--fs-small);
+    color: var(--muted);
+    cursor: pointer;
+}
+.project-more-toggle:hover { text-decoration: underline; }
 .project-links {
     display: flex;
     flex-direction: column;

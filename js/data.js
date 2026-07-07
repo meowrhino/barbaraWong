@@ -18,6 +18,9 @@ export const I18N = {
     no_photos:    { es: "Aún no hay fotos.", en: "No photos yet.", ca: "Encara no hi ha fotos." },
     soon:         { es: "(próximamente)",    en: "(coming soon)",  ca: "(properament)" },
     credits:      { es: "créditos",     en: "credits",      ca: "crèdits" },
+    see_more:     { es: "ver más",      en: "see more",     ca: "veure més" },
+    see_less:     { es: "ver menos",    en: "see less",     ca: "veure menys" },
+    cv:           { es: "ver CV",       en: "see CV",       ca: "veure CV" },
 };
 
 export const t  = (k) => (I18N[k] && I18N[k][state.lang]) || I18N[k]?.es || k;
