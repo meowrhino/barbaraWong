@@ -405,7 +405,7 @@
   },
   {
     "slug": "the-holobiont-that-therefore-i-am",
-    "title": "The holobiont that therefore I am",
+    "title": "The holobiont that <br> therefore I am",
     "published": true,
     "ficha_tecnica": {
       "year": "2022",
@@ -717,7 +717,7 @@
   },
   {
     "slug": "the-word-for-world-is-forest",
-    "title": "The word for world is forest",
+    "title": "The word for world <br> is forest",
     "published": true,
     "ficha_tecnica": {
       "year": "2019",
