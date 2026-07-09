@@ -4,6 +4,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
+    color-scheme: only light;
     --bg: #fafaf7;
     --fg: #111;
     --muted: #888;
