@@ -4,7 +4,7 @@
     "title": "Els peregrins",
     "published": true,
     "ficha_tecnica": {
-      "year": "2025",
+      "year": "2026",
       "type": {
         "es": "Film, 16mm a digital",
         "en": "Film, 16mm to digital",
@@ -44,19 +44,19 @@
       [
         "",
         [
-          "posterVERTICAL.webp"
+          "posterVERTICAL.webp?v=20260709"
         ]
       ],
       [
         "fotogramas",
         [
-          "fotogramas/001.webp",
-          "fotogramas/002.webp",
-          "fotogramas/003.webp",
-          "fotogramas/004.webp",
-          "fotogramas/005.webp",
-          "fotogramas/006.webp",
-          "fotogramas/007.webp"
+          "fotogramas/001.webp?v=20260709",
+          "fotogramas/002.webp?v=20260709",
+          "fotogramas/003.webp?v=20260709",
+          "fotogramas/004.webp?v=20260709",
+          "fotogramas/005.webp?v=20260709",
+          "fotogramas/006.webp?v=20260709",
+          "fotogramas/007.webp?v=20260709"
         ]
       ]
     ]
@@ -452,9 +452,13 @@
       [
         "installation views — Bienal Sur (SAMoCA, Riyadh)",
         [
-          "Installation views at Bienal Sur- Imagine. Fantasies, Dreams, Utopias, SAMoCA, Riyadh/1701272605900.webp",
-          "Installation views at Bienal Sur- Imagine. Fantasies, Dreams, Utopias, SAMoCA, Riyadh/IMG_1379_peque.webp",
-          "Installation views at Bienal Sur- Imagine. Fantasies, Dreams, Utopias, SAMoCA, Riyadh/pasillo.webp"
+          "Installation views at Bienal Sur- Imagine. Fantasies, Dreams, Utopias, SAMoCA, Riyadh/1701272605900.webp"
+        ]
+      ], 
+      [
+        "installation views — Bienal Sur (SAMoCA, Riyadh)",
+        ["vertical/1.webp",
+          "vertical/2.webp"
         ]
       ],
       [
@@ -752,6 +756,25 @@
       "en": [],
       "ca": []
     },
-    "gallerys": []
+    "gallerys": [
+      [
+        "fotogramas",
+        [
+          "galeria 1/1.webp",
+          "galeria 1/2.webp",
+          "galeria 1/3.webp",
+          "galeria 1/4.webp",
+          "galeria 1/5.webp"
+        ]
+      ],
+      [
+        "installation views",
+        [
+          "galeria 2/1.webp",
+          "galeria 2/2.webp",
+          "galeria 2/3.webp"
+        ]
+      ]
+    ]
   }
 ]

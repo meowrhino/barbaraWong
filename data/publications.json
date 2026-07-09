@@ -7,13 +7,30 @@
       "ca": "A Tree - A Reader on Arboreal Kinship"
     },
     "description": {
-      "es": "Editado por Marjolein van der Loo\n\nPublicado por Onomatopee\n\n128 páginas\n\n16€\n\nCon contribuciones escritas de Joss Allen, Céline Baumann, Bárbara Sánchez Barroso, Jorge Menna Barreto, Renée Bus, Lucy Davis, Amirio Freeman, Manjot Kaur, Marjolein van der Loo, Karen Lofgren, Anne Richter, Jerrold Saija, Oscar Salguero, Jonmar van Vlijmen y Müge Yilmaz.\n\nContribuciones visuales de Gerbrand Burger, Chihiro Geuzenbroek, Femke Habets, Roderick Hietbrink, Ingela Ihrman, Mari Keski-Korsu, Alice Ladenburg, Hira Nabi, Frank Resseler y Sanne Vaassen.",
-      "en": "Edited by Marjolein van der Loo\n\nPublished by Onomatopee\n\n128 pages\n\n16€\n\nWith written contributions by Joss Allen, Céline Baumann, Bárbara Sánchez Barroso, Jorge Menna Barreto, Renée Bus, Lucy Davis, Amirio Freeman, Manjot Kaur, Marjolein van der Loo, Karen Lofgren, Anne Richter, Jerrold Saija, Oscar Salguero, Jonmar van Vlijmen and Müge Yilmaz.\n\nVisual contributions by Gerbrand Burger, Chihiro Geuzenbroek, Femke Habets, Roderick Hietbrink, Ingela Ihrman, Mari Keski-Korsu, Alice Ladenburg, Hira Nabi, Frank Resseler and Sanne Vaassen.",
-      "ca": "Editat per Marjolein van der Loo\n\nPublicat per Onomatopee\n\n128 pàgines\n\n16€\n\nAmb contribucions escrites de Joss Allen, Céline Baumann, Bárbara Sánchez Barroso, Jorge Menna Barreto, Renée Bus, Lucy Davis, Amirio Freeman, Manjot Kaur, Marjolein van der Loo, Karen Lofgren, Anne Richter, Jerrold Saija, Oscar Salguero, Jonmar van Vlijmen i Müge Yilmaz.\n\nContribucions visuals de Gerbrand Burger, Chihiro Geuzenbroek, Femke Habets, Roderick Hietbrink, Ingela Ihrman, Mari Keski-Korsu, Alice Ladenburg, Hira Nabi, Frank Resseler i Sanne Vaassen."
+      "es": "Editado por Marjolein van der Loo\n\nPublicado por Onomatopee\n\n128 páginas\n\nCon contribuciones escritas de Joss Allen, Céline Baumann, Bárbara Sánchez Barroso, Jorge Menna Barreto, Renée Bus, Lucy Davis, Amirio Freeman, Manjot Kaur, Marjolein van der Loo, Karen Lofgren, Anne Richter, Jerrold Saija, Oscar Salguero, Jonmar van Vlijmen y Müge Yilmaz.",
+      "en": "Edited by Marjolein van der Loo\n\nPublished by Onomatopee\n\n128 pages\n\nWith written contributions by Joss Allen, Céline Baumann, Bárbara Sánchez Barroso, Jorge Menna Barreto, Renée Bus, Lucy Davis, Amirio Freeman, Manjot Kaur, Marjolein van der Loo, Karen Lofgren, Anne Richter, Jerrold Saija, Oscar Salguero, Jonmar van Vlijmen and Müge Yilmaz.",
+      "ca": "Editat per Marjolein van der Loo\n\nPublicat per Onomatopee\n\n128 pàgines\n\nAmb contribucions escrites de Joss Allen, Céline Baumann, Bárbara Sánchez Barroso, Jorge Menna Barreto, Renée Bus, Lucy Davis, Amirio Freeman, Manjot Kaur, Marjolein van der Loo, Karen Lofgren, Anne Richter, Jerrold Saija, Oscar Salguero, Jonmar van Vlijmen i Müge Yilmaz."
     },
     "image": "data/_publications/1.webp",
     "links": [
       "https://www.onomatopee.net/exhibition/a-tree/"
+    ]
+  },
+  {
+    "year": "2023",
+    "title": {
+      "es": "Gion gion!",
+      "en": "Gion gion!",
+      "ca": "Gion gion!"
+    },
+    "description": {
+      "es": "Fanzine\n\nProducida en la Quincena de arte, dentro del marco del proyecto «Vivim en un món devorat» en el Espai Nyamnyam.",
+      "en": "Fanzine\n\nProduced during the Quincena de arte, within the framework of the project «Vivim en un món devorat» at Espai Nyamnyam.",
+      "ca": "Fanzín\n\nProduïda a la Quinzena d'art, dins del marc del projecte «Vivim en un món devorat» a l'Espai Nyamnyam."
+    },
+    "image": "data/_publications/1_.webp",
+    "links": [
+      "https://fanzinoteca.net/fanzine/gion-gion/"
     ]
   },
   {
