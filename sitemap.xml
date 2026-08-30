@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://barbarawong.info/?lang=es</loc>
     <changefreq>monthly</changefreq>
@@ -9,6 +10,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://barbarawong.info/?lang=en"/>
     <xhtml:link rel="alternate" hreflang="ca" href="https://barbarawong.info/?lang=ca"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://barbarawong.info/"/>
+    <image:image>
+      <image:loc>https://barbarawong.info/data/_about/about.webp</image:loc>
+      <image:title>Bárbara S. Barroso</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://barbarawong.info/?lang=en</loc>
@@ -18,6 +23,10 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://barbarawong.info/?lang=en"/>
     <xhtml:link rel="alternate" hreflang="ca" href="https://barbarawong.info/?lang=ca"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://barbarawong.info/"/>
+    <image:image>
+      <image:loc>https://barbarawong.info/data/_about/about.webp</image:loc>
+      <image:title>Bárbara S. Barroso</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://barbarawong.info/?lang=ca</loc>
@@ -27,5 +36,9 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://barbarawong.info/?lang=en"/>
     <xhtml:link rel="alternate" hreflang="ca" href="https://barbarawong.info/?lang=ca"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://barbarawong.info/"/>
+    <image:image>
+      <image:loc>https://barbarawong.info/data/_about/about.webp</image:loc>
+      <image:title>Bárbara S. Barroso</image:title>
+    </image:image>
   </url>
 </urlset>

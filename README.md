@@ -244,7 +244,13 @@ GitHub Pages desde la rama `main`, root del repo. Para activar dominio custom (`
 
 ### SEO
 
-Configurado en `<head>` de `index.html`: title, description, keywords, Open Graph, Twitter Card, JSON-LD Person. `robots.txt` permite todo, `sitemap.xml` con la URL principal. **Limitación**: al ser SPA con hash routing, los buscadores no indexan las sub-vistas (`#news`, `#about`, etc.) por separado. Si esto se vuelve importante, habría que migrar a History API o pre-renderizar.
+Configurado en `<head>` de `index.html`: title, description, keywords, Open Graph, Twitter Card, JSON-LD (Person + WebSite). `robots.txt` permite todo, `sitemap.xml` con las 3 URLs por idioma y la imagen destacada.
+
+**Resultado en Google**: el meta `robots` es `index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1`, es decir, Google puede mostrar la descripción completa y miniatura grande (antes había un `nosnippet` que dejaba el resultado sin texto debajo del título). La descripción que se ve en el buscador es la del `<meta name="description">`, en inglés y escrita por Bárbara. La imagen social/miniatura es `data/_about/about.webp` (apaisada; las verticales se recortan mal). El bloque `<noscript>` incluye nombre, bio corta e imagen como respaldo para buscadores que no ejecutan JS.
+
+Tras tocar esto: en [Search Console](https://search.google.com/search-console) → *Inspección de URLs* → pedir indexación de `https://barbarawong.info/`. Google tarda de días a un par de semanas en refrescar el resultado, y la miniatura la elige él (no se puede forzar).
+
+**Limitación**: al ser SPA con hash routing, los buscadores no indexan las sub-vistas (`#news`, `#about`, etc.) por separado. Si esto se vuelve importante, habría que migrar a History API o pre-renderizar.
 
 ---
 

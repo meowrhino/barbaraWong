@@ -7,10 +7,11 @@
     <title>Bárbara S. Barroso</title>
 
     <!-- SEO -->
-    <meta name="description" content="Bárbara S. Barroso. Artista visual que trabaja con cine analógico, vídeo-instalación, performance y escritura desde una perspectiva ecofeminista. Obra, noticias, publicaciones y diario fotográfico.">
-    <meta name="keywords" content="Bárbara Sánchez Barroso, barbara s. barroso, barbara wong, artista visual, ecofeminismo, ecofeminism, feminismo, feminism, ecología, ecology, cine analógico, 16mm, super 8, vídeo instalación, performance, Barcelona, arte contemporáneo">
+    <meta name="description" content="Bárbara S. Barroso is a visual artist, filmmaker and researcher. Her work spans film, installation, performance and writing, moving between reality and fiction.">
+    <meta name="keywords" content="Bárbara Sánchez Barroso, barbara s. barroso, barbara wong, artista visual, visual artist, filmmaker, ecofeminismo, ecofeminism, feminismo, feminism, ecología, ecology, cine analógico, analogue film, 16mm, super 8, vídeo instalación, performance, Barcelona, arte contemporáneo">
     <meta name="author" content="Bárbara S. Barroso">
-    <meta name="robots" content="index, follow, nosnippet">
+    <!-- Google puede mostrar descripción completa y miniatura grande en los resultados -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://barbarawong.info/">
     <link rel="alternate" hreflang="es" href="https://barbarawong.info/?lang=es">
     <link rel="alternate" hreflang="en" href="https://barbarawong.info/?lang=en">
@@ -21,10 +22,13 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Bárbara S. Barroso">
     <meta property="og:title" content="Bárbara S. Barroso">
-    <meta property="og:description" content="Cine analógico, vídeo-instalación, performance y escritura desde una perspectiva ecofeminista. Obra, noticias y diario.">
+    <meta property="og:description" content="Bárbara S. Barroso is a visual artist, filmmaker and researcher. Her work spans film, installation, performance and writing, moving between reality and fiction.">
     <meta property="og:url" content="https://barbarawong.info/">
-    <!-- Imagen social apunta a un proyecto concreto (els-peregrins): actualizar a mano si cambia el proyecto destacado -->
-    <meta property="og:image" content="https://barbarawong.info/data/_works/els-peregrins/poster.webp">
+    <!-- Imagen social: la misma de "about". Apaisada a propósito (las verticales se recortan mal en redes y en Google) -->
+    <meta property="og:image" content="https://barbarawong.info/data/_about/about.webp">
+    <meta property="og:image:width" content="1400">
+    <meta property="og:image:height" content="933">
+    <meta property="og:image:alt" content="Obra de Bárbara S. Barroso">
     <meta property="og:locale" content="es_ES">
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="ca_ES">
@@ -32,22 +36,37 @@
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Bárbara S. Barroso">
-    <meta name="twitter:description" content="Cine analógico, vídeo-instalación, performance y escritura desde una perspectiva ecofeminista.">
-    <!-- Imagen social apunta a un proyecto concreto (els-peregrins): actualizar a mano si cambia el proyecto destacado -->
-    <meta name="twitter:image" content="https://barbarawong.info/data/_works/els-peregrins/poster.webp">
+    <meta name="twitter:description" content="Bárbara S. Barroso is a visual artist, filmmaker and researcher. Her work spans film, installation, performance and writing, moving between reality and fiction.">
+    <meta name="twitter:image" content="https://barbarawong.info/data/_about/about.webp">
 
-    <!-- JSON-LD Person -->
+    <!-- JSON-LD Person + WebSite -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Bárbara S. Barroso",
-      "alternateName": ["Bárbara Sánchez Barroso", "barbara wong"],
-      "jobTitle": "Artista visual",
-      "url": "https://barbarawong.info/",
-      "sameAs": ["https://instagram.com/barbara_wong"],
-      "knowsAbout": ["cine analógico", "16mm", "super 8", "vídeo instalación", "performance", "ecofeminismo", "feminismo", "ecología", "escritura"]
-    }
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://barbarawong.info/#person",
+        "name": "Bárbara S. Barroso",
+        "alternateName": ["Bárbara Sánchez Barroso", "barbara wong"],
+        "jobTitle": ["Visual artist", "Filmmaker", "Researcher"],
+        "description": "Bárbara S. Barroso is a visual artist, filmmaker and researcher. Her work spans film, installation, performance and writing, moving between reality and fiction.",
+        "image": "https://barbarawong.info/data/_about/about.webp",
+        "url": "https://barbarawong.info/",
+        "homeLocation": { "@type": "Place", "name": "Barcelona, Spain" },
+        "sameAs": ["https://instagram.com/barbara_wong"],
+        "knowsAbout": ["analogue film", "cine analógico", "16mm", "super 8", "video installation", "vídeo instalación", "performance", "ecofeminismo", "ecofeminism", "ecología", "escritura"]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://barbarawong.info/#website",
+        "name": "Bárbara S. Barroso",
+        "url": "https://barbarawong.info/",
+        "inLanguage": ["es", "en", "ca"],
+        "about": { "@id": "https://barbarawong.info/#person" },
+        "publisher": { "@id": "https://barbarawong.info/#person" }
+      }
+    ]
     </script>
 
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -119,8 +138,18 @@
         </section>
     </main>
 
+    <!-- Respaldo sin JS: también es lo que ven los buscadores que no ejecutan JavaScript -->
     <noscript>
-        <p style="padding:2rem">Activa JavaScript para ver el contenido.</p>
+        <div style="padding:2rem;max-width:44rem;margin:0 auto;line-height:1.5">
+            <p><strong>Bárbara S. Barroso</strong></p>
+            <p>Bárbara S. Barroso is a visual artist, filmmaker and researcher. Her work spans film,
+               installation, performance and writing, moving between reality and fiction.</p>
+            <p>Bárbara trabaja con cine analógico y video instalación, así como con la performance y la
+               escritura. Su práctica se sitúa en la intersección entre cine, instalación y pensamiento
+               ecológico. Vive y trabaja en Barcelona.</p>
+            <img src="data/_about/about.webp" alt="Obra de Bárbara S. Barroso" width="1400" height="933" style="max-width:100%;height:auto">
+            <p>Activa JavaScript para ver la web completa (obra, noticias, publicaciones y diario).</p>
+        </div>
     </noscript>
 
     <script type="module" src="js/main.js"></script>
