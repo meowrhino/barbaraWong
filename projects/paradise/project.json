@@ -1,0 +1,62 @@
+{
+  "$schema": "../../schema/project.json",
+  "title": "Paradise",
+  "details": {
+    "year": "2017",
+    "type": {
+      "es": "Vídeo documental",
+      "en": "Documentary video",
+      "ca": "Vídeo documental"
+    },
+    "duration": "17 min"
+  },
+  "text": {
+    "es": [
+      "El vídeo fue creado durante su estancia en Túnez y explora la dicotomía entre Occidente y Oriente, y cómo está presente en la migración ilegal como metáfora: esperanzas y sueños fallidos, el encuentro subsiguiente con una realidad hostil; la diferencia entre el migrante y el turista; el paraíso soñado, la libertad buscada ante el fracaso. Para ello, la artista se ha basado en varios testimonios de jóvenes inmigrantes de la costa tunecina, en Haouaria, a pocas horas de Italia.",
+      "\"Interesada en las dimensiones contemporáneas de la migración masiva, Barroso confronta sus preconcepciones del turismo y las formas ilegales de movilidad con observaciones personales e historias de personas que han buscado asilo en Europa. Yuxtaponiendo grabaciones de voz con imágenes simbólicas recopiladas durante su viaje, la artista crea una metáfora polifónica de la realidad de las falsas expectativas de libertad y sueños fallidos, cuestionando la condición humana hoy. El vídeo registra el testimonio de Ahmed, un tunecino a quien Barroso conoció durante su viaje de investigación a El Haouaria, una localidad costera del norte del país. Mientras la narrativa se despliega, puntuada por las expresiones de decepción, auto-victimización y resentimiento de los protagonistas, la capa visual socava la trama: las tomas de un luchador de karate o los criadores de aves de presa en su comunidad exclusivamente masculina invierten el equilibrio de poder y dominación implícito. La proyección occidental del Paraíso, con sus anuncios turísticos idílicos, y la oriental parecen igualmente utópicas. El momento en que, en las manos de un mago, el pasaporte español se convierte en uno tunecino entrega una conclusión conmovedora sobre la desigualdad social y la ciudadanía de segunda clase – toda perspectiva de una vida mejor reducible a no más que buena o mala suerte.\"",
+      "Texto comisarial de Anna Smolak"
+    ],
+    "en": [
+      "The video was created during her stay in Tunisia and explores the dichotomy between West and East, and how it is present in illegal migration as a metaphor: failed hopes and dreams, the subsequent encounter of a hostile reality; the difference between the migrant and the tourist; the dreamed paradise, the freedom sought in the face of failure. For this, the artist has based her work on several testimonies of young immigrants from the Tunisian coast, in Haouaria, a few hours from Italy.",
+      "\"Interested in the contemporary dimensions of mass migration, Barroso confronts her preconceptions of tourism and illegal forms of mobility with personal observations and the stories of people who have sought asylum in Europe. Juxtaposing voice recordings with symbolic imagery collected during her journey, the artist creates a polyphonic metaphor for reality of false expectations of freedom and failed dreams, questioning the human condition today. The video tracks testimony by Ahmed – a Tunisian, whom Barroso encountered during her research trip to El Haouaria, a coastal town in the north of the country. While the narrative unfolds, punctuated by the protagonists' expressions of disappointment, self-victimisation and resentment, the visual layer undermines the storyline: the shots of a karate fighter or the birds-of-prey breeders in their all-male community reverse the implied balance of power and dominance. The Western projection of Paradise, with its idyllic tourist adverts, and the Eastern one seem equally utopian. The moment when, in the hands of a magician, the Spanish passport turns into a Tunisian one delivers a poignant conclusion on social inequality and second-class citizenship – any prospect of a better life reducible to no more than good or bad luck.\"",
+      "Curatorial text by Anna Smolak"
+    ],
+    "ca": [
+      "El vídeo va ser creat durant la seva estada a Tunísia i explora la dicotomia entre Occident i Orient, i com està present en la migració il·legal com a metàfora: esperances i somnis fallits, el posterior encontre amb una realitat hostile; la diferència entre el migrant i el turista; el paradís somiat, la llibertat buscada davant del fracàs. Per a això, l'artista s'ha basat en diversos testimonis de joves immigrats de la costa tunisiana, a Haouaria, a poca distància d'Itàlia.",
+      "\"Interessada en les dimensions contemporànies de la migració massiva, Barroso confronta les seves preconcepcions sobre el turisme i les formes il·legals de mobilitat amb observacions personals i històries de persones que han cercat asil a Europa. Juxtaposant enregistraments de veu amb imatges simbòliques recopilades durant el seu viatge, l'artista crea una metàfora polifònica de la realitat de les falses expectatives de llibertat i somnis fallits, qüestionant la condició humana avui. El vídeo registra el testimoni de Ahmed, un tunisià a qui Barroso va conèixer durant el seu viatge d'investigació a El Haouaria, una localitat costanera del nord del país. Mentre la narrativa es desplegra, marcada per les expressions de decepció, auto-victimització i ressentiment dels protagonistes, la capa visual soscava la trama: les preses d'un lluitador de karate o els criadors d'aus de presa en la seva comunitat exclusivament masculina inverteixen l'equilibri de poder i dominació implícit. La projecció occidental del Paradís, amb els seus anuncis turístics idíl·lics, i l'oriental semblen igualment utòpiques. El moment en què, en mans d'un magne, el passaport espanyol es converteix en un tunisià ofereix una conclusió colpidora sobre la desigualtat social i la ciutadania de segona classe – qualsevol perspectiva d'una vida millor reducible a res més que bona o mala sort.\"",
+      "Text comissarial de Anna Smolak"
+    ]
+  },
+  "links": [
+    [
+      "El gesto de filmar. El vídeo en la Colección MACBA",
+      "https://www.macba.cat/es/exposiciones/ecos-videos-de-la-donacion-de-la-fundacion-han-nefkens/"
+    ]
+  ],
+  "trailer": "https://vimeo.com/278376510",
+  "groups": [
+    {
+      "title": "Fotogramas",
+      "photos": [
+        "fotogramas/1.webp",
+        "fotogramas/3.webp",
+        "fotogramas/2.webp",
+        "fotogramas/6.webp",
+        "fotogramas/5.webp",
+        "fotogramas/4.webp"
+      ]
+    },
+    {
+      "title": "installation views of El gesto de filmar. El vídeo en la Colección MACBA, MACBA, 2026",
+      "photos": [
+        "installation-views/1.webp",
+        "installation-views/2.webp",
+        "installation-views/3.webp"
+      ]
+    },
+    {
+      "title": "Animation",
+      "photos": []
+    }
+  ]
+}

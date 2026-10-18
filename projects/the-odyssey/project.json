@@ -1,0 +1,106 @@
+{
+  "$schema": "../../schema/project.json",
+  "title": "The Odyssey",
+  "details": {
+    "year": "2018",
+    "type": {
+      "es": "video instalación / film",
+      "en": "video installation / film",
+      "ca": "videoinstal·lació / film"
+    },
+    "duration": ""
+  },
+  "text": {
+    "es": [
+      "Partiendo de un recuerdo de infancia y mediante una revisión libre del mito de Odiseo, La Odisea de Bárbara Sánchez Barroso relata la travesía que un personaje realiza por mar en busca de un lugar supuestamente relacionado con su propio origen: una cueva específica en una isla determinada. Sin embargo, más que un enclave geográfico concreto dicho lugar se erige como un espacio mental y arquetípico que en la obra funciona como representación simbólica y metafórica de distintos conceptos: el espacio de la ficción, el inconsciente, la noción mítica de origen e incluso la vida intrauterina. El relato visual se acompaña de una locución en primera persona cuya voz narradora evoca este recuerdo de infancia y, recurriendo a la digresión, nos habla sobre cuestiones como las intersecciones que se producen entre la ficción y el relato biográfico, la labor que ejercen las historias fundacionales en el desarrollo del imaginario colectivo y la pulsión, inherente a la naturaleza humana, de transformar la experiencia en narración. Sánchez se refiere también al mito de Odiseo, menciona su funcionamiento como arquetipo literario y establece una analogía indirecta entre la tergiversación de la historia a través de los mitos y la reconstrucción de la vida a través de los recuerdos. En su locución, la artista reversiona y reformula frases y fragmentos de obras narrativas, poéticas y ensayísticas de autores tan diversos como Joseph Campbell, Joan Didion, Éric Pauwels, Dante Gabriel Rossetti, Jean-Paul Sartre y Emily Wilson. Como si se tratara de citas veladas, Sánchez Barroso incorpora a su discurso estos extractos revisionados sin explicitar cuáles son sus fuentes, y los mezcla con sus propias reflexiones para construir un relato sobre la ficción y los arquetipos literarios a partir de textos ya existentes."
+    ],
+    "en": [
+      "Starting from a childhood memory and through a free revision of the myth of Odysseus, Bárbara Sánchez Barroso's La Odisea narrates the voyage undertaken by a character at sea in search of a place supposedly related to her own origin: a specific cave on a particular island. However, rather than a concrete geographical enclave, that place stands as a mental and archetypal space that in the work functions as a symbolic and metaphorical representation of different concepts: the space of fiction, the unconscious, the mythical notion of origin and even intrauterine life. The visual narrative is accompanied by a first-person voice-over whose narrator evokes this childhood memory and, through digression, speaks about issues such as the intersections that occur between fiction and biographical narrative, the work performed by foundational stories in the development of collective imagination and the impulse, inherent to human nature, to transform experience into narration. Sánchez also refers to the myth of Odysseus, mentions its functioning as a literary archetype and establishes an indirect analogy between the distortion of history through myths and the reconstruction of life through memories. In her voice-over, the artist revises and reformulates phrases and fragments from narrative, poetic and essayistic works by authors as diverse as Joseph Campbell, Joan Didion, Éric Pauwels, Dante Gabriel Rossetti, Jean-Paul Sartre and Emily Wilson. As if they were veiled quotations, Sánchez Barroso incorporates these revised excerpts into her discourse without making their sources explicit, and mixes them with her own reflections to construct a narrative about fiction and literary archetypes from texts that already exist."
+    ],
+    "ca": [
+      "Partint d'un record d'infantesa i mitjançant una revisió lliure del mite d'Ulisses, La Odisea de Bárbara Sánchez Barroso relata la travessia que un personatge fa per mar en cerca d'un lloc suposadament relacionat amb el seu propi origen: una cova específica en una illa determinada. No obstant això, més que un enclavament geogràfic concret, aquest lloc esdevé un espai mental i arquetípic que a l'obra funciona com a representació simbòlica i metafòrica de diferents conceptes: l'espai de la ficció, l'inconscient, la noció mítica d'origen i fins i tot la vida intrauterina. El relat visual s'acompanya d'una locució en primera persona la veu de la qual evoca aquest record d'infantesa i, recorrent a la digressió, ens parla sobre qüestions com les interseccions que es produeixen entre la ficció i el relat biogràfic, la labor que exerceixen les històries fundacionals en el desenvolupament de l'imaginari col·lectiu i la pulsió, inherent a la naturalesa humana, de transformar l'experiència en narració. Sánchez es refereix també al mite d'Ulisses, menciona el seu funcionament com a arquetip literari i estableix una analogia indirecta entre la tergiversació de la història a través dels mites i la reconstrucció de la vida a través dels records. En la seva locució, l'artista reversiona i reformula frases i fragments d'obres narratives, poètiques i assagístiques d'autors tan diversos com Joseph Campbell, Joan Didion, Éric Pauwels, Dante Gabriel Rossetti, Jean-Paul Sartre i Emily Wilson. Com si es tractés de cites velades, Sánchez Barroso incorpora al seu discurs aquests extractes revisats sense explicitar quines són les seves fonts, i els barreja amb les seves pròpies reflexions per construir un relat sobre la ficció i els arquetips literaris a partir de textos ja existents."
+    ]
+  },
+  "more": {
+    "es": [
+      "En La Odisea encontramos algunas resonancias platónicas. Los juegos entre luz y oscuridad, la presencia de reflejos y sombras, la contraposición entre día y noche o la indeterminación entre lo real y lo imaginado están presentes a lo largo de la pieza videográfica. La travesía marítima, además, culmina en una cueva, en cuyo interior el personaje protagonista va proyectando la luz tenue de una linterna sobre paredes y cavidades para revelar su morfología. Pero, al final, la protagonista deja la linterna en el suelo y se adentra en la cueva, hacia el fondo, en absoluta oscuridad. Así pues, al revés de lo que plantea el mito de la caverna, La Odisea de Sánchez Barroso propone una restitución del espacio de la representación, una reivindicación de la ficción como paradigma.",
+      "El trabajo parte también de un interés de la artista por los argumentos literarios esenciales que, versionados, dan lugar a todas las obras literarias y cinematográficas de la historia. Según afirmaba el escritor John Gardner, toda la literatura tradicional se basa solo en dos tramas: aquella en que el protagonista emprende un viaje y aquella en que un forastero llega al pueblo. Dado que, durante mucho tiempo, a las mujeres no se les permitió viajar, las obras literarias con protagonistas femeninas respondían principalmente a la segunda trama, y eran sobre todo historias basadas en la espera. En una línea de pensamiento similar, Ursula K. Le Guin habla de cómo las narraciones épicas protagonizadas por héroes masculinos se basan en los conceptos de lucha, competición, dominio, triunfo… y se articulan según unos parámetros de conflicto y resolución. La artista escoge para su film la primera de las tramas, la del personaje que emprende un viaje, pero es ella, figura femenina, quien la protagoniza. La historia narrada se desarrolla, además, según una perspectiva antiheroica: no hay conflicto, ni lucha, ni dominio. La Odisea de Sánchez Barroso es sobre todo una odisea interior, psicológica, que no pasa por la resolución. De hecho, su final se puede interpretar como un nuevo principio. Con un título que nos remite directamente a una de las obras literarias más antiguas de la literatura europea –una epopeya que no es sino el relato de un retorno–, la obra nos cuenta que a menudo viajamos para regresar a un origen, a un comienzo.",
+      "En el espacio expositivo, acompañando al film, se encuentra un barco. Es un objeto que remite a la experiencia vivida pero sin hacerlo triunfalmente, conmemorando la gesta. Tumbado, yaciendo en el suelo, se ofrece al espectador como un despojo y parece evocar algún tipo de naufragio, la pérdida de algo.",
+      "Texto curatorial de Alexandra Laudo"
+    ],
+    "en": [
+      "In La Odisea we find some Platonic resonances. The interplay of light and darkness, the presence of reflections and shadows, the contrast between day and night or the indeterminacy between the real and the imagined are present throughout the videographic piece. The maritime voyage culminates in a cave, inside which the protagonist projects the faint light of a torch onto walls and cavities to reveal their morphology. But in the end, the protagonist leaves the torch on the floor and enters the cave, towards the back, in absolute darkness. Thus, in contrast to what the myth of the cave proposes, Sánchez Barroso's La Odisea proposes a restitution of the space of representation, a vindication of fiction as paradigm.",
+      "The work also grows out of the artist's interest in essential literary plots that, when reworked, give rise to all literary and cinematic works in history. As the writer John Gardner said, all traditional literature is based on only two plots: the one in which the protagonist embarks on a journey and the one in which a stranger arrives in town. Since for a long time women were not allowed to travel, literary works with female protagonists mainly responded to the second plot, and were mostly stories based on waiting. In a similar line of thought, Ursula K. Le Guin speaks about how epic narratives starring male heroes are based on concepts of struggle, competition, domination, triumph... and are articulated according to parameters of conflict and resolution. The artist chooses for her film the first of these plots, that of the character who sets out on a journey, but it is she, a female figure, who occupies the protagonist's role. The story told also unfolds from an antiheroic perspective: there is no conflict, no struggle, no domination. Sánchez Barroso's The Odyssey is above all an inner, psychological odyssey that does not pass through resolution. In fact, its ending can be interpreted as a new beginning. With a title that directly evokes one of the oldest works of European literature –an epic that is nothing other than the tale of a return–, the work tells us that we often travel in order to return to an origin, to a beginning.",
+      "In the exhibition space, accompanying the film, there is a boat. It is an object that points to the lived experience without doing so triumphantly, commemorating the feat. Lying on the floor, it offers itself to the spectator as a remnant and seems to evoke some kind of shipwreck, the loss of something.",
+      "Curatorial text by Alexandra Laudo"
+    ],
+    "ca": [
+      "A La Odisea trobem algunes ressonàncies platòniques. Els jocs entre llum i foscor, la presència de reflexos i ombres, la contraposició entre dia i nit o la indeterminació entre allò real i allò imaginat són presents al llarg de la peça videogràfica. La travessia marítima, a més, culmina en una cova, a l'interior de la qual el personatge protagonista va projectant la llum tènue d'una llanterna sobre parets i cavitats per revelar-ne la morfologia. Però, al final, la protagonista deixa la llanterna a terra i s'endinsa a la cova, cap al fons, en absolut aïllament. Així doncs, al contrari del que planteja el mite de la caverna, La Odisea de Sánchez Barroso proposa una restitució de l'espai de la representació, una reivindicació de la ficció com a paradigma.",
+      "El treball parteix també d'un interès de l'artista pels arguments literaris essencials que, versionats, donen lloc a totes les obres literàries i cinematogràfiques de la història. Segons afirmava l'escriptor John Gardner, tota la literatura tradicional es basa només en dues trames: aquella en què el protagonista emprèn un viatge i aquella en què un foraster arriba al poble. Donat que, durant molt de temps, a les dones no se'ls va permetre viatjar, les obres literàries amb protagonistes femenines responien principalment a la segona trama, i eren sobretot històries basades en l'espera. En una línia de pensament similar, Ursula K. Le Guin parla de com les narracions èpiques protagonitzades per herois masculins es basen en els conceptes de lluita, competició, domini, triomf… i s'articulen segons uns paràmetres de conflicte i resolució. L'artista tria per al seu film la primera de les trames, la del personatge que emprèn un viatge, però és ella, figura femenina, qui la protagonitza. La història narrada es desenvolupa, a més, segons una perspectiva antiheroica: no hi ha conflicte, ni lluita, ni domini. La Odisea de Sánchez Barroso és sobre tot una odissea interior, psicològica, que no passa per la resolució. De fet, el seu final es pot interpretar com un nou principi. Amb un títol que ens remet directament a una de les obres literàries més antigues de la literatura europea –una epopeia que no és sinó el relat d'un retorn–, l'obra ens explica que sovint viatgem per tornar a un origen, a un començament.",
+      "A l'espai expositiu, acompanyant al film, hi ha un vaixell. És un objecte que remet a l'experiència viscuda però sense fer-ho triumphalment, commemorant la gesta. Estirat, jeient a terra, s'ofereix a l'espectador com un espoli i sembla evocar algun tipus de naufragi, la pèrdua d'alguna cosa.",
+      "Text curatorial d'Alexandra Laudo"
+    ]
+  },
+  "links": [
+    [
+      "Fundació Miró",
+      "https://www.fmirobcn.org/en/exhibitions/5734/the-odyssey"
+    ]
+  ],
+  "trailer": "https://vimeo.com/259579181",
+  "credits": {
+    "es": [
+      "Director, producer and writer: Bárbara Sánchez Barroso",
+      "Director de fotografía: Juan Palacios",
+      "Edición, sonido y color: Juan Palacios",
+      "Voz: Emi Kodama",
+      "Traducción: Rubén Verdú",
+      "Producido por: Fundació Joan Miró"
+    ],
+    "en": [
+      "Director, producer and writer: Bárbara Sánchez Barroso",
+      "Director of photography: Juan Palacios",
+      "Editing, sound and color: Juan Palacios",
+      "Voice: Emi Kodama",
+      "Translation: Rubén Verdú",
+      "Produced by: Fundació Joan Miró"
+    ],
+    "ca": [
+      "Director, producer and writer: Bárbara Sánchez Barroso",
+      "Director de fotografia: Juan Palacios",
+      "Edició, so i color: Juan Palacios",
+      "Veu: Emi Kodama",
+      "Traducció: Rubén Verdú",
+      "Produït per: Fundació Joan Miró"
+    ]
+  },
+  "groups": [
+    {
+      "title": "Fotogramas",
+      "photos": [
+        "fotogramas/1.webp",
+        "fotogramas/2.webp",
+        "fotogramas/3.webp",
+        "fotogramas/4.webp",
+        "fotogramas/5.webp"
+      ]
+    },
+    {
+      "title": "Installation views",
+      "photos": [
+        "installation-views/1.webp",
+        "installation-views/2.webp",
+        "installation-views/3.webp",
+        "installation-views/4.webp"
+      ]
+    },
+    {
+      "title": "Els marges. Producciones afectivas, políticas y estéticas desde los confines y fuera de un territorio. Centre d'Art La Panera, Lleida, 2018",
+      "photos": [
+        "els-marges/01.webp",
+        "els-marges/02.webp",
+        "els-marges/03.webp"
+      ]
+    }
+  ]
+}

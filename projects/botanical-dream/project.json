@@ -1,0 +1,63 @@
+{
+  "$schema": "../../schema/project.json",
+  "title": "Botanical Dream",
+  "details": {
+    "year": "2022",
+    "type": {
+      "es": "16 mm transferido a digital",
+      "en": "16 mm transferred to digital",
+      "ca": "16 mm transferit a digital"
+    },
+    "duration": "5 min 40 sec"
+  },
+  "text": {
+    "es": [
+      "Botanical Dream pone en marcha un deseo concebido por un sujeto más que humano: el jardín botánico. Una multi identidad en constante evolución, el resultado de la ilusión colonial, la de poder reunir y ordenar todos los bosques del mundo en un solo lugar. En la película, Barroso transforma el jardín, a través de una ficción onírica, de objeto mudo a sujeto que actúa. Abriendo la imaginación del espectador a una ruptura imposible de la prisión de cristal y acero que lo contiene, la vegetación del jardín espera una irrupción en el espacio de la ciudad para derrocar su orden. A través del desorden, eco de los bosques de los que fue violentamente extrapolado, el jardín se convierte en un bosque extraño nunca antes concebido.",
+      "Obra en 16 mm que, a través de la ficción especulativa, da voz a las plantas del Jardín Botánico de Copenhague creado en 1872. Mientras que el orden de los acontecimientos y el control antrópico impiden un rebobinado del tiempo y el retorno de estos cuerpos-planta a su naturaleza selvática, la estratagema narrativa llevada al cine por la artista reconfigura lo que se puede decir, ver, hacer. Así, imagina una huida onírica hacia la ciudad, donde los cuerpos vegetales de los habitantes del jardín han abolido por fin el cerco que los contenía y ordenaba, tomando posesión del espacio que les había sido robado. Se convertirán, en un tiempo muy largo, profundo e inimaginable, en una nueva forma de bosque queer, en una alianza de todas esas entidades antes tomadas por el hombre.",
+      "Texto curatorial de Lorenzo Lazzari"
+    ],
+    "en": [
+      "Botanical Dream sets in motion a desire conceived by a more-than-human subject: the botanical garden. A multi-identity in constant evolution, the result of the colonial illusion of being able to gather and order all the world's forests in a single place. In the film, Barroso transforms the garden, through an oneiric fiction, from mute object to acting subject. Opening the viewer's imagination to an impossible rupture of the glass-and-steel prison that contains it, the garden's vegetation awaits an irruption into the space of the city in order to overthrow its order. Through disorder — an echo of the forests from which it was violently extrapolated — the garden becomes a strange forest never before conceived.",
+      "A 16 mm work that, through speculative fiction, gives voice to the plants of the Copenhagen Botanical Garden, created in 1872. While the order of events and anthropic control prevent any rewinding of time and the return of these plant-bodies to their wild nature, the narrative stratagem the artist brings to cinema reconfigures what can be said, seen, done. It imagines a dreamlike escape into the city, where the vegetal bodies of the garden's inhabitants have finally abolished the fence that contained and ordered them, taking possession of the space that had been stolen from them. Over a very long, deep, unimaginable time, they will become a new form of queer forest, an alliance of all those entities once taken by humans.",
+      "Curatorial text by Lorenzo Lazzari"
+    ],
+    "ca": [
+      "Botanical Dream posa en marxa un desig concebut per un subjecte més-que-humà: el jardí botànic. Una multi-identitat en constant evolució, el resultat de la il·lusió colonial de poder reunir i ordenar tots els boscos del món en un sol lloc. A la pel·lícula, Barroso transforma el jardí, a través d'una ficció onírica, d'objecte mut a subjecte que actua. Obrint la imaginació de l'espectadora a una ruptura impossible de la presó de vidre i acer que el conté, la vegetació del jardí espera una irrupció en l'espai de la ciutat per enderrocar el seu ordre. A través del desordre, eco dels boscos d'on va ser violentament extrapolat, el jardí esdevé un bosc estrany mai abans concebut.",
+      "Obra en 16 mm que, a través de la ficció especulativa, dóna veu a les plantes del Jardí Botànic de Copenhaguen, creat el 1872. Mentre que l'ordre dels esdeveniments i el control antròpic impedeixen un rebobinat del temps i el retorn d'aquests cossos-planta a la seva naturalesa selvàtica, l'estratagema narrativa portada al cinema per l'artista reconfigura el que es pot dir, veure, fer. Imagina una fugida onírica cap a la ciutat, on els cossos vegetals dels habitants del jardí han abolit per fi la tanca que els contenia i ordenava, prenent possessió de l'espai que els havia estat robat. Esdevindran, en un temps molt llarg, profund i inimaginable, una nova forma de bosc queer, una aliança de totes aquelles entitats abans preses pels humans.",
+      "Text curatorial de Lorenzo Lazzari"
+    ]
+  },
+  "credits": {
+    "es": [
+      "Diseño de sonido: Paulius Sliaupa",
+      "Voz en off: Paul Beaudoin"
+    ],
+    "en": [
+      "Sound design: Paulius Sliaupa",
+      "Voice over: Paul Beaudoin"
+    ],
+    "ca": [
+      "Disseny de so: Paulius Sliaupa",
+      "Veu en off: Paul Beaudoin"
+    ]
+  },
+  "groups": [
+    {
+      "title": "fotogramas",
+      "photos": [
+        "fotogramas/vlcsnap-2022-05-10-14h49m03s538.webp",
+        "fotogramas/vlcsnap-2022-05-10-14h50m03s270.webp",
+        "fotogramas/vlcsnap-2022-05-10-14h50m29s784.webp",
+        "fotogramas/vlcsnap-2022-05-10-14h51m50s439.webp",
+        "fotogramas/vlcsnap-2022-05-10-14h52m15s154.webp"
+      ]
+    },
+    {
+      "title": "installation views — Riconfigurazioni, Palazzo Ca' Tron, Venice 2022",
+      "photos": [
+        "Installation views of the exhibition Riconfigurazioni. Tre indagini filmiche sul silvano, Palazzo Ca’ Tron , Venice, 2022/foto1.webp",
+        "Installation views of the exhibition Riconfigurazioni. Tre indagini filmiche sul silvano, Palazzo Ca’ Tron , Venice, 2022/foto2.webp"
+      ]
+    }
+  ]
+}

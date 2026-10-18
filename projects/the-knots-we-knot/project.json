@@ -1,0 +1,59 @@
+{
+  "$schema": "../../schema/project.json",
+  "title": "The Knots We Knot",
+  "details": {
+    "year": "2021",
+    "type": {
+      "es": "16 mm transferido a digital y 2 performances, en colaboración con Adriana Vila Guevara y Maria Marvila ",
+      "en": "16 mm transferred to digital and 2 performances, in collaboration with Adriana Vila Guevara and Maria Marvila",
+      "ca": "16 mm transferit a digital i 2 performances, en col·laboració amb Adriana Vila Guevara i Maria Marvila"
+    },
+    "duration": "8 min 7 sec"
+  },
+  "text": {
+    "es": [
+      "La pieza fílmica en 16 mm es el resultado de la investigación efectuada a lo largo del período de residencia en la Vall de Santa Creu. Como dicen las artistas una traslación de un encuentro que piensa con cuidado. Que se lee entre líneas, se mira a los ojos, que escucha el crujir del entorno con atención. Un boceto aplicado del devenir y generarse con. Un boceto, desde el más mundano, de un encuentro, físico, reflexivo, simbiótico y situado. Un paso de páginas como versiones de historias que se contienen en su sencillez, en su duración y continuación. Un espacio-tiempo para convertirse en lo que es sugerido en cada paso. Una aceptación de la propuesta de subjetividad, actualizando una y otra la manera en que es recibido el que se nos presenta, actualizando cada gesto y su pulso, en el tejido de figuras de cuerdas. Reconociendo seleccionados la condición de caminantes de senderos entrelazados."
+    ],
+    "en": [
+      "The 16 mm film piece is the result of the research carried out throughout the residency period in Vall de Santa Creu. As the artists say, it is a translation of an encounter that thinks through care. One that is read between the lines, looked at in the eyes, that listens attentively to the creaking of the surroundings. An applied sketch of becoming and generating with. A sketch, from the most mundane, of a physical, reflective, symbolic, and situated encounter. A turning of pages as versions of stories contained in their simplicity, in their duration and continuation. A space-time to become what is suggested at every step. An acceptance of the proposal of subjectivity, continuously updating the way in which what is presented to us is received, renewing every gesture and every pulse within the fabric of string figures. Recognising ourselves as chosen by the condition of walkers along intertwined paths."
+    ],
+    "ca": [
+      "La peça fílmica en 16 mm és el resultat de la investigació duta a terme al llarg del període de residència a la Vall de Santa Creu. Com diuen les artistes, una translació d’un encontre que pensa amb cura. Que es llegeix entre línies, es mira als ulls, que escolta amb atenció el cruixir de l’entorn. Un esbós aplicat de l’esdevenir i generar amb. Un esbós, des del més mundà, d’un encontre físic, reflexiu, simbòlic i situat. Un passar pàgines com versions d’històries que es contenen en la seva senzillesa, en la seva durada i continuació. Un espai-temps per convertir-se en allò que és suggerit a cada pas. Una acceptació de la proposta de subjectivitat, actualitzant una vegada i una altra la manera en què és rebut allò que se’ns presenta, actualitzant cada gest i cada pols, en el teixit de figures de cordes. Reconeixent-nos seleccionades per la condició de caminants de senders entrellaçats."
+    ]
+  },
+  "trailer": "https://vimeo.com/604236418",
+  "groups": [
+    {
+      "title": "exhibition views",
+      "photos": [
+        "exhibition-views/1.webp",
+        "exhibition-views/2.webp",
+        "exhibition-views/3.webp",
+        "exhibition-views/4.webp"
+      ]
+    },
+    {
+      "title": "performance Los nudos que anudamos, en colaboración con Adriana Vila Guevara",
+      "photos": [
+        "performance1/1.webp",
+        "performance1/2.webp",
+        "performance1/3.webp",
+        "performance1/4.webp",
+        "performance1/5.webp"
+      ]
+    },
+    {
+      "title": "performance Una (espècie de) meditació crítica a la vinya, en colaboración con Maria Marvila",
+      "photos": [
+        "performance2/1.webp",
+        "performance2/2.webp",
+        "performance2/3.webp",
+        "performance2/4.webp",
+        "performance2/5.webp",
+        "performance2/6.webp",
+        "performance2/7.webp",
+        "performance2/8.webp"
+      ]
+    }
+  ]
+}

@@ -46,32 +46,55 @@ export const tfa = (val) => {
     return [];
 };
 
-// Sin cache busters ni no-store: el servidor manda max-age=0 + ETag, así que el
-// navegador siempre revalida (304 si no ha cambiado) y los cambios se ven al momento.
-async function loadJSON(path) {
-    const r = await fetch(path);
-    if (!r.ok) throw new Error(`${path} → ${r.status}`);
-    return r.json();
-}
+import { BUILT, loadData } from "./carga.js";
 
 export async function loadAll() {
-    state.data = await loadJSON("data/data.json");
-    const s = state.data.sources;
-    const [menu, about, news, publications, projects, photos] = await Promise.all([
-        loadJSON(s.menu).catch(() => null),
-        loadJSON(s.about).catch(() => null),
-        loadJSON(s.news).catch(() => null),
-        loadJSON(s.publications).catch(() => null),
-        loadJSON(s.projects).catch(() => null),
-        loadJSON(s.photos).catch(() => null),
-    ]);
-    state.menu = menu || [];
-    state.about = about || {};
-    state.news = news || [];
-    state.publications = publications || [];
-    state.projects = projects || [];
-    state.photos = photos || {};
+    const d = await loadData();
+    state.data = d.data;
+    state.menu = d.menu || [];
+    state.about = d.about || {};
+    state.news = d.news || [];
+    state.publications = d.publications || [];
+    state.projects = d.projects || [];
+    state.photos = d.photos || {};
     initLang();
+}
+
+// ---------- Las direcciones ----------
+// En la web construida cada vista tiene la suya, limpia: ./ (news),
+// publications/, photos/, about/, contact/ y <slug>/ para un proyecto, con
+// <base> en la raíz. En la vista previa (y los enlaces de antes), #vista/slug.
+
+export const VIEWS = ["news", "publications", "photos", "about", "contact", "project"];
+export const DEFAULT_VIEW = "news";
+
+export function routeHref(view, payload) {
+    if (!BUILT) return `#${view}${payload ? "/" + payload : ""}`;
+    if (view === "project") return `${encodeURIComponent(payload)}/`;
+    return view === DEFAULT_VIEW ? "./" : `${view}/`;
+}
+
+// la parte de la dirección después de la base: "", "about", "els-peregrins"…
+function relPath() {
+    const base = new URL(document.baseURI).pathname;
+    const p = location.pathname.startsWith(base) ? location.pathname.slice(base.length) : "";
+    try { return decodeURIComponent(p).replace(/\/$/, ""); } catch { return p.replace(/\/$/, ""); }
+}
+
+export function readRoute() {
+    const h = location.hash.replace(/^#/, "");
+    if (h || !BUILT) {
+        if (!h) return { view: DEFAULT_VIEW };
+        const [view, ...rest] = h.split("/");
+        const raw = rest.join("/");
+        let payload = raw || undefined;
+        try { if (raw) payload = decodeURIComponent(raw); } catch {}
+        return { view, payload };
+    }
+    const rel = relPath();
+    if (!rel) return { view: DEFAULT_VIEW };
+    if (VIEWS.includes(rel)) return { view: rel };
+    return { view: "project", payload: rel };
 }
 
 // Precedencia del idioma inicial:
@@ -109,8 +132,9 @@ export function initLang() {
     updateCanonical();
 }
 
-// Actualiza <link rel="canonical">. Si la URL tiene ?lang= válido apunta a
-// https://barbarawong.info/?lang=xx; si no, a la raíz. Nunca incluye el hash.
+// Actualiza <link rel="canonical">: la dirección de la vista (en la web
+// construida; en la vista previa, la raíz) con ?lang= si la URL lo lleva.
+// Nunca incluye el hash.
 export function updateCanonical() {
     const link = document.querySelector('link[rel="canonical"]');
     if (!link) return;
@@ -120,12 +144,10 @@ export function updateCanonical() {
         const p = new URLSearchParams(location.search).get("lang");
         if (allowed.includes(p)) lang = p;
     } catch {}
-    link.setAttribute(
-        "href",
-        lang
-            ? `https://barbarawong.info/?lang=${lang}`
-            : "https://barbarawong.info/"
-    );
+    const site = window.__SITE__ || "https://barbarawong.info";
+    const base = new URL(document.baseURI).pathname;
+    const path = BUILT && location.pathname.startsWith(base) ? location.pathname.slice(base.length) : "";
+    link.setAttribute("href", `${site}/${path}${lang ? `?lang=${lang}` : ""}`);
 }
 
 export function findProject(slug) {

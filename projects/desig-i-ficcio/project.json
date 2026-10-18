@@ -1,0 +1,64 @@
+{
+  "$schema": "../../schema/project.json",
+  "title": "Desig i Ficció",
+  "details": {
+    "year": "2025",
+    "type": {
+      "es": "Instalación de vídeo",
+      "en": "Video installation",
+      "ca": "Instal·lació de vídeo"
+    },
+    "duration": ""
+  },
+  "text": {
+    "es": [
+      "Tráiler de la pieza de vídeo que acompaña la exposición Desig i ficció. Una exploración sensorial y material del margalló, comisariada por Sara G. de Ubieta y Cris Noguer en el Centre de Desenvolupament Rural Museu de la Pauma de Mas de Barberans, Tarragona.",
+      "El margalló (Chamaerops humilis) es una planta que posibilita la vida. Su capacidad de regeneración tras un incendio forestal, la rapidez con la que rebrota y la estabilidad de su ciclo fenológico —que se reanuda casi sin alteraciones— son ejemplos claros. Esta resistencia se debe a una morfología adaptada que protege las partes vitales de la planta del fuego, lo que le permite florecer y fructificar de nuevo con normalidad y asegura su función ecológica y reproductiva.",
+      "Además, el margalló no solo tolera condiciones ambientales adversas, sino que tiene un papel ecológico fundamental en la protección del suelo gracias a su entramado de raíces denso y profundo.",
+      "Desde esta perspectiva, el margalló es mucho más que una planta resiliente: es una infraestructura viva que sostiene la vida, una pieza clave en la creación de microecosistemas y un símbolo tangible de esa otra manera de habitar y narrar el mundo: desde el vínculo, la atención y la reciprocidad.",
+      "Desde la cultura de los materiales y su imparable transformación, surge una colección de objetos que es apenas un hilo del pasado, el presente y el futuro del margalló."
+    ],
+    "en": [
+      "Trailer of the video piece accompanying the exhibition Desig i ficció. A sensory and material exploration of the margalló (dwarf fan palm), curated by Sara G. de Ubieta and Cris Noguer at the Centre de Desenvolupament Rural Museu de la Pauma, Mas de Barberans, Tarragona.",
+      "The margalló (Chamaerops humilis) is a plant that makes life possible. Its capacity to regenerate after a forest fire, the speed with which it sprouts back, and the stability of its phenological cycle — which resumes almost without alteration — are clear examples. This resilience comes from an adapted morphology that protects the plant's vital parts from fire, allowing it to bloom and bear fruit again normally and ensuring its ecological and reproductive function.",
+      "Moreover, the margalló not only tolerates adverse environmental conditions, but plays a fundamental ecological role in protecting the soil thanks to its dense and deep root network.",
+      "From this perspective, the margalló is much more than a resilient plant: it is a living infrastructure that sustains life, a key piece in the creation of micro-ecosystems and a tangible symbol of another way of inhabiting and narrating the world: through bond, attention and reciprocity.",
+      "From the culture of materials and their unstoppable transformation, a collection of objects emerges that is only a thread of the past, present and future of the margalló."
+    ],
+    "ca": [
+      "Trailer per la peça de vídeo que acompanya l'exposició Desig i ficció. Una exploració sensorial i material del margalló, comissariada per Sara G. de Ubieta i Cris Noguer al Centre de Desenvolupament Rural Museu de la Pauma de Mas de Barberans, Tarragona.",
+      "El margalló (Chamaerops humilis) és una planta que possibilita la vida. La seva capacitat de regeneració després d'un incendi forestal, la rapidesa amb què rebrota i l'estabilitat del seu cicle fenològic –que es reprèn gairebé sense alteracions– en són exemples clars. Aquesta resistència és deguda a una morfologia adaptada que protegeix les parts vitals de la planta del foc, cosa que li permet florir i fructificar novament amb normalitat i n'assegura la funció ecològica i reproductiva.",
+      "A més, el margalló no només tolera condicions ambientals adverses, sinó que té un paper ecològic fonamental en la protecció del sòl gràcies al seu entramat d'arrels dens i profund.",
+      "Des d'aquesta perspectiva, el margalló és molt més que una planta resilient: és una infraestructura viva que sosté la vida, una peça clau en la creació de microecosistemes i un símbol tangible d'aquesta altra manera d'habitar i narrar el món: des del vincle, l'atenció i la reciprocitat.",
+      "Des de la cultura dels materials i la seva imparable transformació, sorgeix una col·lecció d'objectes que és només un bri del passat, el present i el futur del margalló."
+    ]
+  },
+  "links": [
+    [
+      "Catálogo (PDF)",
+      "data/_works/desig-i-ficcio/Cataleg_desig_ficcio_50x70_cast.pdf"
+    ],
+    [
+      "Museu de la Pauma",
+      "https://cdrmuseudelapauma.cat/worpre/desig-i-ficcio-tot-explorant-el-margallo/"
+    ],
+    [
+      "Artículo en El País",
+      "https://elpais.com/quadern/art-i-arquitectura/2025-12-18/benvinguts-al-futur-arcaic.html"
+    ]
+  ],
+  "trailer": "https://vimeo.com/1148754736",
+  "groups": [
+    {
+      "title": "fotogramas",
+      "photos": [
+        "Fotogramas/vlcsnap-2025-09-28-17h53m37s152.webp",
+        "Fotogramas/vlcsnap-2025-09-28-17h56m14s836.webp",
+        "Fotogramas/vlcsnap-2025-09-28-17h59m31s406.webp",
+        "Fotogramas/vlcsnap-2025-09-28-18h08m37s685.webp",
+        "Fotogramas/vlcsnap-2025-09-28-18h11m55s216.webp",
+        "Fotogramas/vlcsnap-2025-09-28-18h20m42s361.webp"
+      ]
+    }
+  ]
+}

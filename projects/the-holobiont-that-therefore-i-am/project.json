@@ -1,0 +1,57 @@
+{
+  "$schema": "../../schema/project.json",
+  "title": "The holobiont that <br> therefore I am",
+  "details": {
+    "year": "2022",
+    "type": {
+      "es": "Video instalación site-specific con varias películas en 16 mm escaneadas a HD + 1 pantalla pequeña con un film digital",
+      "en": "Site-specific video installation using different 16 mm scanned to HD films + 1 small screen with a digital film",
+      "ca": "Videoinstal·lació site-specific amb diverses pel·lícules en 16 mm escanejades a HD + 1 pantalla petita amb un film digital"
+    },
+    "duration": ""
+  },
+  "text": {
+    "es": [
+      "Usando como referencia *The animal that therefore I am* de Derrida para preguntarse cómo abrir un diálogo real a partir de modos de ser-con, alteridad y agencia, la instalación forma parte de un proceso de reflexión sobre los temas de una investigación sobre la convivencia, los mundos más-que-humanos y las políticas del cuidado.",
+      "En la obra *Botanical dream*, rodada en un jardín botánico, asistimos a un sueño, pero no estamos seguros de quién es. ¿Quizá las plantas del jardín sueñan con transformarse, traspasar esas paredes de cristal y convertirse en una selva tropical?",
+      "En *The way my mother talked to plants*, la artista ha filmado a su madre en casa y con amigos, (siendo éstos humanos y no humanos), para reflexionar sobre los cuidados entre los seres humanos y la naturaleza.",
+      "*The Knots We Knot* es una película surgida a través de una colaboración con la cineasta Adriana Vila Guevara en una mini residencia en la Vall de Santa Creu. Ambas artistas deciden pasar unos días en el valle explorando sus intereses, y el entorno, humano, animal, vegetal, y liquen que las rodea, interactuando con él a través de una cámara Bólex de 16 mm y una grabadora de sonido, y acompañadas de las lecturas de Donna Haraway, Robin W. Kimmerer y María Puig de la Bellacasa entre otras autoras."
+    ],
+    "en": [
+      "Taking Derrida's *The Animal That Therefore I Am* as a reference to ask how to open a real dialogue based on ways of being-with, alterity and agency, the installation is part of a reflection process on the themes of a research about coexistence, more-than-human worlds and politics of care.",
+      "In *Botanical dream*, shot in a botanical garden, we witness a dream, but we are not sure whose dream it is. Perhaps the garden's plants dream of transforming, passing through those glass walls and turning into a tropical rainforest.",
+      "In *The way my mother talked to plants* the artist filmed her mother at home and with friends (both human and non-human), to reflect on care between human beings and nature.",
+      "*The Knots We Knot* is a film that emerged from a collaboration with filmmaker Adriana Vila Guevara during a mini residency in the Vall de Santa Creu. Both artists decided to spend a few days in the valley exploring their interests and the human, animal, vegetal and lichen environment around them, interacting with it through a 16 mm Bolex camera and a sound recorder, accompanied by readings from Donna Haraway, Robin W. Kimmerer and María Puig de la Bellacasa, among other authors."
+    ],
+    "ca": [
+      "Prenent com a referència *The animal that therefore I am* de Derrida per preguntar-se com obrir un diàleg real a partir de maneres de ser-amb, alteritat i agència, la instal·lació forma part d'un procés de reflexió sobre els temes d'una recerca sobre la convivència, els mons més-que-humans i les polítiques de la cura.",
+      "A l'obra *Botanical dream*, rodada en un jardí botànic, assistim a un somni, però no estem segures de qui és. Potser les plantes del jardí somien transformar-se, traspassar aquelles parets de vidre i esdevenir una selva tropical?",
+      "A *The way my mother talked to plants* l'artista ha filmat la seva mare a casa i amb amics (humans i no humans), per reflexionar sobre les cures entre els éssers humans i la natura.",
+      "*The Knots We Knot* és una pel·lícula sorgida d'una col·laboració amb la cineasta Adriana Vila Guevara en una mini residència a la Vall de Santa Creu. Les dues artistes decideixen passar uns dies a la vall explorant els seus interessos i l'entorn humà, animal, vegetal i de líquens que les envolta, interactuant-hi a través d'una càmera Bolex de 16 mm i una gravadora de so, i acompanyades de les lectures de Donna Haraway, Robin W. Kimmerer i María Puig de la Bellacasa, entre d'altres autores."
+    ]
+  },
+  "groups": [
+    {
+      "title": "installation views — Bienal Sur (SAMoCA, Riyadh)",
+      "photos": [
+        "vertical/2.webp",
+        "vertical/1.webp"
+      ]
+    },
+    {
+      "title": "installation views — Bienal Sur (SAMoCA, Riyadh)",
+      "photos": [
+        "Installation views at Bienal Sur- Imagine. Fantasies, Dreams, Utopias, SAMoCA, Riyadh/1701272605900.webp"
+      ]
+    },
+    {
+      "title": "installation views — Inter Arts Center, Malmö 2022",
+      "photos": [
+        "Installation views at Inter Arts Center, Malmö, 2022 /DSC00125.webp",
+        "Installation views at Inter Arts Center, Malmö, 2022 /DSC00131.webp",
+        "Installation views at Inter Arts Center, Malmö, 2022 /JPG_MFAAR_exhibition_View_74.webp",
+        "Installation views at Inter Arts Center, Malmö, 2022 /JPG_MFAAR_exhibition_View_76.webp"
+      ]
+    }
+  ]
+}

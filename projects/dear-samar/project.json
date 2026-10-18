@@ -1,0 +1,38 @@
+{
+  "$schema": "../../schema/project.json",
+  "title": "Dear Samar",
+  "details": {
+    "year": "2019",
+    "type": {
+      "es": "Vídeo documental",
+      "en": "Documentary video",
+      "ca": "Vídeo documental"
+    },
+    "duration": "10 min"
+  },
+  "text": {
+    "es": [
+      "Un viaje a Jordania para explorar el país de la mano de una mujer árabe. Una crisis de representación: ¿Cómo representar sin domesticar, sin manejar a mi antojo las imágenes, sin clichés? Un viaje etnográfico a través de los paisajes que vieron pasar a Lawrence de Arabia y a Gertrude Bell."
+    ],
+    "en": [
+      "A trip to Jordan to explore the country guided by an Arab woman. A crisis of representation: how to represent without domesticating, without manipulating images to my will, without clichés? An ethnographic journey through the landscapes that witnessed Lawrence of Arabia and Gertrude Bell."
+    ],
+    "ca": [
+      "Un viatge a Jordània per explorar el país de la mà d'una dona àrab. Una crisi de representació: com representar sense domesticar, sense manejar a voluntat les imatges, sense tòpics? Un viatge etnogràfic pels paisatges que van veure passar Lawrence of Arabia i Gertrude Bell."
+    ]
+  },
+  "links": [
+    []
+  ],
+  "trailer": "https://vimeo.com/337264503",
+  "groups": [
+    {
+      "title": "fotogramas",
+      "photos": [
+        "fotogramas/001.webp",
+        "fotogramas/002.webp",
+        "fotogramas/003.webp"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "$schema": "../../schema/project.json",
+  "title": "Cartas desde <br> el bosque",
+  "details": {
+    "year": "2016",
+    "type": {
+      "es": "Video, instalación (7 vídeos)",
+      "en": "Video, installation (7 videos)",
+      "ca": "Vídeo, instal·lació (7 vídeos)"
+    },
+    "duration": "35 min"
+  },
+  "text": {
+    "es": [
+      "En 2015 Bárbara decidió dejar atrás su vida en la ciudad e irse a vivir a una comunidad en el bosque de Dean, en el condado de Gloucestershire (Inglaterra), un paraje natural alejado de todo lo que ella conocía y de lo que cualquier ciudad representa: el individuo competitivo y distanciado de todo lo que es natural, el consumismo de 24 horas y la dependencia tecnológica, ideológica y cultural. Esta experiencia la ha hecho reflexionar sobre la autenticidad y la belleza de lo que siempre ha estado aquí, antes que nosotros, y que nosotros no hemos creado.",
+      "La ha llevado a entender que tarde o temprano el modo en que tratas al otro tiene un efecto en ti –‘recogemos lo que sembramos’–, y le está haciendo cuestionar más cosas que las que realmente puede explicar con palabras, puesto que al interiorizar la vivencia del bosque entendemos, como decía John Fowles, que ‘su secreto consiste en ser, no en decir’."
+    ],
+    "en": [
+      "In 2015 Bárbara decided to leave her city life and go to live in a community in the Forest of Dean, in Gloucestershire (England), a natural place far from everything she knew and from what any city represents: the competitive individual detached from what is natural, 24-hour consumerism, and technological, ideological and cultural dependence.",
+      "This experience led her to reflect on the authenticity and beauty of what has always been here, before us, and that we did not create."
+    ],
+    "ca": [
+      "El 2015 Bárbara va decidir deixar enrere la seva vida a la ciutat i anar a viure a una comunitat al bosc de Dean, al comtat de Gloucestershire (Anglaterra), un paratge natural lluny de tot el que ella coneixia i del que representa qualsevol ciutat: l'individu competitiu i allunyat del que és natural, el consumisme 24 hores i la dependència tecnològica, ideològica i cultural.",
+      "Aquesta experiència l'ha fet reflexionar sobre l'autenticitat i la bellesa del que sempre ha estat aquí, abans que nosaltres, i que nosaltres no hem creat."
+    ]
+  },
+  "more": {
+    "es": [
+      "Por eso un tema central de este proyecto es la noción de tiempo, del paso y la administración de nuestro tiempo, que, comparado con la magnitud temporal del bosque, donde pasado y presente se entrelazan, es fútil.",
+      "La ‘romantización’ de la naturaleza y sus contradicciones actuales es otro de los conceptos que aborda la artista; por eso, cuando relee obsesivamente a Henry David Thoreau –‘Fui a los bosques porque quería vivir a conciencia, quería vivir a fondo y extraer todo el meollo a la vida, y dejar a un lado todo lo que no fuese vida, para no descubrir, en el momento de mi muerte, que no había vivido’–, revisa a la vez el vínculo de la crisis económica con esta especie de retorno al origen que vivimos hoy en día. Abandonar la ciudad, tener un huerto, vivir con menos recursos y reciclar, ¿obedece a un retorno sincero o es que no tenemos otra opción?",
+      "Cuando la artista llegó al bosque, halló el típico buzón inglés de color rojo delante de la casa donde viviría. Hacía tiempo que quería trabajar la correspondencia como proyecto artístico y ha optado por hacerlo a través de videocartas –cartas filmadas que homenajean el documental crítico de Chris Marker y Harun Farocki, la dimensión mística y psicológica del cine de Tarkovsky o la correspondencia poética entre Víctor Erice y Abbas Kiarostami–. Las enviará a La Capella semanalmente y el cartero las introducirá en un buzón similar colocado en la entrada de la calle Hospital. Están dirigidas a cualquier espectador que se siente a ‘leerlas/verlas’ en el Espai Cub y que podrá ‘contestar’ depositando la correspondencia en el mismo buzón siguiendo las instrucciones indicadas en la sala.",
+      "La ‘naturaleza’ de narración íntima, compleja, sin estructura concreta y por capas que Bárbara encuentra en la carta filmada recuerda la analogía que trazaba Fowles entre los árboles, el bosque y la prosa de ficción. Porque aquí la artista también ve en la esencia del bosque un proceso único de ocultación e investigación humana que traslada al vídeo y le sirve para narrar de qué modo la vivencia de la naturaleza es un proceso casi místico y de enamoramiento que incorpora temas tan vastos e inconmensurables como la propia naturaleza. Este es el tema que atraviesa todos los demás y que la autora quiere tratar: la incapacidad de abarcar, medir y comprender la naturaleza en su totalidad.",
+      "Formalmente utiliza la tecnología como un proceso ‘artesanal’ distanciado de cualquier ‘actualización’ con vídeos grabados en DVD que se envían físicamente por correo postal. Como ella dice: ‘Utilizo la tecnología pero la inundo de materialidad’. Cuando pregunto a Bárbara si cree que esta vida que lleva ahora es realmente una vida más auténtica y liberada, me responde que aún no lo sabe, que quizá lo sabrá después del proyecto. Y es que aquí la práctica artística se plantea no solo como investigación o vivencia, sino como ‘observación directa’.",
+      "Así pues, somos testigos de un proyecto en proceso, profundamente vivencial y en comunicación abierta, que elude la grandilocuencia de ‘la palabra ajardinada’ y que en último término es una correspondencia íntima y sincera de la artista consigo misma que no se cierra, porque sabe que el suyo no es un sentimiento solitario: ‘La sombra de la Mujer Salvaje’, nos recuerda Clarissa Pinkola Estés, ‘acecha todavía a nuestra espalda de día y de noche. Dondequiera que estemos, la sombra que trota detrás de nosotros tiene sin duda cuatro patas’.",
+      "Texto curatorial de Mireia Sallarès, La Capella"
+    ],
+    "en": [
+      "For this reason, a central theme of the project is the notion of time — the passing and the management of our time — which, compared to the temporal magnitude of the forest, where past and present intertwine, is futile.",
+      "The 'romanticization' of nature and its present contradictions is another concept the artist addresses; for this reason, when she obsessively rereads Henry David Thoreau — 'I went to the woods because I wished to live deliberately...' — she simultaneously re-examines the link between the economic crisis and this kind of return to origins we are experiencing today.",
+      "When the artist arrived in the forest she found the typical red English postbox in front of the house where she would live. She long wanted to work with correspondence as an artistic project and chose to do it through video-letters — filmed letters that pay homage to the critical documentary tradition of Chris Marker and Harun Farocki, the mystical and psychological dimension of Tarkovsky's cinema, or the poetic correspondence between Víctor Erice and Abbas Kiarostami. She will send them weekly to La Capella and the postman will place them in a similar box installed at the entrance of Carrer Hospital. They are addressed to any viewer who sits to 'read/watch' them in the Espai Cub and who may 'reply' by depositing a response in the same box following the instructions given in the room.",
+      "The intimate, layered, non-linear nature of the filmed letter recalls the analogy Fowles traced between trees, the forest and prose fiction. The artist sees in the essence of the forest a unique process of concealment and human inquiry that she transfers to video, which serves to narrate how the experience of nature is an almost mystical and enamoring process that incorporates themes as vast and immeasurable as nature itself.",
+      "Formally, she uses technology as an 'artisanal' process, distanced from any 'update', with videos recorded on DVD that are sent physically by post. As she says: 'I use technology but I flood it with materiality.' When I ask Bárbara whether she believes that this life she now leads is really more authentic and liberating, she answers that she does not yet know — perhaps she will know after the project. Here artistic practice is posed not only as research or lived experience, but as 'direct observation'.",
+      "Thus, we are witnessing a work in progress, deeply experiential and openly communicative, that avoids the grandiloquence of 'the gardened word' and that ultimately is an intimate and sincere correspondence of the artist with herself that does not close — because she knows that her feeling is not solitary: 'Curatorial text by Mireia Sallarès, La Capella'"
+    ],
+    "ca": [
+      "Per això un tema central d'aquest projecte és la noció de temps — el pas i l'administració del nostre temps — que, comparat amb la magnitud temporal del bosc, on passat i present s'entrellacen, és inútil.",
+      "La 'romantització' de la natura i les seves contradiccions actuals és un altre dels conceptes que tracta l'artista; per això, quan torna a llegir obsessivament Henry David Thoreau — 'Vaig anar al bosc perquè volia viure conscientment...' — revisa al mateix temps el vincle entre la crisi econòmica i aquesta mena de retorn a l'origen que vivim avui.",
+      "Quan l'artista va arribar al bosc, va trobar el típic bústia anglesa de color vermell davant de la casa on vivia. Feia temps que volia treballar la correspondència com a projecte artístic i ha optat per fer-ho a través de videocartes — cartes filmades que retre homenatge a la tradició documental crítica de Chris Marker i Harun Farocki, la dimensió mística i psicològica del cinema de Tarkovsky o la correspondència poètica entre Víctor Erice i Abbas Kiarostami. Les enviarà setmanalment a La Capella i el carter les introduirà en un bústia similar col·locada a l'entrada del carrer Hospital. Van adreçades a qualsevol espectador que s'assegui a 'llegir-les/veure-les' a l'Espai Cub i que podrà 'contestar' dipositant una resposta en el mateix bústia seguint les instruccions indicades a la sala.",
+      "La naturalesa íntima, per capes i no lineal de la carta filmada recorda l'analogia que traçava Fowles entre els arbres, el bosc i la prosa de ficció. L'artista veu en l'essència del bosc un procés únic d'ocultació i investigació humana que trasllada al vídeo i que serveix per narrar com la vivència de la natura és un procés gairebé místic i d'enamorament que incorpora temes tan vastos i inconmensurables com la pròpia natura.",
+      "Formalment utilitza la tecnologia com a procés 'artesanal', allunyat de qualsevol 'actualització', amb vídeos gravats en DVD que s'envien físicament per correu. Com ella diu: 'Utilitzo la tecnologia però l'infondo de materialitat.' Quan li pregunto a Bárbara si creu que aquesta vida que porta ara és realment més autèntica i alliberadora, respon que encara no ho sap — potser ho sabrà després del projecte. Aquí la pràctica artística es planteja no només com a recerca o vivència, sinó com a 'observació directa'.",
+      "Així doncs, som testimonis d'un projecte en procés, profundament vivencial i en comunicació oberta, que evita la grandiloqüència de la 'paraula jardinat' i que, en última instància, és una correspondència íntima i sincera de l'artista amb ella mateixa que no es tanca — perquè sap que el seu sentiment no és solitari: 'Text curatorial de Mireia Sallarès, La Capella'"
+    ]
+  },
+  "links": [
+    {
+      "label": {
+        "es": "Lista de reproducción de las 7 cartas",
+        "en": "Playlist of the 7 letters",
+        "ca": "Llista de reproducció de les 7 cartes"
+      },
+      "url": "https://vimeo.com/showcase/4357095"
+    }
+  ],
+  "videos": [
+    "https://vimeo.com/183922183"
+  ],
+  "groups": [
+    {
+      "title": {
+        "es": "Fotogramas de Cartas desde el bosque",
+        "en": "Video stills from Letters from the Forest",
+        "ca": "Fotogrames de Cartes des del bosc"
+      },
+      "photos": [
+        "fotogramas/1.webp",
+        "fotogramas/2.webp",
+        "fotogramas/3.webp",
+        "fotogramas/4.webp",
+        "fotogramas/5.webp"
+      ]
+    },
+    {
+      "title": {
+        "es": "Instalación — La Capella, Barcelona, 2016",
+        "en": "Installation views at La Capella, Barcelona, 2016",
+        "ca": "Vistes d'instal·lació a La Capella, Barcelona, 2016"
+      },
+      "photos": [
+        "fotografías/1.webp",
+        "fotografías/2.webp",
+        "fotografías/3.webp",
+        "fotografías/4.webp"
+      ]
+    }
+  ]
+}

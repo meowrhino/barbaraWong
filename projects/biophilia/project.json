@@ -1,0 +1,81 @@
+{
+  "$schema": "../../schema/project.json",
+  "title": "Biophilia",
+  "details": {
+    "year": "2023",
+    "type": {
+      "es": "Super 8 transferido a digital, video instalación, proyección sobre piezas cerámicas",
+      "en": "Super 8 film transferred to digital, video installation, projection on ceramic pieces",
+      "ca": "Super 8 transferit a digital, videoinstal·lació, projecció sobre peces ceràmiques"
+    },
+    "duration": "7 min"
+  },
+  "text": {
+    "es": [
+      "En un ejercicio de fabulación especulativa, nos encontramos en un mundo donde parece que el modelo de sistema en el que vivíamos ha llegado a su fin. Un mundo en ruinas y un relato que nos presenta que tal vez este sea un momento de posibilidad. Una posibilidad que se revela hacia las narrativas apocalípticas que consumimos, así como hacia la construcción de un nuevo mundo basado en valores y relatos del pasado, y en la noción misma de construcción. Tal vez sea necesario replantear las relaciones, los valores con los que hemos vivido hasta ahora, y los propios agentes que hacen posible la vida, y enfocarnos simplemente en vivir en las ruinas, juntos, y con goce.",
+      "Biophilia es una película que nos sitúa en un mundo que ha llegado a su fin. No es un mundo imaginario, fabulado o utópico. Es nuestro mundo actual. Nuestro mundo común. Un mundo en ruinas, contaminado, maltratado, agotado. Un mundo condenado por el consumo, el colonialismo, el machismo, el extractivismo. Vivimos la crisis de la modernidad capitalista. Esta crisis es social, medioambiental y psíquica. Los desechos de esta crisis se manifiestan como heridas en el paisaje y también marcan las vidas precarias de las personas. Sin embargo, como sostiene la antropóloga Anna Tsing, en las ruinas puede germinar la vida. En los campos abandonados puede proliferar la vida multiespecie.",
+      "Al fin y al cabo, no tenemos muchas opciones más que buscar y generar vida entre las ruinas. Como afirma Tsing en \"The Mushroom at the End of the World\", para poder generar vida \"el primer paso es restaurar la curiosidad\". En Biophilia, la artista cultiva la curiosidad en un ensayo audiovisual grabado en un valle asturiano donde se evidencian las marcas de la industrialización, la minería, la explotación de yacimientos minerales y las centrales térmicas. Es en este valle donde Bárbara acompaña la vida de una mujer que trabaja el campo y su comunidad multiespecie.",
+      "Texto curatorial de Christian Alonso"
+    ],
+    "en": [
+      "In an exercise of speculative fabulation, we find ourselves in a world where it seems that the system model we have been living in has come to an end. A world in ruins and a narrative suggesting that this may, perhaps, be a moment of possibility. A possibility that reveals itself in the apocalyptic narratives we consume, as well as in the construction of a new world grounded in values and stories from the past, and in the very notion of construction. Perhaps it is necessary to rethink the relations, the values we have lived by, and the very agents that make life possible — and simply to focus on living in the ruins, together, and with joy.",
+      "Biophilia is a film that places us in a world that has come to an end. It is not an imaginary, fabled, or utopian world. It is our current world. Our common world. A world in ruins, polluted, mistreated, exhausted. A world condemned by consumption, colonialism, machismo, extractivism. We are living through the crisis of capitalist modernity. This crisis is social, environmental and psychic. Its debris appears as wounds in the landscape and also marks the precarious lives of people. And yet, as anthropologist Anna Tsing argues, in the ruins life can germinate. In abandoned fields, multispecies life can proliferate.",
+      "After all, we have few options other than seeking and generating life among the ruins. As Tsing claims in The Mushroom at the End of the World, in order to generate life \"the first step is to restore curiosity\". In Biophilia, the artist cultivates curiosity in an audiovisual essay shot in an Asturian valley where the marks of industrialisation, mining, mineral extraction and thermal power plants are visible. It is in this valley that Bárbara accompanies the life of a woman who works the land and her multispecies community.",
+      "Curatorial text by Christian Alonso"
+    ],
+    "ca": [
+      "En un exercici de fabulació especulativa, ens trobem en un món on sembla que el model de sistema en què vivíem ha arribat a la seva fi. Un món en ruïnes i un relat que ens presenta que potser aquest sigui un moment de possibilitat. Una possibilitat que es revela cap a les narratives apocalíptiques que consumim, així com cap a la construcció d'un nou món basat en valors i relats del passat, i en la noció mateixa de construcció. Potser cal replantejar les relacions, els valors amb què hem viscut fins ara, i els propis agents que fan possible la vida, i centrar-nos simplement a viure en les ruïnes, junts, i amb gaudi.",
+      "Biophilia és una pel·lícula que ens situa en un món que ha arribat a la seva fi. No és un món imaginari, fabulat o utòpic. És el nostre món actual. El nostre món comú. Un món en ruïnes, contaminat, maltractat, esgotat. Un món condemnat pel consum, el colonialisme, el masclisme, l'extractivisme. Vivim la crisi de la modernitat capitalista. Aquesta crisi és social, mediambiental i psíquica. Els residus d'aquesta crisi es manifesten com a ferides en el paisatge i també marquen les vides precàries de les persones. Tanmateix, com sosté l'antropòloga Anna Tsing, en les ruïnes pot germinar la vida. En els camps abandonats pot proliferar la vida multiespècie.",
+      "Al cap i a la fi, no tenim gaires opcions més que buscar i generar vida entre les ruïnes. Com afirma Tsing a The Mushroom at the End of the World, per poder generar vida \"el primer pas és restaurar la curiositat\". A Biophilia, l'artista cultiva la curiositat en un assaig audiovisual gravat en una vall asturiana on s'evidencien les marques de la industrialització, la mineria, l'explotació de jaciments minerals i les centrals tèrmiques. És en aquesta vall on Bárbara acompanya la vida d'una dona que treballa el camp i la seva comunitat multiespècie.",
+      "Text curatorial de Christian Alonso"
+    ]
+  },
+  "trailer": "https://vimeo.com/878483404",
+  "credits": {
+    "es": [
+      "Escrito por: Bárbara Sánchez Barroso, Paulius Sliaupa",
+      "Diseño de sonido: Paulius Sliaupa",
+      "Voz en off: Bryony Ulyett",
+      "Color: Ben Guez",
+      "Laboratorio Super 8: CineLab Bucharest",
+      "Piezas cerámicas producidas y cocidas en el taller de Julieta Dentone",
+      "Agradecimientos: a Erundina, Rocio, Luis y el resto de la familia de Alba Feito por acogerme, Paulius Sliaupa, Ben Guez, Valentina Alvarado, Alba Bresolí, Cristina Ferrández, Mara y Armando de Figal de Xugabolos, Cornelia, Diana y Rodrigo de CineLab Bucharest, David Rodríguez y el equipo de La Panera."
+    ],
+    "en": [
+      "Written by: Bárbara Sánchez Barroso, Paulius Sliaupa",
+      "Sound Design: Paulius Sliaupa",
+      "Voice over: Bryony Ulyett",
+      "Color: Ben Guez",
+      "Super 8 Laboratory: CineLab Bucharest",
+      "Ceramic pieces produced and fired in Julieta Dentone's workshop",
+      "Acknowledgments: to Erundina, Rocio, Luis, and the rest of Alba Feito's family for hosting me, Paulius Sliaupa, Ben Guez, Valentina Alvarado, Alba Bresolí, Cristina Ferrández, Mara and Armando from Figal de Xugabolos, Cornelia, Diana and Rodrigo from CineLab Bucharest, David Rodríguez, and the La Panera team."
+    ],
+    "ca": [
+      "Escrit per: Bárbara Sánchez Barroso, Paulius Sliaupa",
+      "Disseny de so: Paulius Sliaupa",
+      "Veu en off: Bryony Ulyett",
+      "Color: Ben Guez",
+      "Laboratori Super 8: CineLab Bucharest",
+      "Peces ceràmiques produïdes i cuites al taller de Julieta Dentone",
+      "Agraïments: a Erundina, Rocio, Luis i la resta de la família d'Alba Feito per acollir-me, Paulius Sliaupa, Ben Guez, Valentina Alvarado, Alba Bresolí, Cristina Ferrández, Mara i Armando de Figal de Xugabolos, Cornelia, Diana i Rodrigo de CineLab Bucharest, David Rodríguez i l'equip de La Panera."
+    ]
+  },
+  "groups": [
+    {
+      "title": "fotogramas",
+      "photos": [
+        "Fotogramas/vlcsnap-2023-11-23-15h31m52s900.webp",
+        "Fotogramas/vlcsnap-2023-11-23-15h32m41s050.webp",
+        "Fotogramas/vlcsnap-2023-11-23-15h33m02s499.webp"
+      ]
+    },
+    {
+      "title": "exhibition views",
+      "photos": [
+        "Exhibition views/detail_web_1.webp",
+        "Exhibition views/Captura-de-pantalla-2023-11-23-a-las-16.08.40.webp",
+        "Exhibition views/detail_web_2.webp"
+      ]
+    }
+  ]
+}

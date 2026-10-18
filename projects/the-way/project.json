@@ -1,0 +1,36 @@
+{
+  "$schema": "../../schema/project.json",
+  "title": "The Way My Mother <br> Talked to Plants",
+  "details": {
+    "year": "2022",
+    "type": {
+      "es": "16 mm transferido a digital",
+      "en": "16 mm transferred to digital",
+      "ca": "16 mm transferit a digital"
+    },
+    "duration": "11 min 40 sec"
+  },
+  "text": {
+    "es": [
+      "En The way my mother talked to plants la artista ha filmado a su madre en casa y con amigos, (siendo éstos humanos y no humanos), para reflexionar sobre los cuidado entre especies."
+    ],
+    "en": [
+      "In The way my mother talked to plants the artist has filmed her mother at home and with friends, (those being human and non-human), to reflect on interspecies care."
+    ],
+    "ca": [
+      "A The way my mother talked to plants, l’artista ha filmat la seva mare a casa i amb amics (tant humans com no humans) per reflexionar sobre les cures entre espècies."
+    ]
+  },
+  "groups": [
+    {
+      "title": "fotogramas",
+      "photos": [
+        "1.webp",
+        "2.webp",
+        "3.webp",
+        "4.webp",
+        "5.webp"
+      ]
+    }
+  ]
+}

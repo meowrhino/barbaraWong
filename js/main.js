@@ -1,7 +1,8 @@
 // Router + init. Default view = "news". Fade suave al cambiar de vista.
 
 import { $ } from "./dom.js";
-import { state, loadAll, setView as setStateView, updateCanonical, findProject, tf } from "./data.js";
+import { state, loadAll, setView as setStateView, updateCanonical, findProject, tf, readRoute, routeHref, VIEWS as VIEW_LIST, DEFAULT_VIEW } from "./data.js";
+import { BUILT } from "./carga.js";
 import { plain } from "./text.js";
 import { renderMenu, setHandlers } from "./menu.js";
 import { shouldShowWelcome, startWelcome, skipWelcome } from "./welcome.js";
@@ -11,24 +12,14 @@ import {
 } from "./views.js";
 import { initLightbox } from "./lightbox.js";
 
-const VIEWS = new Set(["news", "publications", "photos", "about", "contact", "project"]);
-const DEFAULT_VIEW = "news";
+const VIEWS = new Set(VIEW_LIST);
 const FADE_MS = 180;
-
-function readHash() {
-    const h = location.hash.replace(/^#/, "");
-    if (!h) return { view: DEFAULT_VIEW };
-    const [view, ...rest] = h.split("/");
-    const raw = rest.join("/");
-    let payload = raw || undefined;
-    try { if (raw) payload = decodeURIComponent(raw); } catch {}
-    return { view, payload };
-}
+const readHash = readRoute; // la vista: de la dirección (web construida) o del #
 
 let prevKey = null;
 
 function viewKey() {
-    return `${state.view}:${location.hash}`;
+    return `${state.view}:${location.pathname}${location.hash}`;
 }
 
 // Page views manuales a GA4 (send_page_view está desactivado en el snippet
@@ -61,8 +52,12 @@ function trackPageView() {
 function setView(view, payload) {
     if (!VIEWS.has(view)) view = DEFAULT_VIEW;
     setStateView(view);
-    const hash = `#${view}${payload ? "/" + payload : ""}`;
-    if (location.hash !== hash) history.pushState({ view, payload }, "", hash);
+    const href = routeHref(view, payload);
+    if (BUILT) {
+        const url = new URL(href, document.baseURI);
+        if (location.pathname !== url.pathname || location.hash) history.pushState({ view, payload }, "", url.pathname + location.search);
+    } else if (location.hash !== href) history.pushState({ view, payload }, "", href);
+    updateCanonical();
     fadeRender();
     document.getElementById("viewer")?.scrollTo({ top: 0, left: 0, behavior: "instant" });
 }
@@ -131,14 +126,21 @@ function fadeRender() {
     }, FADE_MS);
 }
 
-window.addEventListener("hashchange", () => {
+function onRouteChange() {
     const { view } = readHash();
     setStateView(VIEWS.has(view) ? view : DEFAULT_VIEW);
+    updateCanonical();
     fadeRender();
-});
+}
+window.addEventListener("hashchange", onRouteChange);
+window.addEventListener("popstate", () => { if (BUILT) onRouteChange(); });
 
 function startApp() {
-    const { view } = readHash();
+    const { view, payload } = readHash();
+    // un enlace de antes (#about, #project/x) en la web construida: a su dirección limpia
+    if (BUILT && location.hash && VIEWS.has(view)) {
+        history.replaceState(null, "", new URL(routeHref(view, payload), document.baseURI).pathname + location.search);
+    }
     setStateView(VIEWS.has(view) ? view : DEFAULT_VIEW);
     prevKey = null;
     fadeRender();

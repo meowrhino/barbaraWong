@@ -1,0 +1,102 @@
+{
+  "$schema": "../schema/site.json",
+  "url": "https://barbarawong.info",
+  "title": "Bárbara S. Barroso",
+  "languages": [
+    "es",
+    "en",
+    "ca"
+  ],
+  "menu": [
+    {
+      "key": "news",
+      "label": {
+        "es": "noticias",
+        "en": "news",
+        "ca": "notícies"
+      }
+    },
+    {
+      "key": "works",
+      "label": {
+        "es": "proyectos",
+        "en": "works",
+        "ca": "projectes"
+      }
+    },
+    {
+      "key": "publications",
+      "label": {
+        "es": "publicaciones",
+        "en": "publications",
+        "ca": "publicacions"
+      }
+    },
+    {
+      "key": "photos",
+      "label": {
+        "es": "diario",
+        "en": "diary",
+        "ca": "diari"
+      }
+    },
+    {
+      "key": "about",
+      "label": {
+        "es": "sobre",
+        "en": "about",
+        "ca": "sobre"
+      }
+    },
+    {
+      "key": "contact",
+      "label": {
+        "es": "contacto",
+        "en": "contact",
+        "ca": "contacte"
+      }
+    }
+  ],
+  "welcome": {
+    "videos": [
+      {
+        "id": "1",
+        "label": "01"
+      },
+      {
+        "id": "2",
+        "label": "02"
+      },
+      {
+        "id": "3",
+        "label": "03"
+      },
+      {
+        "id": "4",
+        "label": "04"
+      }
+    ],
+    "formats": [
+      "webm"
+    ]
+  },
+  "lists": {
+    "works": [
+      "els-peregrins",
+      "desig-i-ficcio",
+      "biophilia",
+      "aiguarir",
+      "una-comunitat-de-llavors-i-de-relats",
+      "the-holobiont-that-therefore-i-am",
+      "botanical-dream",
+      "the-way",
+      "the-knots-we-knot",
+      "coexistence",
+      "the-word-for-world-is-forest",
+      "dear-samar",
+      "the-odyssey",
+      "paradise",
+      "cartas-desde-el-bosque"
+    ]
+  }
+}

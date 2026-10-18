@@ -141,9 +141,9 @@ function vimeoEmbed(url, title = "Vimeo") {
 }
 
 // Resuelve las rutas de una galería de proyecto: si ya son absolutas
-// (http(s):// o data/) se dejan tal cual, si no se anteponen a la carpeta del proyecto.
+// (http(s):// o data/) se dejan tal cual, si no se anteponen a la carpeta del proyecto (projects/<slug>/).
 function resolveGalleryImages(imgs, slug) {
-    const base = `data/_works/${slug}/`;
+    const base = `projects/${slug}/`;
     return imgs.map(src => /^(?:https?:\/\/|data\/)/.test(src) ? src : base + src);
 }
 

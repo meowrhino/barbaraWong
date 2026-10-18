@@ -1,0 +1,51 @@
+{
+  "$schema": "../../schema/project.json",
+  "title": "Els peregrins",
+  "details": {
+    "year": "2026",
+    "type": {
+      "es": "Film, 16mm a digital",
+      "en": "Film, 16mm to digital",
+      "ca": "Film, 16 mm a digital"
+    },
+    "duration": "14:34 min"
+  },
+  "text": {
+    "es": [
+      "En el Prat de Llobregat, Ondrej trabaja como halconero en el control de aves en el aeropuerto, al tiempo que cuida sus propias tierras con animales en un entorno agrícola cada vez más presionado. En este territorio limítrofe, su trabajo deviene una forma de resistencia ante el constante zumbido de los aviones. Humanos y no humanos comparten, en un espacio marcado por la ampliación del aeropuerto, una frágil red de relaciones."
+    ],
+    "en": [
+      "In the Prat de Llobregat, Ondrej works as a falconer controlling birds at the airport, while at the same time tending to his own land and animals in an agricultural environment under growing pressure. In this borderland, his work becomes a form of resistance against the constant hum of the planes. Humans and non-humans share, in a space marked by the airport's expansion, a fragile web of relations."
+    ],
+    "ca": [
+      "Al Prat de Llobregat, Ondrej treballa com a falconer en el control d'aus a l'aeroport, alhora que cuida les seves pròpies terres amb animals en un entorn agrícola cada vegada més pressionat. En aquest territori limítrof, la seva feina esdevé una forma de resistència davant del brunzit constant dels avions. Humans i no humans comparteixen, en un espai marcat per l'ampliació de l'aeroport, una fràgil xarxa de relacions."
+    ]
+  },
+  "links": [
+    [
+      "D'A Film Festival",
+      "https://dafilmfestival.com/es/movie/els-peregrins/"
+    ]
+  ],
+  "trailer": "https://vimeo.com/1173077278",
+  "groups": [
+    {
+      "title": "poster",
+      "photos": [
+        "posterVERTICAL.webp"
+      ]
+    },
+    {
+      "title": "fotogramas",
+      "photos": [
+        "fotogramas/001.webp",
+        "fotogramas/002.webp",
+        "fotogramas/003.webp",
+        "fotogramas/004.webp",
+        "fotogramas/005.webp",
+        "fotogramas/006.webp",
+        "fotogramas/007.webp"
+      ]
+    }
+  ]
+}

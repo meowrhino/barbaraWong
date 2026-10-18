@@ -1,0 +1,98 @@
+{
+  "$schema": "../../schema/project.json",
+  "title": "Una comunitat de <br> llavors i de relats",
+  "details": {
+    "year": "2023",
+    "type": {
+      "es": "16 mm transferido a digital, fotos 35 mm",
+      "en": "16 mm transferred to digital, 35 mm photos",
+      "ca": "16 mm transferit a digital, fotos 35 mm"
+    },
+    "duration": ""
+  },
+  "text": {
+    "es": [
+      "Durante unos meses de residencia con estudiantes de bachillerato he querido reflexionar sobre las imágenes en las pantallas desde un punto de salida extremo: haciendo desaparecer la tecnología de las sesiones. La propuesta consistía en simplemente dejar los móviles aparte y salir siempre que pudiéramos de las aulas en el entorno natural de Amer, Girona.",
+      "Como algunas de las alumnas no son del pueblo y otras no siempre salen a conocer su entorno, nos hemos lanzado todas juntas a explorarlo andando. En estas salidas lo que contaba era el hecho de pasar más tiempo en compañía, tejiendo relaciones, como las figuras de cuerdas de las que habla Donna Haraway en Seguir con el problema, además de hacerlo también con nuestra realidad más cercana, con todo lo que está vivo y nos rodea y a lo que no prestamos atención."
+    ],
+    "en": [
+      "During a few months of residency with high-school students, I wanted to reflect on the images on screens from an extreme starting point: making technology disappear from our sessions. The proposal was simply to leave the phones aside and, whenever possible, to leave the classrooms for the natural surroundings of Amer, Girona.",
+      "Since some of the students are not from the town and others do not always go out to get to know their surroundings, we set out together on foot to explore. On these walks what mattered was spending more time together, weaving relations — like the string figures Donna Haraway speaks of in Staying with the Trouble — also with our closest reality, with everything that is alive around us and to which we pay little attention."
+    ],
+    "ca": [
+      "Durant uns mesos de residència amb estudiants de batxillerat he volgut reflexionar sobre les imatges a les pantalles des d'un punt de partida extrem: fent desaparèixer la tecnologia de les sessions. La proposta consistia simplement a deixar els mòbils a banda i sortir sempre que poguéssim de les aules cap a l'entorn natural d'Amer, Girona.",
+      "Com que algunes de les alumnes no són del poble i d'altres no sempre surten a conèixer el seu entorn, ens hem llançat totes juntes a explorar-lo a peu. En aquestes sortides el que comptava era passar més temps en companyia, teixint relacions, com les figures de cordes de què parla Donna Haraway a Seguir amb el problema, i fent-ho també amb la nostra realitat més propera, amb tot allò que és viu i ens envolta i a què no parem atenció."
+    ]
+  },
+  "more": {
+    "es": [
+      "Las pantallas y la tecnología se han convertido en una extensión de nuestro cuerpo, totalmente necesaria para casi cualquier cosa que se quiera hacer a diario. Con este proyecto no he querido demonizar a los móviles ni la tecnología que los hace posibles, simplemente, abrir una reflexión sobre su uso y nuestra dependencia de ellos a partir de una acción tan simple como sacarlos de encima.",
+      "Me gusta pensar que es una brecha que se abre entre dos realidades, la de los móviles y las clases, y la que yo les proponía, en la que pasábamos a un mundo analógico, en el que el tacto, hablar, comer, dibujar cobraban protagonismo, en lugar de sólo mirar en una pantalla.",
+      "En este contexto analógico he introducido la idea de hacer todas juntas una película en 16 mm con una cámara de cine analógica, que siendo también tecnología, no es instantánea como a lo que nos tienen acostumbradas las interfaces de hoy en día. Las imágenes que tomamos no podemos verlas en el mismo momento, porque en la cámara sólo caben pequeños rollos de película de 30 metros que sólo durarán dos minutos y medio. Con este proceso he querido compartir lo que es ahora central para mí en mi práctica artística y en cómo lo estoy experimentando con el cine analógico: ¿hay que tomar tantas imágenes como hacemos cuando tenemos un dispositivo electrónico? ¿Qué ocurre si de repente no tenemos tanta capacidad para tomarlas y guardarlas? ¿Puede que esto nos haga pensar más en cómo tomarlas y por qué? ¿En el valor que tienen?",
+      "Junto a estas cuestiones hemos reflexionado sobre conceptos que son muy importantes para mí cómo es la figura del héroe masculino en muchas de las narrativas, literarias y fílmicas, que consumimos, y un concepto relacionado con el posthumanismo como es el holobionte. Originalmente propuesto por Lynn Margulis en su teoría de la simbiosis, el holobionte es un ser vivo compuesto por otros entes, que viven en comunidades o colonias, y necesitan otros para sobrevivir, que son interdependientes.",
+      "Con las alumnas hemos leído textos como La teoría de la bolsa de la ficción de Ursula K. Le Guin, en lo alto de una montaña, que tardamos una hora en subir, y después meditamos, comer avellanas y tomamos el sol. Y no recuerdo que nadie pensara en el móvil o se quejara por no tenerlo. Con nosotros sólo había una comunidad formada de naturaleza, ficción, hilos, cestas y semillas."
+    ],
+    "en": [
+      "Screens and technology have become an extension of our body, fully necessary for almost anything we want to do every day. With this project I did not want to demonise phones or the technology behind them; simply to open a reflection on their use and our dependence on them, through an action as simple as setting them aside.",
+      "I like to think of it as a gap that opens between two realities — that of phones and classrooms, and the one I proposed, in which we shifted into an analogue world, where touch, talking, eating, drawing took centre stage, instead of just looking at a screen.",
+      "In this analogue context I introduced the idea of making, all together, a 16 mm film with an analogue cinema camera — which, being also technology, is not instantaneous like today's interfaces. We can't see the images we take in the moment, because the camera only takes small 30-metre rolls that last just two and a half minutes. Through this process I wanted to share what is now central to my artistic practice and to how I am experiencing analogue cinema: do we need to take as many images as we do with an electronic device? What happens when we suddenly don't have so much capacity to take and store them? Does that make us think more about how and why we take them? About the value they hold?",
+      "Together with these questions we reflected on concepts that are very important to me, such as the figure of the male hero in many of the narratives — literary and filmic — that we consume, and a concept related to posthumanism: the holobiont. Originally proposed by Lynn Margulis in her theory of symbiosis, the holobiont is a living being made up of other entities, living in communities or colonies, needing one another to survive, interdependent.",
+      "With the students we read texts such as The Carrier Bag Theory of Fiction by Ursula K. Le Guin, on top of a mountain that took us an hour to climb, then we meditated, ate hazelnuts and sat in the sun. And I don't remember anyone thinking about their phone or complaining about not having it. With us there was only a community made of nature, fiction, threads, baskets and seeds."
+    ],
+    "ca": [
+      "Les pantalles i la tecnologia s'han convertit en una extensió del nostre cos, totalment necessària per a gairebé qualsevol cosa que vulguem fer cada dia. Amb aquest projecte no he volgut demonitzar els mòbils ni la tecnologia que els fa possibles, simplement obrir una reflexió sobre el seu ús i la nostra dependència a partir d'una acció tan simple com deixar-los de banda.",
+      "M'agrada pensar que és una escletxa que s'obre entre dues realitats, la dels mòbils i les aules, i la que jo els proposava, en la qual passàvem a un món analògic, on el tacte, parlar, menjar, dibuixar prenien protagonisme, en lloc de només mirar una pantalla.",
+      "En aquest context analògic he introduït la idea de fer totes juntes una pel·lícula en 16 mm amb una càmera de cinema analògic que, essent també tecnologia, no és instantània com les interfícies a què estem acostumades avui dia. Les imatges que prenem no les podem veure al mateix moment, perquè a la càmera només hi caben petits rotlles de pel·lícula de 30 metres que només duraran dos minuts i mig. Amb aquest procés he volgut compartir el que és ara central per a mi en la meva pràctica artística i en com l'estic experimentant amb el cinema analògic: cal prendre tantes imatges com en fem quan tenim un dispositiu electrònic? Què passa si de cop no tenim tanta capacitat per prendre'n i guardar-ne? Potser això ens fa pensar més en com prendre-les i per què? En el valor que tenen?",
+      "Al costat d'aquestes qüestions hem reflexionat sobre conceptes que són molt importants per a mi com és la figura de l'heroi masculí en moltes de les narratives, literàries i fílmiques, que consumim, i un concepte relacionat amb el posthumanisme com és l'holobiont. Proposat originalment per Lynn Margulis en la seva teoria de la simbiosi, l'holobiont és un ésser viu compost per altres ens, que viuen en comunitats o colònies, i necessiten altres per sobreviure, que són interdependents.",
+      "Amb les alumnes hem llegit textos com La teoria de la bossa de la ficció d'Ursula K. Le Guin, dalt d'una muntanya, que vam trigar una hora a pujar, i després meditem, mengem avellanes i prenem el sol. I no recordo que ningú pensés en el mòbil ni es queixés per no tenir-lo. Amb nosaltres només hi havia una comunitat formada de natura, ficció, fils, cistells i llavors."
+    ]
+  },
+  "links": [
+    [
+      "Hoja de sala — On es recolzen les imatges? (PDF)",
+      "https://web.girona.cat/documents/20147/10808186/FdS-Bolit-2023-onesrecolzenlesimatges.pdf"
+    ],
+    [
+      "Galería en Flickr",
+      "https://flic.kr/s/aHBqjACUHq"
+    ]
+  ],
+  "trailer": "https://vimeo.com/824791180",
+  "credits": {
+    "es": [
+      "Proyecto desarrollado en el marco de Bòlit Mentor — Bolit, Centre d'Art Contemporani de Girona. Comisaria: Marta Dahó. Institut Castell d'Estela d'Amer, Girona."
+    ],
+    "en": [
+      "Project developed within the framework of Bòlit Mentor — Bolit, Centre d'Art Contemporani de Girona. Curator: Marta Dahó. Institut Castell d'Estela d'Amer, Girona."
+    ],
+    "ca": [
+      "Projecte desenvolupat en el marc de Bòlit Mentor — Bòlit, Centre d'Art Contemporani de Girona. Comissària: Marta Dahó. Institut Castell d'Estela d'Amer, Girona."
+    ]
+  },
+  "groups": [
+    {
+      "title": "fotogramas",
+      "photos": [
+        "fotogramas/vlcsnap-2023-04-20-18h42m06s194.webp",
+        "fotogramas/vlcsnap-2023-04-20-18h38m49s333.webp",
+        "fotogramas/vlcsnap-2023-04-20-18h43m25s078.webp",
+        "fotogramas/vlcsnap-2023-04-20-18h39m08s369.webp",
+        "fotogramas/vlcsnap-2023-04-20-18h36m40s561.webp",
+        "fotogramas/vlcsnap-2023-04-20-18h33m14s518.webp"
+      ]
+    },
+    {
+      "title": "35mm — fotos tomadas por las estudiantes",
+      "photos": [
+        "Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734701.webp",
+        "Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734731.webp",
+        "Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734762.webp",
+        "Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734796.webp",
+        "Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734827.webp",
+        "Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734858.webp",
+        "Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734890.webp",
+        "Algunas de las fotos en 35mm tomadas por las estudiantes/1687108734921.webp"
+      ]
+    }
+  ]
+}

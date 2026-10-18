@@ -1,7 +1,7 @@
 // Menú: render, persiana móvil, lang switch, label activo, toggle works.
 
 import { $, $$, el, cx, bindOnce } from "./dom.js";
-import { state, t, tf } from "./data.js";
+import { state, t, tf, routeHref, readRoute } from "./data.js";
 import { showWelcomeAgain } from "./welcome.js";
 import { md } from "./text.js";
 
@@ -33,7 +33,7 @@ function renderSections() {
         const isActive = state.view === m.key;
         return el("li", { class: "menu-section" },
             el("a", {
-                href: `#${m.key}`,
+                href: routeHref(m.key),
                 "data-section": m.key,
                 class: isActive ? "is-active" : "",
                 on: { click: (e) => {
@@ -65,7 +65,7 @@ function renderWorksSection(m) {
     const inner = el("ol", { class: "works-list-inner" },
         ...(state.projects || []).map(w => {
             const slug = w.slug;
-            const active = state.view === "project" && location.hash === `#project/${slug}`;
+            const active = state.view === "project" && readRoute().payload === slug;
             const liCls = cx("work-item", !w.published && "is-unpublished", active && "is-active");
             if (!w.published) {
                 return el("li", {
@@ -77,7 +77,7 @@ function renderWorksSection(m) {
             }
             return el("li", { class: liCls, "data-slug": slug },
                 el("a", {
-                    href: `#project/${slug}`,
+                    href: routeHref("project", slug),
                     html: md(tf(w.title)),
                     on: { click: (e) => {
                         e.preventDefault();

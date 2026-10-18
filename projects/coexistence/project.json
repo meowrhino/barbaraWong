@@ -1,0 +1,49 @@
+{
+  "$schema": "../../schema/project.json",
+  "title": "Coexistence",
+  "details": {
+    "year": "2021",
+    "type": {
+      "es": "Video digital",
+      "en": "Digital video",
+      "ca": "Vídeo digital"
+    },
+    "duration": "8 min"
+  },
+  "text": {
+    "es": [
+      "Coexistence es una película concisa que explora nuestra relación con los animales y el mundo vivo en tiempos de pandemia. Hasta ahora nos hemos aprovechado del planeta, considerándolo una mercancía y nuestra propiedad, como hacen los niños de la película con los peces, utilizándolos como atrezzo en un juego. En este juego hay transacciones económicas, como si los animales fueran máquinas con las que jugar. La película pretende plantear la siguiente pregunta: ¿la pandemia nos hará cambiar y cambiar nuestra relación con el mundo?"
+    ],
+    "en": [
+      "Coexistence is a concise film that explores our relationship with animals and the living world in times of pandemic. Until now we have taken advantage of the planet, considering it a commodity and our property, as the children in the film do with the fish, using them as props in a game. In this game there are economic transactions, as if animals were machines to play with. The film aims to raise the following question: will the pandemic make us change and change our relationship with the world?"
+    ],
+    "ca": [
+      "Coexistence és una pel·lícula concisa que explora la nostra relació amb els animals i el món viu en temps de pandèmia. Fins ara hem aprofitat el planeta, considerant-lo una mercaderia i propietat nostra, com fan els infants de la pel·lícula amb els peixos, utilitzant-los com a atrezzo en un joc. En aquest joc hi ha transaccions econòmiques, com si els animals fossin màquines amb què jugar. La pel·lícula pretén plantejar la següent pregunta: la pandèmia ens farà canviar i transformar la nostra relació amb el món?"
+    ]
+  },
+  "trailer": "https://vimeo.com/541253773",
+  "credits": {
+    "es": [
+      "Fragmento del texto “What the virus wants”, de Filipa Ramos",
+      "Voz en off: Bo Alfaro"
+    ],
+    "en": [
+      "Excerpt from the text “What the virus wants”, by Filipa Ramos",
+      "Voice over: Bo Alfaro"
+    ],
+    "ca": [
+      "Extracte del text «What the Virus Wants», de Filipa Ramos",
+      "Veu en off: Bo Alfaro"
+    ]
+  },
+  "groups": [
+    {
+      "title": "fotogramas",
+      "photos": [
+        "img/1.webp",
+        "img/2.webp",
+        "img/3.webp"
+      ]
+    }
+  ]
+}

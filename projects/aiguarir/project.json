@@ -1,0 +1,76 @@
+{
+  "$schema": "../../schema/project.json",
+  "title": "Aiguarir",
+  "details": {
+    "year": "2023",
+    "type": {
+      "es": "Performance con Maria Marvila, film en 16 mm transferido a digital, fotos 35 mm",
+      "en": "Performance with Maria Marvila, film shot in 16 mm transferred to digital, 35mm photos",
+      "ca": "Performance amb Maria Marvila, film en 16 mm transferit a digital, fotos 35 mm"
+    },
+    "duration": ""
+  },
+  "text": {
+    "es": [
+      "Un incendio quema una montaña. Una montaña de alcornoques que arden, pero sobreviven. Dos mujeres recogen la corteza quemada de un alcornoque. La llevan hacia el mar, para aguarirla. Un acto colectivo, donde se escriben deseos y se cuelgan en las ramas. Al soltar, al hacer flotar, los deseos y esperanzas emprenden el viaje. Ellas, aguariendo, continúan su sendero verdadero.",
+      "El verano de 2021 un incendio quemó la montaña donde yace el monasterio de Sant Pere de Rodes. Ambas artistas emprendieron un proceso que les llevaría a formalizar una meditación colectiva dentro del contexto de ARBAR, en la Vall de Santa Creu, que uniría mantras, pensamientos y poesías para la curación de la tierra quemada. Ahora, un año y medio más tarde, ambas se reencuentran para continuar lo que iniciaron con aquella acción, dentro del contexto de la Fundació Palau, en Caldes d'Estrac.",
+      "En un acto de homenaje a Perejaume y a su obra Surar, Bárbara y Maria llevaron la rama caída de un alcornoque, de la montaña todavía quemada pero reverdeciendo, hacia el mar del Maresme. Allí, en un acto colectivo, invitaron a las personas participantes a colgar de las ramas quemadas, palabras escritas en papeles biodegradables, para la curación de la montaña y para la conciencia de la comunidad. Por último, hicieron flotar en el mar la rama negra con las palabras de papel atadas, para aguarla*.",
+      "*Aiguarir (en catalán: agua + curar)"
+    ],
+    "en": [
+      "A fire that burns a mountain. A mountain of cork oaks that burn but survive. Two women collect the burnt bark of a cork oak. They carry it towards the sea, to water-heal it. A collective act, in which wishes are written and hung from the branches. In letting go, in making them float, the wishes and hopes set off on a journey. They, water-healing, continue along their true path.",
+      "In the summer of 2021 a fire burnt the mountain where the monastery of Sant Pere de Rodes stands. Both artists undertook a process that would lead them to formalise a collective meditation within the context of ARBAR, in the Vall de Santa Creu, joining mantras, thoughts and poetry for the healing of the burnt land. A year and a half later, the two meet again to continue what they began with that action, within the context of Fundació Palau, in Caldes d'Estrac.",
+      "As a homage to Perejaume and his work Surar, Bárbara and Maria carried a fallen branch of a cork oak, from the still-burnt but greening mountain, towards the Maresme sea. There, in a collective act, they invited participants to hang words written on biodegradable paper from the burnt branches, for the healing of the mountain and the awareness of the community. Finally, they made the black branch with its tied paper words float on the sea, to water-heal it*.",
+      "*Aiguarir (in Catalan: water + heal)"
+    ],
+    "ca": [
+      "Un incendi que crema una muntanya. Una muntanya d'alzinars surers que cremen, però que sobreviuen. Dues dones recullen l'escorça cremada d'una alzina surera. La porten cap a mar, per a aiguarir-la. Un acte col·lectiu, on hom escriu voluntats i les penja a les branques. En deixar anar, en fer surar, els desitjos i esperances emprenen el viatge. Elles, aiguarint, continuen la seva sendera vera.",
+      "L'estiu del 2021 un incendi va cremar la muntanya on hi ha el monestir de Sant Pere de Rodes. Les dues artistes van emprendre un procés que les portaria a formalitzar una meditació col·lectiva dins el context d'ARBAR, a la Vall de Santa Creu, que uniria mantres, pensaments i poesies per a la curació de la terra cremada. Ara, un any i mig més tard, totes dues es retroben per continuar el que van iniciar amb aquella acció, dins el context de la Fundació Palau, a Caldes d'Estrac.",
+      "En un acte d'homenatge a Perejaume i a la seva obra Surar, Bárbara i Maria van portar la branca caiguda d'una alzina surera, de la muntanya encara cremada però reverdint, cap al mar del Maresme. Allà, en un acte col·lectiu, van convidar les persones participants a penjar de les branques cremades paraules escrites en papers biodegradables, per a la curació de la muntanya i per a la consciència de la comunitat. Finalment, van fer surar al mar la branca negra amb les paraules de paper lligades, per aiguarir-la*.",
+      "*Aiguarir (en català: aigua + guarir)"
+    ]
+  },
+  "trailer": "https://vimeo.com/852875084",
+  "credits": {
+    "es": [
+      "Cámara: Carlos Vásquez Méndez",
+      "Diseño de sonido: Cora Delgado",
+      "Fundació Palau, Caldes d'Estrac"
+    ],
+    "en": [
+      "Camera: Carlos Vásquez Méndez",
+      "Sound design: Cora Delgado",
+      "Fundació Palau, Caldes d'Estrac"
+    ],
+    "ca": [
+      "Càmera: Carlos Vásquez Méndez",
+      "Disseny de so: Cora Delgado",
+      "Fundació Palau, Caldes d'Estrac"
+    ]
+  },
+  "groups": [
+    {
+      "title": "fotogramas",
+      "photos": [
+        "Fotogramas/vlcsnap-2023-01-24-15h51m19s995.webp",
+        "Fotogramas/vlcsnap-2023-01-24-15h57m27s058.webp",
+        "Fotogramas/vlcsnap-2023-01-24-15h58m36s104.webp",
+        "Fotogramas/vlcsnap-2023-01-24-15h58m54s281.webp",
+        "Fotogramas/vlcsnap-2023-01-24-16h00m35s358.webp",
+        "Fotogramas/vlcsnap-2023-01-24-16h01m53s634.webp"
+      ]
+    },
+    {
+      "title": "35mm photos",
+      "photos": [
+        "35mm photos/000015.webp",
+        "35mm photos/000027.webp",
+        "35mm photos/000028.webp",
+        "35mm photos/000032.webp",
+        "35mm photos/000033.webp",
+        "35mm photos/000034.webp",
+        "35mm photos/000036.webp"
+      ]
+    }
+  ]
+}
