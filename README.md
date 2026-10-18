@@ -246,7 +246,15 @@ GitHub Pages desde la rama `main`, root del repo. Para activar dominio custom (`
 
 Configurado en `<head>` de `index.html`: title, description, keywords, Open Graph, Twitter Card, JSON-LD (Person + WebSite). `robots.txt` permite todo, `sitemap.xml` con las 3 URLs por idioma y la imagen destacada.
 
-**Resultado en Google**: el meta `robots` es `index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1`, es decir, Google puede mostrar la descripción completa y miniatura grande (antes había un `nosnippet` que dejaba el resultado sin texto debajo del título). La descripción que se ve en el buscador es la del `<meta name="description">`, en inglés y escrita por Bárbara. La imagen social/miniatura es `data/_about/about.webp` (apaisada; las verticales se recortan mal). El bloque `<noscript>` incluye nombre, bio corta e imagen como respaldo para buscadores que no ejecutan JS.
+**Resultado en Google**: el meta `robots` es `index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1`, es decir, Google puede mostrar la descripción completa y miniatura grande (antes había un `nosnippet` que dejaba el resultado sin texto debajo del título). La imagen social/miniatura es `data/_about/about.webp` (apaisada; las verticales se recortan mal). El bloque `<noscript>` incluye bio corta e imagen como respaldo para buscadores que no ejecutan JS.
+
+**El texto bajo el título lo elige Google**, no la web: usa el `<meta name="description">` solo si encaja con lo que se ha buscado; si no, recorta texto de la página. Por eso:
+- La description empieza por el nombre completo, **Bárbara Sánchez Barroso**, que es lo que la gente busca (con "Bárbara S. Barroso" Google la descartaba y montaba el snippet con "entrar. es en cat. ver menú…").
+- Todo el texto de interfaz (portada, menú, idiomas, nombre del `<h1>`) va marcado con `data-nosnippet`. Ojo: Google **solo** lo respeta en `div`, `span` y `section` (en `<aside>`, `<nav>`, `<h1>`, `<p>`… se ignora).
+
+**Caché**: Cloudflare sirve todo con `max-age=0, must-revalidate` + ETag, así que el navegador siempre comprueba si hay versión nueva. No hacen falta `?v=` en las URLs ni `cache: "no-store"`.
+
+**Google Analytics 4**: `send_page_view: false` en el snippet y page views manuales desde `js/main.js`: uno para la portada (`/`, "bienvenida") al cargar, y uno por vista (`/news`, `/project/<slug>`…) con el nombre de la sección en castellano como título.
 
 Tras tocar esto: en [Search Console](https://search.google.com/search-console) → *Inspección de URLs* → pedir indexación de `https://barbarawong.info/`. Google tarda de días a un par de semanas en refrescar el resultado, y la miniatura la elige él (no se puede forzar).
 

@@ -1,7 +1,8 @@
 // Router + init. Default view = "news". Fade suave al cambiar de vista.
 
 import { $ } from "./dom.js";
-import { state, loadAll, setView as setStateView, updateCanonical } from "./data.js";
+import { state, loadAll, setView as setStateView, updateCanonical, findProject, tf } from "./data.js";
+import { plain } from "./text.js";
 import { renderMenu, setHandlers } from "./menu.js";
 import { shouldShowWelcome, startWelcome, skipWelcome } from "./welcome.js";
 import {
@@ -30,16 +31,31 @@ function viewKey() {
     return `${state.view}:${location.hash}`;
 }
 
-// Envía un page_view manual a GA4 (send_page_view está desactivado en el
-// snippet base porque esto es una SPA con hash routing).
-function trackPageView() {
+// Page views manuales a GA4 (send_page_view está desactivado en el snippet
+// base porque esto es una SPA con hash routing).
+function sendPageView(path, title) {
     if (typeof window.gtag !== "function") return;
-    const { view, payload } = readHash();
-    const path = `/${view || DEFAULT_VIEW}${payload ? "/" + payload : ""}`;
     window.gtag("event", "page_view", {
         page_location: location.origin + path + location.search,
-        page_title: document.title,
+        page_title: `${title} · Bárbara S. Barroso`,
     });
+}
+
+// Nombre de la vista para los informes de GA. Siempre en castellano, para que
+// la misma página no salga partida en tres filas según el idioma del visitante.
+function gaTitle(view, payload) {
+    if (view === "project") {
+        const title = findProject(payload)?.title;
+        if (!title) return "proyecto";
+        return plain(typeof title === "object" ? (title.es || tf(title)) : title);
+    }
+    return (state.menu || []).find(m => m.key === view)?.label?.es || view;
+}
+
+function trackPageView() {
+    const { view, payload } = readHash();
+    const v = VIEWS.has(view) ? view : DEFAULT_VIEW;
+    sendPageView(`/${v}${payload ? "/" + payload : ""}`, gaTitle(v, payload));
 }
 
 function setView(view, payload) {
@@ -136,6 +152,8 @@ async function init() {
 
         if (shouldShowWelcome()) {
             startWelcome();
+            // Cuenta también a quien ve la portada y se va sin pulsar "entrar".
+            sendPageView("/", "bienvenida");
             document.addEventListener("welcome:done", startApp, { once: true });
         } else {
             skipWelcome();

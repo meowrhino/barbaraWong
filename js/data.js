@@ -46,8 +46,10 @@ export const tfa = (val) => {
     return [];
 };
 
+// Sin cache busters ni no-store: el servidor manda max-age=0 + ETag, así que el
+// navegador siempre revalida (304 si no ha cambiado) y los cambios se ven al momento.
 async function loadJSON(path) {
-    const r = await fetch(path, { cache: "no-store" });
+    const r = await fetch(path);
     if (!r.ok) throw new Error(`${path} → ${r.status}`);
     return r.json();
 }

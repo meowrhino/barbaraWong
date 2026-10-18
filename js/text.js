@@ -19,6 +19,18 @@ export function md(str) {
     return s;
 }
 
+// Texto plano para atributos (alt, title): quita <br> y los asteriscos de md().
+export function plain(str) {
+    if (str == null) return "";
+    return String(str)
+        .replace(/<br\s*\/?>/gi, " ")
+        .replace(/\\\*/g, "\u0000")
+        .replace(/\*/g, "")
+        .replace(/\u0000/g, "*")
+        .replace(/\s+/g, " ")
+        .trim();
+}
+
 // Defensa contra `javascript:` URIs en los JSON editoriales. Solo deja pasar
 // esquemas conocidos (http/https/mailto/anclas/rutas relativas); si no, "#".
 export function safeHref(url) {

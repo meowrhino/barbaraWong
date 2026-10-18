@@ -489,8 +489,18 @@ body[data-view="contact"] #viewer-content {
     margin-bottom: 1.5rem;
     font-size: var(--fs-small);
 }
-.project-links a { color: var(--muted); }
-.project-links a:hover { color: var(--fg); }
+.project-links a,
+.project-playlist-btn {
+    color: var(--muted);
+    font: inherit;
+    font-size: var(--fs-small);
+    line-height: 1.5;
+    text-decoration: none;
+}
+.project-links a:hover,
+.project-playlist-btn:hover { color: var(--fg); }
+
+.project-playlist { margin-bottom: 1.5rem; }
 
 .project-gallery-section { margin-bottom: 2rem; }
 .project-gallery-section.is-vertical { max-width: var(--w-gallery-vertical); }

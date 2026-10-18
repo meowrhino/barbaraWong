@@ -3,7 +3,7 @@
 import { $, el } from "./dom.js";
 import { state, t, tf, tfa, findProject } from "./data.js";
 import { openLightbox } from "./lightbox.js";
-import { md, safeHref } from "./text.js";
+import { md, plain, safeHref } from "./text.js";
 
 
 // Texto rico → párrafos. Criterio ÚNICO para info, créditos, news y publications.
@@ -103,7 +103,8 @@ function applyAdaptiveRatio(sliderEl, imageUrls) {
 
 // Media de un item (news/publications): slider si hay varias imágenes,
 // si no una única imagen zoomable. Devuelve null si no hay imagen.
-function itemMedia(item, titleStr) {
+function itemMedia(item, title) {
+    const titleStr = plain(title);
     const singleSrc = item.image || item.images?.[0];
     if (item.images?.length > 1) {
         return makeSlider(item.images, titleStr);
@@ -124,7 +125,7 @@ function linkList(links, className) {
     );
 }
 
-function vimeoEmbed(url) {
+function vimeoEmbed(url, title = "Vimeo") {
     const id = (url || "").match(/vimeo\.com\/(\d+)/)?.[1];
     if (!id) return null;
     return el("div", { class: "project-vimeo" },
@@ -134,7 +135,7 @@ function vimeoEmbed(url) {
             loading: "lazy",
             referrerpolicy: "strict-origin-when-cross-origin",
             allowfullscreen: "",
-            title: "Vimeo trailer",
+            title,
         })
     );
 }
@@ -150,8 +151,11 @@ function resolveGalleryImages(imgs, slug) {
 function gallerySection(name, imgs, slug, titleStr) {
     if (!imgs || !imgs.length) return null;
     const full = resolveGalleryImages(imgs, slug);
-    const label = name || "";
-    const altBase = `${titleStr} — ${name || "imagen"}`;
+    // `name` can be a string or an object with translations { es, en, ca }.
+    const label = (name && typeof name === 'object')
+        ? (name[state.lang] || name.en || name.es || Object.values(name)[0])
+        : (name || "");
+    const altBase = `${plain(titleStr)} — ${typeof label === 'string' && label ? plain(label) : "imagen"}`;
     let media;
     if (full.length > 1) {
         media = makeSlider(full, altBase);
@@ -170,7 +174,7 @@ function gallerySection(name, imgs, slug, titleStr) {
     );
 }
 
-// CV: un PDF por idioma en data/PDF/. Cacheamos el resultado del HEAD por
+// CV: un PDF por idioma en data/PDF/. Si el archivo no existe, no sale el enlace. Cacheamos el resultado del HEAD por
 // ruta para no repetir la comprobación cada vez que se re-renderiza la vista.
 const CV_FILES = { es: "cv_es.pdf", en: "cv_en.pdf", ca: "cv_cat.pdf" };
 const cvExistsCache = new Map();
@@ -307,12 +311,28 @@ export function renderProject(slug) {
     const info = richParagraphs(p.info);
     const infoMore = richParagraphs(p.info_colapsable);
     const creditos = richParagraphs(p.creditos);
-    // Solo se aceptan pares bien formados: una entrada rota no debe tirar toda la obra.
+    // Normalizamos `p.links` para aceptar tanto arrays [name, url] como objetos { label: {es,en,ca} | string, url }.
     const links = (Array.isArray(p.links) ? p.links : [])
-        .filter(l => Array.isArray(l) && l[0] && l[1]);
+        .map(l => {
+            if (Array.isArray(l) && l[0] && l[1]) return { label: l[0], url: l[1] };
+            if (l && typeof l === 'object' && l.url) {
+                const label = typeof l.label === 'string'
+                    ? l.label
+                    : (l.label && (l.label[state.lang] || l.label.es || l.label.en || l.label.ca)) || '';
+                return { label: label || l.url, url: l.url };
+            }
+            return null;
+        })
+        .filter(Boolean);
     const gallerys = (Array.isArray(p.gallerys) ? p.gallerys : [])
         .filter(g => Array.isArray(g) && Array.isArray(g[1]));
-    const trailerNode = vimeoEmbed(p.trailer || p.video);
+    const plainTitle = plain(titleStr);
+    const trailerNode = vimeoEmbed(p.trailer || p.video, `${plainTitle} — trailer`);
+    // videos: lista de URLs de Vimeo extra, se muestran antes de las galerías.
+    const videos = Array.isArray(p.videos) ? p.videos : [];
+    const videosNodes = videos
+        .map((url, i) => vimeoEmbed(url, videos.length > 1 ? `${plainTitle} — vídeo ${i + 1}` : plainTitle))
+        .filter(Boolean);
     // trailer_pos: "antes" muestra el trailer antes de las galerías; por defecto va después.
     const trailerBefore = ["antes", "pre"].includes((p.trailer_pos || "").toLowerCase());
 
@@ -325,12 +345,22 @@ export function renderProject(slug) {
             ? el("div", { class: "project-info" }, ...info)
             : null,
         ...(infoMore.length ? infoMoreToggle(infoMore) : []),
-        links.length
-            ? el("div", { class: "project-links" },
-                ...links.map(([name, url]) => el("a", { href: safeHref(url), target: "_blank", rel: "noopener" }, `↗ ${name}`))
-            )
-            : null,
+        // Mostrar enlace de playlist destacado (showcase) como botón, luego el resto de links.
+        (() => {
+            if (!links.length) return null;
+            const showcase = links.find(l => /vimeo\.com\/showcase/.test(l.url));
+            const others = links.filter(l => l !== showcase);
+            return el('div', { class: 'project-links-wrapper' },
+                showcase ? el('div', { class: 'project-playlist' },
+                    el('a', { class: 'project-playlist-btn', href: safeHref(showcase.url), target: '_blank', rel: 'noopener' }, `↗ ${showcase.label}`)
+                ) : null,
+                others.length ? el('div', { class: 'project-links' },
+                    ...others.map(l => el('a', { href: safeHref(l.url), target: '_blank', rel: 'noopener' }, `↗ ${l.label}`))
+                ) : null
+            );
+        })(),
         trailerBefore ? trailerNode : null,
+        ...videosNodes,
         ...gallerys.map(([name, imgs]) => gallerySection(name, imgs, p.slug, titleStr)),
         trailerBefore ? null : trailerNode,
         creditos.length
