@@ -1,4 +1,5 @@
 {
+  "$schema": "../schema/about.json",
   "bio": {
     "es": [
       "Bárbara es artista visual, cineasta e investigadora. Su práctica se sitúa entre el cine experimental, la no ficción y la videoinstalación, e incorpora también la performance y la escritura.",

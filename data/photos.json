@@ -1,4 +1,5 @@
 {
+  "$schema": "../schema/photos.json",
   "count": 197,
   "ext": "webp",
   "dir": "data/_photos/",

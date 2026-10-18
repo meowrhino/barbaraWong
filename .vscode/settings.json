@@ -1,0 +1,16 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "data/news.json"
+      ],
+      "url": "./schema/news.json"
+    },
+    {
+      "fileMatch": [
+        "data/publications.json"
+      ],
+      "url": "./schema/publications.json"
+    }
+  ]
+}
