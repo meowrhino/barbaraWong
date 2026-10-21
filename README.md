@@ -37,11 +37,12 @@ barbaraWong/
   de vista con `history.pushState` a la dirección limpia, con `<base>` en la raíz. Los enlaces de
   antes (`#about`, `#project/<slug>`) siguen valiendo y pasan a la nueva. En la vista previa, el
   `#` de siempre.
-- **La analítica (GA4)** es de Bárbara: va en `index.html` y el build la quita en nuestra copia.
+- **Sin analítica en el código** (el GA4 se quitó el 2026-10-21). Si Bárbara quiere visitas, Cloudflare Web
+  Analytics se enciende desde su dashboard (sin script, sin cookies, sin banner).
 - **Vista previa**: Live Server sobre la carpeta. Sin `data-built` en `<html>`, `js/carga.js`
   revisa los JSON con `schema/` y enseña en pantalla lo que pararía el build.
-- **Publicar**: nuestra copia, con la Action en `meowrhino.github.io/barbaraWong/` sin indexar ni
-  analítica; la de Bárbara, con Workers Builds (`wrangler.jsonc`) en su dominio. Si falla, un issue.
+- **Publicar**: nuestra copia, con la Action en `meowrhino.github.io/barbaraWong/` sin indexar; la de
+  Bárbara, con Workers Builds (`wrangler.jsonc`) en su dominio. Si falla, un issue.
 
 ## Detalles que conviene saber
 

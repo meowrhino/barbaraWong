@@ -5,10 +5,11 @@ con Cloudflare (Workers, sin build: sirve los ficheros de `main` tal cual, menos
 lo de `.assetsignore`), y **la edita ella, mucho** (noticias, obras, bio). Es la
 versión de antes: un `projects.json` con todas las obras y sus fotos en
 `data/_works/`, todo en una sola página (`#about`, `#project/…`). Tiene su SEO
-trabajado (descripción, JSON-LD, `hreflang`, Search Console) y Google Analytics.
+trabajado (descripción, JSON-LD, `hreflang`, Search Console) y Google Analytics (GA4).
 
-**Su contenido está aquí** (traído el 2026-10-18, hasta `2775c90`). Su SEO y su
-analítica se conservan: la analítica solo va en su copia. Lo que haya cambiado
+**Su contenido está aquí** (traído el 2026-10-18, hasta `2775c90`). Su SEO se
+conserva. **Su GA4 no**: lo quitamos del código el 2026-10-21 (nada de Google ni cookies). Al
+traspasar, avisarla: si quiere ver visitas, Cloudflare Web Analytics desde su dashboard, sin script. Lo que haya cambiado
 desde entonces hay que traerlo antes. Podemos escribir en su repo.
 
 En su copia la Action de publicar no corre (lleva `if: github.repository_owner
@@ -38,8 +39,8 @@ sobre, igual que siempre. Hablarlo antes.
 - [ ] `git push https://github.com/barbarawong/web-manu.git main:receta`
 - [ ] En Cloudflare, en su Worker: **Settings → Build**: rama `receta`, comando
       `node build/build.mjs` (o que lo lea de `wrangler.jsonc`), salida `dist`. Mirar el
-      `*.workers.dev` de la rama: la portada, `/about/`, una obra (`/els-peregrins/`), y que la
-      analítica siga (en la pestaña Red, `googletagmanager`).
+      `*.workers.dev` de la rama: la portada, `/about/`, una obra (`/els-peregrins/`), y que ya no
+      cargue `googletagmanager` (pestaña Red).
 
 ## 2. `main` pasa a ser la versión nueva
 
