@@ -12,7 +12,8 @@
    Antes todo era la misma página (#about, #project/<slug>…); esos enlaces
    siguen valiendo y llevan a la dirección nueva.
 
-   En nuestra copia (meowrhino.github.io) no se indexa.
+   En nuestra copia (meowrhino.github.io) no se indexa y no va la analítica
+   de Bárbara (Google Analytics); en la suya, barbarawong.info, sí.
 
    Si algo está mal (una coma, un campo mal escrito, una foto que no está)
    para y dice qué, y no se publica nada: la web se queda como estaba.
@@ -174,6 +175,8 @@ function page({ view, slug, path, title, desc, image }) {
   html = set(html, /(<link rel="alternate" hreflang="x-default" href=")[^"]*(")/, url);
   if (!INDEX) {
     html = swap(html, /<meta name="robots" content="[^"]*">/, '<meta name="robots" content="noindex">');
+    // la analítica es de Bárbara: en nuestra copia, fuera
+    html = swap(html, /\s*<!-- Google Analytics 4[^>]*-->\s*<script async src="https:\/\/www\.googletagmanager\.com[^"]*"><\/script>\s*<script>[\s\S]*?<\/script>/, '');
   }
   html = swap(html, /<body data-view="news">/, `<body data-view="${view}">`);
   html = swap(html, /(<a id="site-name" href=")#news(")/, '$1./$2');
